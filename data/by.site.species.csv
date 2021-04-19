@@ -1,0 +1,5242 @@
+sample,species,nReads
+CP_201706,Acartia longiremis,2462
+CP_201706,Acrochaetium arcuatum,28
+CP_201706,Aequorea sp. MW-2012,630
+CP_201706,Apodachlya minima,57
+CP_201706,Asterionellopsis guyunusae,5
+CP_201706,Attheya longicornis,61
+CP_201706,Aurelia labiata,131
+CP_201706,Balanus balanus,4606
+CP_201706,Bathycoccus prasinos,22925
+CP_201706,Blastocladiella emersonii,82
+CP_201706,Chaetoceros socialis,4061
+CP_201706,Chaetoceros sp. MBTD-CMFRI-S045,483
+CP_201706,Chattonella subsalsa,41
+CP_201706,Chordariaceae sp. 7 AP-2014,43
+CP_201706,Chrysochromulina sp. CCMP291,9
+CP_201706,Clytia folleata,28
+CP_201706,Clytia gracilis,360
+CP_201706,Corallina vancouveriensis,622
+CP_201706,Coscinodiscus wailesii,35
+CP_201706,Cylindrotheca closterium,173
+CP_201706,Devaleraea mollis,19
+CP_201706,Dictyocha speculum,33
+CP_201706,Ditylum brightwellii,299
+CP_201706,Dodecaceria sp. CMC01,309
+CP_201706,Emiliania huxleyi,8
+CP_201706,Grammonema striatula,1858
+CP_201706,Halichondria panicea,18
+CP_201706,Hecatonema maculans,139
+CP_201706,Hematodinium sp.,37
+CP_201706,Heterocapsa rotundata,1130
+CP_201706,Lacuna vincta,212
+CP_201706,Laminariocolax aecidioides,9
+CP_201706,Leathesia marina,8
+CP_201706,Mazzaella splendens,103
+CP_201706,Membranipora membranacea,23
+CP_201706,Micromonas pusilla,12485
+CP_201706,Minutocellus polymorphus,3740
+CP_201706,Naineris dendritica CMC02,30
+CP_201706,Nanomia bijuga,2
+CP_201706,Navicula cryptocephala,7
+CP_201706,Navicula glaciei,45
+CP_201706,Navicula sp. BOLD:AAO6951,459
+CP_201706,Neorhodomela oregona,751
+CP_201706,Nereocystis luetkeana,60
+CP_201706,Nicolea zostericola,117
+CP_201706,Nitzschia cf. promare,115
+CP_201706,Notheia anomala,19
+CP_201706,Odonthalia floccosa,6
+CP_201706,Orthocladius sp. BOLD-2016,993
+CP_201706,Orthopyxis integra,85
+CP_201706,Paramoeba pemaquidensis,7
+CP_201706,Pedospumella sinomuralis,5
+CP_201706,Phaeocystis antarctica,3352
+CP_201706,Phaeocystis globosa,21
+CP_201706,Phytophthora taxon paludosa,4
+CP_201706,Pinnularia sp. 5 CS-2011,15
+CP_201706,Platynereis bicanaliculata,3425
+CP_201706,Polysiphonia hendryi,59
+CP_201706,Poteriospumella lacustris,38
+CP_201706,Pseudo-nitzschia delicatissima,140
+CP_201706,Pseudo-nitzschia hasleana,555
+CP_201706,Pseudocalanus newmani,6
+CP_201706,Pterosiphonia bipinnata,12
+CP_201706,Pyramimonas parkeae,128
+CP_201706,Pyropia fallax,49
+CP_201706,Pythium pachycaule,23
+CP_201706,Pythium tracheiphilum,44
+CP_201706,Ralfsioid sp. 4GWS,85
+CP_201706,Rhizosolenia setigera,10444
+CP_201706,Rhodomonas salina,8
+CP_201706,Salispina spinosa,8
+CP_201706,Sarcodiotheca sp. 2gaudichaudii,20
+CP_201706,Schizobranchia insignis,13
+CP_201706,Scopalina ruetzleri,65
+CP_201706,Semibalanus cariosus,18
+CP_201706,Skeletonema cf. pseudocostatum,28
+CP_201706,Skeletonema dohrnii,8
+CP_201706,Skeletonema japonicum,339
+CP_201706,Smithora naiadum,1361
+CP_201706,Strongylocentrotus droebachiensis,20
+CP_201706,Synchaeta pectinata,16
+CP_201706,Thalassionema nitzschioides,107
+CP_201706,Thalassiosira nordenskioeldii,3945
+CP_201706,Thecamonas trahens,381
+CP_201706,Thelepus crispus,181
+CP_201706,Triparma laevis,81
+CP_201706,Wildemania amplissima,17
+CP_201706,Wildemania sp. 5POR,226
+CP_201706,Wildemania sp. HK-2011,16
+CP_201706,NA,152651
+CP_201707,Acartia longiremis,10770
+CP_201707,Acrochaetium arcuatum,114
+CP_201707,Aequorea sp. MW-2012,31
+CP_201707,Ammodytes hexapterus,1799
+CP_201707,Asterionellopsis glacialis,5
+CP_201707,Asterionellopsis tropicalis,4
+CP_201707,Attheya longicornis,122
+CP_201707,Azumapecten farreri,26
+CP_201707,Balanus balanus,6040
+CP_201707,Bathycoccus prasinos,189
+CP_201707,Blastocladiella emersonii,18
+CP_201707,Centropages abdominalis,6594
+CP_201707,Chaetoceros socialis,936
+CP_201707,Chaetoceros sp. MBTD-CMFRI-S045,276
+CP_201707,Chaetoceros sp. MBTD-CMFRI-S062,32
+CP_201707,Chattonella subsalsa,1186
+CP_201707,Chondracanthus exasperatus,31
+CP_201707,Chrysochromulina sp. CCMP291,449
+CP_201707,Chrysonoma sp. ANIC15,6
+CP_201707,Cliona chilensis,140
+CP_201707,Clytia gracilis,1082
+CP_201707,Corallina vancouveriensis,135
+CP_201707,Coscinodiscus wailesii,12800
+CP_201707,Cylindrotheca closterium,289
+CP_201707,Dictyocha speculum,617
+CP_201707,Ditylum brightwellii,712
+CP_201707,Dodecaceria sp. CMC01,23
+CP_201707,Dolichomastix tenuilepis,38
+CP_201707,Egregia menziesii,105
+CP_201707,Enophrys bison,423
+CP_201707,Eucampia zodiacus,8
+CP_201707,Euclymene oerstedi,1379
+CP_201707,Grammonema striatula,200
+CP_201707,Halichondria panicea,14
+CP_201707,Hecatonema maculans,171
+CP_201707,Heterocapsa rotundata,45
+CP_201707,Lacuna vincta,5220
+CP_201707,Laminariocolax aecidioides,52
+CP_201707,Leathesia marina,189
+CP_201707,Mazzaella splendens,21
+CP_201707,Membranipora membranacea,316
+CP_201707,Micromonas pusilla,2658
+CP_201707,Minutocellus polymorphus,4651
+CP_201707,Naineris dendritica CMC02,200
+CP_201707,Neorhodomela oregona,8
+CP_201707,Nereocystis luetkeana,821
+CP_201707,Nicolea zostericola,570
+CP_201707,Nitzschia cf. promare,292
+CP_201707,Orthopyxis integra,18039
+CP_201707,Paracalanus sp. C AC-2013,40
+CP_201707,Paramoeba pemaquidensis,233
+CP_201707,Phaeocystis antarctica,1111
+CP_201707,Phaeocystis globosa,107
+CP_201707,Platichthys stellatus,1040
+CP_201707,Platynereis bicanaliculata,153
+CP_201707,Poteriospumella lacustris,93
+CP_201707,Protoperidinium cf. depressum,644
+CP_201707,Pseudo-nitzschia hasleana,30
+CP_201707,Pseudocalanus newmani,9340
+CP_201707,Pseudochattonella farcimen,100
+CP_201707,Pyropia fallax,4
+CP_201707,Pyropia nereocystis,5
+CP_201707,Pythium pachycaule,60
+CP_201707,Pythium tracheiphilum,2427
+CP_201707,Rhizosolenia setigera,4453
+CP_201707,Skeletonema cf. pseudocostatum,10
+CP_201707,Skeletonema dohrnii,157
+CP_201707,Skeletonema japonicum,63
+CP_201707,Smithora naiadum,3915
+CP_201707,Stephanopyxis turris,88
+CP_201707,Thalassionema nitzschioides,2
+CP_201707,Thalassiosira nordenskioeldii,1523
+CP_201707,Thecamonas trahens,40
+CP_201707,Thelepus sp. CMC01,8545
+CP_201707,Tresus capax,211
+CP_201707,Triparma laevis,510
+CP_201707,Wildemania amplissima,18
+CP_201707,Wildemania sp. 5POR,215
+CP_201707,NA,182608
+CP_201708,Acartia californiensis,79
+CP_201708,Acartia longiremis,8443
+CP_201708,Aequorea sp. MW-2012,17
+CP_201708,Arca avellana,71
+CP_201708,Asterionellopsis glacialis,160
+CP_201708,Asterionellopsis guyunusae,17
+CP_201708,Asterionellopsis tropicalis,19
+CP_201708,Attheya longicornis,239
+CP_201708,Azumapecten farreri,12
+CP_201708,Bathycoccus prasinos,2623
+CP_201708,Blastocladiella emersonii,86
+CP_201708,Bougainvillia muscus,81
+CP_201708,Brachionidae sp. SHYT150702c,19
+CP_201708,Calanus pacificus,91
+CP_201708,Centropages abdominalis,3
+CP_201708,Chaetoceros socialis,1253
+CP_201708,Chaetoceros sp. MBTD-CMFRI-S062,5801
+CP_201708,Chattonella subsalsa,129
+CP_201708,Chondracanthus exasperatus,58
+CP_201708,Chrysochromulina sp. CCMP291,97
+CP_201708,Compsomyax subdiaphana,4
+CP_201708,Coryne eximia,98
+CP_201708,Coscinodiscus wailesii,152
+CP_201708,Cylindrotheca closterium,26
+CP_201708,Dictyocha speculum,2051
+CP_201708,Emiliania huxleyi,48
+CP_201708,Eucampia zodiacus,30
+CP_201708,Glycera sp. CMC03,13520
+CP_201708,Heterocapsa rotundata,122
+CP_201708,Hincksia hincksiae,3
+CP_201708,Loxothylacus panopaei,73
+CP_201708,Macoma nasuta,556
+CP_201708,Mazzaella splendens,51
+CP_201708,Membranipora membranacea,163
+CP_201708,Micromonas pusilla,7093
+CP_201708,Minutocellus polymorphus,13626
+CP_201708,Muggiaea atlantica,58
+CP_201708,Mytilus trossulus,171
+CP_201708,Paracalanus sp. C AC-2013,168
+CP_201708,Phaeocystis antarctica,29959
+CP_201708,Phaeocystis globosa,145
+CP_201708,Poteriospumella lacustris,14
+CP_201708,Proboscidactyla flavicirrata,2
+CP_201708,Protoperidinium cf. depressum,181
+CP_201708,Pseudo-nitzschia delicatissima,58
+CP_201708,Pseudo-nitzschia hasleana,1060
+CP_201708,Pseudocalanus moultoni,4
+CP_201708,Pseudocalanus newmani,25189
+CP_201708,Pseudochattonella farcimen,20
+CP_201708,Pycnococcus provasolii,83
+CP_201708,Pythium sp. CAL-2011c,3
+CP_201708,Pythium tracheiphilum,553
+CP_201708,Rhizosolenia setigera,2301
+CP_201708,Saxidomus gigantea,24
+CP_201708,Sellaphora bacillum,362
+CP_201708,Skeletonema dohrnii,36
+CP_201708,Stephanopyxis turris,3
+CP_201708,Styela gibbsii,14417
+CP_201708,Thalassiosira nordenskioeldii,7770
+CP_201708,Thalassiosira punctigera,18
+CP_201708,Triparma laevis,145
+CP_201708,NA,189295
+CP_201709,Anisolpidium ectocarpii,76
+CP_201709,Attheya longicornis,12
+CP_201709,Azumapecten farreri,98
+CP_201709,Bathycoccus prasinos,113421
+CP_201709,Blastocladiella emersonii,47
+CP_201709,Bougainvillia muscus,1965
+CP_201709,Campanularia volubilis,65
+CP_201709,Chattonella subsalsa,27
+CP_201709,Chondracanthus exasperatus,10
+CP_201709,Chrysochromulina sp. CCMP291,111
+CP_201709,Coryne eximia,164
+CP_201709,Coscinodiscus wailesii,474
+CP_201709,Cylindrotheca closterium,84
+CP_201709,Dendraster excentricus,4
+CP_201709,Dictyocha speculum,188
+CP_201709,Dolichomastix tenuilepis,28
+CP_201709,Emiliania huxleyi,801
+CP_201709,Eunice valens,841
+CP_201709,Halichondria panicea,48
+CP_201709,Heterocapsa rotundata,4451
+CP_201709,Homo sapiens,48
+CP_201709,Mazzaella rosea,9
+CP_201709,Mazzaella splendens,236
+CP_201709,Membranipora membranacea,38
+CP_201709,Micromonas pusilla,37595
+CP_201709,Minutocellus polymorphus,23857
+CP_201709,Navicula cryptocephala,3
+CP_201709,Navicula ramosissima,13
+CP_201709,Nitzschia cf. promare,29
+CP_201709,Orthopyxis integra,16
+CP_201709,Paracalanus sp. C AC-2013,25
+CP_201709,Pedospumella sinomuralis,16
+CP_201709,Phacellophora camtschatica,30
+CP_201709,Phaeocystis antarctica,1676
+CP_201709,Phaeocystis globosa,330
+CP_201709,Plumularia lagenifera,33
+CP_201709,Polyneura latissima,103
+CP_201709,Polysiphonia hendryi,22
+CP_201709,Poteriospumella lacustris,2
+CP_201709,Protoperidinium cf. depressum,49
+CP_201709,Pseudocalanus newmani,3014
+CP_201709,Pseudochattonella farcimen,95
+CP_201709,Pycnococcus provasolii,690
+CP_201709,Pythium tracheiphilum,511
+CP_201709,Ralfsioid sp. 4GWS,15
+CP_201709,Rhizosolenia setigera,33
+CP_201709,Saprolegnia diclina,3
+CP_201709,Sarcodiotheca sp. 2gaudichaudii,43
+CP_201709,Skeletonema cf. pseudocostatum,6
+CP_201709,Skeletonema dohrnii,2
+CP_201709,Stelligera rigida,97
+CP_201709,Thalassiosira nordenskioeldii,7547
+CP_201709,Thelepus cincinnatus,35
+CP_201709,NA,109821
+CP_201710,Amathia vidovici,7
+CP_201710,Ammodytes hexapterus,289
+CP_201710,Attheya longicornis,15
+CP_201710,Balanus glandula,90
+CP_201710,Bathycoccus prasinos,46110
+CP_201710,Blastocladiella emersonii,149
+CP_201710,Boccardia proboscidea,310
+CP_201710,Callophyllis flabellulata,119
+CP_201710,Chaetoceros socialis,58
+CP_201710,Chattonella subsalsa,1044
+CP_201710,Chrysaora melanaster,9
+CP_201710,Chrysochromulina sp. CCMP291,88
+CP_201710,Corallina vancouveriensis,46
+CP_201710,Coscinodiscus wailesii,167
+CP_201710,Cylindrotheca closterium,21
+CP_201710,Dendraster excentricus,36892
+CP_201710,Devaleraea mollis,229
+CP_201710,Dictyocha speculum,351
+CP_201710,Ditylum brightwellii,341
+CP_201710,Emiliania huxleyi,104
+CP_201710,Enophrys bison,4
+CP_201710,Euclymene sp. BOLD:ACG1020,306
+CP_201710,Eunice valens,320
+CP_201710,Fucus distichus,769
+CP_201710,Halichondria panicea,397
+CP_201710,Haliclystus sanjuanensis,338
+CP_201710,Hecatonema maculans,135
+CP_201710,Hematodinium sp.,10
+CP_201710,Heterocapsa rotundata,2328
+CP_201710,Hildenbrandia sp. 27GWS,993
+CP_201710,Hincksia hincksiae,6
+CP_201710,Homo sapiens,1144
+CP_201710,Laminariocolax aecidioides,9
+CP_201710,Littorina scutulata,14
+CP_201710,Littorina sitkana,54
+CP_201710,Lottia paradigitalis,551
+CP_201710,Manania gwilliami,18
+CP_201710,Mastocarpus alaskensis,2434
+CP_201710,Mazzaella sp. GWS-2013b,32
+CP_201710,Mazzaella splendens,270
+CP_201710,Membranipora membranacea,41
+CP_201710,Mesocentrotus franciscanus,15
+CP_201710,Microcladia coulteri,49
+CP_201710,Micromonas pusilla,9536
+CP_201710,Minutocellus polymorphus,42851
+CP_201710,Muggiaea atlantica,13
+CP_201710,Naineris dendritica CMC02,6
+CP_201710,Navicula ramosissima,3
+CP_201710,Navicula sp. BOLD:AAO6951,20
+CP_201710,Neorhodomela oregona,12
+CP_201710,Nereis vexillosa,119
+CP_201710,Nereocystis luetkeana,334
+CP_201710,Nicolea zostericola,2
+CP_201710,Oncorhynchus keta,157
+CP_201710,Orthopyxis integra,5
+CP_201710,Paracalanus sp. C AC-2013,18
+CP_201710,Pedospumella sinomuralis,5
+CP_201710,Penicillium sclerotiorum,59
+CP_201710,Phacellophora camtschatica,6192
+CP_201710,Phaeocystis antarctica,510
+CP_201710,Phaeocystis globosa,603
+CP_201710,Phytophthora taxon paludosa,14
+CP_201710,Platynereis bicanaliculata,4
+CP_201710,Platynereis sp. CMC02,3
+CP_201710,Poteriospumella lacustris,112
+CP_201710,Prionitis sternbergii,157
+CP_201710,Protoperidinium cf. depressum,475
+CP_201710,Pseudocalanus moultoni,5
+CP_201710,Pseudocalanus newmani,3200
+CP_201710,Pseudochattonella farcimen,2153
+CP_201710,Pycnococcus provasolii,124
+CP_201710,Pyramimonas parkeae,13
+CP_201710,Pyropia perforata,134
+CP_201710,Pythium acanthicum,26
+CP_201710,Pythium pachycaule,28
+CP_201710,Pythium tracheiphilum,1115
+CP_201710,Ralfsioid sp. 4GWS,104
+CP_201710,Rhizosolenia setigera,1681
+CP_201710,Scopalina ruetzleri,6
+CP_201710,Sellaphora pupula,27
+CP_201710,Semibalanus cariosus,30
+CP_201710,Skeletonema japonicum,8
+CP_201710,Smithora naiadum,148
+CP_201710,Stephanopyxis turris,16
+CP_201710,Thalassiosira nordenskioeldii,19579
+CP_201710,Thalassiosira punctigera,50
+CP_201710,Thecamonas trahens,6
+CP_201710,Thelepus crispus,459
+CP_201710,Thelepus sp. CMC01,306
+CP_201710,Triparma laevis,139
+CP_201710,Urile penicillatus,2175
+CP_201710,Wildemania sp. 5POR,41
+CP_201710,NA,205785
+CP_201711,Acartia longiremis,16
+CP_201711,Attheya longicornis,4
+CP_201711,Azumapecten farreri,4
+CP_201711,Balanus glandula,208
+CP_201711,Bathycoccus prasinos,44203
+CP_201711,Blastocladiella emersonii,37
+CP_201711,Boccardia proboscidea,86
+CP_201711,Cafeteria roenbergensis,4
+CP_201711,Calanus pacificus,5
+CP_201711,Callophyllis flabellulata,11
+CP_201711,Carcinonemertes errans,53
+CP_201711,Centropages abdominalis,88
+CP_201711,Chaetoceros socialis,26
+CP_201711,Chattonella subsalsa,172
+CP_201711,Chondracanthus exasperatus,29
+CP_201711,Chrysochromulina sp. CCMP291,5
+CP_201711,Chthamalus dalli,341
+CP_201711,Cliona chilensis,51
+CP_201711,Corallina vancouveriensis,19
+CP_201711,Coscinodiscus wailesii,49
+CP_201711,Cylindrotheca closterium,5
+CP_201711,Dasybranchus sp. DH1,60
+CP_201711,Dendraster excentricus,61
+CP_201711,Dictyocha speculum,311
+CP_201711,Ditylum brightwellii,10
+CP_201711,Emiliania huxleyi,114
+CP_201711,Emplectonema sp. 1 TCH-2015,39
+CP_201711,Euclymene sp. BOLD:ACG1020,9
+CP_201711,Eunice valens,70
+CP_201711,Fucus distichus,163
+CP_201711,Halichondria panicea,167
+CP_201711,Haliclystus sanjuanensis,10
+CP_201711,Hecatonema maculans,10
+CP_201711,Heterocapsa rotundata,586
+CP_201711,Hildenbrandia sp. 27GWS,303
+CP_201711,Hincksia hincksiae,18
+CP_201711,Homo sapiens,238
+CP_201711,Laminariocolax aecidioides,14
+CP_201711,Lepidodinium chlorophorum,82
+CP_201711,Liparis florae,348
+CP_201711,Littorina plena,1415
+CP_201711,Littorina scutulata,56
+CP_201711,Littorina sitkana,96
+CP_201711,Lottia paradigitalis,87
+CP_201711,Manania gwilliami,18
+CP_201711,Mastocarpus alaskensis,106
+CP_201711,Mazzaella splendens,4
+CP_201711,Membranipora membranacea,9
+CP_201711,Micromonas pusilla,18811
+CP_201711,Minutocellus polymorphus,10394
+CP_201711,Mytilus trossulus,325
+CP_201711,Navicula sp. BOLD:AAO6950,14
+CP_201711,Navicula sp. BOLD:AAO6951,3
+CP_201711,Nereis vexillosa,351
+CP_201711,Nitzschia cf. promare,6
+CP_201711,Ostrea lurida,5
+CP_201711,Penicillium sclerotiorum,25
+CP_201711,Petalonia fascia,5
+CP_201711,Phacellophora camtschatica,3
+CP_201711,Phaeocystis antarctica,3070
+CP_201711,Phaeocystis globosa,363
+CP_201711,Phoca vitulina,4
+CP_201711,Platynereis bicanaliculata,179
+CP_201711,Polycirrus sp. CMC06,16
+CP_201711,Prionitis sternbergii,35
+CP_201711,Pseudocalanus newmani,32
+CP_201711,Pseudochattonella farcimen,49
+CP_201711,Pycnococcus provasolii,80
+CP_201711,Pyropia fallax,2
+CP_201711,Pyropia perforata,16
+CP_201711,Pythium acanthicum,140
+CP_201711,Pythium pachycaule,23
+CP_201711,Pythium tracheiphilum,382
+CP_201711,Ralfsioid sp. 4GWS,589
+CP_201711,Rhizosolenia setigera,51
+CP_201711,Saprolegnia diclina,24
+CP_201711,Scopalina ruetzleri,3
+CP_201711,Sellaphora pupula,119
+CP_201711,Semibalanus cariosus,126
+CP_201711,Skeletonema cf. pseudocostatum,3
+CP_201711,Skeletonema japonicum,8
+CP_201711,Smithora naiadum,39
+CP_201711,Smithora sp. 1naiadum,3
+CP_201711,Stelligera rigida,43
+CP_201711,Strongylocentrotus droebachiensis,40
+CP_201711,Thalassionema nitzschioides,26
+CP_201711,Thalassiosira nordenskioeldii,3063
+CP_201711,Thecamonas trahens,2
+CP_201711,Thelepus crispus,755
+CP_201711,NA,160296
+CP_201801,Amathia vidovici,4409
+CP_201801,Asterionellopsis guyunusae,52
+CP_201801,Balanus glandula,343
+CP_201801,Bathycoccus prasinos,28682
+CP_201801,Calanus pacificus,455
+CP_201801,Centropages abdominalis,234
+CP_201801,Chattonella subsalsa,459
+CP_201801,Chthamalus dalli,127
+CP_201801,Coscinodiscus wailesii,112
+CP_201801,Dendraster excentricus,11
+CP_201801,Dictyocha speculum,16
+CP_201801,Ditylum brightwellii,48
+CP_201801,Emiliania huxleyi,384
+CP_201801,Emplectonema sp. 1 TCH-2015,281
+CP_201801,Fucus distichus,137
+CP_201801,Grammonema striatula,16
+CP_201801,Heterocapsa rotundata,589
+CP_201801,Hildenbrandia sp. 27GWS,287
+CP_201801,Hincksia hincksiae,40
+CP_201801,Homo sapiens,36
+CP_201801,Laminariocolax aecidioides,254
+CP_201801,Leathesia marina,42
+CP_201801,Lottia paradigitalis,126
+CP_201801,Micromonas pusilla,9505
+CP_201801,Minutocellus polymorphus,10116
+CP_201801,Navicula glaciei,33
+CP_201801,Navicula sp. BOLD:AAO6951,77
+CP_201801,Nicolea zostericola,84
+CP_201801,Ophelina acuminata,117
+CP_201801,Ostrea lurida,809
+CP_201801,Parvamoeba rugata,252
+CP_201801,Penicillium rubens,98
+CP_201801,Phaeocystis antarctica,11490
+CP_201801,Phaeocystis globosa,40
+CP_201801,Phytophthora riparia,18
+CP_201801,Pinnularia sp. 5 CS-2011,408
+CP_201801,Poteriospumella lacustris,5
+CP_201801,Pseudocalanus newmani,329
+CP_201801,Pycnococcus provasolii,55
+CP_201801,Pyramimonas parkeae,50
+CP_201801,Pyropia fallax,39
+CP_201801,Ralfsioid sp. 4GWS,5
+CP_201801,Rhizosolenia setigera,1300
+CP_201801,Thalassionema nitzschioides,635
+CP_201801,Thalassiosira nordenskioeldii,1977
+CP_201801,Thalassiosira punctigera,33
+CP_201801,Thelepus crispus,1862
+CP_201801,NA,125948
+CP_201803,Acartia longiremis,4809
+CP_201803,Acrochaetium arcuatum,26
+CP_201803,Apodachlya minima,20
+CP_201803,Attheya longicornis,6
+CP_201803,Balanus balanus,27979
+CP_201803,Balanus glandula,871
+CP_201803,Bathycoccus prasinos,47432
+CP_201803,Chattonella subsalsa,675
+CP_201803,Chordariaceae sp. 17 AP-2014,14
+CP_201803,Chthamalus dalli,3739
+CP_201803,Cliona chilensis,25
+CP_201803,Corallina vancouveriensis,817
+CP_201803,Cylindrotheca closterium,520
+CP_201803,Dictyocha speculum,31
+CP_201803,Ditylum brightwellii,566
+CP_201803,Ectocarpus siliculosus,26
+CP_201803,Emiliania huxleyi,12
+CP_201803,Enophrys bison,1545
+CP_201803,Fucus distichus,69
+CP_201803,Gomphonema clevei,1
+CP_201803,Grammonema striatula,778
+CP_201803,Halichondria panicea,25065
+CP_201803,Hecatonema maculans,40
+CP_201803,Heterocapsa rotundata,398
+CP_201803,Hildenbrandia sp. 27GWS,582
+CP_201803,Hincksia hincksiae,378
+CP_201803,Homo sapiens,748
+CP_201803,Littorina scutulata,119
+CP_201803,Lottia paradigitalis,11334
+CP_201803,Mazzaella rosea,53
+CP_201803,Mazzaella splendens,88
+CP_201803,Micromonas pusilla,21775
+CP_201803,Minutocellus polymorphus,6871
+CP_201803,Navicula cryptocephala,36
+CP_201803,Navicula glaciei,147
+CP_201803,Navicula sp. BOLD:AAO6950,12
+CP_201803,Navicula sp. BOLD:AAO6951,1477
+CP_201803,Neorhodomela oregona,18
+CP_201803,Nicolea zostericola,36
+CP_201803,Nitzschia cf. promare,1918
+CP_201803,Oligocottus maculosus,332
+CP_201803,Orthocladius sp. BOLD-2016,11
+CP_201803,Paramoeba pemaquidensis,21
+CP_201803,Petalonia fascia,12
+CP_201803,Phaeocystis antarctica,61332
+CP_201803,Polysiphonia hendryi,164
+CP_201803,Poteriospumella lacustris,186
+CP_201803,Protoperidinium cf. depressum,29
+CP_201803,Pseudo-nitzschia delicatissima,103
+CP_201803,Pseudocalanus mimus,1021
+CP_201803,Pseudocalanus moultoni,82
+CP_201803,Pterosiphonia bipinnata,9
+CP_201803,Pycnococcus provasolii,286
+CP_201803,Pyramimonas parkeae,155
+CP_201803,Pyropia fallax,53
+CP_201803,Pythium tracheiphilum,66
+CP_201803,Ralfsioid sp. 4GWS,2360
+CP_201803,Rhizosolenia setigera,2250
+CP_201803,Sellaphora pupula,18
+CP_201803,Semibalanus cariosus,1911
+CP_201803,Skeletonema dohrnii,1119
+CP_201803,Smithora sp. 1naiadum,868
+CP_201803,Stelligera rigida,31
+CP_201803,Strongylocentrotus droebachiensis,610
+CP_201803,Thalassionema nitzschioides,332
+CP_201803,Thalassiosira nordenskioeldii,4702
+CP_201803,Thalassiosira punctigera,49
+CP_201803,Thecamonas trahens,74
+CP_201803,Thelepus crispus,133
+CP_201803,Thelepus sp. CMC01,229
+CP_201803,Triparma laevis,513
+CP_201803,Tylos sp. clade D MM-2013,25
+CP_201803,Wildemania sp. 5POR,96
+CP_201803,NA,226436
+CP_201805,Acartia californiensis,1485
+CP_201805,Acartia longiremis,5427
+CP_201805,Acrochaetium arcuatum,15
+CP_201805,Aequorea sp. MW-2012,342
+CP_201805,Aphanomyces sp. BOLD:AAO9952,76
+CP_201805,Apodachlya minima,434
+CP_201805,Asterionellopsis glacialis,73
+CP_201805,Asterionellopsis tropicalis,125
+CP_201805,Attheya longicornis,317
+CP_201805,Aurelia labiata,2159
+CP_201805,Balanus balanus,7450
+CP_201805,Balanus glandula,81
+CP_201805,Bathycoccus prasinos,2524
+CP_201805,Boccardia proboscidea,214
+CP_201805,Brachionidae sp. SHYT150702c,513
+CP_201805,Centropages abdominalis,2938
+CP_201805,Chaetoceros socialis,297
+CP_201805,Chattonella subsalsa,2437
+CP_201805,Chondracanthus exasperatus,406
+CP_201805,Chrysochromulina sp. CCMP291,102
+CP_201805,Chthamalus dalli,85
+CP_201805,Clytia folleata,34
+CP_201805,Clytia gracilis,291
+CP_201805,Corallina vancouveriensis,181
+CP_201805,Cylindrotheca closterium,1645
+CP_201805,Cylindrotheca fusiformis,21
+CP_201805,Devaleraea mollis,704
+CP_201805,Dictyocha speculum,69
+CP_201805,Ditylum brightwellii,953
+CP_201805,Emplectonema sp. 1 TCH-2015,56
+CP_201805,Enophrys bison,1602
+CP_201805,Euclymene sp. BOLD:ACG1020,2676
+CP_201805,Fistulifera solaris,13
+CP_201805,Fucus distichus,453
+CP_201805,Gomphonema clevei,79
+CP_201805,Grammonema striatula,3444
+CP_201805,Halichondria panicea,4196
+CP_201805,Halidrys siliquosa,7
+CP_201805,Hecatonema maculans,78
+CP_201805,Hematodinium sp.,61
+CP_201805,Heterocapsa rotundata,1187
+CP_201805,Hildenbrandia sp. 27GWS,945
+CP_201805,Homo sapiens,1739
+CP_201805,Laminariocolax aecidioides,89
+CP_201805,Littorina plena,146
+CP_201805,Mazzaella rosea,220
+CP_201805,Mazzaella sp. GWS-2013b,412
+CP_201805,Mazzaella splendens,3379
+CP_201805,Micromonas pusilla,14100
+CP_201805,Minutocellus polymorphus,4018
+CP_201805,Nanomia bijuga,22
+CP_201805,Navicula cryptocephala,157
+CP_201805,Navicula sp. BOLD:AAO6951,96
+CP_201805,Nereis vexillosa,485
+CP_201805,Nereocystis luetkeana,72
+CP_201805,Nicolea zostericola,127
+CP_201805,Nitzschia cf. promare,551
+CP_201805,Obelia bidentata,123
+CP_201805,Odonthalia floccosa,363
+CP_201805,Oligocottus maculosus,978
+CP_201805,Paramoeba pemaquidensis,53
+CP_201805,Parvamoeba rugata,65
+CP_201805,Phaeocystis antarctica,3827
+CP_201805,Phaeocystis globosa,32
+CP_201805,Phytophthora multivora,147
+CP_201805,Pinnularia sp. 5 CS-2011,1626
+CP_201805,Pisaster ochraceus,550
+CP_201805,Placoneis sp. WJS-2015a,8
+CP_201805,Plagiogramma sp. IAL-2014a,57
+CP_201805,Polysiphonia hendryi,895
+CP_201805,Poteriospumella lacustris,9
+CP_201805,Prionitis sternbergii,1781
+CP_201805,Protoperidinium cf. depressum,200
+CP_201805,Pseudo-nitzschia delicatissima,2911
+CP_201805,Pseudo-nitzschia hasleana,22
+CP_201805,Pseudocalanus moultoni,7
+CP_201805,Pseudocalanus newmani,195
+CP_201805,Pterosiphonia bipinnata,1099
+CP_201805,Pycnococcus provasolii,136
+CP_201805,Pyramimonas parkeae,233
+CP_201805,Pyropia fallax,1158
+CP_201805,Pyropia perforata,7
+CP_201805,Pythium pachycaule,201
+CP_201805,Pythium tracheiphilum,539
+CP_201805,Ralfsioid sp. 4GWS,78
+CP_201805,Rhizosolenia setigera,13137
+CP_201805,Sellaphora bacillum,133
+CP_201805,Semibalanus cariosus,4681
+CP_201805,Skeletonema cf. pseudocostatum,39
+CP_201805,Skeletonema dohrnii,37
+CP_201805,Skeletonema japonicum,653
+CP_201805,Smithora naiadum,203
+CP_201805,Smithora sp. 1naiadum,23
+CP_201805,Synchaeta pectinata,3
+CP_201805,Thalassionema nitzschioides,1094
+CP_201805,Thalassiosira nordenskioeldii,32661
+CP_201805,Thecamonas trahens,2
+CP_201805,Triparma laevis,2740
+CP_201805,Wildemania amplissima,5
+CP_201805,Wildemania sp. 5POR,2527
+CP_201805,Wildemania sp. HK-2011,277
+CP_201805,NA,233090
+CP_201807,Acartia longiremis,10011
+CP_201807,Acrochaetium arcuatum,109
+CP_201807,Amathia vidovici,143
+CP_201807,Ammodytes hexapterus,889
+CP_201807,Apodachlya minima,18
+CP_201807,Azumapecten farreri,22
+CP_201807,Balanus balanus,18
+CP_201807,Balanus glandula,22873
+CP_201807,Bathycoccus prasinos,22104
+CP_201807,Blastocladiella emersonii,34
+CP_201807,Boccardia proboscidea,40
+CP_201807,Chaetoceros socialis,19
+CP_201807,Chaetoceros sp. MBTD-CMFRI-S045,4
+CP_201807,Chattonella subsalsa,132
+CP_201807,Chone magna CMC02,5128
+CP_201807,Chordariaceae sp. 17 AP-2014,2
+CP_201807,Chrysonoma sp. ANIC15,134
+CP_201807,Chthamalus dalli,5366
+CP_201807,Cliona chilensis,5
+CP_201807,Clytia gracilis,15
+CP_201807,Corallina vancouveriensis,51
+CP_201807,Coscinodiscus wailesii,20235
+CP_201807,Cylindrotheca closterium,439
+CP_201807,Devaleraea mollis,32
+CP_201807,Dictyocha speculum,560
+CP_201807,Dodecaceria sp. CMC01,82
+CP_201807,Emiliania huxleyi,48
+CP_201807,Euclymene oerstedi,343
+CP_201807,Euclymene sp. BOLD:ACG1020,248
+CP_201807,Fucus distichus,121
+CP_201807,Grammonema striatula,1213
+CP_201807,Halichondria panicea,190
+CP_201807,Haliclystus sanjuanensis,54
+CP_201807,Hecatonema maculans,114
+CP_201807,Hematodinium sp.,4
+CP_201807,Heterocapsa rotundata,3227
+CP_201807,Heterosigma akashiwo,215
+CP_201807,Hildenbrandia sp. 27GWS,213
+CP_201807,Homo sapiens,300
+CP_201807,Laminariocolax aecidioides,2
+CP_201807,Leathesia marina,4
+CP_201807,Liparis florae,21
+CP_201807,Littorina plena,21
+CP_201807,Lottia paradigitalis,503
+CP_201807,Martensia jejuensis,4
+CP_201807,Mazzaella sp. GWS-2013b,26
+CP_201807,Mazzaella splendens,895
+CP_201807,Membranipora membranacea,162
+CP_201807,Micromonas pusilla,47977
+CP_201807,Microspongium alariae,7
+CP_201807,Minutocellus polymorphus,6141
+CP_201807,Muggiaea atlantica,9
+CP_201807,Navicula glaciei,22
+CP_201807,Navicula sp. BOLD:AAO6949,9
+CP_201807,Navicula sp. BOLD:AAO6950,12
+CP_201807,Navicula sp. BOLD:AAO6951,50
+CP_201807,Neorhodomela oregona,96
+CP_201807,Nereis vexillosa,51
+CP_201807,Nereocystis luetkeana,244
+CP_201807,Nicolea zostericola,11
+CP_201807,Nitzschia cf. promare,252
+CP_201807,Odonthalia floccosa,10
+CP_201807,Orthopyxis integra,84
+CP_201807,Paracalanus sp. C AC-2013,23
+CP_201807,Penicillium rubens,69
+CP_201807,Penicillium sclerotiorum,153
+CP_201807,Phacellophora camtschatica,10
+CP_201807,Phaeocystis globosa,37
+CP_201807,Pinnularia subanglica,4
+CP_201807,Pisaster ochraceus,171
+CP_201807,Plagiogramma sp. IAL-2014a,2
+CP_201807,Platynereis sp. CMC02,36
+CP_201807,Polysiphonia hendryi,29
+CP_201807,Protoperidinium cf. depressum,300
+CP_201807,Pseudo-nitzschia hasleana,12
+CP_201807,Pyramimonas parkeae,21
+CP_201807,Pyropia fallax,3150
+CP_201807,Pyropia perforata,8
+CP_201807,Pythium pachycaule,3
+CP_201807,Pythium tracheiphilum,172
+CP_201807,Ralfsioid sp. 4GWS,101
+CP_201807,Rhizosolenia setigera,29976
+CP_201807,Sarcodiotheca sp. 2gaudichaudii,79
+CP_201807,Schistomeringos longicornis,62
+CP_201807,Schizobranchia insignis,301
+CP_201807,Sellaphora pupula,8
+CP_201807,Semibalanus cariosus,4908
+CP_201807,Smithora naiadum,277
+CP_201807,Strongylocentrotus droebachiensis,72
+CP_201807,Thalassiosira nordenskioeldii,1665
+CP_201807,Thelepus crispus,208
+CP_201807,Thelepus sp. CMC01,5031
+CP_201807,Triparma laevis,78
+CP_201807,Wildemania amplissima,61
+CP_201807,Wildemania sp. 5POR,39549
+CP_201807,Wildemania sp. HK-2011,53
+CP_201807,NA,223423
+FH_201706,Acartia longiremis,10130
+FH_201706,Aequorea sp. MW-2012,7
+FH_201706,Anisolpidium ectocarpii,7
+FH_201706,Asterionellopsis glacialis,20
+FH_201706,Attheya longicornis,360
+FH_201706,Azumapecten farreri,44
+FH_201706,Bathycoccus prasinos,424
+FH_201706,Blastocladiella emersonii,31
+FH_201706,Centropages abdominalis,25704
+FH_201706,Chaetoceros socialis,109767
+FH_201706,Chattonella subsalsa,302
+FH_201706,Chondracanthus exasperatus,4
+FH_201706,Chordariaceae sp. 7 AP-2014,523
+FH_201706,Chrysochromulina sp. CCMP291,38
+FH_201706,Coscinodiscus wailesii,93
+FH_201706,Cylindrotheca closterium,28
+FH_201706,Cymbomonas tetramitiformis,80
+FH_201706,Dictyocha speculum,310
+FH_201706,Ditylum brightwellii,837
+FH_201706,Emiliania huxleyi,98
+FH_201706,Gomphonema clevei,1
+FH_201706,Gymnodinium sp. NVA/RUS/2008,52
+FH_201706,Hematodinium sp.,3
+FH_201706,Heterocapsa rotundata,1045
+FH_201706,Hincksia hincksiae,7
+FH_201706,Leitoscoloplos pugettensis CMC01,5
+FH_201706,Maculaura alaskensis,205
+FH_201706,Mesocentrotus franciscanus,84
+FH_201706,Micromonas pusilla,16756
+FH_201706,Minutocellus polymorphus,776
+FH_201706,Nitzschia cf. promare,28
+FH_201706,Paracalanus sp. C AC-2013,77
+FH_201706,Pedospumella sinomuralis,19
+FH_201706,Petalonia fascia,2
+FH_201706,Phaeocystis antarctica,350
+FH_201706,Phaeocystis globosa,18
+FH_201706,Phytophthora riparia,23
+FH_201706,Phytophthora taxon paludosa,11
+FH_201706,Pinnularia sp. 5 CS-2011,12
+FH_201706,Protoperidinium cf. depressum,483
+FH_201706,Pseudo-nitzschia delicatissima,353
+FH_201706,Pseudo-nitzschia hasleana,545
+FH_201706,Pyramimonas parkeae,68
+FH_201706,Pythium pachycaule,46
+FH_201706,Pythium tracheiphilum,308
+FH_201706,Rhodomonas salina,2
+FH_201706,Scopalina ruetzleri,17
+FH_201706,Skeletonema japonicum,66
+FH_201706,Stelligera rigida,13
+FH_201706,Striaria attenuata,241
+FH_201706,Synchaeta pectinata,101
+FH_201706,Thalassionema nitzschioides,211
+FH_201706,Thalassiosira nordenskioeldii,1562
+FH_201706,Thalassiosira pseudonana,47
+FH_201706,Thalassiosira punctigera,4
+FH_201706,Triparma laevis,79
+FH_201706,NA,109428
+FH_201707,Acartia californiensis,27
+FH_201707,Acartia longiremis,36349
+FH_201707,Aequorea sp. MW-2012,2
+FH_201707,Anisolpidium ectocarpii,99
+FH_201707,Arca avellana,11
+FH_201707,Asterionellopsis glacialis,6
+FH_201707,Asterionellopsis tropicalis,121
+FH_201707,Attheya longicornis,33
+FH_201707,Aurelia labiata,129
+FH_201707,Balanus balanus,12
+FH_201707,Barantolla americana CMC01,392
+FH_201707,Bathycoccus prasinos,44524
+FH_201707,Blastocladiella emersonii,2
+FH_201707,Brachionidae sp. SHYT150702c,33
+FH_201707,Calanus pacificus,12214
+FH_201707,Centropages abdominalis,3488
+FH_201707,Chaetoceros socialis,392
+FH_201707,Chaetoceros sp. MBTD-CMFRI-S045,612
+FH_201707,Chaetoceros sp. MBTD-CMFRI-S062,15
+FH_201707,Chattonella subsalsa,2130
+FH_201707,Chondracanthus exasperatus,16
+FH_201707,Chrysochromulina sp. CCMP291,12
+FH_201707,Compsomyax subdiaphana,9129
+FH_201707,Coryne eximia,81
+FH_201707,Coscinodiscus wailesii,98356
+FH_201707,Cylindrotheca closterium,6552
+FH_201707,Dictyocha speculum,282
+FH_201707,Ditylum brightwellii,947
+FH_201707,Dolichomastix tenuilepis,83
+FH_201707,Eucampia zodiacus,26
+FH_201707,Halichondria panicea,7
+FH_201707,Heterocapsa rotundata,408
+FH_201707,Homo sapiens,8
+FH_201707,Littorina plena,69
+FH_201707,Mazzaella splendens,41
+FH_201707,Membranipora membranacea,1187
+FH_201707,Mesocentrotus franciscanus,56
+FH_201707,Micromonas pusilla,9691
+FH_201707,Minutocellus polymorphus,3449
+FH_201707,Nais communis/variabilis complex sp. A1,41
+FH_201707,Nais elinguis,202
+FH_201707,Navicula glaciei,4
+FH_201707,Navicula ramosissima,37
+FH_201707,Nitzschia cf. promare,228
+FH_201707,Paracalanus sp. C AC-2013,1625
+FH_201707,Pedospumella sinomuralis,9
+FH_201707,Phaeocystis antarctica,9767
+FH_201707,Phaeocystis globosa,69
+FH_201707,Phytophthora multivora,2
+FH_201707,Pinnularia sp. 5 CS-2011,135
+FH_201707,Plagiogramma sp. IAL-2014a,2
+FH_201707,Polysiphonia hendryi,9
+FH_201707,Poteriospumella lacustris,235
+FH_201707,Protoperidinium cf. depressum,4351
+FH_201707,Pseudo-nitzschia hasleana,10
+FH_201707,Pseudocalanus moultoni,204
+FH_201707,Pseudocalanus newmani,51726
+FH_201707,Pythium pachycaule,110
+FH_201707,Pythium tracheiphilum,2768
+FH_201707,Rhizosolenia setigera,515
+FH_201707,Saprolegnia diclina,14
+FH_201707,Semibalanus cariosus,235
+FH_201707,Smithora naiadum,7
+FH_201707,Stelligera rigida,3
+FH_201707,Stephanopyxis turris,147
+FH_201707,Synchaeta pectinata,67
+FH_201707,Thalassiosira nordenskioeldii,1096
+FH_201707,Triparma laevis,3559
+FH_201707,NA,250290
+FH_201708,Acartia longiremis,1040
+FH_201708,Acrochaetium arcuatum,39
+FH_201708,Anisolpidium ectocarpii,36
+FH_201708,Apodachlya minima,12
+FH_201708,Asterionellopsis glacialis,243
+FH_201708,Asterionellopsis tropicalis,67
+FH_201708,Attheya longicornis,214
+FH_201708,Aurelia labiata,10
+FH_201708,Azumapecten farreri,59
+FH_201708,Balanus balanus,6009
+FH_201708,Bathycoccus prasinos,1656
+FH_201708,Blastocladiella emersonii,29
+FH_201708,Boccardia proboscidea,26
+FH_201708,Chaetoceros socialis,3542
+FH_201708,Chaetoceros sp. MBTD-CMFRI-S045,316
+FH_201708,Chaetoceros sp. MBTD-CMFRI-S062,1297
+FH_201708,Chattonella subsalsa,472
+FH_201708,Chondracanthus exasperatus,5
+FH_201708,Chrysochromulina sp. CCMP291,150
+FH_201708,Chrysonoma sp. ANIC15,54
+FH_201708,Clytia folleata,1881
+FH_201708,Clytia gracilis,4542
+FH_201708,Corallina vancouveriensis,21
+FH_201708,Coscinodiscus wailesii,111
+FH_201708,Cylindrotheca closterium,301
+FH_201708,Devaleraea mollis,276
+FH_201708,Dictyocha speculum,2648
+FH_201708,Ditylum brightwellii,200
+FH_201708,Dodecaceria sp. CMC01,84
+FH_201708,Egregia menziesii,4
+FH_201708,Emiliania huxleyi,18
+FH_201708,Eucampia zodiacus,44
+FH_201708,Euclymene oerstedi,248
+FH_201708,Grammonema striatula,5101
+FH_201708,Gymnodinium sp. NVA/RUS/2008,8
+FH_201708,Halichondria panicea,196
+FH_201708,Haliclystus sanjuanensis,2020
+FH_201708,Harpacticoida sp. DNZ085,2
+FH_201708,Hecatonema maculans,902
+FH_201708,Hematodinium sp.,9
+FH_201708,Heterocapsa rotundata,216
+FH_201708,Heterosigma akashiwo,2
+FH_201708,Homo sapiens,21
+FH_201708,Lacuna pallidula,12
+FH_201708,Lacuna vincta,331
+FH_201708,Laminariocolax aecidioides,77
+FH_201708,Leathesia marina,66
+FH_201708,Lottia paradigitalis,2672
+FH_201708,Mazzaella rosea,7
+FH_201708,Mazzaella sp. GWS-2013b,93
+FH_201708,Mazzaella splendens,2303
+FH_201708,Membranipora membranacea,1476
+FH_201708,Microcladia coulteri,419
+FH_201708,Microcladia sp. 1Cal,10
+FH_201708,Micromonas pusilla,14540
+FH_201708,Minutocellus polymorphus,21977
+FH_201708,Navicula glaciei,4
+FH_201708,Navicula sp. BOLD:AAO6951,98
+FH_201708,Nereis vexillosa,19
+FH_201708,Nereocystis luetkeana,529
+FH_201708,Nicolea zostericola,868
+FH_201708,Nitzschia cf. promare,387
+FH_201708,Obelia bidentata,16
+FH_201708,Opisthosyllis sp. CMC01,10
+FH_201708,Orthopyxis integra,835
+FH_201708,Paracalanus sp. C AC-2013,34
+FH_201708,Paramoeba pemaquidensis,88
+FH_201708,Phaeocystis antarctica,25469
+FH_201708,Phaeocystis globosa,201
+FH_201708,Phytophthora multivora,9
+FH_201708,Phytophthora riparia,6
+FH_201708,Phytophthora siskiyouensis,16
+FH_201708,Pinnularia sp. 5 CS-2011,10
+FH_201708,Platynereis bicanaliculata,68
+FH_201708,Polysiphonia hendryi,294
+FH_201708,Poteriospumella lacustris,5
+FH_201708,Prionitis sternbergii,140
+FH_201708,Proceraea okadai,33
+FH_201708,Protoperidinium cf. depressum,305
+FH_201708,Pseudo-nitzschia delicatissima,157
+FH_201708,Pseudo-nitzschia hasleana,604
+FH_201708,Pseudocalanus newmani,10751
+FH_201708,Pterosiphonia bipinnata,139
+FH_201708,Pycnococcus provasolii,1293
+FH_201708,Pyropia fallax,16
+FH_201708,Pyropia nereocystis,130
+FH_201708,Pythium aff. diclinum,394
+FH_201708,Pythium pachycaule,82
+FH_201708,Pythium tracheiphilum,439
+FH_201708,Ralfsioid sp. 4GWS,30
+FH_201708,Rhizosolenia setigera,18500
+FH_201708,Saccocirrus sp. CMC01,69
+FH_201708,Schizobranchia insignis,162
+FH_201708,Sellaphora bacillum,146
+FH_201708,Sellaphora pupula,54
+FH_201708,Semibalanus cariosus,31
+FH_201708,Skeletonema japonicum,227
+FH_201708,Smithora naiadum,934
+FH_201708,Smithora sp. 1naiadum,6
+FH_201708,Stephanopyxis turris,10
+FH_201708,Thalassiosira nordenskioeldii,11632
+FH_201708,Thecamonas trahens,51
+FH_201708,Thelepus sp. CMC01,3232
+FH_201708,Triparma laevis,147
+FH_201708,Wildemania sp. 5POR,26
+FH_201708,Wildemania sp. HK-2011,26
+FH_201708,NA,246357
+FH_201709,Acartia longiremis,1171
+FH_201709,Amathia vidovici,25
+FH_201709,Ammodytes hexapterus,840
+FH_201709,Balanus glandula,20
+FH_201709,Bathycoccus prasinos,77994
+FH_201709,Blastocladiella emersonii,41
+FH_201709,Boccardia proboscidea,266
+FH_201709,Calanus pacificus,89
+FH_201709,Chaetoceros socialis,12
+FH_201709,Chaetoceros sp. MBTD-CMFRI-S045,413
+FH_201709,Chattonella subsalsa,30
+FH_201709,Chondracanthus exasperatus,14
+FH_201709,Chrysochromulina sp. CCMP291,3
+FH_201709,Chrysonoma sp. ANIC15,7
+FH_201709,Clytia gracilis,532
+FH_201709,Compsomyax subdiaphana,20
+FH_201709,Corallina vancouveriensis,101
+FH_201709,Coscinodiscus wailesii,144
+FH_201709,Cylindrotheca closterium,82
+FH_201709,Dendraster excentricus,14
+FH_201709,Devaleraea mollis,20
+FH_201709,Dictyocha speculum,11
+FH_201709,Ditylum brightwellii,15
+FH_201709,Emiliania huxleyi,269
+FH_201709,Emplectonema sp. 1 TCH-2015,4
+FH_201709,Enophrys bison,61
+FH_201709,Euclymene oerstedi,69
+FH_201709,Eunice valens,2
+FH_201709,Evasterias troschelii,11
+FH_201709,Fucus distichus,9
+FH_201709,Grammonema striatula,935
+FH_201709,Halichondria panicea,2292
+FH_201709,Haliclystus sanjuanensis,27
+FH_201709,Hecatonema maculans,63
+FH_201709,Heterocapsa rotundata,3858
+FH_201709,Homo sapiens,95
+FH_201709,Lacuna vincta,132
+FH_201709,Laminariocolax aecidioides,7
+FH_201709,Liparis florae,95
+FH_201709,Littorina scutulata,6
+FH_201709,Lottia paradigitalis,27681
+FH_201709,Manania gwilliami,5
+FH_201709,Mastocarpus alaskensis,8
+FH_201709,Mazzaella rosea,5
+FH_201709,Mazzaella sp. GWS-2013b,23
+FH_201709,Mazzaella splendens,724
+FH_201709,Membranipora membranacea,589
+FH_201709,Microcladia coulteri,43
+FH_201709,Microcladia sp. 1Cal,7
+FH_201709,Micromonas pusilla,24464
+FH_201709,Minutocellus polymorphus,17822
+FH_201709,Naineris dendritica CMC02,9
+FH_201709,Navicula glaciei,10
+FH_201709,Navicula sp. BOLD:AAO6950,29
+FH_201709,Neorhodomela oregona,90
+FH_201709,Nereocystis luetkeana,246
+FH_201709,Nicolea zostericola,78
+FH_201709,Nitzschia cf. promare,148
+FH_201709,Notheia anomala,12
+FH_201709,Odonthalia floccosa,13
+FH_201709,Oligocottus maculosus,39
+FH_201709,Orthopyxis integra,74
+FH_201709,Paracalanus sp. C AC-2013,30
+FH_201709,Paramoeba pemaquidensis,16
+FH_201709,Phaeocystis antarctica,914
+FH_201709,Phaeocystis globosa,336
+FH_201709,Pinnularia sp. 5 CS-2011,14
+FH_201709,Platynereis bicanaliculata,330
+FH_201709,Polycirrus sp. CMC06,177
+FH_201709,Polyneura latissima,5
+FH_201709,Polysiphonia hendryi,13
+FH_201709,Poteriospumella lacustris,27
+FH_201709,Pseudo-nitzschia delicatissima,3
+FH_201709,Pseudocalanus newmani,10
+FH_201709,Pseudolithophyllum sp. 2whidbeyense,37
+FH_201709,Pycnococcus provasolii,802
+FH_201709,Pyropia fallax,15
+FH_201709,Pyropia perforata,2218
+FH_201709,Pythium tracheiphilum,92
+FH_201709,Ralfsioid sp. 4GWS,447
+FH_201709,Rhizosolenia setigera,31653
+FH_201709,Sarcodiotheca sp. 2gaudichaudii,4
+FH_201709,Schizobranchia insignis,169
+FH_201709,Sellaphora pupula,31
+FH_201709,Semibalanus cariosus,513
+FH_201709,Skeletonema cf. pseudocostatum,4
+FH_201709,Smithora naiadum,7930
+FH_201709,Smithora sp. 1naiadum,139
+FH_201709,Strongylocentrotus droebachiensis,59
+FH_201709,Thalassiosira nordenskioeldii,3695
+FH_201709,Thalassiosira punctigera,8
+FH_201709,Thecamonas trahens,37
+FH_201709,Thelepus cincinnatus,32
+FH_201709,Thelepus crispus,2095
+FH_201709,Thelepus sp. CMC01,1048
+FH_201709,Triparma laevis,5
+FH_201709,Tylos sp. clade D MM-2013,10
+FH_201709,Wildemania sp. 5POR,34
+FH_201709,Wildemania sp. HK-2011,56
+FH_201709,NA,85603
+FH_201710,Acartia longiremis,15918
+FH_201710,Anisolpidium ectocarpii,2
+FH_201710,Azumapecten farreri,24
+FH_201710,Bathycoccus prasinos,14257
+FH_201710,Blastocladiella emersonii,72
+FH_201710,Brachionidae sp. SHYT150702c,3
+FH_201710,Calanus pacificus,150
+FH_201710,Chaetoceros socialis,31
+FH_201710,Chaetoceros sp. MBTD-CMFRI-S062,38
+FH_201710,Chattonella subsalsa,408
+FH_201710,Chrysochromulina sp. CCMP291,34
+FH_201710,Coscinodiscus wailesii,1941
+FH_201710,Cylindrotheca closterium,3
+FH_201710,Dictyocha speculum,171
+FH_201710,Ditylum brightwellii,204
+FH_201710,Emiliania huxleyi,132
+FH_201710,Eunice valens,135
+FH_201710,Evasterias troschelii,4
+FH_201710,Grammonema striatula,5
+FH_201710,Halichondria panicea,8
+FH_201710,Hematodinium sp.,3
+FH_201710,Heterocapsa rotundata,507
+FH_201710,Homo sapiens,412
+FH_201710,Lottia paradigitalis,2
+FH_201710,Macoma nasuta,121
+FH_201710,Mazzaella splendens,8
+FH_201710,Micromonas pusilla,4495
+FH_201710,Minutocellus polymorphus,30718
+FH_201710,Modiolus modiolus,3
+FH_201710,Paracalanus sp. C AC-2013,135
+FH_201710,Phaeocystis antarctica,209
+FH_201710,Phaeocystis globosa,118
+FH_201710,Phytophthora taxon paludosa,2
+FH_201710,Polycirrus sp. CMC05,51
+FH_201710,Polynoidae sp. C_0250,614
+FH_201710,Protoperidinium cf. depressum,251
+FH_201710,Pseudo-nitzschia hasleana,6
+FH_201710,Pseudocalanus acuspes,14
+FH_201710,Pseudocalanus newmani,18697
+FH_201710,Pseudochattonella farcimen,1084
+FH_201710,Pycnococcus provasolii,82
+FH_201710,Pyramimonas parkeae,4
+FH_201710,Pythium acanthicum,3
+FH_201710,Pythium tracheiphilum,597
+FH_201710,Rhizosolenia setigera,171
+FH_201710,Saxidomus gigantea,96
+FH_201710,Skeletonema japonicum,100
+FH_201710,Smithora naiadum,6
+FH_201710,Stelligera rigida,11
+FH_201710,Stephanopyxis turris,171
+FH_201710,Stiliger fuscovittatus,697
+FH_201710,Styela gibbsii,4
+FH_201710,Thalassiosira nordenskioeldii,8524
+FH_201710,Thelepus cincinnatus,32
+FH_201710,Thelepus crispus,81
+FH_201710,Tortanus discaudatus,185
+FH_201710,Trebouxia aggregata,3
+FH_201710,Triparma laevis,21
+FH_201710,NA,185773
+FH_201711,Attheya longicornis,9
+FH_201711,Azumapecten farreri,2
+FH_201711,Bathycoccus prasinos,39213
+FH_201711,Blastocladiella emersonii,25
+FH_201711,Centropages abdominalis,12738
+FH_201711,Chaetoceros socialis,5
+FH_201711,Chattonella subsalsa,209
+FH_201711,Chrysaora fuscescens,1243
+FH_201711,Chrysochromulina sp. CCMP291,6
+FH_201711,Cliona chilensis,4
+FH_201711,Coscinodiscus wailesii,131
+FH_201711,Cylindrotheca closterium,50
+FH_201711,Dendraster excentricus,95
+FH_201711,Dictyocha speculum,36
+FH_201711,Ditylum brightwellii,37
+FH_201711,Emiliania huxleyi,46
+FH_201711,Evasterias troschelii,6
+FH_201711,Halichondria panicea,31
+FH_201711,Halidrys siliquosa,2
+FH_201711,Heterocapsa rotundata,1362
+FH_201711,Hincksia hincksiae,24
+FH_201711,Homo sapiens,405
+FH_201711,Lepidodinium chlorophorum,77
+FH_201711,Lottia paradigitalis,81
+FH_201711,Macoma petalum,199
+FH_201711,Mazzaella splendens,14
+FH_201711,Micromonas pusilla,13585
+FH_201711,Minutocellus polymorphus,17003
+FH_201711,Myxicola infundibulum CMC02,1606
+FH_201711,Navicula ramosissima,11
+FH_201711,Nitzschia cf. promare,4
+FH_201711,Ophelina acuminata,444
+FH_201711,Paracalanus sp. C AC-2013,219
+FH_201711,Pedospumella sinomuralis,3
+FH_201711,Penicillium sclerotiorum,4
+FH_201711,Phaeocystis antarctica,4300
+FH_201711,Phaeocystis globosa,641
+FH_201711,Phyllodoce medipapillata,4041
+FH_201711,Phytophthora riparia,22
+FH_201711,Phytopythium helicoides,18
+FH_201711,Platynereis bicanaliculata,5
+FH_201711,Polycirrus sp. CMC02,100
+FH_201711,Polyneura latissima,4
+FH_201711,Poteriospumella lacustris,2
+FH_201711,Pseudocalanus moultoni,91
+FH_201711,Pseudocalanus newmani,1403
+FH_201711,Pseudochattonella farcimen,222
+FH_201711,Pycnococcus provasolii,233
+FH_201711,Pyramimonas parkeae,6
+FH_201711,Pythium acanthicum,146
+FH_201711,Pythium tracheiphilum,760
+FH_201711,Rhizosolenia setigera,39
+FH_201711,Rhodotorula taiwanensis,71
+FH_201711,Saxidomus gigantea,17
+FH_201711,Skeletonema dohrnii,36
+FH_201711,Skeletonema japonicum,21
+FH_201711,Smithora naiadum,5
+FH_201711,Stelligera rigida,37
+FH_201711,Stephanopyxis turris,30
+FH_201711,Strongylocentrotus droebachiensis,224
+FH_201711,Thalassionema nitzschioides,13
+FH_201711,Thalassiosira nordenskioeldii,4022
+FH_201711,Thalassiosira punctigera,4
+FH_201711,Thelepus cincinnatus,9
+FH_201711,Wildemania amplissima,31
+FH_201711,NA,216145
+FH_201801,Aequorea sp. MW-2012,50
+FH_201801,Aurelia labiata,114
+FH_201801,Balanus balanus,44
+FH_201801,Balanus glandula,1526
+FH_201801,Bathycoccus prasinos,40487
+FH_201801,Capitella nonatoi,834
+FH_201801,Chrysochromulina sp. CCMP291,228
+FH_201801,Coscinodiscus wailesii,28
+FH_201801,Cystoseira geminata,27
+FH_201801,Dictyocha speculum,190
+FH_201801,Ditylum brightwellii,24
+FH_201801,Ectocarpus siliculosus,15
+FH_201801,Glycera sp. CMC03,11
+FH_201801,Gomphonema clevei,23
+FH_201801,Halichondria panicea,48
+FH_201801,Harpacticoida sp. DNZ085,73
+FH_201801,Hecatonema maculans,4
+FH_201801,Hematodinium sp.,112
+FH_201801,Heterocapsa rotundata,514
+FH_201801,Hincksia hincksiae,50
+FH_201801,Homo sapiens,2216
+FH_201801,Mazzaella splendens,10
+FH_201801,Micromonas pusilla,10450
+FH_201801,Minutocellus polymorphus,10020
+FH_201801,Navicula ramosissima,143
+FH_201801,Navicula sp. BOLD:AAO6951,9
+FH_201801,Nereocystis luetkeana,11
+FH_201801,Phacellophora camtschatica,49
+FH_201801,Phaeocystis antarctica,25300
+FH_201801,Phaeocystis globosa,110
+FH_201801,Phyllodoce medipapillata,26
+FH_201801,Phytophthora multivora,4
+FH_201801,Phytophthora riparia,369
+FH_201801,Pinnularia sp. 5 CS-2011,222
+FH_201801,Poteriospumella lacustris,112
+FH_201801,Pseudocalanus newmani,614
+FH_201801,Pycnococcus provasolii,108
+FH_201801,Pyramimonas parkeae,698
+FH_201801,Pythium tracheiphilum,45
+FH_201801,Rhizosolenia setigera,225
+FH_201801,Sarcodiotheca sp. 2gaudichaudii,104
+FH_201801,Stelligera rigida,231
+FH_201801,Synchaetomella acerina,825
+FH_201801,Thalassionema nitzschioides,18
+FH_201801,Thalassiosira nordenskioeldii,442
+FH_201801,Thelepus crispus,16
+FH_201801,Tresus capax,8
+FH_201801,Triparma laevis,158
+FH_201801,NA,305344
+FH_201803,Acartia californiensis,2569
+FH_201803,Acartia longiremis,25354
+FH_201803,Bathycoccus prasinos,38870
+FH_201803,Calanus glacialis,299
+FH_201803,Chattonella subsalsa,3631
+FH_201803,Chordariaceae sp. 7 AP-2014,44
+FH_201803,Chthamalus dalli,4689
+FH_201803,Coscinodiscus wailesii,92
+FH_201803,Cylindrotheca closterium,131
+FH_201803,Dictyocha speculum,127
+FH_201803,Ditylum brightwellii,887
+FH_201803,Galathowenia oculata,232
+FH_201803,Gari maculosa,35
+FH_201803,Gomphonema clevei,8
+FH_201803,Gymnodinium sp. NVA/RUS/2008,15
+FH_201803,Halidrys siliquosa,10
+FH_201803,Harpacticoida sp. DNZ085,534
+FH_201803,Hematodinium sp.,62
+FH_201803,Heterocapsa rotundata,380
+FH_201803,Hincksia hincksiae,111
+FH_201803,Homo sapiens,443
+FH_201803,Leathesia marina,5
+FH_201803,Littorina plena,1518
+FH_201803,Lottia paradigitalis,177
+FH_201803,Macoma nasuta,358
+FH_201803,Mazzaella splendens,19
+FH_201803,Micromonas pusilla,16111
+FH_201803,Minutocellus polymorphus,5731
+FH_201803,Nanomia bijuga,3
+FH_201803,Navicula ramosissima,4
+FH_201803,Nitzschia cf. promare,113
+FH_201803,Ostrea lurida,60
+FH_201803,Phaeocystis antarctica,67209
+FH_201803,Phaeocystis globosa,2
+FH_201803,Pinnularia sp. 5 CS-2011,1880
+FH_201803,Poteriospumella lacustris,220
+FH_201803,Pseudo-nitzschia delicatissima,81
+FH_201803,Pseudocalanus moultoni,25
+FH_201803,Pycnococcus provasolii,367
+FH_201803,Pyramimonas parkeae,13
+FH_201803,Pythium tracheiphilum,92
+FH_201803,Rhizosolenia setigera,194
+FH_201803,Semibalanus cariosus,367
+FH_201803,Skeletonema dohrnii,2372
+FH_201803,Skeletonema japonicum,476
+FH_201803,Stelligera rigida,149
+FH_201803,Strongylocentrotus droebachiensis,1604
+FH_201803,Thalassionema nitzschioides,1322
+FH_201803,Thalassiosira nordenskioeldii,14279
+FH_201803,Thalassiosira punctigera,94
+FH_201803,Trebouxia aggregata,9
+FH_201803,Triparma laevis,585
+FH_201803,NA,307617
+FH_201805,Acartia californiensis,7967
+FH_201805,Acartia longiremis,38920
+FH_201805,Aequorea sp. MW-2012,422
+FH_201805,Alitta sp. CMC01,22223
+FH_201805,Aphanomyces sp. BOLD:AAO9952,16
+FH_201805,Asterionellopsis glacialis,869
+FH_201805,Attheya longicornis,1120
+FH_201805,Azumapecten farreri,120
+FH_201805,Balanus balanus,2106
+FH_201805,Bathycoccus prasinos,3166
+FH_201805,Calanus pacificus,474
+FH_201805,Centropages abdominalis,12909
+FH_201805,Chaetoceros socialis,1751
+FH_201805,Chattonella subsalsa,941
+FH_201805,Chondracanthus exasperatus,249
+FH_201805,Chordariaceae sp. 7 AP-2014,326
+FH_201805,Chthamalus dalli,786
+FH_201805,Coryne eximia,435
+FH_201805,Coscinodiscus wailesii,33
+FH_201805,Cylindrotheca closterium,1021
+FH_201805,Dendraster excentricus,30355
+FH_201805,Devaleraea mollis,34
+FH_201805,Ditylum brightwellii,6629
+FH_201805,Eucampia zodiacus,23
+FH_201805,Fucus distichus,28
+FH_201805,Gallus gallus,76
+FH_201805,Gomphonema clevei,32
+FH_201805,Gymnodinium sp. NVA/RUS/2008,109
+FH_201805,Halidrys siliquosa,25
+FH_201805,Haramonas dimorpha,27
+FH_201805,Harpacticoida sp. DNZ085,1369
+FH_201805,Hematodinium sp.,2619
+FH_201805,Heterocapsa rotundata,644
+FH_201805,Leitoscoloplos pugettensis CMC01,1756
+FH_201805,Leuckartiara octona,1287
+FH_201805,Macoma nasuta,2830
+FH_201805,Martensia jejuensis,72
+FH_201805,Mazzaella splendens,76
+FH_201805,Micromonas pusilla,11164
+FH_201805,Minutocellus polymorphus,37
+FH_201805,Mytilus trossulus,16
+FH_201805,Nitzschia cf. promare,401
+FH_201805,Paracalanus sp. C AC-2013,37
+FH_201805,Pedospumella sinomuralis,37
+FH_201805,Penicillium sclerotiorum,20
+FH_201805,Phaeocystis antarctica,9239
+FH_201805,Phaeocystis globosa,65
+FH_201805,Phytophthora multivora,29
+FH_201805,Phytophthora taxon paludosa,87
+FH_201805,Pinnularia sp. 5 CS-2011,4270
+FH_201805,Polychaeta sp. NB-Po356,1045
+FH_201805,Polyneura latissima,36
+FH_201805,Polysiphonia hendryi,3038
+FH_201805,Poteriospumella lacustris,153
+FH_201805,Prionospio steenstrupi,1171
+FH_201805,Protoperidinium cf. depressum,458
+FH_201805,Pseudo-nitzschia delicatissima,2594
+FH_201805,Pseudo-nitzschia hasleana,957
+FH_201805,Pseudocalanus moultoni,260
+FH_201805,Pseudocalanus newmani,6034
+FH_201805,Pycnococcus provasolii,3407
+FH_201805,Pyramimonas parkeae,91
+FH_201805,Pythium pachycaule,672
+FH_201805,Pythium tracheiphilum,3074
+FH_201805,Rhizosolenia setigera,1559
+FH_201805,Saxidomus gigantea,638
+FH_201805,Sellaphora bacillum,435
+FH_201805,Skeletonema cf. pseudocostatum,77
+FH_201805,Skeletonema japonicum,6223
+FH_201805,Stephanopyxis turris,54
+FH_201805,Styela gibbsii,14
+FH_201805,Thalassionema nitzschioides,163
+FH_201805,Thalassiosira nordenskioeldii,30330
+FH_201805,Thalassiosira punctigera,168
+FH_201805,Tresus capax,6
+FH_201805,NA,325759
+FH_201807,Acartia longiremis,40705
+FH_201807,Attheya longicornis,3
+FH_201807,Azumapecten farreri,43
+FH_201807,Bathycoccus prasinos,14022
+FH_201807,Blastocladiella emersonii,44
+FH_201807,Bougainvillia muscus,8
+FH_201807,Callithamnion pikeanum,8
+FH_201807,Centropages abdominalis,2541
+FH_201807,Chaetoceros socialis,31
+FH_201807,Chattonella subsalsa,15
+FH_201807,Cliona chilensis,94
+FH_201807,Coscinodiscus wailesii,88631
+FH_201807,Cylindrotheca closterium,96
+FH_201807,Dictyocha speculum,137
+FH_201807,Ditylum brightwellii,2
+FH_201807,Fucus distichus,6
+FH_201807,Heterocapsa rotundata,2753
+FH_201807,Heterosigma akashiwo,263
+FH_201807,Homo sapiens,29
+FH_201807,Leuckartiara octona,140
+FH_201807,Macoma nasuta,8
+FH_201807,Mazzaella sp. GWS-2013b,10
+FH_201807,Membranipora membranacea,301
+FH_201807,Mesocentrotus franciscanus,60
+FH_201807,Micromonas pusilla,29511
+FH_201807,Minutocellus polymorphus,2965
+FH_201807,Muggiaea atlantica,289
+FH_201807,Paracalanus sp. C AC-2013,430
+FH_201807,Parvamoeba rugata,13
+FH_201807,Penicillium rubens,309
+FH_201807,Penicillium sclerotiorum,34
+FH_201807,Phaeocystis antarctica,318
+FH_201807,Phaeocystis globosa,14
+FH_201807,Phytophthora riparia,12
+FH_201807,Pinnularia sp. 5 CS-2011,47
+FH_201807,Polycirrus sp. CMC05,422
+FH_201807,Protoperidinium cf. depressum,314
+FH_201807,Pseudo-nitzschia hasleana,44
+FH_201807,Pseudocalanus newmani,10069
+FH_201807,Pythium pachycaule,6
+FH_201807,Pythium tracheiphilum,156
+FH_201807,Rhizosolenia setigera,222
+FH_201807,Skeletonema japonicum,18
+FH_201807,Thalassionema nitzschioides,6
+FH_201807,Thalassiosira nordenskioeldii,946
+FH_201807,Triparma laevis,4
+FH_201807,NA,231150
+LK_201706,Acartia longiremis,12
+LK_201706,Acrochaetium arcuatum,218
+LK_201706,Acrochaetium moniliforme,22
+LK_201706,Aequorea sp. MW-2012,10526
+LK_201706,Anisolpidium ectocarpii,18
+LK_201706,Aphanomyces sp. BOLD:AAO9952,15
+LK_201706,Apodachlya minima,393
+LK_201706,Asterionellopsis tropicalis,14
+LK_201706,Attheya longicornis,28
+LK_201706,Aurelia labiata,33573
+LK_201706,Bathycoccus prasinos,3687
+LK_201706,Blastocladiella emersonii,699
+LK_201706,Calanus pacificus,668
+LK_201706,Callithamnion pikeanum,59
+LK_201706,Chaetoceros socialis,2369
+LK_201706,Chattonella subsalsa,1357
+LK_201706,Chordariaceae sp. 2 AP-2014,11
+LK_201706,Chordariaceae sp. 7 AP-2014,120
+LK_201706,Chrysaora melanaster,19
+LK_201706,Clytia gracilis,371
+LK_201706,Corallina vancouveriensis,12
+LK_201706,Coscinodiscus wailesii,84
+LK_201706,Cylindrotheca closterium,1471
+LK_201706,Cystoseira geminata,2006
+LK_201706,Dictyocha speculum,57
+LK_201706,Ditylum brightwellii,533
+LK_201706,Dodecaceria sp. CMC01,17
+LK_201706,Fucus distichus,32
+LK_201706,Gomphonema clevei,8
+LK_201706,Grammonema striatula,8276
+LK_201706,Gymnodinium sp. NVA/RUS/2008,141
+LK_201706,Halichondria panicea,58
+LK_201706,Halidrys siliquosa,2
+LK_201706,Haptoglossa zoospora,10
+LK_201706,Hecatonema maculans,5521
+LK_201706,Hematodinium sp.,4
+LK_201706,Heterocapsa rotundata,878
+LK_201706,Lacuna vincta,329
+LK_201706,Laminariocolax aecidioides,8
+LK_201706,Leathesia marina,212
+LK_201706,Leptasterias hexactis,5
+LK_201706,Leuckartiara octona,563
+LK_201706,Lichtheimia ramosa,5
+LK_201706,Liparis florae,480
+LK_201706,Littorina scutulata,259
+LK_201706,Lottia paradigitalis,201
+LK_201706,Martensia jejuensis,37
+LK_201706,Megacyclops viridis,5
+LK_201706,Membranipora membranacea,252
+LK_201706,Mesocentrotus franciscanus,16
+LK_201706,Microcladia coulteri,1738
+LK_201706,Micromonas pusilla,14312
+LK_201706,Microspongium alariae,14
+LK_201706,Minutocellus polymorphus,1717
+LK_201706,Myrionema balticum,38
+LK_201706,Naineris dendritica CMC02,19
+LK_201706,Nanomia bijuga,3324
+LK_201706,Navicula cryptocephala,124
+LK_201706,Navicula glaciei,77
+LK_201706,Navicula sp. BOLD:AAO6949,17
+LK_201706,Navicula sp. BOLD:AAO6950,19
+LK_201706,Navicula sp. BOLD:AAO6951,340
+LK_201706,Neorhodomela oregona,99
+LK_201706,Nereocystis luetkeana,3483
+LK_201706,Nitzschia cf. promare,1261
+LK_201706,Nitzschia cf. recta RT-2009,38
+LK_201706,Odonthalia floccosa,3603
+LK_201706,Paramoeba pemaquidensis,162
+LK_201706,Parvamoeba rugata,14
+LK_201706,Pedospumella sinomuralis,33
+LK_201706,Phacellophora camtschatica,10184
+LK_201706,Phaeocystis antarctica,684
+LK_201706,Phaeocystis globosa,13
+LK_201706,Pinnularia sp. 5 CS-2011,1181
+LK_201706,Polysiphonia hendryi,644
+LK_201706,Protoperidinium cf. depressum,154
+LK_201706,Pseudo-nitzschia delicatissima,4245
+LK_201706,Pseudo-nitzschia hasleana,196
+LK_201706,Pseudocalanus newmani,1957
+LK_201706,Pterosiphonia bipinnata,13
+LK_201706,Pyropia fallax,115
+LK_201706,Pythium pachycaule,582
+LK_201706,Pythium tracheiphilum,1645
+LK_201706,Ralfsioid sp. 4GWS,324
+LK_201706,Rhizosolenia setigera,608
+LK_201706,Saprolegnia diclina,574
+LK_201706,Scytosiphon lomentaria,3
+LK_201706,Skeletonema cf. pseudocostatum,158
+LK_201706,Skeletonema dohrnii,28
+LK_201706,Skeletonema japonicum,343
+LK_201706,Soranthera ulvoidea,82
+LK_201706,Stephanopyxis turris,3
+LK_201706,Striaria attenuata,3
+LK_201706,Strongylocentrotus droebachiensis,892
+LK_201706,Thalassionema nitzschioides,160
+LK_201706,Thalassiosira nordenskioeldii,3156
+LK_201706,Thalassiosira pseudonana,6
+LK_201706,Thecamonas trahens,271
+LK_201706,Triparma laevis,6
+LK_201706,Wildemania sp. 5POR,144
+LK_201706,NA,164396
+LK_201707,Acartia longiremis,21543
+LK_201707,Aequorea sp. MW-2012,36
+LK_201707,Apodachlya minima,37
+LK_201707,Asterionellopsis tropicalis,8
+LK_201707,Attheya longicornis,122
+LK_201707,Aurelia labiata,207
+LK_201707,Balanus glandula,20
+LK_201707,Bathycoccus prasinos,278
+LK_201707,Blastocladiella emersonii,70
+LK_201707,Bossiella frondescens,111
+LK_201707,Brachionidae sp. SHYT150702c,69
+LK_201707,Calanus pacificus,488
+LK_201707,Calliarthron tuberculosum,203
+LK_201707,Chaetoceros socialis,667
+LK_201707,Chaetoceros sp. MBTD-CMFRI-S062,2
+LK_201707,Chattonella subsalsa,563
+LK_201707,Chordariaceae sp. 7 AP-2014,14
+LK_201707,Chrysochromulina sp. CCMP291,4
+LK_201707,Chthamalus dalli,53
+LK_201707,Cliona chilensis,7
+LK_201707,Clytia gracilis,268
+LK_201707,Corallina vancouveriensis,52
+LK_201707,Coscinodiscus wailesii,18686
+LK_201707,Cylindrotheca closterium,1290
+LK_201707,Cystoseira geminata,75
+LK_201707,Dictyocha speculum,471
+LK_201707,Ditylum brightwellii,268
+LK_201707,Dodecaceria sp. CMC01,58
+LK_201707,Emiliania huxleyi,4
+LK_201707,Eucampia zodiacus,6
+LK_201707,Eunice valens,1487
+LK_201707,Glycera sp. CMC03,7
+LK_201707,Grammonema striatula,609
+LK_201707,Halichondria panicea,370
+LK_201707,Halidrys siliquosa,19
+LK_201707,Hecatonema maculans,2096
+LK_201707,Hematodinium sp.,53
+LK_201707,Heterocapsa rotundata,156
+LK_201707,Hincksia hincksiae,74
+LK_201707,Lacuna vincta,7661
+LK_201707,Laminariocolax aecidioides,63
+LK_201707,Leathesia marina,16
+LK_201707,Membranipora membranacea,3563
+LK_201707,Microcladia coulteri,113
+LK_201707,Micromonas pusilla,2710
+LK_201707,Microspongium alariae,37
+LK_201707,Minutocellus polymorphus,2032
+LK_201707,Mytilus trossulus,70
+LK_201707,Navicula cryptocephala,4
+LK_201707,Navicula glaciei,143
+LK_201707,Navicula sp. BOLD:AAO6950,6
+LK_201707,Navicula sp. BOLD:AAO6951,6
+LK_201707,Neorhodomela oregona,30
+LK_201707,Nereocystis luetkeana,2746
+LK_201707,Nitzschia cf. promare,238
+LK_201707,Odonthalia floccosa,24
+LK_201707,Orthopyxis integra,9
+LK_201707,Paracalanus sp. C AC-2013,126
+LK_201707,Phacellophora camtschatica,1284
+LK_201707,Phaeocystis antarctica,1043
+LK_201707,Phaeocystis globosa,60
+LK_201707,Phytophthora riparia,8
+LK_201707,Pinnularia sp. 5 CS-2011,5
+LK_201707,Platynereis bicanaliculata,11
+LK_201707,Polysiphonia hendryi,401
+LK_201707,Poteriospumella lacustris,66
+LK_201707,Protoperidinium cf. depressum,427
+LK_201707,Pseudo-nitzschia hasleana,11
+LK_201707,Pseudocalanus moultoni,47
+LK_201707,Pseudocalanus newmani,16372
+LK_201707,Pseudochattonella farcimen,9
+LK_201707,Pterosiphonia bipinnata,55
+LK_201707,Pyropia nereocystis,31
+LK_201707,Pythium tracheiphilum,1578
+LK_201707,Ralfsioid sp. 4GWS,8
+LK_201707,Rhizosolenia setigera,433
+LK_201707,Salispina spinosa,10
+LK_201707,Sellaphora bacillum,2
+LK_201707,Semibalanus cariosus,356
+LK_201707,Skeletonema dohrnii,4
+LK_201707,Skeletonema japonicum,2
+LK_201707,Stephanopyxis turris,164
+LK_201707,Strongylocentrotus droebachiensis,1738
+LK_201707,Syllis alternata CMC01,11298
+LK_201707,Synchaeta pectinata,104
+LK_201707,Thalassionema nitzschioides,5
+LK_201707,Thalassiosira nordenskioeldii,608
+LK_201707,Thecamonas trahens,188
+LK_201707,Thelepus crispus,44
+LK_201707,Tonicella lineata,109
+LK_201707,Triparma laevis,7
+LK_201707,NA,166408
+LK_201708,Acartia californiensis,589
+LK_201708,Acartia longiremis,903
+LK_201708,Apodachlya minima,16
+LK_201708,Asterionellopsis glacialis,35
+LK_201708,Asterionellopsis tropicalis,78
+LK_201708,Attheya longicornis,148
+LK_201708,Aurelia labiata,5
+LK_201708,Azumapecten farreri,213
+LK_201708,Balanus glandula,51
+LK_201708,Bathycoccus prasinos,3485
+LK_201708,Boccardia proboscidea,93
+LK_201708,Calanus pacificus,76
+LK_201708,Calliarthron tuberculosum,23
+LK_201708,Campanularia volubilis,4
+LK_201708,Chaetoceros socialis,1734
+LK_201708,Chaetoceros sp. MBTD-CMFRI-S062,600
+LK_201708,Chattonella subsalsa,96
+LK_201708,Chrysochromulina sp. CCMP291,59
+LK_201708,Cliona chilensis,7
+LK_201708,Clytia gracilis,963
+LK_201708,Corallina vancouveriensis,157
+LK_201708,Coscinodiscus wailesii,133
+LK_201708,Cylindrotheca closterium,2604
+LK_201708,Cystoseira geminata,305
+LK_201708,Dasybranchus sp. DH1,12
+LK_201708,Devaleraea mollis,72
+LK_201708,Dictyocha speculum,1408
+LK_201708,Ditylum brightwellii,244
+LK_201708,Dodecaceria sp. CMC01,45
+LK_201708,Emiliania huxleyi,18
+LK_201708,Fucus distichus,53
+LK_201708,Gomphonema parvulum,28
+LK_201708,Grammonema striatula,196
+LK_201708,Halichondria panicea,76
+LK_201708,Hecatonema maculans,1336
+LK_201708,Hematodinium sp.,7
+LK_201708,Heterocapsa rotundata,130
+LK_201708,Hildenbrandia sp. 27GWS,4
+LK_201708,Homo sapiens,9
+LK_201708,Lacuna vincta,923
+LK_201708,Laminariocolax aecidioides,79
+LK_201708,Leptasterias hexactis,17
+LK_201708,Littorina sitkana,8
+LK_201708,Lottia paradigitalis,830
+LK_201708,Mazzaella rosea,74
+LK_201708,Mazzaella splendens,1001
+LK_201708,Megacyclops viridis,19730
+LK_201708,Membranipora membranacea,4136
+LK_201708,Mesocentrotus franciscanus,56
+LK_201708,Microcladia coulteri,214
+LK_201708,Micromonas pusilla,12437
+LK_201708,Microspongium alariae,522
+LK_201708,Minutocellus polymorphus,19819
+LK_201708,Muggiaea atlantica,44
+LK_201708,Navicula glaciei,46
+LK_201708,Navicula sp. BOLD:AAO6949,49
+LK_201708,Navicula sp. BOLD:AAO6950,15
+LK_201708,Navicula sp. BOLD:AAO6951,4
+LK_201708,Neorhodomela oregona,12
+LK_201708,Nereis vexillosa,3095
+LK_201708,Nereocystis luetkeana,4620
+LK_201708,Nicolea zostericola,15
+LK_201708,Nitzschia cf. promare,303
+LK_201708,Odonthalia floccosa,44
+LK_201708,Orthopyxis integra,71
+LK_201708,Paracalanus sp. C AC-2013,57
+LK_201708,Paramoeba pemaquidensis,12
+LK_201708,Parvamoeba rugata,7
+LK_201708,Phaeocystis antarctica,5519
+LK_201708,Phaeocystis globosa,38
+LK_201708,Phytophthora multivora,7
+LK_201708,Phytophthora taxon paludosa,6
+LK_201708,Pinnularia sp. 5 CS-2011,42
+LK_201708,Plagiogramma sp. IAL-2014a,5
+LK_201708,Platynereis bicanaliculata,10
+LK_201708,Polydora lingshuiensis,2
+LK_201708,Polysiphonia hendryi,828
+LK_201708,Poteriospumella lacustris,68
+LK_201708,Protoperidinium cf. depressum,98
+LK_201708,Pseudo-nitzschia delicatissima,30
+LK_201708,Pseudo-nitzschia hasleana,199
+LK_201708,Pseudocalanus moultoni,13
+LK_201708,Pseudocalanus newmani,20658
+LK_201708,Pseudochattonella farcimen,5
+LK_201708,Pterosiphonia bipinnata,36
+LK_201708,Pycnococcus provasolii,21
+LK_201708,Pyropia nereocystis,857
+LK_201708,Pythium tracheiphilum,106
+LK_201708,Ralfsioid sp. 4GWS,172
+LK_201708,Rhizosolenia setigera,2018
+LK_201708,Rostanga pulchra,28
+LK_201708,Schistomeringos longicornis,7
+LK_201708,Sellaphora bacillum,8
+LK_201708,Sellaphora pupula,4
+LK_201708,Semibalanus cariosus,297
+LK_201708,Skeletonema cf. pseudocostatum,34
+LK_201708,Skeletonema dohrnii,4
+LK_201708,Stephanopyxis turris,157
+LK_201708,Strongylocentrotus droebachiensis,1225
+LK_201708,Thalassiosira nordenskioeldii,4496
+LK_201708,Thecamonas trahens,102
+LK_201708,Thelepus crispus,782
+LK_201708,Thelepus sp. CMC01,63
+LK_201708,Triparma laevis,41
+LK_201708,Wildemania sp. 5POR,35
+LK_201708,NA,135782
+LK_201709,Acartia longiremis,23635
+LK_201709,Acrochaetium arcuatum,362
+LK_201709,Acrochaetium moniliforme,257
+LK_201709,Anisolpidium ectocarpii,2
+LK_201709,Apodachlya minima,8
+LK_201709,Bathycoccus prasinos,139779
+LK_201709,Blastocladiella emersonii,48
+LK_201709,Boccardia proboscidea,298
+LK_201709,Cafeteria roenbergensis,22
+LK_201709,Chattonella subsalsa,4
+LK_201709,Chrysochromulina sp. CCMP291,17
+LK_201709,Chthamalus dalli,112
+LK_201709,Clytia gracilis,1820
+LK_201709,Corallina vancouveriensis,193
+LK_201709,Coscinodiscus wailesii,214
+LK_201709,Cylindrotheca closterium,1222
+LK_201709,Dictyocha speculum,37
+LK_201709,Ditylum brightwellii,26
+LK_201709,Dolichomastix tenuilepis,129
+LK_201709,Emiliania huxleyi,577
+LK_201709,Fucus distichus,3
+LK_201709,Gomphonema parvulum,26
+LK_201709,Grammonema striatula,555
+LK_201709,Halichondria panicea,1620
+LK_201709,Hecatonema maculans,1182
+LK_201709,Hematodinium sp.,2
+LK_201709,Heterocapsa rotundata,2676
+LK_201709,Hildenbrandia sp. 27GWS,166
+LK_201709,Homo sapiens,8
+LK_201709,Hydra circumcincta,837
+LK_201709,Laminariocolax aecidioides,17
+LK_201709,Leathesia marina,20
+LK_201709,Leptasterias hexactis,1656
+LK_201709,Lichtheimia ramosa,18
+LK_201709,Littorina sitkana,15
+LK_201709,Lottia paradigitalis,28611
+LK_201709,Martensia jejuensis,12
+LK_201709,Mastocarpus alaskensis,5
+LK_201709,Mazzaella rosea,40
+LK_201709,Mazzaella splendens,201
+LK_201709,Membranipora membranacea,529
+LK_201709,Mesocentrotus franciscanus,10
+LK_201709,Microcladia sp. 1Cal,63
+LK_201709,Micromonas pusilla,34902
+LK_201709,Microspongium alariae,124
+LK_201709,Minutocellus polymorphus,25869
+LK_201709,Naineris dendritica CMC02,350
+LK_201709,Navicula cryptocephala,109
+LK_201709,Navicula sp. BOLD:AAO6950,37
+LK_201709,Navicula sp. BOLD:AAO6951,5
+LK_201709,Neorhodomela oregona,1284
+LK_201709,Nereocystis luetkeana,822
+LK_201709,Nitzschia cf. promare,219
+LK_201709,Oligocottus maculosus,293
+LK_201709,Ostrea lurida,3
+LK_201709,Paracalanus sp. C AC-2013,49
+LK_201709,Parvamoeba rugata,4
+LK_201709,Petalonia fascia,6
+LK_201709,Phaeocystis antarctica,1480
+LK_201709,Phaeocystis globosa,277
+LK_201709,Phytophthora riparia,5
+LK_201709,Pinnularia sp. 5 CS-2011,3
+LK_201709,Pisaster ochraceus,41
+LK_201709,Platynereis bicanaliculata,242
+LK_201709,Polydora lingshuiensis,145
+LK_201709,Polynoidae sp. C_0250,14604
+LK_201709,Polysiphonia hendryi,1604
+LK_201709,Poteriospumella lacustris,16
+LK_201709,Prionitis sternbergii,42
+LK_201709,Proboscidactyla flavicirrata,22
+LK_201709,Protoperidinium cf. depressum,29
+LK_201709,Pseudocalanus acuspes,8
+LK_201709,Pseudocalanus newmani,20378
+LK_201709,Pseudochattonella farcimen,251
+LK_201709,Pseudolithophyllum sp. 2whidbeyense,279
+LK_201709,Pterosiphonia bipinnata,377
+LK_201709,Pycnococcus provasolii,405
+LK_201709,Pyropia nereocystis,57
+LK_201709,Pyropia perforata,297
+LK_201709,Pythium tracheiphilum,282
+LK_201709,Ralfsioid sp. 4GWS,4928
+LK_201709,Rhizosolenia setigera,24973
+LK_201709,Sellaphora pupula,2
+LK_201709,Semibalanus cariosus,44
+LK_201709,Skeletonema cf. pseudocostatum,5
+LK_201709,Skeletonema dohrnii,5
+LK_201709,Skeletonema japonicum,65
+LK_201709,Stelligera rigida,15
+LK_201709,Strongylocentrotus droebachiensis,2711
+LK_201709,Thalassionema nitzschioides,5
+LK_201709,Thalassiosira nordenskioeldii,8720
+LK_201709,Thecamonas trahens,11
+LK_201709,Thelepus crispus,796
+LK_201709,Triparma laevis,37
+LK_201709,Tylos sp. clade D MM-2013,20
+LK_201709,Wildemania amplissima,5
+LK_201709,NA,118927
+LK_201710,Acartia longiremis,4395
+LK_201710,Acrochaetium arcuatum,93
+LK_201710,Acrochaetium moniliforme,23
+LK_201710,Asterionellopsis tropicalis,7
+LK_201710,Attheya longicornis,3
+LK_201710,Balanus glandula,35
+LK_201710,Bathycoccus prasinos,30122
+LK_201710,Blastocladiella emersonii,124
+LK_201710,Boccardia proboscidea,100
+LK_201710,Callophyllis flabellulata,76
+LK_201710,Centropages abdominalis,47
+LK_201710,Chaetoceros socialis,596
+LK_201710,Chaetoceros sp. MBTD-CMFRI-S062,36
+LK_201710,Chattonella subsalsa,247
+LK_201710,Chondracanthus exasperatus,5
+LK_201710,Chordariaceae sp. 2 AP-2014,27
+LK_201710,Chrysochromulina sp. CCMP291,57
+LK_201710,Chthamalus dalli,5602
+LK_201710,Cliona chilensis,7
+LK_201710,Clytia gracilis,22
+LK_201710,Corallina vancouveriensis,13
+LK_201710,Cordyceps militaris,10
+LK_201710,Coscinodiscus wailesii,1535
+LK_201710,Dendraster excentricus,81
+LK_201710,Dictyocha speculum,183
+LK_201710,Ditylum brightwellii,335
+LK_201710,Emiliania huxleyi,103
+LK_201710,Eucampia zodiacus,2
+LK_201710,Eunice valens,817
+LK_201710,Fucus distichus,197
+LK_201710,Halichondria panicea,76
+LK_201710,Hecatonema maculans,10
+LK_201710,Hematodinium sp.,29
+LK_201710,Heterocapsa rotundata,936
+LK_201710,Hildenbrandia sp. 27GWS,173
+LK_201710,Hincksia hincksiae,32
+LK_201710,Homo sapiens,1054
+LK_201710,Laminariocolax aecidioides,2
+LK_201710,Leptasterias hexactis,146
+LK_201710,Littorina plena,35
+LK_201710,Littorina scutulata,30
+LK_201710,Littorina sitkana,80
+LK_201710,Lottia paradigitalis,406
+LK_201710,Macoma nasuta,178
+LK_201710,Mastocarpus alaskensis,65
+LK_201710,Membranipora membranacea,20
+LK_201710,Micromonas pusilla,13312
+LK_201710,Minutocellus polymorphus,54914
+LK_201710,Muggiaea atlantica,63
+LK_201710,Myxicola infundibulum CMC02,7
+LK_201710,Navicula cryptocephala,19
+LK_201710,Neorhodomela oregona,18
+LK_201710,Nereocystis luetkeana,4
+LK_201710,Notheia anomala,2
+LK_201710,Ophelina acuminata,9
+LK_201710,Paracalanus sp. C AC-2013,59
+LK_201710,Penicillium sclerotiorum,154
+LK_201710,Phaeocystis antarctica,2605
+LK_201710,Phaeocystis globosa,257
+LK_201710,Phyllodoce medipapillata,43
+LK_201710,Phytophthora riparia,39
+LK_201710,Platynereis bicanaliculata,12
+LK_201710,Polydora lingshuiensis,4
+LK_201710,Poteriospumella lacustris,33
+LK_201710,Protoperidinium cf. depressum,436
+LK_201710,Pseudo-nitzschia delicatissima,3
+LK_201710,Pseudo-nitzschia hasleana,11
+LK_201710,Pseudocalanus newmani,19595
+LK_201710,Pseudochattonella farcimen,3479
+LK_201710,Pycnococcus provasolii,771
+LK_201710,Pythium acanthicum,63
+LK_201710,Pythium tracheiphilum,1087
+LK_201710,Ralfsioid sp. 4GWS,3
+LK_201710,Rhizosolenia setigera,76
+LK_201710,Semibalanus cariosus,166
+LK_201710,Skeletonema japonicum,24
+LK_201710,Stelligera rigida,14
+LK_201710,Stephanopyxis turris,247
+LK_201710,Strongylocentrotus droebachiensis,334
+LK_201710,Thalassionema nitzschioides,8
+LK_201710,Thalassiosira nordenskioeldii,16634
+LK_201710,Thalassiosira punctigera,4
+LK_201710,Thelepus crispus,6497
+LK_201710,Triparma laevis,66
+LK_201710,Tylos sp. clade D MM-2013,23
+LK_201710,Wildemania sp. 5POR,59
+LK_201710,NA,211524
+LK_201711,Acila castrensis,64
+LK_201711,Acrochaetium arcuatum,2
+LK_201711,Aphanomyces sp. BOLD:AAO9952,30
+LK_201711,Aphroditella hastata,201
+LK_201711,Attheya longicornis,603
+LK_201711,Balanus balanus,5
+LK_201711,Bathycoccus prasinos,63935
+LK_201711,Blastocladiella emersonii,73
+LK_201711,Boccardia proboscidea,23
+LK_201711,Callophyllis flabellulata,6
+LK_201711,Centropages abdominalis,3
+LK_201711,Chaetoceros socialis,42
+LK_201711,Chattonella subsalsa,263
+LK_201711,Chondracanthus exasperatus,9
+LK_201711,Corallina vancouveriensis,2
+LK_201711,Coscinodiscus wailesii,550
+LK_201711,Crepipatella lingulata,12
+LK_201711,Cylindrotheca closterium,5
+LK_201711,Dendraster excentricus,806
+LK_201711,Ditylum brightwellii,194
+LK_201711,Emiliania huxleyi,377
+LK_201711,Emplectonema sp. 1 TCH-2015,20
+LK_201711,Geminosyllis ohma,3297
+LK_201711,Halichondria panicea,21
+LK_201711,Halidrys siliquosa,9
+LK_201711,Hecatonema maculans,175
+LK_201711,Heterocapsa rotundata,650
+LK_201711,Hildenbrandia sp. 27GWS,831
+LK_201711,Hincksia hincksiae,50
+LK_201711,Homo sapiens,367
+LK_201711,Laminariocolax aecidioides,139
+LK_201711,Lepidodinium chlorophorum,354
+LK_201711,Leptasterias hexactis,4
+LK_201711,Littorina plena,301
+LK_201711,Littorina scutulata,280
+LK_201711,Littorina sitkana,580
+LK_201711,Lottia paradigitalis,58
+LK_201711,Loxosomella sp. JM-2012,910
+LK_201711,Marionina sp. F LM-2012,1093
+LK_201711,Martensia jejuensis,26
+LK_201711,Mastocarpus alaskensis,274
+LK_201711,Mesocentrotus franciscanus,27
+LK_201711,Micromonas pusilla,19812
+LK_201711,Minutocellus polymorphus,17050
+LK_201711,Mytilus trossulus,25
+LK_201711,Navicula sp. BOLD:AAO6950,5
+LK_201711,Neorhodomela oregona,127
+LK_201711,Nereocystis luetkeana,51
+LK_201711,Nitzschia cf. promare,6
+LK_201711,Ostrea lurida,453
+LK_201711,Penicillium sclerotiorum,6
+LK_201711,Phaeocystis antarctica,9436
+LK_201711,Phaeocystis globosa,999
+LK_201711,Phascolosoma agassizii,697
+LK_201711,Phytophthora riparia,17
+LK_201711,Platynereis bicanaliculata,153
+LK_201711,Polycirrus sp. CMC02,122
+LK_201711,Prionitis sternbergii,27
+LK_201711,Pseudocalanus newmani,11
+LK_201711,Pseudochattonella farcimen,202
+LK_201711,Pycnococcus provasolii,78
+LK_201711,Pythium acanthicum,458
+LK_201711,Pythium pachycaule,129
+LK_201711,Pythium tracheiphilum,1058
+LK_201711,Ralfsioid sp. 4GWS,397
+LK_201711,Rhizosolenia setigera,664
+LK_201711,Sellaphora pupula,8
+LK_201711,Semibalanus cariosus,25
+LK_201711,Skeletonema japonicum,11
+LK_201711,Stelligera rigida,6
+LK_201711,Stephanopyxis turris,33
+LK_201711,Strongylocentrotus droebachiensis,203
+LK_201711,Thalassionema nitzschioides,51
+LK_201711,Thalassiosira nordenskioeldii,4522
+LK_201711,Thecamonas trahens,34
+LK_201711,Thelepus cincinnatus,66
+LK_201711,Thelepus crispus,97
+LK_201711,Wildemania amplissima,1043
+LK_201711,Wildemania sp. 5POR,42
+LK_201711,NA,273924
+LK_201801,Balanus glandula,115
+LK_201801,Bathycoccus prasinos,48498
+LK_201801,Callophyllis flabellulata,2
+LK_201801,Chthamalus dalli,1310
+LK_201801,Corallina vancouveriensis,402
+LK_201801,Cordyceps militaris,845
+LK_201801,Coscinodiscus wailesii,648
+LK_201801,Cylindrotheca closterium,32
+LK_201801,Dendraster excentricus,503
+LK_201801,Dictyocha speculum,374
+LK_201801,Ditylum brightwellii,133
+LK_201801,Emiliania huxleyi,869
+LK_201801,Halichondria panicea,169
+LK_201801,Harpacticoida sp. DNZ085,1662
+LK_201801,Heterocapsa rotundata,222
+LK_201801,Hildenbrandia sp. 27GWS,28
+LK_201801,Hincksia hincksiae,477
+LK_201801,Homo sapiens,140
+LK_201801,Leitoscoloplos pugettensis CMC01,659
+LK_201801,Littorina plena,706
+LK_201801,Micromonas pusilla,13855
+LK_201801,Minutocellus polymorphus,7837
+LK_201801,Navicula cryptocephala,107
+LK_201801,Nitzschia cf. promare,174
+LK_201801,Orthocladius sp. BOLD-2016,2765
+LK_201801,Phaeocystis antarctica,25046
+LK_201801,Phaeocystis globosa,101
+LK_201801,Pinnularia sp. 5 CS-2011,231
+LK_201801,Poteriospumella lacustris,4
+LK_201801,Pseudocalanus newmani,8275
+LK_201801,Pseudochattonella farcimen,942
+LK_201801,Pycnococcus provasolii,639
+LK_201801,Pythium tracheiphilum,98
+LK_201801,Ralfsioid sp. 4GWS,6
+LK_201801,Rhizosolenia setigera,42
+LK_201801,Semibalanus cariosus,505
+LK_201801,Skeletonema dohrnii,30
+LK_201801,Skeletonema japonicum,93
+LK_201801,Thalassiosira nordenskioeldii,380
+LK_201801,NA,81555
+LK_201803,Acartia californiensis,261
+LK_201803,Acartia longiremis,8756
+LK_201803,Acrochaetium arcuatum,41
+LK_201803,Acrochaetium moniliforme,42
+LK_201803,Amathia vidovici,6
+LK_201803,Amphicaryon earnesti,52
+LK_201803,Apodachlya minima,23
+LK_201803,Attheya longicornis,22
+LK_201803,Balanus balanus,395
+LK_201803,Balanus glandula,987
+LK_201803,Bathycoccus prasinos,30092
+LK_201803,Callithamnion pikeanum,264
+LK_201803,Centropages abdominalis,205
+LK_201803,Chaetoceros socialis,62
+LK_201803,Chattonella subsalsa,824
+LK_201803,Chordariaceae sp. 17 AP-2014,10
+LK_201803,Chthamalus dalli,26
+LK_201803,Corallina vancouveriensis,61
+LK_201803,Coscinodiscus wailesii,190
+LK_201803,Cylindrotheca closterium,419
+LK_201803,Dictyocha speculum,117
+LK_201803,Ditylum brightwellii,813
+LK_201803,Eucalanus bungii,6215
+LK_201803,Evasterias troschelii,164
+LK_201803,Fistulifera pelliculosa,68
+LK_201803,Gomphonema clevei,18
+LK_201803,Grammonema striatula,200
+LK_201803,Halichondria panicea,1421
+LK_201803,Halidrys siliquosa,16
+LK_201803,Harpacticoida sp. DNZ085,282
+LK_201803,Hecatonema maculans,25
+LK_201803,Heterocapsa rotundata,262
+LK_201803,Hildenbrandia sp. 27GWS,14
+LK_201803,Hincksia hincksiae,10
+LK_201803,Homo sapiens,42
+LK_201803,Lacuna pallidula,23
+LK_201803,Leathesia marina,14
+LK_201803,Leptasterias hexactis,129
+LK_201803,Lichtheimia ramosa,36
+LK_201803,Littorina plena,8085
+LK_201803,Littorina sitkana,129
+LK_201803,Lottia paradigitalis,2061
+LK_201803,Mesocentrotus franciscanus,328
+LK_201803,Microcladia sp. 1Cal,2
+LK_201803,Micromonas pusilla,14692
+LK_201803,Minutocellus polymorphus,5910
+LK_201803,Navicula cryptocephala,38
+LK_201803,Navicula sp. BOLD:AAO6950,56
+LK_201803,Navicula sp. BOLD:AAO6951,512
+LK_201803,Neorhodomela oregona,65
+LK_201803,Nitzschia cf. promare,105
+LK_201803,Nuttallia olivacea,48
+LK_201803,Odonthalia floccosa,3
+LK_201803,Ostrea lurida,275
+LK_201803,Paracalanus sp. C AC-2013,104
+LK_201803,Phaeocystis antarctica,41456
+LK_201803,Phaeocystis globosa,23
+LK_201803,Phytophthora megasperma,17
+LK_201803,Pisaster ochraceus,92
+LK_201803,Plagiogramma sp. IAL-2014a,10
+LK_201803,Polycirrus sp. CMC05,1932
+LK_201803,Polysiphonia hendryi,1746
+LK_201803,Porichthys notatus,127
+LK_201803,Poteriospumella lacustris,139
+LK_201803,Protoperidinium cf. depressum,26
+LK_201803,Pseudocalanus moultoni,419
+LK_201803,Pseudochattonella farcimen,56
+LK_201803,Pseudolithophyllum sp. 2whidbeyense,56
+LK_201803,Pterosiphonia bipinnata,1082
+LK_201803,Pycnococcus provasolii,702
+LK_201803,Pyramimonas parkeae,228
+LK_201803,Pythium tracheiphilum,190
+LK_201803,Ralfsioid sp. 4GWS,336
+LK_201803,Rhizosolenia setigera,175
+LK_201803,Saprolegnia diclina,61
+LK_201803,Scopalina ruetzleri,44
+LK_201803,Semibalanus cariosus,687
+LK_201803,Skeletonema dohrnii,2208
+LK_201803,Skeletonema japonicum,125
+LK_201803,Stelligera rigida,8
+LK_201803,Strongylocentrotus droebachiensis,988
+LK_201803,Thalassionema nitzschioides,623
+LK_201803,Thalassiosira nordenskioeldii,11473
+LK_201803,Thalassiosira punctigera,95
+LK_201803,Thecamonas trahens,7
+LK_201803,Thelepus crispus,57
+LK_201803,Thysanoessa raschii,6
+LK_201803,Triparma laevis,467
+LK_201803,NA,297104
+LK_201805,Acartia longiremis,13160
+LK_201805,Aequorea sp. MW-2012,29
+LK_201805,Anisolpidium ectocarpii,88
+LK_201805,Aphanomyces sp. BOLD:AAO9952,4
+LK_201805,Apodachlya minima,89
+LK_201805,Asterionellopsis glacialis,84
+LK_201805,Asterionellopsis tropicalis,8
+LK_201805,Attheya longicornis,709
+LK_201805,Bathycoccus prasinos,2499
+LK_201805,Calliarthron tuberculosum,31
+LK_201805,Centropages abdominalis,124
+LK_201805,Chattonella subsalsa,757
+LK_201805,Chordariaceae sp. 7 AP-2014,772
+LK_201805,Chrysochromulina sp. CCMP291,88
+LK_201805,Corallina vancouveriensis,13679
+LK_201805,Coscinodiscus wailesii,19
+LK_201805,Ditylum brightwellii,925
+LK_201805,Eucampia zodiacus,7
+LK_201805,Fucus distichus,555
+LK_201805,Gomphonema clevei,12
+LK_201805,Grammonema striatula,1370
+LK_201805,Halichondria panicea,722
+LK_201805,Halidrys siliquosa,20
+LK_201805,Halosydna brevisetosa,1157
+LK_201805,Hematodinium sp.,23
+LK_201805,Heterocapsa rotundata,26
+LK_201805,Hildenbrandia sp. 27GWS,9
+LK_201805,Homo sapiens,399
+LK_201805,Laminariocolax aecidioides,212
+LK_201805,Leptasterias hexactis,790
+LK_201805,Lichtheimia ramosa,104
+LK_201805,Littorina plena,56
+LK_201805,Littorina scutulata,3253
+LK_201805,Littorina sitkana,99
+LK_201805,Macoma nasuta,193
+LK_201805,Martensia jejuensis,22
+LK_201805,Micromonas pusilla,5234
+LK_201805,Navicula sp. BOLD:AAO6950,32
+LK_201805,Navicula sp. BOLD:AAO6951,55
+LK_201805,Neorhodomela oregona,104
+LK_201805,Notheia anomala,4
+LK_201805,Odonthalia floccosa,47
+LK_201805,Opisthosyllis sp. CMC01,1021
+LK_201805,Paracalanus sp. C AC-2013,18
+LK_201805,Phaeocystis antarctica,7972
+LK_201805,Phaeocystis globosa,35
+LK_201805,Phytophthora siskiyouensis,7
+LK_201805,Phytophthora taxon paludosa,21
+LK_201805,Pisaster ochraceus,1583
+LK_201805,Plagiogramma sp. IAL-2014a,184
+LK_201805,Polysiphonia hendryi,519
+LK_201805,Poteriospumella lacustris,89
+LK_201805,Protoperidinium cf. depressum,51
+LK_201805,Pseudo-nitzschia delicatissima,118
+LK_201805,Pseudo-nitzschia hasleana,20
+LK_201805,Pterosiphonia bipinnata,136
+LK_201805,Pyropia fallax,183
+LK_201805,Pythium pachycaule,280
+LK_201805,Pythium tracheiphilum,1722
+LK_201805,Ralfsioid sp. 4GWS,89
+LK_201805,Rhizosolenia setigera,220
+LK_201805,Rhodoptilum plumosum,42
+LK_201805,Saprolegnia diclina,369
+LK_201805,Saxidomus gigantea,29
+LK_201805,Sellaphora bacillum,623
+LK_201805,Semibalanus cariosus,12693
+LK_201805,Skeletonema japonicum,488
+LK_201805,Stephanopyxis turris,169
+LK_201805,Thalassionema nitzschioides,45
+LK_201805,Thalassiosira nordenskioeldii,17975
+LK_201805,Thecamonas trahens,20
+LK_201805,Thelepus crispus,1037
+LK_201805,Thelepus sp. CMC01,1067
+LK_201805,Wildemania sp. 5POR,664
+LK_201805,NA,261688
+LK_201807,Acanthamoeba castellanii,33755
+LK_201807,Acartia longiremis,21956
+LK_201807,Amathia vidovici,84
+LK_201807,Aurelia labiata,3926
+LK_201807,Bathycoccus prasinos,24315
+LK_201807,Callithamnion pikeanum,122
+LK_201807,Chaetoceros socialis,5
+LK_201807,Chattonella subsalsa,45
+LK_201807,Chordariaceae sp. 17 AP-2014,2
+LK_201807,Chordariaceae sp. 7 AP-2014,33
+LK_201807,Chrysaora melanaster,315
+LK_201807,Chthamalus dalli,6073
+LK_201807,Corallina vancouveriensis,201
+LK_201807,Cordyceps militaris,143
+LK_201807,Coscinodiscus wailesii,41872
+LK_201807,Cylindrotheca closterium,93
+LK_201807,Dictyocha speculum,295
+LK_201807,Ditylum brightwellii,18
+LK_201807,Emplectonema sp. 1 TCH-2015,6
+LK_201807,Euclymene oerstedi,61
+LK_201807,Euclymene sp. BOLD:ACG1020,12
+LK_201807,Fucus distichus,155
+LK_201807,Grammonema striatula,197
+LK_201807,Halichondria panicea,1239
+LK_201807,Hecatonema maculans,522
+LK_201807,Hemigrapsus oregonensis,24
+LK_201807,Heterocapsa rotundata,3168
+LK_201807,Heterosigma akashiwo,169
+LK_201807,Hildenbrandia sp. 27GWS,125
+LK_201807,Homo sapiens,147
+LK_201807,Leathesia marina,3
+LK_201807,Leptasterias hexactis,343
+LK_201807,Lichtheimia ramosa,24
+LK_201807,Liparis florae,98
+LK_201807,Littorina plena,131
+LK_201807,Littorina scutulata,1103
+LK_201807,Littorina sitkana,28
+LK_201807,Lottia paradigitalis,460
+LK_201807,Macoma nasuta,16
+LK_201807,Mazzaella sp. GWS-2013b,8
+LK_201807,Membranipora membranacea,1093
+LK_201807,Mesocentrotus franciscanus,53
+LK_201807,Microcladia coulteri,91
+LK_201807,Micromonas pusilla,48946
+LK_201807,Microspongium alariae,6
+LK_201807,Minutocellus polymorphus,4497
+LK_201807,Myrionema balticum,9
+LK_201807,Naineris dendritica CMC02,203
+LK_201807,Navicula cryptocephala,9
+LK_201807,Navicula glaciei,138
+LK_201807,Navicula sp. BOLD:AAO6950,57
+LK_201807,Navicula sp. BOLD:AAO6951,143
+LK_201807,Neorhodomela oregona,108
+LK_201807,Nereis vexillosa,372
+LK_201807,Nereocystis luetkeana,124
+LK_201807,Nitzschia cf. promare,93
+LK_201807,Oncorhynchus keta,124
+LK_201807,Paracalanus sp. C AC-2013,635
+LK_201807,Paramoeba pemaquidensis,27
+LK_201807,Penicillium sclerotiorum,90
+LK_201807,Phaeocystis antarctica,69
+LK_201807,Phaeocystis globosa,89
+LK_201807,Plagiogramma sp. IAL-2014a,3
+LK_201807,Platynereis sp. CMC02,8
+LK_201807,Podosira stelligera,7
+LK_201807,Polycirrus sp. CMC05,822
+LK_201807,Polydora lingshuiensis,6495
+LK_201807,Polysiphonia hendryi,316
+LK_201807,Pseudocalanus moultoni,50
+LK_201807,Pseudocalanus newmani,29129
+LK_201807,Pterosiphonia bipinnata,48
+LK_201807,Pyramimonas parkeae,11
+LK_201807,Pyropia fallax,67
+LK_201807,Pythium pachycaule,14
+LK_201807,Pythium sp. CAL-2011c,12
+LK_201807,Pythium tracheiphilum,76
+LK_201807,Ralfsioid sp. 4GWS,498
+LK_201807,Rhizosolenia setigera,321
+LK_201807,Rhodophysema kjellmanii,51
+LK_201807,Rhodotorula taiwanensis,718
+LK_201807,Semibalanus cariosus,6217
+LK_201807,Skeletonema japonicum,8
+LK_201807,Strongylocentrotus droebachiensis,205
+LK_201807,Thalassionema nitzschioides,34
+LK_201807,Thalassiosira nordenskioeldii,816
+LK_201807,Thalassiosira pseudonana,9
+LK_201807,Thelepus crispus,22
+LK_201807,Triparma laevis,196
+LK_201807,Tylos sp. clade D MM-2013,82
+LK_201807,Wildemania sp. 5POR,4670
+LK_201807,NA,213123
+LL_201703,Balanus glandula,1339
+LL_201703,Barantolla americana CMC01,7969
+LL_201703,Bathycoccus prasinos,930855
+LL_201703,Callithamnion corymbosum,2
+LL_201703,Caulacanthus ustulatus,4
+LL_201703,Centropages abdominalis,64
+LL_201703,Chaetoceros socialis,220
+LL_201703,Chattonella subsalsa,817
+LL_201703,Chondracanthus exasperatus,6
+LL_201703,Chordariaceae sp. 17 AP-2014,2
+LL_201703,Chordariaceae sp. 2 AP-2014,4
+LL_201703,Chordariaceae sp. 7 AP-2014,186
+LL_201703,Chthamalus dalli,1306
+LL_201703,Cylindrotheca closterium,26
+LL_201703,Dialonectria episphaeria,5
+LL_201703,Dictyocha speculum,2337
+LL_201703,Ectocarpus siliculosus,60
+LL_201703,Emiliania huxleyi,97
+LL_201703,Evasterias troschelii,16
+LL_201703,Heterocapsa rotundata,81
+LL_201703,Hincksia hincksiae,30
+LL_201703,Homo sapiens,1381
+LL_201703,Karlodinium veneficum,4
+LL_201703,Littorina plena,39
+LL_201703,Lottia paradigitalis,28
+LL_201703,Melosira nummuloides,109
+LL_201703,Micromonas pusilla,324436
+LL_201703,Minutocellus polymorphus,17077
+LL_201703,Mytilus trossulus,2
+LL_201703,Navicula cryptocephala,18
+LL_201703,Navicula ramosissima,60
+LL_201703,Nitzschia cf. promare,24
+LL_201703,Orthocladius sp. BOLD-2016,83
+LL_201703,Ostrea lurida,39
+LL_201703,Peronospora violae,12
+LL_201703,Phaeocystis antarctica,355688
+LL_201703,Phaeocystis globosa,9
+LL_201703,Phytophthora multivora,4
+LL_201703,Pinnularia sp. 5 CS-2011,17
+LL_201703,Poteriospumella lacustris,13147
+LL_201703,Pseudocalanus newmani,278
+LL_201703,Pseudochattonella farcimen,111
+LL_201703,Pycnococcus provasolii,11
+LL_201703,Pyramimonas parkeae,67
+LL_201703,Pythium pachycaule,6
+LL_201703,Pythium sp. CAL-2011c,34
+LL_201703,Pythium tracheiphilum,34
+LL_201703,Rhizosolenia setigera,298
+LL_201703,Ruditapes philippinarum,7
+LL_201703,Skeletonema dohrnii,44
+LL_201703,Stelligera rigida,59
+LL_201703,Thalassionema nitzschioides,42
+LL_201703,Thalassiosira nordenskioeldii,1030
+LL_201703,Triparma laevis,92286
+LL_201703,NA,324565
+LL_201705,Aequorea sp. MW-2012,1967
+LL_201705,Albugo candida,45
+LL_201705,Alitta sp. CMC01,21
+LL_201705,Asterionellopsis guyunusae,36
+LL_201705,Attheya longicornis,5726
+LL_201705,Balanus balanus,9
+LL_201705,Balanus glandula,800
+LL_201705,Bathycoccus prasinos,1464
+LL_201705,Calanus pacificus,6
+LL_201705,Caulacanthus ustulatus,395
+LL_201705,Centropages abdominalis,18282
+LL_201705,Chaetoceros socialis,19002
+LL_201705,Chrysochromulina sp. CCMP291,1464
+LL_201705,Chthamalus dalli,310
+LL_201705,Coscinodiscus wailesii,98
+LL_201705,Crassostrea gigas,6
+LL_201705,Cylindrotheca closterium,2101
+LL_201705,Dendraster excentricus,104
+LL_201705,Dictyocha speculum,104
+LL_201705,Ditylum brightwellii,8213
+LL_201705,Dolichomastix tenuilepis,45
+LL_201705,Emiliania huxleyi,1407
+LL_201705,Emplectonema sp. 1 TCH-2015,18
+LL_201705,Gomphonema clevei,293
+LL_201705,Gracilaria vermiculophylla,158
+LL_201705,Haramonas dimorpha,35
+LL_201705,Hemipodia simplex,197
+LL_201705,Lichtheimia ramosa,236
+LL_201705,Littorina plena,899
+LL_201705,Lottia paradigitalis,494
+LL_201705,Micromonas pusilla,29813
+LL_201705,Minutocellus polymorphus,1276
+LL_201705,Mytilus trossulus,93
+LL_201705,Navicula cryptocephala,14
+LL_201705,Nitzschia cf. promare,104
+LL_201705,Nuttallia olivacea,65
+LL_201705,Obelia bidentata,101
+LL_201705,Ostrea lurida,62
+LL_201705,Paracalanus sp. C AC-2013,156
+LL_201705,Pedospumella sinomuralis,155
+LL_201705,Plagiogramma sp. IAL-2014a,433
+LL_201705,Porichthys notatus,2660
+LL_201705,Protoperidinium cf. depressum,757
+LL_201705,Pseudo-nitzschia hasleana,591
+LL_201705,Pseudochattonella farcimen,139
+LL_201705,Pyropia haitanensis,35
+LL_201705,Pythium tracheiphilum,1088
+LL_201705,Rhizosolenia setigera,86
+LL_201705,Saprolegnia diclina,17543
+LL_201705,Scopalina ruetzleri,13
+LL_201705,Skeletonema dohrnii,26
+LL_201705,Skeletonema japonicum,310
+LL_201705,Thalassionema nitzschioides,14
+LL_201705,Thalassiosira nordenskioeldii,5452
+LL_201705,Thalassiosira punctigera,12
+LL_201705,Thecamonas trahens,8
+LL_201705,Triparma laevis,1380
+LL_201705,Wildemania amplissima,7
+LL_201705,NA,410620
+LL_201706,Aequorea sp. MW-2012,37
+LL_201706,Amphicaryon earnesti,28
+LL_201706,Asterionellopsis guyunusae,128
+LL_201706,Bathycoccus prasinos,9295
+LL_201706,Blastocladiella emersonii,77
+LL_201706,Calanus pacificus,31203
+LL_201706,Chaetoceros socialis,258
+LL_201706,Chattonella subsalsa,329
+LL_201706,Chrysochromulina sp. CCMP291,394
+LL_201706,Cylindrotheca closterium,907
+LL_201706,Cymatogaster aggregata,98
+LL_201706,Cymbomonas tetramitiformis,812
+LL_201706,Ditylum brightwellii,40
+LL_201706,Dolichomastix tenuilepis,76
+LL_201706,Emiliania huxleyi,13986
+LL_201706,Gracilaria vermiculophylla,723
+LL_201706,Haramonas dimorpha,83
+LL_201706,Homo sapiens,120
+LL_201706,Littorina plena,2
+LL_201706,Micromonas pusilla,33747
+LL_201706,Minutocellus polymorphus,8414
+LL_201706,Mya arenaria,11
+LL_201706,Navicula cryptocephala,311
+LL_201706,Navicula sp. BOLD:AAO6951,6
+LL_201706,Nuttallia olivacea,815
+LL_201706,Ostrea lurida,3509
+LL_201706,Paracalanus sp. C AC-2013,2382
+LL_201706,Parvamoeba rugata,45
+LL_201706,Pedospumella sinomuralis,97
+LL_201706,Pisaster ochraceus,1825
+LL_201706,Porichthys notatus,1497
+LL_201706,Poteriospumella lacustris,74
+LL_201706,Prasinoderma coloniale,2246
+LL_201706,Pseudochattonella farcimen,7706
+LL_201706,Pythium sp. CAL-2011c,68
+LL_201706,Pythium tracheiphilum,1532
+LL_201706,Rhizosolenia setigera,8039
+LL_201706,Skeletonema dohrnii,2170
+LL_201706,Synchaeta pectinata,21
+LL_201706,Thalassiosira nordenskioeldii,9024
+LL_201706,Triparma laevis,6354
+LL_201706,Wildemania amplissima,3
+LL_201706,NA,383724
+LL_201707,Barantolla americana CMC01,7
+LL_201707,Bathycoccus prasinos,11118
+LL_201707,Callithamnion corymbosum,19
+LL_201707,Centropages abdominalis,10
+LL_201707,Ceramium sp. 3Cal,8
+LL_201707,Chaetoceros socialis,3
+LL_201707,Chrysochromulina sp. CCMP291,315
+LL_201707,Cliona chilensis,6
+LL_201707,Crassostrea gigas,81
+LL_201707,Cylindrotheca closterium,2295
+LL_201707,Dictyocha speculum,14
+LL_201707,Emiliania huxleyi,200629
+LL_201707,Gallus gallus,4
+LL_201707,Gracilaria vermiculophylla,129
+LL_201707,Halichondria panicea,8
+LL_201707,Harpacticoida sp. DNZ085,4
+LL_201707,Hematodinium sp.,113
+LL_201707,Hincksia hincksiae,95
+LL_201707,Homo sapiens,9
+LL_201707,Kellia porculus,231
+LL_201707,Macoma nasuta,23
+LL_201707,Micromonas pusilla,45840
+LL_201707,Minutocellus polymorphus,134159
+LL_201707,Monocorophium acherusicum,32
+LL_201707,Navicula cryptocephala,734
+LL_201707,Nitzschia cf. promare,3
+LL_201707,Ostrea lurida,6906
+LL_201707,Phaeocystis antarctica,31
+LL_201707,Pisaster ochraceus,30
+LL_201707,Platynereis sp. CMC02,14
+LL_201707,Podosira stelligera,17
+LL_201707,Porichthys notatus,259
+LL_201707,Poteriospumella lacustris,211
+LL_201707,Prasinoderma coloniale,265
+LL_201707,Pseudochattonella farcimen,2247
+LL_201707,Pythium sp. CAL-2011c,5
+LL_201707,Ralfsioid sp. 4GWS,2
+LL_201707,Saprolegnia diclina,12
+LL_201707,Schistomeringos longicornis,9
+LL_201707,Sellaphora pupula,61
+LL_201707,Skeletonema dohrnii,33
+LL_201707,Thalassiosira nordenskioeldii,732
+LL_201707,Thalassiosira punctigera,27
+LL_201707,Triparma laevis,842
+LL_201707,NA,425037
+LL_201708,Balanus glandula,31
+LL_201708,Barantolla americana CMC01,29
+LL_201708,Bathycoccus prasinos,96859
+LL_201708,Chaetoceros socialis,14
+LL_201708,Chaetoceros sp. MBTD-CMFRI-S062,13
+LL_201708,Chrysochromulina sp. CCMP291,3
+LL_201708,Coscinodiscus wailesii,4934
+LL_201708,Crassostrea gigas,4
+LL_201708,Cylindrotheca closterium,337
+LL_201708,Ditylum brightwellii,98
+LL_201708,Ectocarpus siliculosus,5
+LL_201708,Emiliania huxleyi,2317
+LL_201708,Gallus gallus,74
+LL_201708,Gracilaria vermiculophylla,250
+LL_201708,Hematodinium sp.,12
+LL_201708,Homo sapiens,374
+LL_201708,Littorina plena,1173
+LL_201708,Lottia paradigitalis,10
+LL_201708,Melosira nummuloides,23
+LL_201708,Micromonas pusilla,98813
+LL_201708,Minutocellus polymorphus,84220
+LL_201708,Mya arenaria,3
+LL_201708,Mytilicola orientalis,157
+LL_201708,Navicula cryptocephala,4
+LL_201708,Nereis vexillosa,36
+LL_201708,Nitokra spinipes,55
+LL_201708,Ostrea lurida,778
+LL_201708,Paracalanus sp. C AC-2013,1791
+LL_201708,Polychaeta sp. BOLD:ACQ0474,67
+LL_201708,Poteriospumella lacustris,34
+LL_201708,Protoperidinium cf. depressum,73
+LL_201708,Pseudochattonella farcimen,54
+LL_201708,Pyropia haitanensis,2
+LL_201708,Rhizosolenia setigera,1783
+LL_201708,Ruditapes philippinarum,298
+LL_201708,Saprolegnia diclina,2302
+LL_201708,Skeletonema dohrnii,73
+LL_201708,Stiliger fuscovittatus,15549
+LL_201708,Thalassionema nitzschioides,10
+LL_201708,Thalassiosira nordenskioeldii,233
+LL_201708,Thalassiosira punctigera,4
+LL_201708,NA,311275
+LL_201709,Asterionellopsis guyunusae,127
+LL_201709,Attheya longicornis,43
+LL_201709,Balanus glandula,250
+LL_201709,Bathycoccus prasinos,75935
+LL_201709,Botrylloides violaceus,156
+LL_201709,Calanus pacificus,1227
+LL_201709,Caulacanthus ustulatus,357
+LL_201709,Chaetoceros socialis,4
+LL_201709,Chattonella subsalsa,111
+LL_201709,Chordariaceae sp. 2 AP-2014,4
+LL_201709,Chrysochromulina sp. CCMP291,760
+LL_201709,Cliona chilensis,5
+LL_201709,Coscinodiscus wailesii,15
+LL_201709,Cylindrotheca closterium,8
+LL_201709,Cymbomonas tetramitiformis,113
+LL_201709,Dendraster excentricus,2
+LL_201709,Dictyocha speculum,209
+LL_201709,Dolichomastix tenuilepis,20
+LL_201709,Echiniscoides pollocki,117
+LL_201709,Emiliania huxleyi,2537
+LL_201709,Gelidiophycus freshwateri,274
+LL_201709,Gracilaria vermiculophylla,6
+LL_201709,Halichondria panicea,12
+LL_201709,Haramonas dimorpha,34
+LL_201709,Harpacticoida sp. DNZ085,15324
+LL_201709,Hematodinium sp.,46
+LL_201709,Heterocapsa rotundata,405
+LL_201709,Hincksia hincksiae,3339
+LL_201709,Homo sapiens,27
+LL_201709,Leucocryptos marina,14
+LL_201709,Littorina plena,363
+LL_201709,Lottia paradigitalis,1480
+LL_201709,Mayamaea permitis,13
+LL_201709,Micromonas pusilla,50337
+LL_201709,Minutocellus polymorphus,56243
+LL_201709,Mytilus trossulus,1981
+LL_201709,Nassarius mendicus,4
+LL_201709,Oncorhynchus keta,15
+LL_201709,Paracalanus sp. C AC-2013,230
+LL_201709,Phaeocystis antarctica,2578
+LL_201709,Phaeocystis globosa,295
+LL_201709,Poteriospumella lacustris,480
+LL_201709,Prasinoderma coloniale,266
+LL_201709,Protoperidinium cf. depressum,21
+LL_201709,Pseudochattonella farcimen,483
+LL_201709,Pycnococcus provasolii,104
+LL_201709,Pythium sp. CAL-2011c,8
+LL_201709,Pythium tracheiphilum,197
+LL_201709,Rhizosolenia setigera,12
+LL_201709,Ruditapes philippinarum,187
+LL_201709,Saprolegnia diclina,210
+LL_201709,Saxidomus gigantea,119
+LL_201709,Skeletonema dohrnii,39
+LL_201709,Thalassionema nitzschioides,110
+LL_201709,Thalassiosira nordenskioeldii,1468
+LL_201709,Thalassiosira punctigera,170
+LL_201709,Thecamonas trahens,8
+LL_201709,Triparma laevis,1041
+LL_201709,NA,332023
+LL_201710,Balanus glandula,1767
+LL_201710,Chrysochromulina sp. CCMP291,136
+LL_201710,Chthamalus dalli,713
+LL_201710,Cylindrotheca closterium,1252
+LL_201710,Leathesia marina,218
+LL_201710,Lichtheimia ramosa,86
+LL_201710,Melosira nummuloides,29
+LL_201710,Micromonas pusilla,3108
+LL_201710,Minutocellus polymorphus,3847
+LL_201710,Muggiaea atlantica,123
+LL_201710,Navicula cryptocephala,309
+LL_201710,Oncorhynchus keta,11
+LL_201710,Phytophthora taxon paludosa,35
+LL_201710,Pseudochattonella farcimen,150
+LL_201710,Pythium periplocum,144
+LL_201710,Rhizosolenia setigera,60
+LL_201710,Skeletonema dohrnii,149
+LL_201710,Thalassiosira punctigera,20
+LL_201710,Triparma laevis,317
+LL_201710,NA,108283
+LL_201711,Acartia longiremis,382
+LL_201711,Articulospora tetracladia,219
+LL_201711,Asterionellopsis guyunusae,6
+LL_201711,Balanus glandula,7
+LL_201711,Bathycoccus prasinos,3
+LL_201711,Bothrioneurum vejdovskyanum,31
+LL_201711,Bursaphelenchus cocophilus,25
+LL_201711,Caulacanthus ustulatus,118
+LL_201711,Centropages abdominalis,214
+LL_201711,Chaetoceros socialis,282
+LL_201711,Cladophialophora bantiana,4
+LL_201711,Cliona chilensis,9
+LL_201711,Clytia gracilis,5
+LL_201711,Cochliopodium larifeili,12
+LL_201711,Coscinodiscus wailesii,445
+LL_201711,Cylindrotheca closterium,61
+LL_201711,Dasybranchus sp. DH1,2
+LL_201711,Dinobryon divergens,8
+LL_201711,Ditylum brightwellii,80
+LL_201711,Emiliania huxleyi,146
+LL_201711,Euclymene sp. BOLD:ACG1020,2
+LL_201711,Glarea lozoyensis,14
+LL_201711,Gracilaria vermiculophylla,63
+LL_201711,Haramonas dimorpha,2694
+LL_201711,Hartmannella cantabrigiensis,3
+LL_201711,Hildenbrandia sp. 27GWS,7
+LL_201711,Homo sapiens,20
+LL_201711,Leathesia marina,5
+LL_201711,Lottia paradigitalis,700
+LL_201711,Melosira nummuloides,221
+LL_201711,Micromonas pusilla,99
+LL_201711,Minutocellus polymorphus,191
+LL_201711,Mytilus trossulus,55
+LL_201711,Navicula cryptocephala,4
+LL_201711,Nuttallia olivacea,3
+LL_201711,Octolasion tyrtaeum,5
+LL_201711,Oncorhynchus keta,7758
+LL_201711,Pedospumella encystans,76
+LL_201711,Pedospumella sinomuralis,13
+LL_201711,Phaeocystis antarctica,6
+LL_201711,Phytophthora bilorbang,123
+LL_201711,Phytophthora multivora,4
+LL_201711,Poteriospumella lacustris,3
+LL_201711,Pseudocalanus newmani,28
+LL_201711,Pseudochattonella farcimen,12
+LL_201711,Psocoptera sp. BOLD:ACB0984,51
+LL_201711,Pycnococcus provasolii,3
+LL_201711,Pythium contiguanum,24
+LL_201711,Pythium tracheiphilum,103
+LL_201711,Rhizosolenia setigera,85
+LL_201711,Ruditapes philippinarum,2
+LL_201711,Skeletonema dohrnii,29
+LL_201711,Synchaetomella acerina,6
+LL_201711,Thalassiosira nordenskioeldii,61
+LL_201711,Thalassiosira punctigera,866
+LL_201711,Thelepus sp. CMC01,439
+LL_201711,NA,95934
+LL_201801,Balanus balanus,6
+LL_201801,Balanus glandula,453
+LL_201801,Bathycoccus prasinos,97186
+LL_201801,Chaetoceros socialis,1129
+LL_201801,Chattonella subsalsa,2263
+LL_201801,Chordariaceae sp. 7 AP-2014,79
+LL_201801,Chrysaora melanaster,1266
+LL_201801,Dictyocha speculum,929
+LL_201801,Ditylum brightwellii,691
+LL_201801,Emiliania huxleyi,6
+LL_201801,Heterocapsa rotundata,108
+LL_201801,Hincksia hincksiae,2224
+LL_201801,Homo sapiens,287
+LL_201801,Littorina plena,4020
+LL_201801,Melosira nummuloides,1415
+LL_201801,Micromonas pusilla,62132
+LL_201801,Minutocellus polymorphus,13451
+LL_201801,Mytilus trossulus,10
+LL_201801,Nitzschia cf. promare,75
+LL_201801,Ostrea lurida,4
+LL_201801,Phaeocystis antarctica,6412
+LL_201801,Phaeocystis globosa,329
+LL_201801,Poteriospumella lacustris,5
+LL_201801,Pycnococcus provasolii,176
+LL_201801,Pyramimonas parkeae,373
+LL_201801,Pythium pachycaule,24
+LL_201801,Skeletonema dohrnii,276
+LL_201801,Skeletonema japonicum,63
+LL_201801,Thalassionema nitzschioides,239
+LL_201801,Thalassiosira nordenskioeldii,2081
+LL_201801,Triparma laevis,586
+LL_201801,NA,107654
+LL_201803,Albugo candida,29
+LL_201803,Attheya longicornis,106
+LL_201803,Balanus glandula,52
+LL_201803,Bathycoccus prasinos,1400
+LL_201803,Brachionidae sp. SHYT150702c,214
+LL_201803,Chaetoceros socialis,7
+LL_201803,Chaetoceros sp. MBTD-CMFRI-S045,30
+LL_201803,Chattonella subsalsa,10207
+LL_201803,Chordariaceae sp. 7 AP-2014,179
+LL_201803,Cliona chilensis,22
+LL_201803,Cylindrotheca closterium,1893
+LL_201803,Dictyocha speculum,462
+LL_201803,Ditylum brightwellii,292
+LL_201803,Evasterias troschelii,22
+LL_201803,Gracilaria vermiculophylla,669
+LL_201803,Haramonas dimorpha,32
+LL_201803,Homo sapiens,408
+LL_201803,Leathesia marina,47
+LL_201803,Leuckartiara octona,21
+LL_201803,Littorina plena,7624
+LL_201803,Lottia paradigitalis,106
+LL_201803,Melosira nummuloides,214
+LL_201803,Micromonas pusilla,500
+LL_201803,Minutocellus polymorphus,914
+LL_201803,Muggiaea atlantica,448
+LL_201803,Navicula cryptocephala,214
+LL_201803,Navicula sp. BOLD:AAO6949,12
+LL_201803,Navicula sp. BOLD:AAO6951,36
+LL_201803,Nitzschia cf. promare,1932
+LL_201803,Paracalanus sp. C AC-2013,12
+LL_201803,Parvamoeba rugata,85
+LL_201803,Peltogaster paguri,38
+LL_201803,Phaeocystis antarctica,4
+LL_201803,Plagiogramma sp. IAL-2014a,36
+LL_201803,Podosira stelligera,43
+LL_201803,Polydora cornuta,531
+LL_201803,Poteriospumella lacustris,51
+LL_201803,Protoperidinium cf. depressum,50
+LL_201803,Pseudochattonella farcimen,738
+LL_201803,Pythium tracheiphilum,283
+LL_201803,Rhizosolenia setigera,5635
+LL_201803,Salispina spinosa,12
+LL_201803,Skeletonema dohrnii,21
+LL_201803,Skeletonema japonicum,26
+LL_201803,Thalassionema nitzschioides,123
+LL_201803,Thalassiosira nordenskioeldii,8052
+LL_201803,Thalassiosira punctigera,108
+LL_201803,NA,311398
+LL_201805,Amphicaryon earnesti,40
+LL_201805,Balanus glandula,4
+LL_201805,Bathycoccus prasinos,86
+LL_201805,Brachionidae sp. SHYT150702c,70
+LL_201805,Calanus pacificus,64
+LL_201805,Callithamnion corymbosum,16
+LL_201805,Caulacanthus ustulatus,563
+LL_201805,Ceramium sp. 3Cal,1686
+LL_201805,Chaetoceros socialis,40
+LL_201805,Chattonella subsalsa,383
+LL_201805,Chrysochromulina sp. CCMP291,141
+LL_201805,Chthamalus dalli,10026
+LL_201805,Cliona chilensis,209
+LL_201805,Coscinodiscus wailesii,1116
+LL_201805,Cylindrotheca closterium,669
+LL_201805,Dictyocha speculum,245
+LL_201805,Ditylum brightwellii,50
+LL_201805,Dolichomastix tenuilepis,5
+LL_201805,Emiliania huxleyi,125
+LL_201805,Harpacticoida sp. DNZ085,15039
+LL_201805,Hematodinium sp.,621
+LL_201805,Ismaila chaihuiensis,1562
+LL_201805,Kellia porculus,1901
+LL_201805,Lichtheimia ramosa,44
+LL_201805,Littorina plena,3859
+LL_201805,Lomentaria hakodatensis,55
+LL_201805,Lottia paradigitalis,139
+LL_201805,Loxothylacus panopaei,1380
+LL_201805,Mayamaea permitis,30
+LL_201805,Melosira nummuloides,37
+LL_201805,Micromonas pusilla,6012
+LL_201805,Minutocellus polymorphus,1169
+LL_201805,Navicula cryptocephala,225
+LL_201805,Nitzschia cf. promare,104
+LL_201805,Nitzschia longissima,49
+LL_201805,Ostrea lurida,142
+LL_201805,Paracalanus sp. C AC-2013,1073
+LL_201805,Parvamoeba rugata,106
+LL_201805,Pedospumella sinomuralis,37
+LL_201805,Penicillium rubens,206
+LL_201805,Phyllodoce medipapillata,251
+LL_201805,Phytophthora multivora,73
+LL_201805,Pinnularia sp. 5 CS-2011,212
+LL_201805,Platynereis sp. CMC02,2107
+LL_201805,Podosira stelligera,439
+LL_201805,Porichthys notatus,869
+LL_201805,Pseudochattonella farcimen,457
+LL_201805,Pycnococcus provasolii,85
+LL_201805,Pyropia haitanensis,4
+LL_201805,Pythium tracheiphilum,366
+LL_201805,Rhizosolenia setigera,1623
+LL_201805,Rhodotorula taiwanensis,34
+LL_201805,Saprolegnia diclina,87
+LL_201805,Thalassiosira nordenskioeldii,1755
+LL_201805,Thalassiosira punctigera,769
+LL_201805,Triparma laevis,1002
+LL_201805,NA,245064
+LL_201807,Asterionellopsis guyunusae,210
+LL_201807,Attheya longicornis,7
+LL_201807,Balanus balanus,1301
+LL_201807,Bathycoccus prasinos,1333
+LL_201807,Calanus pacificus,317
+LL_201807,Callithamnion corymbosum,120
+LL_201807,Centropages abdominalis,4
+LL_201807,Ceramium sp. 3Cal,212
+LL_201807,Chrysochromulina sp. CCMP291,37
+LL_201807,Cliona chilensis,34490
+LL_201807,Cochliopodium larifeili,10
+LL_201807,Cylindrotheca closterium,7791
+LL_201807,Dasybranchus sp. DH1,62
+LL_201807,Dictyocha speculum,6
+LL_201807,Emiliania huxleyi,10429
+LL_201807,Gelidium vagum,50
+LL_201807,Halichondria panicea,193
+LL_201807,Halicyclops itohi,23
+LL_201807,Halophytophthora avicenniae,3
+LL_201807,Hemigrapsus oregonensis,20
+LL_201807,Homo sapiens,274
+LL_201807,Lichtheimia ramosa,11
+LL_201807,Littorina plena,2336
+LL_201807,Mayamaea permitis,34
+LL_201807,Micromonas pusilla,13130
+LL_201807,Minutocellus polymorphus,72367
+LL_201807,Navicula cryptocephala,556
+LL_201807,Nuttallia olivacea,518
+LL_201807,Obelia bidentata,122
+LL_201807,Ostrea lurida,3883
+LL_201807,Paracalanus sp. C AC-2013,21
+LL_201807,Parvamoeba rugata,25
+LL_201807,Phaeocystis antarctica,356
+LL_201807,Plagiogramma sp. IAL-2014a,16
+LL_201807,Podosira stelligera,1134
+LL_201807,Polycirrus sp. CMC05,16080
+LL_201807,Porichthys notatus,467
+LL_201807,Poteriospumella lacustris,310
+LL_201807,Pseudochattonella farcimen,465
+LL_201807,Pycnococcus provasolii,13477
+LL_201807,Rhizosolenia setigera,207
+LL_201807,Saprolegnia diclina,16
+LL_201807,Sarocladium implicatum,398
+LL_201807,Saxidomus gigantea,12
+LL_201807,Skeletonema dohrnii,15
+LL_201807,Sphacelaria sp. 2 AP-2014,71
+LL_201807,Thalassionema nitzschioides,2682
+LL_201807,Thalassiosira nordenskioeldii,149
+LL_201807,Thalassiosira punctigera,1058
+LL_201807,Triparma laevis,82
+LL_201807,NA,172442
+PO_201703,Alitta sp. CMC01,31
+PO_201703,Balanus glandula,4020
+PO_201703,Barantolla americana CMC01,83362
+PO_201703,Bathycoccus prasinos,1093609
+PO_201703,Centropages abdominalis,32245
+PO_201703,Chaetoceros socialis,1931
+PO_201703,Chattonella subsalsa,2151
+PO_201703,Chordariaceae sp. 7 AP-2014,932
+PO_201703,Chrysochromulina sp. CCMP291,23
+PO_201703,Coscinodiscus wailesii,11
+PO_201703,Cylindrotheca closterium,435
+PO_201703,Dictyocha speculum,3740
+PO_201703,Ditylum brightwellii,23
+PO_201703,Ectocarpus siliculosus,91
+PO_201703,Emiliania huxleyi,111
+PO_201703,Gomphonema clevei,2
+PO_201703,Gracilaria vermiculophylla,112
+PO_201703,Hartmannella cantabrigiensis,4
+PO_201703,Hemigrapsus oregonensis,2
+PO_201703,Heterocapsa rotundata,857
+PO_201703,Hildenbrandia sp. 27GWS,9
+PO_201703,Hincksia hincksiae,17
+PO_201703,Homo sapiens,9586
+PO_201703,Karlodinium veneficum,74
+PO_201703,Leitoscoloplos pugettensis CMC01,11
+PO_201703,Littorina plena,44
+PO_201703,Lottia paradigitalis,60
+PO_201703,Melosira nummuloides,473
+PO_201703,Micromonas pusilla,289571
+PO_201703,Minutocellus polymorphus,15395
+PO_201703,Navicula cryptocephala,124
+PO_201703,Nitzschia cf. promare,70
+PO_201703,Orthocladius sp. BOLD-2016,38
+PO_201703,Pectinaria granulata CMC01,11
+PO_201703,Pedospumella sinomuralis,8
+PO_201703,Peronospora violae,5
+PO_201703,Phaeocystis antarctica,412261
+PO_201703,Phaeocystis globosa,43
+PO_201703,Phoronopsis harmeri,3
+PO_201703,Pinnularia sp. 5 CS-2011,48
+PO_201703,Platichthys stellatus,82
+PO_201703,Poteriospumella lacustris,8718
+PO_201703,Pseudocalanus newmani,33
+PO_201703,Pseudochattonella farcimen,275
+PO_201703,Pyramimonas parkeae,673
+PO_201703,Pythium pachycaule,11
+PO_201703,Pythium sp. CAL-2011c,27
+PO_201703,Pythium tracheiphilum,4
+PO_201703,Rhizosolenia setigera,55
+PO_201703,Ruditapes philippinarum,6
+PO_201703,Scopalina ruetzleri,13
+PO_201703,Skeletonema dohrnii,70
+PO_201703,Stelligera rigida,101
+PO_201703,Thalassionema nitzschioides,31
+PO_201703,Thalassiosira nordenskioeldii,2547
+PO_201703,Triparma laevis,98041
+PO_201703,NA,446687
+PO_201705,Acartia longiremis,338
+PO_201705,Aequorea sp. MW-2012,5
+PO_201705,Albugo candida,14
+PO_201705,Attheya longicornis,948
+PO_201705,Bathycoccus prasinos,160
+PO_201705,Brachionidae sp. SHYT150702c,96
+PO_201705,Calanus pacificus,175
+PO_201705,Centropages abdominalis,185012
+PO_201705,Chaetoceros socialis,7422
+PO_201705,Chrysochromulina sp. CCMP291,351
+PO_201705,Chthamalus dalli,371
+PO_201705,Citharichthys sordidus,29
+PO_201705,Cylindrotheca closterium,764
+PO_201705,Dendraster excentricus,11
+PO_201705,Dictyocha speculum,713
+PO_201705,Ditylum brightwellii,884
+PO_201705,Dolichomastix tenuilepis,7
+PO_201705,Emiliania huxleyi,156
+PO_201705,Gracilaria vermiculophylla,37
+PO_201705,Hypomesus pretiosus,10
+PO_201705,Lichtheimia ramosa,6
+PO_201705,Littorina plena,19
+PO_201705,Macoma nasuta,290
+PO_201705,Micromonas pusilla,9370
+PO_201705,Minutocellus polymorphus,87
+PO_201705,Mytilus trossulus,93
+PO_201705,Nitzschia cf. promare,38
+PO_201705,Nitzschia longissima,39
+PO_201705,Nuttallia olivacea,8
+PO_201705,Paracalanus sp. C AC-2013,209
+PO_201705,Protoperidinium cf. depressum,381
+PO_201705,Pseudochattonella farcimen,24
+PO_201705,Pythium tracheiphilum,51
+PO_201705,Saprolegnia diclina,324
+PO_201705,Skeletonema japonicum,21
+PO_201705,Thalassiosira nordenskioeldii,8354
+PO_201705,Thalassiosira punctigera,6
+PO_201705,Triparma laevis,42
+PO_201705,NA,339011
+PO_201706,Aequorea sp. MW-2012,612
+PO_201706,Albugo candida,18
+PO_201706,Asterionellopsis guyunusae,137
+PO_201706,Attheya longicornis,41
+PO_201706,Bathycoccus prasinos,20326
+PO_201706,Blastocladiella emersonii,232
+PO_201706,Calanus pacificus,1172
+PO_201706,Chaetoceros socialis,161
+PO_201706,Chaetoceros sp. MBTD-CMFRI-S062,7
+PO_201706,Chattonella subsalsa,315
+PO_201706,Chordariaceae sp. 7 AP-2014,27
+PO_201706,Chrysochromulina sp. CCMP291,412
+PO_201706,Cylindrotheca closterium,5693
+PO_201706,Cymatogaster aggregata,105
+PO_201706,Cymbomonas tetramitiformis,599
+PO_201706,Dendraster excentricus,3559
+PO_201706,Ditylum brightwellii,63
+PO_201706,Dolichomastix tenuilepis,228
+PO_201706,Emiliania huxleyi,18608
+PO_201706,Fucus distichus,4
+PO_201706,Gracilaria vermiculophylla,188
+PO_201706,Haramonas dimorpha,325
+PO_201706,Hemigrapsus oregonensis,6
+PO_201706,Leitoscoloplos pugettensis CMC01,369
+PO_201706,Lichtheimia ramosa,10
+PO_201706,Littorina plena,3
+PO_201706,Mayamaea permitis,22
+PO_201706,Micromonas pusilla,28490
+PO_201706,Minutocellus polymorphus,8926
+PO_201706,Monocorophium acherusicum,7
+PO_201706,Musculista senhousia,17
+PO_201706,Myrionema balticum,9
+PO_201706,Mytilus trossulus,88
+PO_201706,Navicula cryptocephala,233
+PO_201706,Navicula sp. BOLD:AAO6951,65
+PO_201706,Nitzschia cf. promare,135
+PO_201706,Nitzschia longissima,63
+PO_201706,Nitzschia palea,15
+PO_201706,Nuttallia olivacea,701
+PO_201706,Paracalanus sp. C AC-2013,597
+PO_201706,Parvamoeba rugata,3
+PO_201706,Pedospumella sinomuralis,33
+PO_201706,Phaeocystis antarctica,1363
+PO_201706,Phytophthora multivora,60
+PO_201706,Platynereis sp. CMC02,13
+PO_201706,Poteriospumella lacustris,727
+PO_201706,Prasinoderma coloniale,8681
+PO_201706,Protoperidinium cf. depressum,167
+PO_201706,Pseudo-nitzschia hasleana,62
+PO_201706,Pseudochattonella farcimen,13990
+PO_201706,Pythium sp. CAL-2011c,45
+PO_201706,Pythium tracheiphilum,1219
+PO_201706,Rhizosolenia setigera,40814
+PO_201706,Ruditapes philippinarum,9
+PO_201706,Saprolegnia diclina,49
+PO_201706,Skeletonema dohrnii,43164
+PO_201706,Thalassionema nitzschioides,25
+PO_201706,Thalassiosira nordenskioeldii,9580
+PO_201706,Thecamonas trahens,3
+PO_201706,Triparma laevis,4822
+PO_201706,NA,562933
+PO_201707,Balanus glandula,4
+PO_201707,Barantolla americana CMC01,116
+PO_201707,Bathycoccus prasinos,89799
+PO_201707,Caulacanthus ustulatus,182
+PO_201707,Chrysochromulina sp. CCMP291,4
+PO_201707,Crassostrea gigas,189
+PO_201707,Cylindrotheca closterium,2126
+PO_201707,Cymbomonas tetramitiformis,12
+PO_201707,Dendraster excentricus,5
+PO_201707,Emiliania huxleyi,295881
+PO_201707,Gallus gallus,144
+PO_201707,Gracilaria vermiculophylla,185
+PO_201707,Harpacticoida sp. DNZ085,59
+PO_201707,Homo sapiens,258
+PO_201707,Leucocryptos marina,46
+PO_201707,Lichtheimia ramosa,61
+PO_201707,Littorina plena,46
+PO_201707,Littorina scutulata,74
+PO_201707,Micromonas pusilla,119649
+PO_201707,Minutocellus polymorphus,211691
+PO_201707,Monocorophium acherusicum,105
+PO_201707,Navicula cryptocephala,28
+PO_201707,Navicula sp. BOLD:AAO6951,58
+PO_201707,Nereis vexillosa,36
+PO_201707,Nitzschia palea,114
+PO_201707,Obelia bidentata,7
+PO_201707,Ostrea lurida,29895
+PO_201707,Paracalanus sp. C AC-2013,83
+PO_201707,Platichthys stellatus,21
+PO_201707,Poteriospumella lacustris,46
+PO_201707,Prasinoderma coloniale,123
+PO_201707,Pseudochattonella farcimen,59
+PO_201707,Pythium sp. CAL-2011c,3
+PO_201707,Rhizosolenia setigera,4
+PO_201707,Ruditapes philippinarum,1424
+PO_201707,Saprolegnia diclina,3
+PO_201707,Skeletonema dohrnii,9
+PO_201707,Stiliger fuscovittatus,7
+PO_201707,Thalassiosira nordenskioeldii,216
+PO_201707,Triparma laevis,304
+PO_201707,NA,362575
+PO_201708,Balanus balanus,3
+PO_201708,Balanus glandula,13
+PO_201708,Bathycoccus prasinos,95348
+PO_201708,Botrylloides violaceus,450
+PO_201708,Caulacanthus ustulatus,469
+PO_201708,Chordariaceae sp. 2 AP-2014,45
+PO_201708,Chrysochromulina sp. CCMP291,17
+PO_201708,Cliona chilensis,107
+PO_201708,Crassostrea gigas,3
+PO_201708,Cylindrotheca closterium,782
+PO_201708,Cymbomonas tetramitiformis,167
+PO_201708,Dolichomastix tenuilepis,8
+PO_201708,Emiliania huxleyi,25627
+PO_201708,Gallus gallus,14
+PO_201708,Gelidiophycus freshwateri,297
+PO_201708,Gracilaria vermiculophylla,77
+PO_201708,Halichondria panicea,78
+PO_201708,Haramonas dimorpha,8
+PO_201708,Harpacticoida sp. DNZ085,10317
+PO_201708,Hematodinium sp.,3
+PO_201708,Hemigrapsus oregonensis,38
+PO_201708,Hemipodia simplex,1623
+PO_201708,Heterocapsa rotundata,375
+PO_201708,Heterosigma akashiwo,98
+PO_201708,Homo sapiens,154
+PO_201708,Lomentaria hakodatensis,9
+PO_201708,Micromonas pusilla,273689
+PO_201708,Minutocellus polymorphus,9860
+PO_201708,Monocorophium acherusicum,29
+PO_201708,Navicula cryptocephala,85
+PO_201708,Ostrea lurida,3447
+PO_201708,Paracalanus sp. C AC-2013,16475
+PO_201708,Phaeocystis antarctica,11
+PO_201708,Podosira stelligera,120
+PO_201708,Porichthys notatus,30
+PO_201708,Poteriospumella lacustris,138
+PO_201708,Prasinoderma coloniale,1126
+PO_201708,Pseudochattonella farcimen,5783
+PO_201708,Pycnococcus provasolii,9
+PO_201708,Pythium sp. CAL-2011c,20
+PO_201708,Rhinogobiops nicholsii,130
+PO_201708,Rhizosolenia setigera,40
+PO_201708,Saprolegnia diclina,127
+PO_201708,Sarcodiotheca sp. 2gaudichaudii,39
+PO_201708,Saxidomus gigantea,3
+PO_201708,Skeletonema dohrnii,6
+PO_201708,Skeletonema japonicum,13
+PO_201708,Thalassionema nitzschioides,25
+PO_201708,Thalassiosira nordenskioeldii,16
+PO_201708,Thalassiosira punctigera,200
+PO_201708,Triparma laevis,215
+PO_201708,NA,671003
+PO_201709,Apodachlya minima,25
+PO_201709,Asterionellopsis guyunusae,1936
+PO_201709,Bathycoccus prasinos,11053
+PO_201709,Brachionidae sp. SHYT150702c,75
+PO_201709,Cafeteria roenbergensis,52
+PO_201709,Calanus pacificus,1080
+PO_201709,Caulacanthus ustulatus,21
+PO_201709,Centropages abdominalis,2
+PO_201709,Chaetoceros socialis,6502
+PO_201709,Chattonella subsalsa,63
+PO_201709,Chrysochromulina sp. CCMP291,2184
+PO_201709,Coscinodiscus wailesii,30
+PO_201709,Crassostrea gigas,24
+PO_201709,Cylindrotheca closterium,78
+PO_201709,Cymatogaster aggregata,15
+PO_201709,Cymbomonas tetramitiformis,5
+PO_201709,Dictyocha speculum,5035
+PO_201709,Ditylum brightwellii,39
+PO_201709,Dolichomastix tenuilepis,12
+PO_201709,Emiliania huxleyi,5226
+PO_201709,Gracilaria vermiculophylla,2640
+PO_201709,Halicyclops itohi,112
+PO_201709,Haptoglossa sp. DM2 4/12,33
+PO_201709,Hincksia hincksiae,83
+PO_201709,Homo sapiens,201
+PO_201709,Karlodinium veneficum,30
+PO_201709,Keratella cochlearis,132
+PO_201709,Micromonas pusilla,17087
+PO_201709,Minutocellus polymorphus,49886
+PO_201709,Muggiaea atlantica,6
+PO_201709,Nereis vexillosa,1792
+PO_201709,Nitzschia palea,228
+PO_201709,Oncorhynchus keta,15
+PO_201709,Paracalanus sp. C AC-2013,345
+PO_201709,Pedospumella sinomuralis,107
+PO_201709,Phaeocystis globosa,1110
+PO_201709,Phytophthora multivora,137
+PO_201709,Poteriospumella lacustris,8
+PO_201709,Prasinoderma coloniale,1280
+PO_201709,Protoperidinium cf. depressum,38
+PO_201709,Pseudochattonella farcimen,1668
+PO_201709,Pythium pachycaule,93
+PO_201709,Pythium tracheiphilum,395
+PO_201709,Rhizosolenia setigera,4
+PO_201709,Ruditapes philippinarum,16
+PO_201709,Saxidomus gigantea,540
+PO_201709,Skeletonema dohrnii,25278
+PO_201709,Thalassiosira nordenskioeldii,9889
+PO_201709,Thalassiosira punctigera,34
+PO_201709,Triparma laevis,1347
+PO_201709,NA,471012
+PO_201711,Acartia longiremis,8
+PO_201711,Articulospora tetracladia,77
+PO_201711,Asterionellopsis guyunusae,5
+PO_201711,Attheya longicornis,33
+PO_201711,Aurelia labiata,133
+PO_201711,Balanus glandula,222
+PO_201711,Bathycoccus prasinos,789
+PO_201711,Brachionidae sp. SHYT150702c,351
+PO_201711,Bursaphelenchus cocophilus,75
+PO_201711,Callithamnion corymbosum,2
+PO_201711,Cancer productus,551
+PO_201711,Centropages abdominalis,24
+PO_201711,Chaetoceros socialis,3820
+PO_201711,Chattonella subsalsa,1054
+PO_201711,Chrysochromulina sp. CCMP291,558
+PO_201711,Cochliopodium sp. SG-2014,176
+PO_201711,Coscinodiscus wailesii,4
+PO_201711,Cunea thuwala,94
+PO_201711,Cylindrotheca closterium,42
+PO_201711,Dendraster excentricus,453
+PO_201711,Dialonectria episphaeria,57
+PO_201711,Dictyocha speculum,442
+PO_201711,Ditylum brightwellii,801
+PO_201711,Emiliania huxleyi,1624
+PO_201711,Fucus distichus,10
+PO_201711,Galactomyces candidum,86
+PO_201711,Gracilaria vermiculophylla,500
+PO_201711,Halophytophthora avicenniae,197
+PO_201711,Hartmannella cantabrigiensis,124
+PO_201711,Heterocapsa rotundata,246
+PO_201711,Hildenbrandia sp. 27GWS,45
+PO_201711,Homo sapiens,7245
+PO_201711,Hypomesus pretiosus,33
+PO_201711,Lichtheimia ramosa,19
+PO_201711,Melosira ambiqua,43
+PO_201711,Melosira nummuloides,19913
+PO_201711,Micromonas pusilla,3279
+PO_201711,Minutocellus polymorphus,1432
+PO_201711,Muggiaea atlantica,60
+PO_201711,Mytilus trossulus,6616
+PO_201711,Nassarius mendicus,8880
+PO_201711,Navicula cryptocephala,343
+PO_201711,Oncorhynchus keta,43488
+PO_201711,Ostrea lurida,124
+PO_201711,Paracalanus sp. C AC-2013,113
+PO_201711,Paramoeba pemaquidensis,8
+PO_201711,Pedospumella sinomuralis,560
+PO_201711,Penicillium sclerotiorum,74
+PO_201711,Petalonia fascia,28
+PO_201711,Phaeocystis antarctica,21
+PO_201711,Phaeocystis globosa,33
+PO_201711,Phytophthora megasperma,290
+PO_201711,Phytophthora multivora,4
+PO_201711,Pinnularia parvulissima,3093
+PO_201711,Protoperidinium cf. depressum,64
+PO_201711,Pseudo-nitzschia cuspidata,33
+PO_201711,Pseudobradya attenuata,467
+PO_201711,Pseudochattonella farcimen,16544
+PO_201711,Pyramimonas parkeae,5
+PO_201711,Pythium periplocum,25
+PO_201711,Pythium tracheiphilum,396
+PO_201711,Rhizosolenia setigera,15
+PO_201711,Ruditapes philippinarum,99
+PO_201711,Saprolegnia diclina,6
+PO_201711,Skeletonema dohrnii,251
+PO_201711,Skeletonema japonicum,13
+PO_201711,Spongospora subterranea,50
+PO_201711,Synchaetomella acerina,46
+PO_201711,Thalassiosira nordenskioeldii,933
+PO_201711,Trebouxia aggregata,18
+PO_201711,Triparma laevis,22
+PO_201711,NA,250225
+PO_201801,Albugo candida,15
+PO_201801,Amphicaryon earnesti,35
+PO_201801,Attheya longicornis,159
+PO_201801,Balanus balanus,201
+PO_201801,Bathycoccus prasinos,45125
+PO_201801,Calanus pacificus,1219
+PO_201801,Carcinonemertes errans,27
+PO_201801,Chattonella subsalsa,306
+PO_201801,Chrysaora melanaster,19
+PO_201801,Chrysochromulina sp. CCMP291,2
+PO_201801,Cochliopodium larifeili,18
+PO_201801,Coscinodiscus wailesii,9
+PO_201801,Cylindrotheca closterium,11557
+PO_201801,Dictyocha speculum,286
+PO_201801,Ditylum brightwellii,601
+PO_201801,Hincksia hincksiae,3402
+PO_201801,Homo sapiens,585
+PO_201801,Lichtheimia ramosa,7
+PO_201801,Littorina plena,21887
+PO_201801,Melosira ambiqua,249
+PO_201801,Melosira nummuloides,11716
+PO_201801,Micromonas pusilla,27075
+PO_201801,Minutocellus polymorphus,14639
+PO_201801,Nanomia cara,56
+PO_201801,Navicula cryptocephala,313
+PO_201801,Navicula sp. BOLD:AAO6949,10
+PO_201801,Nitzschia cf. promare,7012
+PO_201801,Nitzschia cf. recta RT-2009,27
+PO_201801,Ostrea lurida,3
+PO_201801,Paracalanus sp. C AC-2013,86
+PO_201801,Pedospumella sinomuralis,281
+PO_201801,Petalonia fascia,117
+PO_201801,Phaeocystis antarctica,4656
+PO_201801,Phaeocystis globosa,431
+PO_201801,Pinnularia parvulissima,1840
+PO_201801,Plagiogramma sp. IAL-2014a,3
+PO_201801,Protoperidinium cf. depressum,22
+PO_201801,Pseudo-nitzschia cuspidata,4
+PO_201801,Pycnococcus provasolii,206
+PO_201801,Rhizosolenia setigera,1509
+PO_201801,Ruditapes philippinarum,29
+PO_201801,Skeletonema dohrnii,289
+PO_201801,Thalassionema nitzschioides,177
+PO_201801,Thalassiosira nordenskioeldii,626
+PO_201801,Triparma laevis,245
+PO_201801,NA,133558
+PO_201803,Alitta sp. CMC01,16
+PO_201803,Asterionellopsis guyunusae,132
+PO_201803,Attheya longicornis,283
+PO_201803,Balanus balanus,7677
+PO_201803,Balanus glandula,82
+PO_201803,Brachionidae sp. SHYT150702c,5
+PO_201803,Calanus pacificus,10887
+PO_201803,Callithamnion corymbosum,18
+PO_201803,Chaetoceros socialis,279
+PO_201803,Chattonella subsalsa,15341
+PO_201803,Chironomidae sp. BOLD:ACC1767,2426
+PO_201803,Chordariaceae sp. 7 AP-2014,7
+PO_201803,Coscinodiscus wailesii,3
+PO_201803,Cylindrotheca closterium,7511
+PO_201803,Cyphoderia cf. compressa,24
+PO_201803,Dictyocha speculum,314
+PO_201803,Ditylum brightwellii,899
+PO_201803,Emiliania huxleyi,30
+PO_201803,Fistulifera solaris,101
+PO_201803,Grammonema striatula,1431
+PO_201803,Hematodinium sp.,1389
+PO_201803,Homo sapiens,202
+PO_201803,Melosira nummuloides,220
+PO_201803,Membranipora membranacea,9
+PO_201803,Metridium senile,169
+PO_201803,Micromonas pusilla,6
+PO_201803,Minutocellus polymorphus,50
+PO_201803,Muggiaea atlantica,340
+PO_201803,Navicula cryptocephala,24
+PO_201803,Navicula ramosissima,173
+PO_201803,Navicula sp. BOLD:AAO6951,194
+PO_201803,Nitzschia cf. promare,2130
+PO_201803,Nitzschia longissima,1229
+PO_201803,Nitzschia palea,59
+PO_201803,Paracalanus sp. C AC-2013,752
+PO_201803,Parvamoeba rugata,8
+PO_201803,Phaeocystis antarctica,6038
+PO_201803,Phaeocystis globosa,37
+PO_201803,Pinnularia acrosphaeria,87
+PO_201803,Pinnularia sp. 5 CS-2011,2726
+PO_201803,Plagiogramma sp. IAL-2014a,37
+PO_201803,Poteriospumella lacustris,5
+PO_201803,Pseudo-nitzschia delicatissima,74
+PO_201803,Pythium pachycaule,10
+PO_201803,Pythium tracheiphilum,211
+PO_201803,Rhizosolenia setigera,1206
+PO_201803,Saxidomus gigantea,200
+PO_201803,Scopalina ruetzleri,6
+PO_201803,Skeletonema dohrnii,72
+PO_201803,Skeletonema japonicum,781
+PO_201803,Smithora naiadum,7
+PO_201803,Synchaeta pectinata,29
+PO_201803,Thalassionema nitzschioides,315
+PO_201803,Thalassiosira nordenskioeldii,4274
+PO_201803,Thalassiosira punctigera,92
+PO_201803,Triparma laevis,1100
+PO_201803,NA,292689
+PO_201805,Aequorea sp. MW-2012,55
+PO_201805,Ameritella mitchelli,40
+PO_201805,Amphicaryon earnesti,25
+PO_201805,Balanus glandula,4050
+PO_201805,Centropages abdominalis,8136
+PO_201805,Ceramium sp. 3Cal,32
+PO_201805,Chattonella subsalsa,4377
+PO_201805,Chrysochromulina sp. CCMP291,222
+PO_201805,Coscinodiscus wailesii,767
+PO_201805,Cylindrotheca closterium,1399
+PO_201805,Cylindrotheca fusiformis,4
+PO_201805,Dictyocha speculum,95
+PO_201805,Dolichomastix tenuilepis,26
+PO_201805,Evadne nordmanni,3600
+PO_201805,Fistulifera solaris,11
+PO_201805,Gracilaria vermiculophylla,1227
+PO_201805,Harpacticoida sp. DNZ085,25879
+PO_201805,Hematodinium sp.,2
+PO_201805,Hemigrapsus oregonensis,20
+PO_201805,Homo sapiens,131
+PO_201805,Leitoscoloplos pugettensis CMC01,431
+PO_201805,Leuckartiara octona,412
+PO_201805,Lichtheimia ramosa,32
+PO_201805,Littorina plena,224
+PO_201805,Littorina scutulata,577
+PO_201805,Lottia paradigitalis,37
+PO_201805,Melosira nummuloides,33
+PO_201805,Micromonas pusilla,334
+PO_201805,Minutocellus polymorphus,228
+PO_201805,Nanomia cara,10
+PO_201805,Navicula cryptocephala,171
+PO_201805,Navicula sp. BOLD:AAO6951,93
+PO_201805,Nereis vexillosa,118
+PO_201805,Nitzschia cf. promare,659
+PO_201805,Nitzschia cf. recta RT-2009,64
+PO_201805,Nitzschia longissima,944
+PO_201805,Oncorhynchus tshawytscha,20
+PO_201805,Paracalanus sp. C AC-2013,721
+PO_201805,Paramoeba pemaquidensis,33
+PO_201805,Parvamoeba rugata,19
+PO_201805,Phyllodoce medipapillata,231
+PO_201805,Pinnularia sp. 5 CS-2011,2001
+PO_201805,Plagiogramma sp. IAL-2014a,31
+PO_201805,Protoperidinium cf. depressum,13
+PO_201805,Pycnococcus provasolii,33
+PO_201805,Pythium tracheiphilum,902
+PO_201805,Rhizosolenia setigera,1102
+PO_201805,Saxidomus gigantea,10
+PO_201805,Skeletonema japonicum,9
+PO_201805,Stenhelia pubescens,905
+PO_201805,Thalassionema nitzschioides,101
+PO_201805,Thalassiosira nordenskioeldii,2374
+PO_201805,Thalassiosira punctigera,108
+PO_201805,Triparma laevis,369
+PO_201805,NA,248425
+PO_201807,Asterionellopsis guyunusae,14
+PO_201807,Attheya longicornis,7
+PO_201807,Bathycoccus prasinos,2146
+PO_201807,Blastocladiella emersonii,15
+PO_201807,Ceramium sp. 3Cal,24
+PO_201807,Chaetoceros socialis,4
+PO_201807,Chrysochromulina sp. CCMP291,90
+PO_201807,Cylindrotheca closterium,3808
+PO_201807,Cymatogaster aggregata,24
+PO_201807,Cymbomonas tetramitiformis,274
+PO_201807,Dictyocha speculum,430
+PO_201807,Dolichomastix tenuilepis,8
+PO_201807,Ectocarpus siliculosus,5
+PO_201807,Emiliania huxleyi,7142
+PO_201807,Gracilaria vermiculophylla,1755
+PO_201807,Harpacticoida sp. DNZ085,1088
+PO_201807,Homo sapiens,28
+PO_201807,Melosira nummuloides,300
+PO_201807,Micromonas pusilla,14182
+PO_201807,Minutocellus polymorphus,86092
+PO_201807,Monocorophium acherusicum,6
+PO_201807,Mytilus trossulus,5
+PO_201807,Navicula cryptocephala,177
+PO_201807,Nuttallia olivacea,168
+PO_201807,Oncorhynchus tshawytscha,7
+PO_201807,Paracalanus sp. C AC-2013,290
+PO_201807,Penicillium sclerotiorum,17
+PO_201807,Pinnularia sp. 5 CS-2011,22
+PO_201807,Podosira stelligera,7
+PO_201807,Poteriospumella lacustris,32
+PO_201807,Prasinoderma coloniale,557
+PO_201807,Protoperidinium cf. depressum,15
+PO_201807,Pseudochattonella farcimen,3853
+PO_201807,Pycnococcus provasolii,1094
+PO_201807,Pythium tracheiphilum,54
+PO_201807,Rhizosolenia setigera,64
+PO_201807,Saprolegnia diclina,17
+PO_201807,Sarocladium implicatum,5
+PO_201807,Skeletonema dohrnii,9
+PO_201807,Thalassionema nitzschioides,423
+PO_201807,Thalassiosira nordenskioeldii,149
+PO_201807,Thalassiosira punctigera,71
+PO_201807,Triparma laevis,429
+PO_201807,NA,165680
+SA_201703,Azumapecten farreri,6
+SA_201703,Balanus glandula,10375
+SA_201703,Bathycoccus prasinos,91794
+SA_201703,Centropages abdominalis,12
+SA_201703,Chaetoceros sp. MBTD-CMFRI-S045,12
+SA_201703,Chondracanthus exasperatus,5
+SA_201703,Chordariaceae sp. 7 AP-2014,31
+SA_201703,Chrysochromulina sp. CCMP291,3
+SA_201703,Chthamalus dalli,2958
+SA_201703,Cylindrotheca closterium,5
+SA_201703,Dendraster excentricus,91
+SA_201703,Dictyocha speculum,1698
+SA_201703,Ectocarpus siliculosus,54
+SA_201703,Emiliania huxleyi,77
+SA_201703,Glycera sp. CMC03,9
+SA_201703,Gomphonema clevei,3
+SA_201703,Hemigrapsus oregonensis,11
+SA_201703,Heterocapsa rotundata,3
+SA_201703,Hincksia hincksiae,20
+SA_201703,Membranipora membranacea,8
+SA_201703,Micromonas pusilla,23387
+SA_201703,Minutocellus polymorphus,2479
+SA_201703,Mytilus trossulus,2
+SA_201703,Nereis vexillosa,1348
+SA_201703,Nitzschia cf. promare,47
+SA_201703,Odonthalia floccosa,4
+SA_201703,Phaeocystis antarctica,49557
+SA_201703,Phaeocystis globosa,66
+SA_201703,Poteriospumella lacustris,854
+SA_201703,Pseudo-nitzschia delicatissima,6
+SA_201703,Pseudocalanus newmani,28
+SA_201703,Pyramimonas parkeae,54
+SA_201703,Pythium sp. CAL-2011c,21
+SA_201703,Pythium tracheiphilum,68
+SA_201703,Rhizosolenia setigera,541
+SA_201703,Rhodotorula taiwanensis,4
+SA_201703,Thalassiosira nordenskioeldii,146
+SA_201703,Triparma laevis,21931
+SA_201703,NA,49831
+SA_201705,Acartia longiremis,240
+SA_201705,Aequorea sp. MW-2012,139
+SA_201705,Albugo candida,5
+SA_201705,Alitta sp. CMC01,252
+SA_201705,Amphicaryon earnesti,16
+SA_201705,Anisolpidium ectocarpii,67
+SA_201705,Aphanomyces sp. BOLD:AAO9952,155
+SA_201705,Arca avellana,4
+SA_201705,Asterionellopsis guyunusae,6
+SA_201705,Attheya longicornis,19776
+SA_201705,Balanus balanus,1001
+SA_201705,Balanus glandula,105
+SA_201705,Bathycoccus prasinos,529
+SA_201705,Blastocladiella emersonii,92
+SA_201705,Brachionidae sp. SHYT150702c,72
+SA_201705,Calanus pacificus,37
+SA_201705,Centropages abdominalis,10529
+SA_201705,Chaetoceros socialis,13738
+SA_201705,Chattonella subsalsa,777
+SA_201705,Chondracanthus exasperatus,1728
+SA_201705,Chordariaceae sp. 7 AP-2014,3772
+SA_201705,Chrysochromulina sp. CCMP291,28
+SA_201705,Clytia languida,73
+SA_201705,Coscinodiscus wailesii,330
+SA_201705,Cylindrotheca closterium,4640
+SA_201705,Dendraster excentricus,13954
+SA_201705,Dictyocha speculum,5929
+SA_201705,Ditylum brightwellii,5599
+SA_201705,Emiliania huxleyi,525
+SA_201705,Evasterias troschelii,13
+SA_201705,Gelidium coulteri,817
+SA_201705,Halidrys siliquosa,47
+SA_201705,Haptoglossa sp. DM2 4/12,30
+SA_201705,Haramonas dimorpha,41
+SA_201705,Heterocapsa rotundata,154
+SA_201705,Homo sapiens,8
+SA_201705,Leitoscoloplos pugettensis CMC01,6
+SA_201705,Lichtheimia ramosa,54
+SA_201705,Macoma nasuta,19
+SA_201705,Mazzaella splendens,92
+SA_201705,Membranipora membranacea,510
+SA_201705,Micromonas pusilla,3721
+SA_201705,Minutocellus polymorphus,4587
+SA_201705,Muggiaea atlantica,38
+SA_201705,Navicula cryptocephala,563
+SA_201705,Navicula ramosissima,677
+SA_201705,Nitzschia cf. promare,5268
+SA_201705,Nitzschia cf. recta RT-2009,19
+SA_201705,Nitzschia longissima,256
+SA_201705,Nuttallia olivacea,8
+SA_201705,Obelia bidentata,293
+SA_201705,Paramoeba pemaquidensis,124
+SA_201705,Parvamoeba rugata,221
+SA_201705,Pedospumella sinomuralis,655
+SA_201705,Phaeocystis antarctica,2663
+SA_201705,Phaeocystis globosa,113
+SA_201705,Phytophthora sp. 2 EEO-2011,100
+SA_201705,Phytophthora taxon paludosa,6
+SA_201705,Pinnularia sp. 5 CS-2011,468
+SA_201705,Plagiogramma sp. IAL-2014a,1084
+SA_201705,Porichthys notatus,2088
+SA_201705,Poteriospumella lacustris,41
+SA_201705,Prionitis sternbergii,133
+SA_201705,Protoperidinium cf. depressum,487
+SA_201705,Pseudo-nitzschia delicatissima,431
+SA_201705,Pseudo-nitzschia hasleana,24
+SA_201705,Pseudocalanus moultoni,422
+SA_201705,Pseudocalanus newmani,16495
+SA_201705,Pyramimonas parkeae,119
+SA_201705,Pyropia haitanensis,39
+SA_201705,Pythium acanthicum,8
+SA_201705,Pythium pachycaule,768
+SA_201705,Pythium tracheiphilum,1866
+SA_201705,Rhizosolenia setigera,5054
+SA_201705,Rhodomonas salina,14
+SA_201705,Salispina spinosa,92
+SA_201705,Saprolegnia diclina,1160
+SA_201705,Sarcodiotheca sp. 2gaudichaudii,1429
+SA_201705,Saxidomus gigantea,469
+SA_201705,Scopalina ruetzleri,54
+SA_201705,Skeletonema dohrnii,448
+SA_201705,Skeletonema japonicum,13107
+SA_201705,Synchaeta pectinata,119
+SA_201705,Thalassionema nitzschioides,2529
+SA_201705,Thalassiosira nordenskioeldii,7525
+SA_201705,Thalassiosira punctigera,30
+SA_201705,Thecamonas trahens,162
+SA_201705,Tresus capax,47
+SA_201705,Triparma laevis,1013
+SA_201705,Wildemania amplissima,80236
+SA_201705,NA,446337
+SA_201706,Asterionellopsis glacialis,360
+SA_201706,Asterionellopsis guyunusae,59
+SA_201706,Attheya longicornis,131
+SA_201706,Balanus balanus,594
+SA_201706,Balanus glandula,6169
+SA_201706,Bathycoccus prasinos,3153
+SA_201706,Blastocladiella emersonii,83
+SA_201706,Calanus pacificus,28108
+SA_201706,Centropages abdominalis,4
+SA_201706,Chaetoceros socialis,2920
+SA_201706,Chaetoceros sp. MBTD-CMFRI-S062,1024
+SA_201706,Chattonella subsalsa,289
+SA_201706,Chondracanthus exasperatus,27
+SA_201706,Coscinodiscus wailesii,50
+SA_201706,Cylindrotheca closterium,1864
+SA_201706,Cylindrotheca fusiformis,12
+SA_201706,Cymbomonas tetramitiformis,596
+SA_201706,Dendraster excentricus,175315
+SA_201706,Dictyocha speculum,699
+SA_201706,Ditylum brightwellii,3244
+SA_201706,Emiliania huxleyi,3489
+SA_201706,Emplectonema sp. 1 TCH-2015,18
+SA_201706,Eucampia zodiacus,10
+SA_201706,Gymnodinium sp. NVA/RUS/2008,120
+SA_201706,Lacuna pallidula,14
+SA_201706,Lichtheimia ramosa,372
+SA_201706,Littorina plena,6573
+SA_201706,Macoma nasuta,3754
+SA_201706,Macoma petalum,878
+SA_201706,Micromonas pusilla,10964
+SA_201706,Minutocellus polymorphus,2350
+SA_201706,Mya arenaria,5382
+SA_201706,Mytilus trossulus,214
+SA_201706,Navicula cryptocephala,32
+SA_201706,Nitzschia cf. promare,53
+SA_201706,Nitzschia longissima,12
+SA_201706,Nuttallia olivacea,939
+SA_201706,Paracalanus sp. C AC-2013,1930
+SA_201706,Phaeocystis antarctica,34
+SA_201706,Platynereis sp. CMC02,298
+SA_201706,Protoperidinium cf. depressum,114
+SA_201706,Pseudo-nitzschia delicatissima,578
+SA_201706,Pseudo-nitzschia hasleana,2405
+SA_201706,Pseudocalanus newmani,12414
+SA_201706,Pseudochattonella farcimen,2432
+SA_201706,Pyropia haitanensis,208
+SA_201706,Pythium pachycaule,64
+SA_201706,Pythium tracheiphilum,19
+SA_201706,Rhizosolenia setigera,176
+SA_201706,Ruditapes philippinarum,5446
+SA_201706,Saprolegnia diclina,3
+SA_201706,Saxidomus gigantea,18609
+SA_201706,Skeletonema cf. pseudocostatum,8
+SA_201706,Skeletonema dohrnii,237
+SA_201706,Skeletonema japonicum,5969
+SA_201706,Thalassionema nitzschioides,48
+SA_201706,Thalassiosira nordenskioeldii,4446
+SA_201706,Tresus capax,384
+SA_201706,Triparma laevis,424
+SA_201706,NA,356184
+SA_201707,Asterionellopsis glacialis,627
+SA_201707,Asterionellopsis guyunusae,5
+SA_201707,Attheya longicornis,4
+SA_201707,Bathycoccus prasinos,2317
+SA_201707,Blastocladiella emersonii,5
+SA_201707,Cafeteria roenbergensis,7
+SA_201707,Calanus pacificus,37
+SA_201707,Chrysochromulina sp. CCMP291,11
+SA_201707,Cylindrotheca closterium,142
+SA_201707,Cymbomonas tetramitiformis,3
+SA_201707,Dendraster excentricus,461
+SA_201707,Dictyocha speculum,93
+SA_201707,Emiliania huxleyi,413586
+SA_201707,Heterocapsa rotundata,327
+SA_201707,Leucocryptos marina,90
+SA_201707,Micromonas pusilla,33782
+SA_201707,Minutocellus polymorphus,69924
+SA_201707,Navicula cryptocephala,9
+SA_201707,Nitzschia cf. promare,12
+SA_201707,Nitzschia longissima,34
+SA_201707,Paracalanus sp. C AC-2013,15
+SA_201707,Phaeocystis antarctica,8
+SA_201707,Phaeocystis globosa,3
+SA_201707,Platyias quadricornis,88
+SA_201707,Poteriospumella lacustris,80
+SA_201707,Prasinoderma coloniale,194
+SA_201707,Pseudo-nitzschia delicatissima,148
+SA_201707,Pseudochattonella farcimen,2249
+SA_201707,Saxidomus gigantea,12
+SA_201707,Skeletonema dohrnii,19
+SA_201707,Skeletonema japonicum,5
+SA_201707,Thalassionema nitzschioides,132
+SA_201707,Thalassiosira nordenskioeldii,11654
+SA_201707,Thalassiosira punctigera,2
+SA_201707,Triparma laevis,60
+SA_201707,NA,326794
+SA_201708,Asterionellopsis guyunusae,199
+SA_201708,Balanus balanus,623
+SA_201708,Bathycoccus prasinos,29222
+SA_201708,Cafeteria roenbergensis,11
+SA_201708,Calanus pacificus,348
+SA_201708,Cancer productus,33
+SA_201708,Centropages abdominalis,12
+SA_201708,Chaetoceros socialis,145
+SA_201708,Chondracanthus exasperatus,97
+SA_201708,Chordariaceae sp. 2 AP-2014,7
+SA_201708,Chrysochromulina sp. CCMP291,23
+SA_201708,Chrysonoma sp. ANIC15,12
+SA_201708,Coscinodiscus wailesii,25
+SA_201708,Cylindrotheca closterium,1849
+SA_201708,Cylindrotheca fusiformis,110
+SA_201708,Cymbomonas tetramitiformis,100
+SA_201708,Dendraster excentricus,14897
+SA_201708,Dictyocha speculum,6480
+SA_201708,Emiliania huxleyi,9136
+SA_201708,Enophrys bison,14
+SA_201708,Grammonema striatula,3
+SA_201708,Gymnodinium sp. NVA/RUS/2008,55
+SA_201708,Haslea ostrearia,213
+SA_201708,Heterocapsa rotundata,538
+SA_201708,Hincksia hincksiae,22
+SA_201708,Homo sapiens,342
+SA_201708,Leptosynapta clarki,15
+SA_201708,Mayamaea permitis,3
+SA_201708,Melosira nummuloides,56
+SA_201708,Membranipora membranacea,46
+SA_201708,Micromonas pusilla,110195
+SA_201708,Minutocellus polymorphus,3202
+SA_201708,Modiolus modiolus,337
+SA_201708,Monocorophium acherusicum,63
+SA_201708,Myrionema balticum,2
+SA_201708,Mytilus trossulus,45
+SA_201708,Navicula cryptocephala,239
+SA_201708,Nereis vexillosa,5
+SA_201708,Nitzschia cf. promare,1300
+SA_201708,Nitzschia longissima,377
+SA_201708,Notophyllum foliosum,107
+SA_201708,Ostrea lurida,4
+SA_201708,Paracalanus sp. C AC-2013,7656
+SA_201708,Phaeocystis antarctica,169
+SA_201708,Phaeocystis globosa,491
+SA_201708,Pinnularia sp. 5 CS-2011,3923
+SA_201708,Platyias quadricornis,666
+SA_201708,Platynereis sp. CMC02,101
+SA_201708,Poteriospumella lacustris,29
+SA_201708,Proboscidactyla flavicirrata,56
+SA_201708,Protoperidinium cf. depressum,23
+SA_201708,Pseudocalanus newmani,4944
+SA_201708,Pseudochattonella farcimen,1376
+SA_201708,Pycnococcus provasolii,17
+SA_201708,Pythium tracheiphilum,197
+SA_201708,Rhizosolenia setigera,448
+SA_201708,Saprolegnia diclina,19
+SA_201708,Sarcodiotheca sp. 2gaudichaudii,22
+SA_201708,Saxidomus gigantea,5
+SA_201708,Sellaphora pupula,40
+SA_201708,Skeletonema japonicum,10858
+SA_201708,Stephanopyxis turris,6
+SA_201708,Thalassionema nitzschioides,380
+SA_201708,Thalassiosira nordenskioeldii,8987
+SA_201708,Triparma laevis,23
+SA_201708,NA,622263
+SA_201709,Asterionellopsis guyunusae,100
+SA_201709,Aurelia labiata,7
+SA_201709,Balanus balanus,3
+SA_201709,Bathycoccus prasinos,18156
+SA_201709,Brachionidae sp. SHYT150702c,22
+SA_201709,Calanus pacificus,440
+SA_201709,Callithamnion corymbosum,3
+SA_201709,Carcinonemertes errans,888
+SA_201709,Caulacanthus ustulatus,239
+SA_201709,Chaetoceros socialis,314
+SA_201709,Chattonella subsalsa,460
+SA_201709,Chordariaceae sp. 2 AP-2014,15
+SA_201709,Chrysochromulina sp. CCMP291,540
+SA_201709,Cliona chilensis,31
+SA_201709,Cylindrotheca closterium,11
+SA_201709,Cymatogaster aggregata,8
+SA_201709,Dictyocha speculum,482
+SA_201709,Ditylum brightwellii,48
+SA_201709,Emiliania huxleyi,2518
+SA_201709,Gracilaria vermiculophylla,70
+SA_201709,Harpacticoida sp. DNZ085,1419
+SA_201709,Hematodinium sp.,10
+SA_201709,Heterocapsa rotundata,21
+SA_201709,Hincksia hincksiae,245
+SA_201709,Homo sapiens,36
+SA_201709,Karlodinium veneficum,17
+SA_201709,Littorina plena,3
+SA_201709,Lottia paradigitalis,18
+SA_201709,Melanothamnus harveyi,19
+SA_201709,Metridia pacifica,43
+SA_201709,Micromonas pusilla,15093
+SA_201709,Minutocellus polymorphus,41052
+SA_201709,Mytilus trossulus,63
+SA_201709,Navicula cryptocephala,157
+SA_201709,Oncorhynchus keta,123
+SA_201709,Ostrea lurida,488
+SA_201709,Paracalanus sp. C AC-2013,5165
+SA_201709,Pedospumella sinomuralis,348
+SA_201709,Phaeocystis antarctica,34
+SA_201709,Phaeocystis globosa,541
+SA_201709,Poteriospumella lacustris,40
+SA_201709,Prasinoderma coloniale,14
+SA_201709,Pseudochattonella farcimen,372
+SA_201709,Pycnococcus provasolii,365
+SA_201709,Pythium tracheiphilum,52
+SA_201709,Rhizosolenia setigera,202
+SA_201709,Saxidomus gigantea,210
+SA_201709,Skeletonema dohrnii,2090
+SA_201709,Thalassionema nitzschioides,71
+SA_201709,Thalassiosira nordenskioeldii,4047
+SA_201709,Thalassiosira punctigera,234
+SA_201709,Triparma laevis,781
+SA_201709,NA,313991
+SA_201711,Asterionellopsis guyunusae,44
+SA_201711,Attheya longicornis,99
+SA_201711,Balanus balanus,9
+SA_201711,Balanus glandula,139
+SA_201711,Bathycoccus prasinos,4558
+SA_201711,Blastocladiella emersonii,7
+SA_201711,Bothrioneurum vejdovskyanum,4691
+SA_201711,Chaetoceros socialis,7340
+SA_201711,Chattonella subsalsa,192
+SA_201711,Chondracanthus exasperatus,55
+SA_201711,Chrysochromulina sp. CCMP291,65
+SA_201711,Chthamalus dalli,13
+SA_201711,Cladophialophora bantiana,26
+SA_201711,Clytia gracilis,246
+SA_201711,Coscinodiscus wailesii,73
+SA_201711,Cylindrotheca closterium,53
+SA_201711,Dictyocha speculum,562
+SA_201711,Ditylum brightwellii,1505
+SA_201711,Emiliania huxleyi,4502
+SA_201711,Emplectonema sp. 1 TCH-2015,703
+SA_201711,Euclymene sp. BOLD:ACG1020,317
+SA_201711,Haramonas dimorpha,1
+SA_201711,Hematodinium sp.,17
+SA_201711,Heterocapsa rotundata,28
+SA_201711,Hincksia hincksiae,20
+SA_201711,Homo sapiens,13
+SA_201711,Hypogymnia vittata,89
+SA_201711,Karlodinium veneficum,30
+SA_201711,Leitoscoloplos pugettensis CMC01,108
+SA_201711,Lichtheimia ramosa,18
+SA_201711,Microgadus proximus,67
+SA_201711,Micromonas pusilla,1404
+SA_201711,Minutocellus polymorphus,3775
+SA_201711,Navicula cryptocephala,300
+SA_201711,Navicula sp. BOLD:AAO6951,1
+SA_201711,Nitzschia cf. promare,741
+SA_201711,Oncorhynchus keta,8
+SA_201711,Paracalanus sp. C AC-2013,26
+SA_201711,Pedospumella sinomuralis,15
+SA_201711,Penicillium sclerotiorum,6
+SA_201711,Phaeocystis antarctica,4615
+SA_201711,Phaeocystis globosa,645
+SA_201711,Phytophthora megasperma,71
+SA_201711,Phytophthora taxon paludosa,18
+SA_201711,Plectus aquatilis,316
+SA_201711,Protoperidinium cf. depressum,190
+SA_201711,Pseudochattonella farcimen,3584
+SA_201711,Pycnococcus provasolii,999
+SA_201711,Pyropia haitanensis,6
+SA_201711,Pythium periplocum,68
+SA_201711,Pythium sp. CAL-2011c,296
+SA_201711,Pythium tracheiphilum,147
+SA_201711,Rhizosolenia setigera,5884
+SA_201711,Rhyacodrilus falciformis,76
+SA_201711,Saxidomus gigantea,78
+SA_201711,Skeletonema dohrnii,64
+SA_201711,Skeletonema japonicum,65
+SA_201711,Smithora naiadum,54
+SA_201711,Synchaetomella acerina,214
+SA_201711,Thalassiosira nordenskioeldii,2153
+SA_201711,Thalassiosira punctigera,105
+SA_201711,Triparma laevis,14
+SA_201711,NA,275523
+SA_201801,Acartia longiremis,46
+SA_201801,Anisolpidium rosenvingei,53
+SA_201801,Attheya longicornis,8
+SA_201801,Bathycoccus prasinos,93921
+SA_201801,Blastocladiella emersonii,64
+SA_201801,Caulacanthus ustulatus,1914
+SA_201801,Chaetoceros socialis,51
+SA_201801,Chattonella subsalsa,2244
+SA_201801,Chthamalus dalli,156
+SA_201801,Coscinodiscus wailesii,64
+SA_201801,Cylindrotheca closterium,24
+SA_201801,Dendraster excentricus,645
+SA_201801,Dictyocha speculum,121
+SA_201801,Ditylum brightwellii,1713
+SA_201801,Grammonema striatula,5
+SA_201801,Halichondria panicea,88
+SA_201801,Heterocapsa rotundata,3
+SA_201801,Hincksia hincksiae,3302
+SA_201801,Homo sapiens,75
+SA_201801,Lacuna vincta,187
+SA_201801,Lottia paradigitalis,226
+SA_201801,Melosira nummuloides,73
+SA_201801,Micromonas pusilla,62744
+SA_201801,Minutocellus polymorphus,37791
+SA_201801,Navicula cryptocephala,16
+SA_201801,Nitzschia cf. promare,259
+SA_201801,Paramoeba pemaquidensis,62
+SA_201801,Penicillium sclerotiorum,43
+SA_201801,Phaeocystis antarctica,44866
+SA_201801,Phaeocystis globosa,916
+SA_201801,Phytophthora multivora,7
+SA_201801,Plagiogramma sp. IAL-2014a,61
+SA_201801,Poteriospumella lacustris,50
+SA_201801,Pseudochattonella farcimen,47
+SA_201801,Pycnococcus provasolii,63
+SA_201801,Pyramimonas parkeae,85
+SA_201801,Pythium pachycaule,55
+SA_201801,Pythium tracheiphilum,134
+SA_201801,Rhizosolenia setigera,4208
+SA_201801,Rhyacodrilus falciformis,44
+SA_201801,Salispina spinosa,14
+SA_201801,Skeletonema dohrnii,107
+SA_201801,Skeletonema japonicum,20
+SA_201801,Stelligera rigida,120
+SA_201801,Synchaetomella acerina,31
+SA_201801,Thalassionema nitzschioides,274
+SA_201801,Thalassiosira nordenskioeldii,785
+SA_201801,Thalassiosira punctigera,17
+SA_201801,Triparma laevis,1304
+SA_201801,Wildemania sp. 5POR,12
+SA_201801,NA,99001
+SA_201803,Albugo candida,4
+SA_201803,Asterionellopsis guyunusae,43
+SA_201803,Attheya longicornis,1435
+SA_201803,Balanus balanus,8
+SA_201803,Balanus glandula,2941
+SA_201803,Bathycoccus prasinos,308
+SA_201803,Calanus pacificus,174
+SA_201803,Centropages abdominalis,12677
+SA_201803,Chaetoceros socialis,473
+SA_201803,Chaetoceros sp. MBTD-CMFRI-S062,23
+SA_201803,Chattonella subsalsa,548
+SA_201803,Chthamalus dalli,333
+SA_201803,Coscinodiscus wailesii,5
+SA_201803,Cylindrotheca closterium,154
+SA_201803,Cylindrotheca fusiformis,51
+SA_201803,Dictyocha speculum,16
+SA_201803,Ditylum brightwellii,2379
+SA_201803,Gomphonema clevei,10
+SA_201803,Homo sapiens,476
+SA_201803,Littorina plena,83
+SA_201803,Mazzaella splendens,89
+SA_201803,Membranipora membranacea,11
+SA_201803,Micromonas pusilla,53
+SA_201803,Nanomia cara,2
+SA_201803,Navicula cryptocephala,154
+SA_201803,Navicula ramosissima,36
+SA_201803,Navicula sp. BOLD:AAO6951,12
+SA_201803,Nereocystis luetkeana,333
+SA_201803,Nitzschia cf. promare,1548
+SA_201803,Oligocottus maculosus,478
+SA_201803,Paramoeba pemaquidensis,3
+SA_201803,Phaeocystis antarctica,1485
+SA_201803,Plagiogramma sp. IAL-2014a,48
+SA_201803,Poteriospumella lacustris,13
+SA_201803,Pseudo-nitzschia delicatissima,122
+SA_201803,Pseudo-nitzschia hasleana,75
+SA_201803,Pseudocalanus newmani,735
+SA_201803,Pseudochattonella farcimen,5
+SA_201803,Pyramimonas parkeae,10
+SA_201803,Pythium tracheiphilum,266
+SA_201803,Rhizosolenia setigera,233
+SA_201803,Skeletonema dohrnii,31
+SA_201803,Skeletonema japonicum,23846
+SA_201803,Stelligera rigida,236
+SA_201803,Synchaeta pectinata,28
+SA_201803,Thalassionema nitzschioides,741
+SA_201803,Thalassiosira nordenskioeldii,3466
+SA_201803,Thysanoessa raschii,8760
+SA_201803,NA,311985
+SA_201805,Acartia longiremis,374
+SA_201805,Aequorea sp. MW-2012,31
+SA_201805,Alitta sp. CMC01,352
+SA_201805,Anisolpidium ectocarpii,9
+SA_201805,Asterionellopsis glacialis,8
+SA_201805,Attheya longicornis,87
+SA_201805,Balanus balanus,257
+SA_201805,Balanus glandula,11896
+SA_201805,Calanus pacificus,485
+SA_201805,Caulacanthus ustulatus,9
+SA_201805,Centropages abdominalis,8573
+SA_201805,Chaetoceros socialis,845
+SA_201805,Chattonella subsalsa,1085
+SA_201805,Chondracanthus exasperatus,9
+SA_201805,Chordariaceae sp. 7 AP-2014,60
+SA_201805,Chrysaora melanaster,32
+SA_201805,Chrysochromulina sp. CCMP291,28
+SA_201805,Chthamalus dalli,332
+SA_201805,Coscinodiscus wailesii,2982
+SA_201805,Cylindrotheca closterium,185
+SA_201805,Cylindrotheca fusiformis,60
+SA_201805,Dendraster excentricus,99
+SA_201805,Dictyocha speculum,5526
+SA_201805,Ditylum brightwellii,47
+SA_201805,Dolichomastix tenuilepis,4
+SA_201805,Emplectonema sp. 1 TCH-2015,22
+SA_201805,Gracilaria vermiculophylla,66
+SA_201805,Halichondria panicea,11
+SA_201805,Harpacticoida sp. DNZ085,6
+SA_201805,Hemigrapsus oregonensis,14
+SA_201805,Lacuna vincta,15
+SA_201805,Leuckartiara octona,138
+SA_201805,Lichtheimia ramosa,154
+SA_201805,Littorina plena,362
+SA_201805,Membranipora membranacea,198
+SA_201805,Metridia pacifica,1753
+SA_201805,Micromonas pusilla,5844
+SA_201805,Minutocellus polymorphus,2297
+SA_201805,Navicula cryptocephala,107
+SA_201805,Navicula ramosissima,65
+SA_201805,Navicula sp. BOLD:AAO6951,87
+SA_201805,Nereis vexillosa,163
+SA_201805,Nitzschia cf. promare,74
+SA_201805,Onchidoris bilamellata,8
+SA_201805,Oncorhynchus keta,508
+SA_201805,Ostrea lurida,212
+SA_201805,Paracalanus sp. C AC-2013,171
+SA_201805,Paramoeba pemaquidensis,13
+SA_201805,Pedospumella sinomuralis,40
+SA_201805,Phacellophora camtschatica,1156
+SA_201805,Phyllodoce medipapillata,4
+SA_201805,Pinnularia sp. 5 CS-2011,432
+SA_201805,Plagiogramma sp. IAL-2014a,90
+SA_201805,Protoperidinium cf. depressum,103
+SA_201805,Pseudocalanus newmani,1303
+SA_201805,Pycnococcus provasolii,20
+SA_201805,Pyropia haitanensis,266
+SA_201805,Pythium pachycaule,100
+SA_201805,Pythium tracheiphilum,67
+SA_201805,Ralfsioid sp. 4GWS,13
+SA_201805,Rhizosolenia setigera,423
+SA_201805,Rhodotorula taiwanensis,47
+SA_201805,Scolelepis squamata,9606
+SA_201805,Sellaphora pupula,8
+SA_201805,Skeletonema japonicum,97
+SA_201805,Stephanopyxis turris,11
+SA_201805,Thalassionema nitzschioides,211
+SA_201805,Thalassiosira nordenskioeldii,14091
+SA_201805,Thalassiosira punctigera,59
+SA_201805,Triparma laevis,618
+SA_201805,Wildemania amplissima,156
+SA_201805,NA,215239
+SA_201807,Acartia longiremis,3525
+SA_201807,Aphanomyces sp. BOLD:AAO9952,3
+SA_201807,Asterionellopsis guyunusae,58
+SA_201807,Attheya longicornis,7
+SA_201807,Bathycoccus prasinos,8618
+SA_201807,Calanus pacificus,2661
+SA_201807,Chaetoceros socialis,372
+SA_201807,Chaetoceros sp. MBTD-CMFRI-S062,83
+SA_201807,Chattonella subsalsa,14
+SA_201807,Chondracanthus exasperatus,6
+SA_201807,Cliona chilensis,427
+SA_201807,Coscinodiscus wailesii,643
+SA_201807,Cylindrotheca closterium,151
+SA_201807,Cylindrotheca fusiformis,135
+SA_201807,Dendraster excentricus,74
+SA_201807,Dictyocha speculum,428
+SA_201807,Ditylum brightwellii,91
+SA_201807,Emiliania huxleyi,23318
+SA_201807,Gracilaria vermiculophylla,349
+SA_201807,Heterocapsa rotundata,121
+SA_201807,Karlodinium veneficum,6
+SA_201807,Membranipora membranacea,265
+SA_201807,Micromonas pusilla,14470
+SA_201807,Minutocellus polymorphus,5920
+SA_201807,Navicula cryptocephala,14
+SA_201807,Navicula glaciei,28
+SA_201807,Nitzschia cf. promare,155
+SA_201807,Nitzschia longissima,148
+SA_201807,Paracalanus sp. C AC-2013,4680
+SA_201807,Penicillium rubens,2383
+SA_201807,Penicillium sclerotiorum,7
+SA_201807,Phaeocystis antarctica,1080
+SA_201807,Phaeocystis globosa,44
+SA_201807,Phytophthora multivora,4
+SA_201807,Poteriospumella lacustris,60
+SA_201807,Pseudo-nitzschia delicatissima,44
+SA_201807,Pseudo-nitzschia hasleana,972
+SA_201807,Pseudocalanus newmani,6727
+SA_201807,Pseudochattonella farcimen,455
+SA_201807,Pycnococcus provasolii,655
+SA_201807,Pythium tracheiphilum,183
+SA_201807,Rhizosolenia setigera,1890
+SA_201807,Rhodotorula taiwanensis,94
+SA_201807,Ruditapes philippinarum,67
+SA_201807,Skeletonema cf. pseudocostatum,48
+SA_201807,Skeletonema dohrnii,5
+SA_201807,Skeletonema japonicum,148
+SA_201807,Styela gibbsii,167
+SA_201807,Thalassionema nitzschioides,8770
+SA_201807,Thalassiosira nordenskioeldii,7528
+SA_201807,Triparma laevis,98
+SA_201807,NA,140359
+TR_201703,Balanus glandula,14651
+TR_201703,Barantolla americana CMC01,34
+TR_201703,Bathycoccus prasinos,264357
+TR_201703,Chaetoceros socialis,7
+TR_201703,Chattonella subsalsa,512
+TR_201703,Chordariaceae sp. 7 AP-2014,9
+TR_201703,Chrysochromulina sp. CCMP291,43
+TR_201703,Chthamalus dalli,2431
+TR_201703,Coscinodiscus wailesii,36
+TR_201703,Dictyocha speculum,938
+TR_201703,Ectocarpus siliculosus,81
+TR_201703,Emiliania huxleyi,145
+TR_201703,Haramonas dimorpha,21
+TR_201703,Hematodinium sp.,179
+TR_201703,Heterocapsa rotundata,7
+TR_201703,Homo sapiens,202
+TR_201703,Karlodinium veneficum,24
+TR_201703,Megacyclops viridis,5
+TR_201703,Micromonas pusilla,75444
+TR_201703,Minutocellus polymorphus,2542
+TR_201703,Navicula ramosissima,22
+TR_201703,Nereis vexillosa,3
+TR_201703,Peronospora violae,37
+TR_201703,Phaeocystis antarctica,144026
+TR_201703,Phaeocystis globosa,35
+TR_201703,Phoronopsis harmeri,701
+TR_201703,Pisaster ochraceus,9
+TR_201703,Platynereis sp. CMC02,3
+TR_201703,Poteriospumella lacustris,4626
+TR_201703,Pseudochattonella farcimen,40
+TR_201703,Pythium sp. CAL-2011c,12
+TR_201703,Pythium tracheiphilum,34
+TR_201703,Rhizosolenia setigera,1017
+TR_201703,Ruditapes philippinarum,5
+TR_201703,Saxidomus gigantea,3
+TR_201703,Scopalina ruetzleri,5
+TR_201703,Skeletonema cf. pseudocostatum,2
+TR_201703,Skeletonema dohrnii,33
+TR_201703,Stelligera rigida,84
+TR_201703,Thalassionema nitzschioides,24
+TR_201703,Thalassiosira nordenskioeldii,544
+TR_201703,Triparma laevis,48911
+TR_201703,NA,62449
+TR_201705,Acartia longiremis,44
+TR_201705,Aequorea sp. MW-2012,322
+TR_201705,Aglaja ocelligera,345
+TR_201705,Albugo candida,4
+TR_201705,Alitta sp. CMC01,132
+TR_201705,Amphicaryon earnesti,7
+TR_201705,Apodachlya minima,10
+TR_201705,Asterionellopsis glacialis,15
+TR_201705,Asterionellopsis guyunusae,59
+TR_201705,Attheya longicornis,2175
+TR_201705,Balanus balanus,57
+TR_201705,Balanus glandula,13
+TR_201705,Bathycoccus prasinos,1329
+TR_201705,Brachionidae sp. SHYT150702c,676
+TR_201705,Calanus pacificus,860
+TR_201705,Caulacanthus ustulatus,20
+TR_201705,Centropages abdominalis,54204
+TR_201705,Chaetoceros socialis,9707
+TR_201705,Chattonella subsalsa,54
+TR_201705,Chrysochromulina sp. CCMP291,756
+TR_201705,Chthamalus dalli,824
+TR_201705,Cliona chilensis,596
+TR_201705,Coscinodiscus wailesii,106
+TR_201705,Cylindrotheca closterium,917
+TR_201705,Cymatogaster aggregata,7
+TR_201705,Cymbomonas tetramitiformis,33
+TR_201705,Dendraster excentricus,43
+TR_201705,Dictyocha speculum,348
+TR_201705,Ditylum brightwellii,4406
+TR_201705,Dolichomastix tenuilepis,137
+TR_201705,Emiliania huxleyi,63235
+TR_201705,Gelidiophycus freshwateri,47
+TR_201705,Gomphonema clevei,17
+TR_201705,Gracilaria vermiculophylla,116
+TR_201705,Halichondria panicea,25
+TR_201705,Haramonas dimorpha,121
+TR_201705,Harpacticoida sp. DNZ085,40
+TR_201705,Hediste diadroma,170
+TR_201705,Heterosigma akashiwo,4
+TR_201705,Homo sapiens,68
+TR_201705,Leathesia marina,3
+TR_201705,Leuckartiara octona,110
+TR_201705,Lichtheimia ramosa,7
+TR_201705,Loxothylacus panopaei,4
+TR_201705,Micromonas pusilla,122111
+TR_201705,Minutocellus polymorphus,6871
+TR_201705,Monocorophium acherusicum,162
+TR_201705,Mytilus trossulus,826
+TR_201705,Nanomia cara,10
+TR_201705,Navicula cryptocephala,39
+TR_201705,Nitzschia cf. promare,30
+TR_201705,Nitzschia longissima,112
+TR_201705,Ostrea lurida,1665
+TR_201705,Paracalanus sp. C AC-2013,310
+TR_201705,Pedospumella sinomuralis,15
+TR_201705,Pennaria disticha,13
+TR_201705,Petalonia fascia,6
+TR_201705,Phaeocystis globosa,29
+TR_201705,Phytophthora sp. 2 EEO-2011,18
+TR_201705,Pinnularia sp. 5 CS-2011,6
+TR_201705,Plagiogramma sp. IAL-2014a,4
+TR_201705,Platynereis sp. CMC02,10
+TR_201705,Porichthys notatus,16104
+TR_201705,Prasinoderma coloniale,448
+TR_201705,Protoperidinium cf. depressum,20
+TR_201705,Pseudo-nitzschia delicatissima,36
+TR_201705,Pseudo-nitzschia hasleana,65
+TR_201705,Pseudochattonella farcimen,268
+TR_201705,Pythium tracheiphilum,44
+TR_201705,Rhinogobiops nicholsii,114
+TR_201705,Rhizosolenia setigera,615
+TR_201705,Saprolegnia diclina,11894
+TR_201705,Schistomeringos longicornis,67
+TR_201705,Skeletonema dohrnii,21
+TR_201705,Skeletonema japonicum,871
+TR_201705,Synchaeta pectinata,87
+TR_201705,Thalassionema nitzschioides,17
+TR_201705,Thalassiosira nordenskioeldii,2587
+TR_201705,Thalassiosira punctigera,80
+TR_201705,Thecamonas trahens,8
+TR_201705,Triparma laevis,2294
+TR_201705,NA,358688
+TR_201706,Asterionellopsis guyunusae,177
+TR_201706,Balanus balanus,5453
+TR_201706,Balanus glandula,918
+TR_201706,Bathycoccus prasinos,24568
+TR_201706,Blastocladiella emersonii,643
+TR_201706,Calanus pacificus,22996
+TR_201706,Callithamnion corymbosum,34
+TR_201706,Caulacanthus ustulatus,1039
+TR_201706,Chaetoceros socialis,76
+TR_201706,Chaetoceros sp. MBTD-CMFRI-S062,184
+TR_201706,Chattonella subsalsa,1229
+TR_201706,Chrysochromulina sp. CCMP291,689
+TR_201706,Chthamalus dalli,1132
+TR_201706,Crassostrea gigas,337
+TR_201706,Crepipatella lingulata,4873
+TR_201706,Cylindrotheca closterium,505
+TR_201706,Cymbomonas tetramitiformis,135
+TR_201706,Dictyocha speculum,5311
+TR_201706,Ditylum brightwellii,773
+TR_201706,Dolichomastix tenuilepis,89
+TR_201706,Emiliania huxleyi,6709
+TR_201706,Gelidiophycus freshwateri,88
+TR_201706,Gelidium coulteri,148
+TR_201706,Gomphonema clevei,6
+TR_201706,Gracilaria vermiculophylla,479
+TR_201706,Haptoglossa sp. DM2 4/12,3
+TR_201706,Haramonas dimorpha,74
+TR_201706,Hematodinium sp.,69
+TR_201706,Lichtheimia ramosa,257
+TR_201706,Lottia paradigitalis,892
+TR_201706,Loxothylacus panopaei,15461
+TR_201706,Micromonas pusilla,78863
+TR_201706,Minutocellus polymorphus,4502
+TR_201706,Mytilus trossulus,11868
+TR_201706,Navicula cryptocephala,43
+TR_201706,Nuttallia olivacea,287
+TR_201706,Ostrea lurida,23484
+TR_201706,Paracalanus sp. C AC-2013,6185
+TR_201706,Pedospumella sinomuralis,100
+TR_201706,Penicillium rubens,4
+TR_201706,Phaeocystis antarctica,3359
+TR_201706,Plagiogramma sp. IAL-2014a,8
+TR_201706,Porichthys notatus,3780
+TR_201706,Poteriospumella lacustris,68
+TR_201706,Prasinoderma coloniale,2082
+TR_201706,Protoperidinium cf. depressum,8
+TR_201706,Pseudocalanus newmani,5
+TR_201706,Pseudochattonella farcimen,8537
+TR_201706,Pythium tracheiphilum,144
+TR_201706,Rhizosolenia setigera,2024
+TR_201706,Saxidomus gigantea,6
+TR_201706,Skeletonema dohrnii,2859
+TR_201706,Skeletonema japonicum,139
+TR_201706,Thalassiosira nordenskioeldii,9450
+TR_201706,Triparma laevis,1742
+TR_201706,NA,533552
+TR_201707,Balanus glandula,6
+TR_201707,Barantolla americana CMC01,6
+TR_201707,Bathycoccus prasinos,17502
+TR_201707,Blastocladiella emersonii,7
+TR_201707,Botrylloides violaceus,25
+TR_201707,Ceramium sp. 3Cal,264
+TR_201707,Chaetoceros socialis,38
+TR_201707,Chrysochromulina sp. CCMP291,5
+TR_201707,Crassostrea gigas,18
+TR_201707,Cylindrotheca closterium,18554
+TR_201707,Emiliania huxleyi,290000
+TR_201707,Gelidiophycus freshwateri,20
+TR_201707,Gracilaria vermiculophylla,6
+TR_201707,Halichondria panicea,6
+TR_201707,Hematodinium sp.,30
+TR_201707,Leucocryptos marina,6
+TR_201707,Littorina scutulata,4
+TR_201707,Loxothylacus panopaei,302
+TR_201707,Micromonas pusilla,67027
+TR_201707,Minutocellus polymorphus,247735
+TR_201707,Mytilus trossulus,7
+TR_201707,Navicula cryptocephala,1239
+TR_201707,Nitzschia cf. promare,9
+TR_201707,Nitzschia longissima,450
+TR_201707,Ostrea lurida,7296
+TR_201707,Paracalanus sp. C AC-2013,546
+TR_201707,Platynereis sp. CMC02,6
+TR_201707,Podosira stelligera,143
+TR_201707,Porichthys notatus,205
+TR_201707,Prasinoderma coloniale,1069
+TR_201707,Pseudochattonella farcimen,396
+TR_201707,Ruditapes philippinarum,890
+TR_201707,Saprolegnia diclina,49
+TR_201707,Thalassiosira nordenskioeldii,10
+TR_201707,Thalassiosira punctigera,461
+TR_201707,Triparma laevis,641
+TR_201707,NA,518331
+TR_201708,Balanus glandula,53
+TR_201708,Barantolla americana CMC01,5
+TR_201708,Bathycoccus prasinos,134428
+TR_201708,Callithamnion corymbosum,6
+TR_201708,Caulacanthus ustulatus,42
+TR_201708,Chrysochromulina sp. CCMP291,10
+TR_201708,Coscinodiscus wailesii,302
+TR_201708,Crassostrea gigas,154
+TR_201708,Cylindrotheca closterium,385
+TR_201708,Cymbomonas tetramitiformis,350
+TR_201708,Dictyocha speculum,4
+TR_201708,Dolichomastix tenuilepis,213
+TR_201708,Emiliania huxleyi,670
+TR_201708,Gallus gallus,8
+TR_201708,Gracilaria vermiculophylla,41
+TR_201708,Harpacticoida sp. DNZ085,265
+TR_201708,Hemigrapsus oregonensis,7
+TR_201708,Hemipodia simplex,22
+TR_201708,Heterocapsa rotundata,35
+TR_201708,Hincksia hincksiae,3
+TR_201708,Homo sapiens,30
+TR_201708,Lichtheimia ramosa,38
+TR_201708,Littorina plena,545
+TR_201708,Micromonas pusilla,200925
+TR_201708,Minutocellus polymorphus,12087
+TR_201708,Navicula cryptocephala,215
+TR_201708,Ostrea lurida,42
+TR_201708,Paracalanus sp. C AC-2013,2964
+TR_201708,Porichthys notatus,44
+TR_201708,Poteriospumella lacustris,100
+TR_201708,Pseudochattonella farcimen,920
+TR_201708,Rhizosolenia setigera,46
+TR_201708,Ruditapes philippinarum,42
+TR_201708,Saprolegnia diclina,314
+TR_201708,Skeletonema dohrnii,15
+TR_201708,Stiliger fuscovittatus,102
+TR_201708,Thalassiosira nordenskioeldii,65
+TR_201708,Thalassiosira punctigera,17
+TR_201708,Triparma laevis,19
+TR_201708,NA,630006
+TR_201709,Albugo candida,5
+TR_201709,Asterionellopsis guyunusae,1107
+TR_201709,Balanus glandula,1504
+TR_201709,Bathycoccus prasinos,39231
+TR_201709,Brachionidae sp. SHYT150702c,9
+TR_201709,Cafeteria roenbergensis,158
+TR_201709,Caulacanthus ustulatus,817
+TR_201709,Chaetoceros socialis,523
+TR_201709,Chordariaceae sp. 2 AP-2014,154
+TR_201709,Chrysochromulina sp. CCMP291,7
+TR_201709,Cliona chilensis,829
+TR_201709,Cryptocotyle lingua,166
+TR_201709,Cylindrotheca closterium,1267
+TR_201709,Cymatogaster aggregata,164
+TR_201709,Cymbomonas tetramitiformis,319
+TR_201709,Dendraster excentricus,173
+TR_201709,Emiliania huxleyi,6189
+TR_201709,Gracilaria vermiculophylla,13959
+TR_201709,Halicyclops itohi,335
+TR_201709,Haptoglossa zoospora,13
+TR_201709,Harpacticoida sp. DNZ085,7449
+TR_201709,Homo sapiens,647
+TR_201709,Leuckartiara octona,23
+TR_201709,Leucocryptos marina,157
+TR_201709,Littorina plena,1343
+TR_201709,Lottia paradigitalis,174
+TR_201709,Micromonas pusilla,34294
+TR_201709,Minutocellus polymorphus,102882
+TR_201709,Monocorophium acherusicum,7
+TR_201709,Muggiaea atlantica,12
+TR_201709,Mytilus trossulus,55
+TR_201709,Nanomia cara,13
+TR_201709,Navicula cryptocephala,42
+TR_201709,Nuttallia olivacea,16
+TR_201709,Paracalanus sp. C AC-2013,5
+TR_201709,Pedospumella sinomuralis,75
+TR_201709,Petalonia fascia,50
+TR_201709,Phaeocystis antarctica,5
+TR_201709,Prasinoderma coloniale,59
+TR_201709,Pseudochattonella farcimen,283
+TR_201709,Pycnococcus provasolii,52
+TR_201709,Pythium tracheiphilum,293
+TR_201709,Ruditapes philippinarum,5870
+TR_201709,Skeletonema dohrnii,83
+TR_201709,Thalassiosira nordenskioeldii,34
+TR_201709,Triparma laevis,2141
+TR_201709,NA,271606
+TR_201711,Articulospora tetracladia,29
+TR_201711,Balanus glandula,147
+TR_201711,Bathycoccus prasinos,20103
+TR_201711,Botrylloides violaceus,22
+TR_201711,Brachionidae sp. SHYT150702c,28
+TR_201711,Callithamnion corymbosum,232
+TR_201711,Caulacanthus ustulatus,475
+TR_201711,Chaetoceros socialis,8206
+TR_201711,Chattonella subsalsa,296
+TR_201711,Chordariaceae sp. 2 AP-2014,6
+TR_201711,Chrysochromulina sp. CCMP291,544
+TR_201711,Cliona chilensis,24
+TR_201711,Cylindrotheca closterium,421
+TR_201711,Dictyocha speculum,119
+TR_201711,Ditylum brightwellii,626
+TR_201711,Emiliania huxleyi,5920
+TR_201711,Gelidiophycus freshwateri,32
+TR_201711,Harpacticoida sp. DNZ085,4
+TR_201711,Hematodinium sp.,30
+TR_201711,Hincksia hincksiae,225
+TR_201711,Homo sapiens,28
+TR_201711,Hypogymnia vittata,1802
+TR_201711,Karlodinium veneficum,68
+TR_201711,Leitoscoloplos pugettensis CMC01,108
+TR_201711,Lichtheimia ramosa,15
+TR_201711,Littorina plena,3
+TR_201711,Melosira nummuloides,15721
+TR_201711,Micromonas pusilla,3567
+TR_201711,Minutocellus polymorphus,6112
+TR_201711,Muggiaea atlantica,179
+TR_201711,Mytilus trossulus,55
+TR_201711,Navicula cryptocephala,26
+TR_201711,Ostrea lurida,443
+TR_201711,Paracalanus sp. C AC-2013,88
+TR_201711,Pedospumella sinomuralis,6
+TR_201711,Phaeocystis antarctica,11962
+TR_201711,Phaeocystis globosa,953
+TR_201711,Phytophthora megasperma,1646
+TR_201711,Phytophthora taxon paludosa,68
+TR_201711,Poteriospumella lacustris,110
+TR_201711,Protoperidinium cf. depressum,228
+TR_201711,Pseudochattonella farcimen,96
+TR_201711,Pycnococcus provasolii,3297
+TR_201711,Pythium pachycaule,3
+TR_201711,Pythium sp. CAL-2011c,7
+TR_201711,Pythium tracheiphilum,220
+TR_201711,Rhizosolenia setigera,343
+TR_201711,Ruditapes philippinarum,111
+TR_201711,Skeletonema dohrnii,260
+TR_201711,Skeletonema japonicum,39
+TR_201711,Styela gibbsii,5
+TR_201711,Thalassiosira nordenskioeldii,1809
+TR_201711,Thalassiosira punctigera,1148
+TR_201711,Triparma laevis,431
+TR_201711,NA,281772
+TR_201801,Balanus balanus,9553
+TR_201801,Balanus glandula,396
+TR_201801,Bathycoccus prasinos,125331
+TR_201801,Centropages abdominalis,3517
+TR_201801,Chaetoceros socialis,58
+TR_201801,Chattonella subsalsa,1291
+TR_201801,Chthamalus dalli,9
+TR_201801,Dendraster excentricus,84
+TR_201801,Dictyocha speculum,8091
+TR_201801,Ditylum brightwellii,316
+TR_201801,Gelidiophycus freshwateri,146
+TR_201801,Hemigrapsus oregonensis,103
+TR_201801,Heterocapsa rotundata,1660
+TR_201801,Hincksia hincksiae,3208
+TR_201801,Homo sapiens,159
+TR_201801,Littorina plena,1751
+TR_201801,Lottia paradigitalis,287
+TR_201801,Melosira nummuloides,6111
+TR_201801,Micromonas pusilla,106953
+TR_201801,Minutocellus polymorphus,30311
+TR_201801,Muggiaea atlantica,4
+TR_201801,Nitzschia cf. recta RT-2009,52
+TR_201801,Paracalanus sp. C AC-2013,43
+TR_201801,Phaeocystis antarctica,15628
+TR_201801,Phaeocystis globosa,556
+TR_201801,Pycnococcus provasolii,247
+TR_201801,Pyramimonas parkeae,40
+TR_201801,Pythium pachycaule,32
+TR_201801,Pythium tracheiphilum,67
+TR_201801,Rhizosolenia setigera,76
+TR_201801,Skeletonema dohrnii,42
+TR_201801,Stelligera rigida,258
+TR_201801,Thalassionema nitzschioides,383
+TR_201801,Thalassiosira nordenskioeldii,835
+TR_201801,Thalassiosira punctigera,6
+TR_201801,Triparma laevis,1287
+TR_201801,NA,69410
+TR_201803,Acartia longiremis,93
+TR_201803,Albugo candida,5
+TR_201803,Amynthas sp. FJ201111-06,196
+TR_201803,Attheya longicornis,298
+TR_201803,Balanus balanus,1541
+TR_201803,Balanus glandula,7761
+TR_201803,Brachionidae sp. SHYT150702c,3
+TR_201803,Calanus pacificus,6206
+TR_201803,Caulacanthus ustulatus,12
+TR_201803,Centropages abdominalis,15517
+TR_201803,Chaetoceros socialis,404
+TR_201803,Chaetoceros sp. MBTD-CMFRI-S045,55
+TR_201803,Chattonella subsalsa,190
+TR_201803,Chthamalus dalli,9586
+TR_201803,Clunio tsushimensis,21832
+TR_201803,Coscinodiscus wailesii,297
+TR_201803,Crassostrea gigas,6
+TR_201803,Cylindrotheca closterium,279
+TR_201803,Dictyocha speculum,126
+TR_201803,Ditylum brightwellii,599
+TR_201803,Gelidiophycus freshwateri,78
+TR_201803,Gracilaria vermiculophylla,337
+TR_201803,Harmothoe fragilis,4146
+TR_201803,Hematodinium sp.,188
+TR_201803,Homo sapiens,735
+TR_201803,Lichtheimia ramosa,31
+TR_201803,Littorina plena,30696
+TR_201803,Lottia paradigitalis,243
+TR_201803,Melanosiphon intestinalis,23
+TR_201803,Melosira nummuloides,382
+TR_201803,Membranipora membranacea,18
+TR_201803,Micromonas pusilla,5
+TR_201803,Minutocellus polymorphus,389
+TR_201803,Muggiaea atlantica,413
+TR_201803,Navicula cryptocephala,79
+TR_201803,Navicula sp. BOLD:AAO6949,5
+TR_201803,Nitzschia cf. promare,26
+TR_201803,Nitzschia cf. recta RT-2009,2
+TR_201803,Onchidoris bilamellata,84
+TR_201803,Paramoeba pemaquidensis,31
+TR_201803,Parvamoeba rugata,28
+TR_201803,Pedospumella sinomuralis,33
+TR_201803,Petalonia fascia,253
+TR_201803,Phaeocystis antarctica,630
+TR_201803,Phaeocystis globosa,7
+TR_201803,Platynereis sp. CMC02,9
+TR_201803,Podosira stelligera,436
+TR_201803,Polynoidae sp. C_0250,3585
+TR_201803,Poteriospumella lacustris,21
+TR_201803,Protoperidinium cf. depressum,17
+TR_201803,Pseudo-nitzschia delicatissima,28
+TR_201803,Pseudocalanus newmani,126
+TR_201803,Pythium pachycaule,14
+TR_201803,Pythium tracheiphilum,209
+TR_201803,Rhizosolenia setigera,2385
+TR_201803,Scopalina ruetzleri,62
+TR_201803,Scytosiphon lomentaria,14
+TR_201803,Skeletonema japonicum,616
+TR_201803,Synchaeta pectinata,445
+TR_201803,Thalassionema nitzschioides,99
+TR_201803,Thalassiosira nordenskioeldii,2630
+TR_201803,Thalassiosira punctigera,203
+TR_201803,Triparma laevis,95
+TR_201803,NA,246991
+TR_201805,Aequorea sp. MW-2012,130
+TR_201805,Albugo candida,15
+TR_201805,Anisolpidium rosenvingei,244
+TR_201805,Attheya longicornis,31
+TR_201805,Bathycoccus prasinos,413
+TR_201805,Botrylloides violaceus,9
+TR_201805,Calanus pacificus,66
+TR_201805,Callithamnion corymbosum,19
+TR_201805,Caulacanthus ustulatus,21
+TR_201805,Ceramium sp. 3Cal,82
+TR_201805,Chattonella subsalsa,61
+TR_201805,Chondracanthus exasperatus,153
+TR_201805,Chrysochromulina sp. CCMP291,16
+TR_201805,Cliona chilensis,43
+TR_201805,Clytia languida,5
+TR_201805,Coscinodiscus wailesii,1023
+TR_201805,Cylindrotheca closterium,2649
+TR_201805,Dictyocha speculum,158
+TR_201805,Ditylum brightwellii,94
+TR_201805,Ectocarpus siliculosus,87
+TR_201805,Emiliania huxleyi,1139
+TR_201805,Evasterias troschelii,4
+TR_201805,Gomphonema parvulum,454
+TR_201805,Gracilaria vermiculophylla,8
+TR_201805,Harpacticoida sp. DNZ085,10021
+TR_201805,Leucocryptos marina,8
+TR_201805,Lichtheimia ramosa,71
+TR_201805,Littorina plena,5055
+TR_201805,Littorina scutulata,177
+TR_201805,Lomentaria hakodatensis,33
+TR_201805,Lottia paradigitalis,392
+TR_201805,Mayamaea permitis,46
+TR_201805,Melosira nummuloides,101
+TR_201805,Micromonas pusilla,8876
+TR_201805,Minutocellus polymorphus,15004
+TR_201805,Mytilus trossulus,9
+TR_201805,Navicula cryptocephala,287
+TR_201805,Navicula ramosissima,312
+TR_201805,Nitzschia cf. promare,1027
+TR_201805,Nitzschia cf. recta RT-2009,131
+TR_201805,Nitzschia longissima,359
+TR_201805,Nuttallia olivacea,30
+TR_201805,Obelia bidentata,32
+TR_201805,Orthopyxis integra,16
+TR_201805,Ostrea lurida,63535
+TR_201805,Paracalanus sp. C AC-2013,122
+TR_201805,Paramoeba pemaquidensis,32
+TR_201805,Parvamoeba rugata,41
+TR_201805,Pectinaria granulata CMC01,972
+TR_201805,Pedospumella sinomuralis,93
+TR_201805,Penicillium rubens,8
+TR_201805,Pennaria disticha,19
+TR_201805,Petalonia fascia,13
+TR_201805,Phacellophora camtschatica,62
+TR_201805,Pinnularia sp. 5 CS-2011,8242
+TR_201805,Pinnularia subanglica,25
+TR_201805,Pisaster ochraceus,28573
+TR_201805,Placoneis sp. WJS-2015a,9
+TR_201805,Platynereis sp. CMC02,152
+TR_201805,Podosira stelligera,1229
+TR_201805,Porichthys notatus,13738
+TR_201805,Poteriospumella lacustris,6
+TR_201805,Pseudochattonella farcimen,649
+TR_201805,Pycnococcus provasolii,72
+TR_201805,Rhinogobiops nicholsii,655
+TR_201805,Rhizosolenia setigera,314
+TR_201805,Saprolegnia diclina,490
+TR_201805,Sarcodiotheca sp. 2gaudichaudii,22
+TR_201805,Scopalina ruetzleri,31
+TR_201805,Sellaphora pupula,484
+TR_201805,Skeletonema dohrnii,32
+TR_201805,Thalassionema nitzschioides,98
+TR_201805,Thalassiosira nordenskioeldii,1592
+TR_201805,Thalassiosira punctigera,4841
+TR_201805,Triparma laevis,1489
+TR_201805,NA,189022
+TR_201807,Acremonium cf. chrysogenum DAOM 226667,52
+TR_201807,Bathycoccus prasinos,12652
+TR_201807,Botrylloides violaceus,16
+TR_201807,Calanus pacificus,747
+TR_201807,Caulacanthus ustulatus,125
+TR_201807,Ceramium sp. 3Cal,3
+TR_201807,Chaetoceros socialis,16
+TR_201807,Chrysochromulina sp. CCMP291,56
+TR_201807,Chthamalus dalli,39
+TR_201807,Cliona chilensis,95
+TR_201807,Clunio tsushimensis,50
+TR_201807,Crassostrea gigas,375
+TR_201807,Cylindrotheca closterium,441
+TR_201807,Cylindrotheca fusiformis,3
+TR_201807,Cymbomonas tetramitiformis,190
+TR_201807,Emiliania huxleyi,5412
+TR_201807,Gelidiophycus freshwateri,5
+TR_201807,Gracilaria vermiculophylla,177
+TR_201807,Harpacticoida sp. DNZ085,44
+TR_201807,Hemigrapsus oregonensis,9
+TR_201807,Heterocapsa rotundata,20
+TR_201807,Homo sapiens,36
+TR_201807,Kellia porculus,36
+TR_201807,Lichtheimia ramosa,63
+TR_201807,Littorina plena,57
+TR_201807,Lottia paradigitalis,171
+TR_201807,Loxothylacus panopaei,113
+TR_201807,Martensia jejuensis,11
+TR_201807,Membranipora membranacea,53
+TR_201807,Micromonas pusilla,28789
+TR_201807,Minutocellus polymorphus,35948
+TR_201807,Mytilus trossulus,40
+TR_201807,Navicula cryptocephala,68
+TR_201807,Nitzschia cf. promare,20
+TR_201807,Ostrea lurida,487
+TR_201807,Paracalanus sp. C AC-2013,6769
+TR_201807,Paramoeba pemaquidensis,20
+TR_201807,Penicillium rubens,290
+TR_201807,Penicillium sclerotiorum,35
+TR_201807,Phaeocystis antarctica,62
+TR_201807,Phaeocystis globosa,46
+TR_201807,Platynereis sp. CMC02,6
+TR_201807,Podosira stelligera,125
+TR_201807,Porichthys notatus,460
+TR_201807,Poteriospumella lacustris,1000
+TR_201807,Prasinoderma coloniale,685
+TR_201807,Protoperidinium cf. depressum,9
+TR_201807,Pseudo-nitzschia hasleana,71
+TR_201807,Pseudocalanus newmani,266
+TR_201807,Pseudochattonella farcimen,231
+TR_201807,Pycnococcus provasolii,6643
+TR_201807,Pythium sp. CAL-2011c,26
+TR_201807,Rhizosolenia setigera,156
+TR_201807,Ruditapes philippinarum,357
+TR_201807,Saprolegnia diclina,22
+TR_201807,Styela gibbsii,83
+TR_201807,Thalassionema nitzschioides,769
+TR_201807,Thalassiosira nordenskioeldii,337
+TR_201807,Thalassiosira punctigera,27
+TR_201807,Triparma laevis,39
+TR_201807,NA,261622
+TW_201703,Alitta sp. CMC01,70
+TW_201703,Balanus balanus,229
+TW_201703,Balanus glandula,6708
+TW_201703,Barantolla americana CMC01,599
+TW_201703,Bathycoccus prasinos,635282
+TW_201703,Caulacanthus ustulatus,92
+TW_201703,Centropages abdominalis,73
+TW_201703,Chaetoceros socialis,564
+TW_201703,Chattonella subsalsa,4789
+TW_201703,Chordariaceae sp. 7 AP-2014,3570
+TW_201703,Chrysochromulina sp. CCMP291,5
+TW_201703,Coscinodiscus wailesii,12
+TW_201703,Cylindrotheca closterium,82
+TW_201703,Dictyocha speculum,15056
+TW_201703,Emiliania huxleyi,20
+TW_201703,Emplectonema sp. 1 TCH-2015,5
+TW_201703,Hemigrapsus oregonensis,6
+TW_201703,Heterocapsa rotundata,2666
+TW_201703,Hincksia hincksiae,61
+TW_201703,Homo sapiens,1385
+TW_201703,Karlodinium veneficum,56
+TW_201703,Leitoscoloplos pugettensis CMC01,185
+TW_201703,Littorina plena,5
+TW_201703,Lottia paradigitalis,111
+TW_201703,Micromonas pusilla,190979
+TW_201703,Minutocellus polymorphus,4079
+TW_201703,Navicula cryptocephala,17
+TW_201703,Nereis vexillosa,5
+TW_201703,Nitzschia cf. promare,53
+TW_201703,Nitzschia longissima,30
+TW_201703,Ostrea lurida,25
+TW_201703,Paracalanus sp. C AC-2013,18
+TW_201703,Paranemertes californica,3433
+TW_201703,Phaeocystis antarctica,38936
+TW_201703,Phaeocystis globosa,5
+TW_201703,Polychaeta sp. BOLD:ACQ0474,28
+TW_201703,Poteriospumella lacustris,3475
+TW_201703,Pseudochattonella farcimen,91
+TW_201703,Pyramimonas parkeae,829
+TW_201703,Pythium pachycaule,46
+TW_201703,Pythium sp. CAL-2011c,9
+TW_201703,Rhizosolenia setigera,15
+TW_201703,Rhodotorula taiwanensis,3
+TW_201703,Ruditapes philippinarum,53
+TW_201703,Scopalina ruetzleri,47
+TW_201703,Skeletonema dohrnii,121
+TW_201703,Thalassionema nitzschioides,59
+TW_201703,Thalassiosira nordenskioeldii,1041
+TW_201703,Triparma laevis,18237
+TW_201703,NA,1338524
+TW_201705,Aequorea sp. MW-2012,259
+TW_201705,Attheya longicornis,625
+TW_201705,Balanus glandula,442
+TW_201705,Bathycoccus prasinos,771
+TW_201705,Calanus pacificus,13
+TW_201705,Callithamnion corymbosum,7
+TW_201705,Carcinonemertes errans,3060
+TW_201705,Chaetoceros socialis,8788
+TW_201705,Chaetoceros sp. MBTD-CMFRI-S062,2
+TW_201705,Chattonella subsalsa,5
+TW_201705,Chrysochromulina sp. CCMP291,357
+TW_201705,Chthamalus dalli,8363
+TW_201705,Cylindrotheca closterium,1550
+TW_201705,Dendraster excentricus,532
+TW_201705,Dictyocha speculum,7976
+TW_201705,Ditylum brightwellii,189
+TW_201705,Emiliania huxleyi,1984
+TW_201705,Emplectonema sp. 1 TCH-2015,70
+TW_201705,Hematodinium sp.,14
+TW_201705,Heterosigma akashiwo,3
+TW_201705,Homo sapiens,14
+TW_201705,Lagenidium giganteum,5
+TW_201705,Littorina plena,31027
+TW_201705,Littorina scutulata,58
+TW_201705,Micromonas pusilla,111045
+TW_201705,Minutocellus polymorphus,815
+TW_201705,Musculista senhousia,3
+TW_201705,Mytilus trossulus,8010
+TW_201705,Navicula cryptocephala,4
+TW_201705,Nitzschia cf. promare,38
+TW_201705,Nuttallia olivacea,21
+TW_201705,Paracalanus sp. C AC-2013,197
+TW_201705,Paranemertes californica,20
+TW_201705,Pedospumella sinomuralis,8
+TW_201705,Phaeocystis antarctica,3
+TW_201705,Plagiogramma sp. IAL-2014a,3
+TW_201705,Poteriospumella lacustris,4
+TW_201705,Prasinoderma coloniale,95
+TW_201705,Protoperidinium cf. depressum,468
+TW_201705,Pseudochattonella farcimen,526
+TW_201705,Pyropia haitanensis,122
+TW_201705,Pythium tracheiphilum,24
+TW_201705,Rhizosolenia setigera,679
+TW_201705,Ruditapes philippinarum,478
+TW_201705,Saprolegnia diclina,45
+TW_201705,Saxidomus gigantea,5
+TW_201705,Skeletonema dohrnii,305
+TW_201705,Skeletonema japonicum,9
+TW_201705,Thalassiosira nordenskioeldii,28889
+TW_201705,Triparma laevis,84
+TW_201705,Wildemania amplissima,4
+TW_201705,NA,267092
+TW_201706,Acrochaetium moniliforme,11
+TW_201706,Aequorea sp. MW-2012,1085
+TW_201706,Alitta sp. CMC01,52
+TW_201706,Amphicaryon earnesti,18
+TW_201706,Anisolpidium rosenvingei,61
+TW_201706,Asterionellopsis guyunusae,232
+TW_201706,Attheya longicornis,24
+TW_201706,Bathycoccus prasinos,26992
+TW_201706,Calanus pacificus,22
+TW_201706,Callithamnion corymbosum,15
+TW_201706,Caulacanthus ustulatus,223
+TW_201706,Chaetoceros socialis,197
+TW_201706,Chrysochromulina sp. CCMP291,115
+TW_201706,Cliona chilensis,14
+TW_201706,Clytia languida,16
+TW_201706,Crassostrea gigas,9
+TW_201706,Cylindrotheca closterium,14652
+TW_201706,Cylindrotheca fusiformis,21
+TW_201706,Cymbomonas tetramitiformis,394
+TW_201706,Cyphoderia cf. compressa,5
+TW_201706,Dendraster excentricus,7559
+TW_201706,Dictyocha speculum,13
+TW_201706,Dolichomastix tenuilepis,154
+TW_201706,Emiliania huxleyi,13052
+TW_201706,Gallus gallus,113
+TW_201706,Gelidium vagum,48
+TW_201706,Gracilaria vermiculophylla,3870
+TW_201706,Harpacticoida sp. DNZ085,580
+TW_201706,Hemipodia simplex,237
+TW_201706,Homo sapiens,31
+TW_201706,Lagenidium giganteum,4
+TW_201706,Lichtheimia ramosa,86
+TW_201706,Maculaura alaskensis,117
+TW_201706,Mayamaea permitis,3
+TW_201706,Melosira nummuloides,7
+TW_201706,Micromonas pusilla,33569
+TW_201706,Minutocellus polymorphus,15852
+TW_201706,Monocorophium acherusicum,5
+TW_201706,Mytilus trossulus,72
+TW_201706,Nanomia cara,30
+TW_201706,Navicula cryptocephala,756
+TW_201706,Navicula sp. BOLD:AAO6951,38
+TW_201706,Nereis vexillosa,3
+TW_201706,Nitzschia cf. promare,81
+TW_201706,Nitzschia cf. recta RT-2009,3
+TW_201706,Nitzschia longissima,921
+TW_201706,Nitzschia palea,62
+TW_201706,Nuttallia olivacea,181
+TW_201706,Ostrea lurida,2596
+TW_201706,Paracalanus sp. C AC-2013,1905
+TW_201706,Pedospumella sinomuralis,28
+TW_201706,Penicillium rubens,118
+TW_201706,Phaeocystis antarctica,164
+TW_201706,Pinnularia acrosphaeria,40
+TW_201706,Pisaster brevispinus,150
+TW_201706,Pisaster ochraceus,375
+TW_201706,Plagiogramma sp. IAL-2014a,6
+TW_201706,Platynereis sp. CMC02,8
+TW_201706,Polychaeta sp. BOLD:ACQ0474,1930
+TW_201706,Porichthys notatus,23
+TW_201706,Poteriospumella lacustris,26
+TW_201706,Prasinoderma coloniale,7977
+TW_201706,Protoperidinium cf. depressum,198
+TW_201706,Pseudo-nitzschia cuspidata,5
+TW_201706,Pseudochattonella farcimen,2207
+TW_201706,Pyropia haitanensis,76
+TW_201706,Pythium sp. CAL-2011c,303
+TW_201706,Rhizosolenia setigera,21294
+TW_201706,Rhodotorula taiwanensis,50
+TW_201706,Ruditapes philippinarum,631
+TW_201706,Saprolegnia diclina,52
+TW_201706,Skeletonema dohrnii,3725
+TW_201706,Stiliger fuscovittatus,3
+TW_201706,Thalassionema nitzschioides,27
+TW_201706,Thalassiosira nordenskioeldii,7400
+TW_201706,Thecamonas trahens,24
+TW_201706,Triparma laevis,2942
+TW_201706,Wildemania amplissima,1
+TW_201706,NA,455858
+TW_201707,Bathycoccus prasinos,20326
+TW_201707,Calanus pacificus,4
+TW_201707,Chrysochromulina sp. CCMP291,163
+TW_201707,Coscinodiscus wailesii,37
+TW_201707,Cylindrotheca closterium,522
+TW_201707,Cymbomonas tetramitiformis,6
+TW_201707,Dictyocha speculum,12
+TW_201707,Ditylum brightwellii,4
+TW_201707,Emiliania huxleyi,339299
+TW_201707,Gracilaria vermiculophylla,111
+TW_201707,Harpacticoida sp. DNZ085,1325
+TW_201707,Hincksia hincksiae,575
+TW_201707,Micromonas pusilla,41701
+TW_201707,Minutocellus polymorphus,187005
+TW_201707,Mytilus trossulus,5
+TW_201707,Navicula cryptocephala,42
+TW_201707,Nitzschia palea,41
+TW_201707,Phaeocystis antarctica,769
+TW_201707,Poteriospumella lacustris,470
+TW_201707,Prasinoderma coloniale,72
+TW_201707,Pseudochattonella farcimen,680
+TW_201707,Pythium sp. CAL-2011c,6
+TW_201707,Rhizosolenia setigera,7
+TW_201707,Saprolegnia diclina,23
+TW_201707,Saxidomus gigantea,4
+TW_201707,Skeletonema dohrnii,386
+TW_201707,Stiliger fuscovittatus,88
+TW_201707,Thalassiosira nordenskioeldii,4397
+TW_201707,Triparma laevis,1101
+TW_201707,NA,695398
+TW_201708,Balanus glandula,17
+TW_201708,Bathycoccus prasinos,128074
+TW_201708,Calanus pacificus,241
+TW_201708,Chrysochromulina sp. CCMP291,27
+TW_201708,Coscinodiscus wailesii,196
+TW_201708,Crassostrea gigas,12
+TW_201708,Cylindrotheca closterium,1012
+TW_201708,Cymbomonas tetramitiformis,1889
+TW_201708,Dictyocha speculum,150
+TW_201708,Ditylum brightwellii,14
+TW_201708,Dolichomastix tenuilepis,66
+TW_201708,Ectocarpus siliculosus,14
+TW_201708,Emiliania huxleyi,2019
+TW_201708,Gallus gallus,58
+TW_201708,Gracilaria vermiculophylla,509
+TW_201708,Harpacticoida sp. DNZ085,37
+TW_201708,Hemipodia simplex,11
+TW_201708,Hincksia hincksiae,29
+TW_201708,Homo sapiens,249
+TW_201708,Lichtheimia ramosa,24
+TW_201708,Littorina plena,159
+TW_201708,Melosira nummuloides,717
+TW_201708,Micromonas pusilla,186650
+TW_201708,Minutocellus polymorphus,19611
+TW_201708,Mytilus trossulus,8
+TW_201708,Navicula cryptocephala,88
+TW_201708,Navicula sp. BOLD:AAO6951,13
+TW_201708,Nitzschia palea,72
+TW_201708,Nuttallia olivacea,2
+TW_201708,Oncorhynchus tshawytscha,13
+TW_201708,Paracalanus sp. C AC-2013,867
+TW_201708,Poteriospumella lacustris,289
+TW_201708,Pseudochattonella farcimen,2291
+TW_201708,Pycnococcus provasolii,4
+TW_201708,Rhizosolenia setigera,718
+TW_201708,Ruditapes philippinarum,64
+TW_201708,Saprolegnia diclina,165
+TW_201708,Skeletonema dohrnii,68
+TW_201708,Thalassionema nitzschioides,8
+TW_201708,Thalassiosira nordenskioeldii,190
+TW_201708,Thalassiosira punctigera,8
+TW_201708,Triparma laevis,161
+TW_201708,NA,588959
+TW_201709,Attheya longicornis,88
+TW_201709,Aurelia labiata,3
+TW_201709,Balanus balanus,27
+TW_201709,Balanus glandula,5336
+TW_201709,Bathycoccus prasinos,107726
+TW_201709,Calanus pacificus,431
+TW_201709,Chaetoceros socialis,10
+TW_201709,Chondracanthus exasperatus,5
+TW_201709,Chrysochromulina sp. CCMP291,21
+TW_201709,Coscinodiscus wailesii,22
+TW_201709,Cylindrotheca closterium,22
+TW_201709,Dictyocha speculum,26
+TW_201709,Emiliania huxleyi,4310
+TW_201709,Galactomyces candidum,2028
+TW_201709,Gracilaria vermiculophylla,3
+TW_201709,Gymnodinium sp. NVA/RUS/2008,10
+TW_201709,Haramonas dimorpha,12
+TW_201709,Heterocapsa rotundata,1148
+TW_201709,Hincksia hincksiae,500
+TW_201709,Homo sapiens,378
+TW_201709,Leucocryptos marina,30
+TW_201709,Lichtheimia ramosa,5
+TW_201709,Littorina plena,21
+TW_201709,Mayamaea permitis,9
+TW_201709,Melosira nummuloides,9
+TW_201709,Micromonas pusilla,47971
+TW_201709,Minutocellus polymorphus,73235
+TW_201709,Navicula cryptocephala,5
+TW_201709,Navicula sp. BOLD:AAO6951,10
+TW_201709,Nitzschia cf. promare,72
+TW_201709,Oncorhynchus keta,2
+TW_201709,Paracalanus sp. C AC-2013,128
+TW_201709,Phaeocystis antarctica,1632
+TW_201709,Phaeocystis globosa,62
+TW_201709,Poteriospumella lacustris,966
+TW_201709,Prasinoderma coloniale,561
+TW_201709,Pseudochattonella farcimen,686
+TW_201709,Pycnococcus provasolii,12
+TW_201709,Pyropia haitanensis,3
+TW_201709,Pythium sp. CAL-2011c,3
+TW_201709,Rhizosolenia setigera,5571
+TW_201709,Rhodotorula taiwanensis,55
+TW_201709,Saprolegnia diclina,64
+TW_201709,Scolelepis squamata,334
+TW_201709,Sellaphora pupula,509
+TW_201709,Skeletonema dohrnii,35
+TW_201709,Skeletonema japonicum,11
+TW_201709,Thalassionema nitzschioides,84
+TW_201709,Thalassiosira nordenskioeldii,3708
+TW_201709,Thalassiosira punctigera,24
+TW_201709,Triparma laevis,389
+TW_201709,NA,400852
+TW_201711,Asterionellopsis guyunusae,1157
+TW_201711,Attheya longicornis,193
+TW_201711,Bathycoccus prasinos,222
+TW_201711,Bipalponephtys cornuta,776
+TW_201711,Brachionidae sp. SHYT150702c,2461
+TW_201711,Chaetoceros socialis,19807
+TW_201711,Chaetoceros sp. MBTD-CMFRI-S062,80
+TW_201711,Chattonella subsalsa,2213
+TW_201711,Chrysochromulina sp. CCMP291,125
+TW_201711,Coscinodiscus wailesii,134
+TW_201711,Cylindrotheca closterium,105
+TW_201711,Dictyocha speculum,2493
+TW_201711,Ditylum brightwellii,800
+TW_201711,Emiliania huxleyi,1227
+TW_201711,Gymnodinium sp. NVA/RUS/2008,120
+TW_201711,Haramonas dimorpha,149
+TW_201711,Heterocapsa rotundata,2031
+TW_201711,Homo sapiens,382
+TW_201711,Hypomesus pretiosus,686
+TW_201711,Karlodinium veneficum,1370
+TW_201711,Littorina plena,149
+TW_201711,Micromonas pusilla,1459
+TW_201711,Minutocellus polymorphus,217
+TW_201711,Mytilus trossulus,12
+TW_201711,Oncorhynchus keta,802
+TW_201711,Paracalanus sp. C AC-2013,3
+TW_201711,Pedospumella sinomuralis,1092
+TW_201711,Phaeocystis antarctica,30
+TW_201711,Phaeocystis globosa,143
+TW_201711,Phytophthora megasperma,13
+TW_201711,Phytophthora taxon paludosa,9
+TW_201711,Poteriospumella lacustris,5
+TW_201711,Protoperidinium cf. depressum,499
+TW_201711,Pseudochattonella farcimen,13199
+TW_201711,Pyropia haitanensis,93
+TW_201711,Pythium tracheiphilum,1908
+TW_201711,Rhizosolenia setigera,411
+TW_201711,Ruditapes philippinarum,460
+TW_201711,Skeletonema dohrnii,126
+TW_201711,Skeletonema japonicum,71
+TW_201711,Synchaetomella acerina,54
+TW_201711,Thalassionema nitzschioides,75
+TW_201711,Thalassiosira nordenskioeldii,1299
+TW_201711,Triparma laevis,100
+TW_201711,NA,400835
+TW_201801,Balanus balanus,218
+TW_201801,Bathycoccus prasinos,96680
+TW_201801,Chaetoceros socialis,55
+TW_201801,Chordariaceae sp. 7 AP-2014,235
+TW_201801,Coscinodiscus wailesii,16
+TW_201801,Cylindrotheca closterium,65
+TW_201801,Dictyocha speculum,165
+TW_201801,Ditylum brightwellii,318
+TW_201801,Haptoglossa zoospora,102
+TW_201801,Haramonas dimorpha,6
+TW_201801,Heterocapsa rotundata,10788
+TW_201801,Homo sapiens,694
+TW_201801,Hypomesus pretiosus,277
+TW_201801,Melosira nummuloides,17
+TW_201801,Micromonas pusilla,77851
+TW_201801,Minutocellus polymorphus,1985
+TW_201801,Paracalanus sp. C AC-2013,20
+TW_201801,Pedospumella sinomuralis,211
+TW_201801,Phaeocystis antarctica,46
+TW_201801,Phaeocystis globosa,12
+TW_201801,Scopalina ruetzleri,567
+TW_201801,Skeletonema dohrnii,177
+TW_201801,Thalassiosira nordenskioeldii,2323
+TW_201801,Thalassiosira punctigera,198
+TW_201801,Triparma laevis,23
+TW_201801,NA,139768
+TW_201803,Albugo candida,33
+TW_201803,Attheya longicornis,88
+TW_201803,Balanus balanus,27212
+TW_201803,Brachionidae sp. SHYT150702c,34
+TW_201803,Caulacanthus ustulatus,15
+TW_201803,Chaetoceros socialis,689
+TW_201803,Chattonella subsalsa,1018
+TW_201803,Coscinodiscus wailesii,23
+TW_201803,Cylindrotheca closterium,3242
+TW_201803,Cyphoderia cf. compressa,2
+TW_201803,Dendraster excentricus,83
+TW_201803,Dictyocha speculum,315
+TW_201803,Ditylum brightwellii,110
+TW_201803,Gracilaria vermiculophylla,14
+TW_201803,Kellia porculus,1065
+TW_201803,Lacuna vincta,659
+TW_201803,Lagenidium giganteum,12
+TW_201803,Leitoscoloplos pugettensis CMC01,11291
+TW_201803,Littorina plena,1668
+TW_201803,Littorina scutulata,36
+TW_201803,Lottia paradigitalis,74
+TW_201803,Melosira nummuloides,23
+TW_201803,Membranipora membranacea,8
+TW_201803,Minutocellus polymorphus,544
+TW_201803,Nanomia cara,45
+TW_201803,Navicula cryptocephala,300
+TW_201803,Navicula sp. BOLD:AAO6951,2
+TW_201803,Neochromadora poecilosomoides,37
+TW_201803,Nitzschia cf. promare,2302
+TW_201803,Nitzschia cf. recta RT-2009,168
+TW_201803,Obelia bidentata,253
+TW_201803,Paramoeba pemaquidensis,15
+TW_201803,Parvamoeba rugata,356
+TW_201803,Pinnularia acrosphaeria,147
+TW_201803,Pinnularia sp. 5 CS-2011,53
+TW_201803,Pinnularia subanglica,24
+TW_201803,Placoneis sp. WJS-2015a,89
+TW_201803,Podosira stelligera,62
+TW_201803,Pseudochattonella farcimen,199
+TW_201803,Pycnococcus provasolii,52
+TW_201803,Pythium tracheiphilum,95
+TW_201803,Rhizosolenia setigera,294
+TW_201803,Ruditapes philippinarum,30
+TW_201803,Saprolegnia diclina,5
+TW_201803,Scopalina ruetzleri,171
+TW_201803,Skeletonema dohrnii,213
+TW_201803,Skeletonema japonicum,1291
+TW_201803,Synchaeta pectinata,269
+TW_201803,Thalassionema nitzschioides,983
+TW_201803,Thalassiosira nordenskioeldii,5889
+TW_201803,Thalassiosira punctigera,125
+TW_201803,NA,355414
+TW_201805,Acartia longiremis,30
+TW_201805,Albugo candida,54
+TW_201805,Anisolpidium ectocarpii,6
+TW_201805,Attheya longicornis,22
+TW_201805,Balanus balanus,1701
+TW_201805,Balanus glandula,1113
+TW_201805,Bathycoccus prasinos,1095
+TW_201805,Calanus pacificus,6
+TW_201805,Caulacanthus ustulatus,49
+TW_201805,Centropages abdominalis,974
+TW_201805,Chaetoceros socialis,158
+TW_201805,Chattonella subsalsa,303
+TW_201805,Chordariaceae sp. 7 AP-2014,23
+TW_201805,Chthamalus dalli,79
+TW_201805,Coscinodiscus wailesii,1380
+TW_201805,Cryptocotyle lingua,264
+TW_201805,Cylindrotheca closterium,110
+TW_201805,Dictyocha speculum,134
+TW_201805,Ditylum brightwellii,3
+TW_201805,Evadne nordmanni,6
+TW_201805,Gracilaria vermiculophylla,1881
+TW_201805,Homo sapiens,32
+TW_201805,Lichtheimia ramosa,206
+TW_201805,Littorina plena,83477
+TW_201805,Littorina sitkana,377
+TW_201805,Melosira nummuloides,104
+TW_201805,Micromonas pusilla,56369
+TW_201805,Minutocellus polymorphus,424
+TW_201805,Mytilus trossulus,365
+TW_201805,Nanomia cara,18
+TW_201805,Nassarius mendicus,70
+TW_201805,Navicula cryptocephala,157
+TW_201805,Navicula sp. BOLD:AAO6951,9
+TW_201805,Nitokra spinipes,1326
+TW_201805,Nitzschia cf. promare,30
+TW_201805,Nuttallia olivacea,2098
+TW_201805,Oncorhynchus keta,127
+TW_201805,Paracalanus sp. C AC-2013,857
+TW_201805,Parvamoeba rugata,169
+TW_201805,Petalonia fascia,5
+TW_201805,Phacellophora camtschatica,11
+TW_201805,Pinnularia acrosphaeria,126
+TW_201805,Plagiogramma sp. IAL-2014a,21
+TW_201805,Platichthys stellatus,721
+TW_201805,Polychaeta sp. BOLD:ACQ0474,149
+TW_201805,Porichthys notatus,28
+TW_201805,Prasinoderma coloniale,360
+TW_201805,Pseudocalanus newmani,168
+TW_201805,Pycnococcus provasolii,8
+TW_201805,Pyropia haitanensis,24
+TW_201805,Pythium tracheiphilum,321
+TW_201805,Rhizosolenia setigera,226
+TW_201805,Rhodotorula taiwanensis,26
+TW_201805,Ruditapes philippinarum,488
+TW_201805,Scolelepis squamata,535
+TW_201805,Thalassionema nitzschioides,89
+TW_201805,Thalassiosira nordenskioeldii,239
+TW_201805,Thalassiosira punctigera,11
+TW_201805,Thysanoessa raschii,59
+TW_201805,Triparma laevis,286
+TW_201805,NA,115183
+TW_201807,Asterionellopsis guyunusae,4
+TW_201807,Balanus glandula,8
+TW_201807,Bathycoccus prasinos,275
+TW_201807,Calanus pacificus,456
+TW_201807,Chordariaceae sp. 2 AP-2014,12
+TW_201807,Cliona chilensis,28
+TW_201807,Coscinodiscus wailesii,5
+TW_201807,Cylindrotheca closterium,841
+TW_201807,Cymbomonas tetramitiformis,189
+TW_201807,Dictyocha speculum,11
+TW_201807,Dolichomastix tenuilepis,71
+TW_201807,Emiliania huxleyi,7338
+TW_201807,Gracilaria vermiculophylla,433
+TW_201807,Haptoglossa zoospora,3946
+TW_201807,Harpacticoida sp. DNZ085,21963
+TW_201807,Heterocapsa rotundata,36
+TW_201807,Hincksia hincksiae,30
+TW_201807,Kellia porculus,357
+TW_201807,Leucocryptos marina,274
+TW_201807,Macoma nasuta,27
+TW_201807,Melosira nummuloides,9
+TW_201807,Membranipora membranacea,21
+TW_201807,Micromonas pusilla,4678
+TW_201807,Minutocellus polymorphus,79323
+TW_201807,Nanomia bijuga,17
+TW_201807,Nassarius mendicus,302
+TW_201807,Navicula cryptocephala,176
+TW_201807,Ostrea lurida,70
+TW_201807,Paracalanus sp. C AC-2013,174
+TW_201807,Penicillium rubens,424
+TW_201807,Pisaster ochraceus,19
+TW_201807,Platyias quadricornis,20
+TW_201807,Podosira stelligera,191
+TW_201807,Prasinoderma coloniale,973
+TW_201807,Pseudo-nitzschia hasleana,18
+TW_201807,Pseudocalanus newmani,366
+TW_201807,Pseudochattonella farcimen,577
+TW_201807,Pycnococcus provasolii,77
+TW_201807,Rhizosolenia setigera,202
+TW_201807,Rhodotorula taiwanensis,24
+TW_201807,Schistomeringos longicornis,97
+TW_201807,Skeletonema cf. pseudocostatum,3
+TW_201807,Thalassionema nitzschioides,1085
+TW_201807,Thalassiosira nordenskioeldii,1146
+TW_201807,Thalassiosira punctigera,3301
+TW_201807,Thelepus crispus,24
+TW_201807,Triparma laevis,1191
+TW_201807,NA,155714
