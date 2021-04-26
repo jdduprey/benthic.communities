@@ -9,7 +9,7 @@ hash.annotated <- read.csv('../data/hash.annotated.csv')
 by.site.species <- read.csv('../data/by.site.species.csv')
 events <- read.csv('../data/events.joe.format.csv')
 
-# merge hashes by species
+# merge hashes by species - why do we lose some hashes here? 
 species.annotated <- hash.annotated %>%
   distinct(species, .keep_all=TRUE) 
 
