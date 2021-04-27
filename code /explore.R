@@ -3,10 +3,10 @@ library('dplyr')
 library('here')
 library('ggplot2')
 
-# load data - NOTE by.site.species may need revision because I cleaned the data, 
+# load data
 # and merged replicates... 
 hash.annotated <- read.csv('../data/hash.annotated.csv')
-by.site.species <- read.csv('../data/by.site.species.csv')
+by.sample.species <- read.csv('../data/by.sample.species.csv')
 events <- read.csv('../data/events.joe.format.csv')
 
 # merge hashes by species - why do we lose some hashes here? 
@@ -14,7 +14,7 @@ species.annotated <- hash.annotated %>%
   distinct(species, .keep_all=TRUE) 
 
 # join annotated species with sample reads 
-ben.community <- inner_join(species.annotated, by.site.species)
+ben.community <- inner_join(species.annotated, by.sample.species)
 
 ben.community <- ben.community %>%
   filter(benthos %in% c('BEN','Both')) %>% 
