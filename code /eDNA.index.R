@@ -69,5 +69,13 @@ eDNA <- inner_join(eDNA, maxreads_j.HASH)
 eDNA$index <- (eDNA$nReads/eDNA$Y_i)/eDNA$max_j*(eDNA$nReads/eDNA$Y_i)
 eDNA$log.index <- log(eDNA$index)
 
-#TODO: create useful table with just the taxa that Moncho classified as BENTHIC
+
+# ==================================================
+# ==================================================
+# create useful table with just the taxa that Moncho classified as BENTHIC
+# merge hashes by species
+# ==================================================
+species.annotated <- hash.annotated %>%
+  distinct(species, .keep_all=TRUE) 
+
 ben.community <- inner_join(species.annotated, by.sample.species)
