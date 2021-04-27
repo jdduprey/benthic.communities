@@ -70,7 +70,6 @@ eDNA <- inner_join(eDNA, maxreads_j.HASH)
 eDNA$index <- (eDNA$nReads/eDNA$Y_i)/eDNA$max_j*(eDNA$nReads/eDNA$Y_i)
 eDNA$log.index <- log(eDNA$index)
 
-
 # ==================================================
 # ==================================================
 # create useful table with just the taxa that Moncho classified as BENTHIC
@@ -97,9 +96,23 @@ ben.community <- inner_join(ben.community, events)
 #                        'Semibalanus cariosus',))
 
 
-jpeg("../figures/all.the.benthos.jpg", height = 10000, width = 500)
+jpeg("../figures/all.the.benthos.jpg", height = 30000, width = 1000)
 ggplot(data=ben.community, aes(x=pH_new, y=log.index, colour=site)) +
   geom_point() +
   facet_wrap(~ species, ncol=3)
 dev.off()
 
+#jpeg("../figures/lm.trial.jpg", height = 30000, width = 1000)
+#ggplot(data=ben.community, aes(x=pH_new, y=log.index)) +
+#  geom_point() +
+#  geom_smooth(method = 'lm') +
+#  facet_wrap(~ species, ncol=3)
+#dev.off()
+
+jpeg("../figures/time.series.jpg", heigh = 30000, width = 1000)
+ggplot(data=ben.community, aes(x=date, y=log.index)) +
+  geom_bar(stat='identity') +
+  facet_wrap(~ species + site, ncol=3)
+dev.off()
+
+# species diversity time series ?   
