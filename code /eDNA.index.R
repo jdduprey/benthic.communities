@@ -7,6 +7,7 @@
 # ==================================================
 library('tidyverse')
 library('dplyr')
+library('ggplot2')
 
 hash.annotated <- read.csv('../data/hash.annotated.csv') # Mocho's hashes with taxa info
 events <- read.csv('../data/events.joe.format.csv') # Moncho's event/environmental params w/ dates reformatted
@@ -77,5 +78,28 @@ eDNA$log.index <- log(eDNA$index)
 # ==================================================
 species.annotated <- hash.annotated %>%
   distinct(species, .keep_all=TRUE) 
+ 
 
-ben.community <- inner_join(species.annotated, by.sample.species)
+ben.community <- inner_join(species.annotated, eDNA)
+
+ben.community <- ben.community %>%
+  filter(benthos %in% c('BEN','Both')) %>%
+  separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2)
+
+ben.community <- inner_join(ben.community, events)
+
+# ==================================================
+# DATA VIZ 
+# ==================================================
+
+#barnacles <- ben.community %>%
+#  filter(species %in% c('Balanus glandula', 
+#                        'Semibalanus cariosus',))
+
+
+jpeg("../figures/all.the.benthos.jpg", height = 10000, width = 500)
+ggplot(data=ben.community, aes(x=pH_new, y=log.index, colour=site)) +
+  geom_point() +
+  facet_wrap(~ species, ncol=3)
+dev.off()
+
