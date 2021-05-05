@@ -129,7 +129,7 @@ ben.community <- inner_join(ben.community, events)
 
 
 jpeg("../figures/all.the.benthos.jpg", height = 30000, width = 1000)
-ggplot(data=ben.community, aes(x=pH_new, y=log.index, colour=site)) +
+ggplot(data=ben.community, aes(x=pH_new, y=log_index, colour=site)) +
   geom_point() +
   facet_wrap(~ species, ncol=3)
 dev.off()
@@ -142,7 +142,7 @@ dev.off()
 #dev.off()
 
 jpeg("../figures/time.series.jpg", heigh = 30000, width = 1000)
-ggplot(data=ben.community, aes(x=date, y=log.index)) +
+ggplot(data=ben.community, aes(x=date, y=log_index)) +
   geom_bar(stat='identity') +
   facet_wrap(~ species + site, ncol=3)
 dev.off()
