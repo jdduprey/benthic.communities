@@ -8,6 +8,7 @@
 library('tidyverse')
 library('dplyr')
 library('ggplot2')
+source('Moncho.index.R')
 
 hash.annotated <- read.csv('../data/hash.annotated.csv') # Mocho's hashes with taxa info
 events <- read.csv('../data/events.joe.format.csv') # Moncho's event/environmental params w/ dates reformatted
@@ -58,14 +59,14 @@ write.csv(by.sample.species,"../data/by.sample.species.csv")
 
 
 # maxreads_j.SPECIES or maxreads_j.hash both work just give slightly different results - see above
-maxreads_j.SPECIES <- by.sample.species %>%
-  group_by(sample) %>%
-  summarize(max_j=max(nReads))
+# maxreads_j.SPECIES <- by.sample.species %>%
+#   group_by(sample) %>%
+#   summarize(max_j=max(nReads))
 
 # calculate ***total reads by species***
-nreads_i <- by.sample.species %>%
-  group_by(species) %>%
-  summarize(Y_i=sum(nReads)) 
+# nreads_i <- by.sample.species %>%
+#  group_by(species) %>%
+#  summarize(Y_i=sum(nReads)) 
 
 # ==================================================
 # put together joint table to calculate eDNA index 
@@ -96,11 +97,14 @@ Index.check <- myIndex %>%
   group_by(species) %>% 
   summarize(max(eDNA_index),
             min(eDNA_index))
-#things that occur only once in the data will have both max and min of 1.  
 
+#things that occur only once in the data will have both max and min of 1.  
 
 ####RPK stopped here, because let's get the above right before anything else...
 
+# ==================================================
+# experimenting with Moncho's eDNAindex() function
+# moncho.Index <- eDNAindex(ASV.tax, sample, Hash, nReads)
 
 # ==================================================
 # ==================================================
