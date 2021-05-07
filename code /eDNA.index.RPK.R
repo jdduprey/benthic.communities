@@ -44,7 +44,7 @@ by.sample.species <- by.hash.sample %>%
   group_by(sample, species) %>% 
   summarize(nReads=sum(nReads))   ##RPK says: this works fine, although of course you could have done this in the previous step by just excluding Hash from the grouping variables
 
-write.csv(by.sample.species,"../data/by.sample.species.csv")
+write.csv(by.sample.species,"../data/by.sample.species.csv", row.names = FALSE)
 
 # ==================================================
 # begin calculating inputs needed for eDNA index 
