@@ -81,7 +81,7 @@ species_logit <- function(species_str){
 # ======================================================
 
 # call the logit function 
-test_logit <- species_logit('Balanus glandula')
+test_logit <- species_logit('Littorina sitkana')
 
 # display results 
 summary(test_logit)
@@ -126,11 +126,12 @@ plot_logit <- function(species_str, test_logit) {
 # ======================================================
 
 # call the visualize function 
-plot_logit('Balanus glandula', test_logit)
+plot_logit('Littorina sitkana', test_logit)
 
 # ======================================================
 
 # TODO so i don't forget 
+# gametes/plankton vs adults - eli fish vs shrimp vs crab <- model?
 # replicate graph from Terrie's student's published paper for p/a data
 # known spawning month for invertebrates nReads 
 # habitat depth of detected organisms? 
