@@ -1,6 +1,6 @@
 # ============================================
-# Joe's first attempt at logistic regression models
-# for San Juan project
+# BENTHIC SPECIES LOGISTIC REGRESSION MODELS for PRESENCE/ABSENCE 
+# Joe's first attempt 
 # Last edited: 05/18/2021
 # ============================================
 library('tidyverse')
@@ -54,7 +54,7 @@ presence.absence$Area <- factor(presence.absence$Area)
 p.a.species <- list()
 
 # loop through all species, creating a dataframe for each 
-for(i in unique(presence.absence$species)){
+for(i in unique(presence.absence$species)) {
   print(i)
   one.species <- presence.absence %>%
     filter(species %in% c(i))
@@ -86,6 +86,7 @@ test_logit <- species_logit('Balanus glandula')
 # display results 
 summary(test_logit)
 
+
 # VISUAlIZE LOGIT MODEL AS PROBABILITY  ================
 # takes logit object and species string as input
 # holds pH constant to visualize temp gradient 
@@ -116,17 +117,21 @@ plot_logit <- function(species_str, test_logit) {
   head(newdata3)
   
   # plot the output 
-  x <- ggplot(newdata3, aes(x = Temperature, y = PredictedProb)) + geom_ribbon(aes(ymin = LL,
+  logit_plot <- ggplot(newdata3, aes(x = Temperature, y = PredictedProb)) + geom_ribbon(aes(ymin = LL,
   ymax = UL, fill = Season), alpha = 0.2) + geom_line(aes(colour = Season),
   size = 1) + labs(title=species_str)
   
-  return(x)
+  return(logit_plot)
   }
+# ======================================================
 
+# call the visualize function 
 plot_logit('Balanus glandula', test_logit)
 
 # ======================================================
-##TODO so i don't forget 
+
+# TODO so i don't forget 
 # replicate graph from Terrie's student's published paper for p/a data
 # known spawning month for invertebrates nReads 
 # habitat depth of detected organisms? 
+# replicate interactive app to view relative abundance and community structure
