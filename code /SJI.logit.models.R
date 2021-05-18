@@ -59,6 +59,7 @@ for(i in unique(presence.absence$species)){
   
 }
 
+# gametophye might be long lived, sporophyt annual 
 # LOGIT FUNCTION =======================================
 # ======================================================
 species_logit <- function(species_str){
@@ -73,7 +74,7 @@ species_logit <- function(species_str){
   }
 
 
-test_logit <- species_logit('Fucus distichus')
+test_logit <- species_logit('Nereocystis luetkeana')
 
 summary(test_logit)
 
@@ -82,29 +83,35 @@ summary(test_logit)
 max(presence.absence$Temperature)
 min(presence.absence$Temperature)
 
-
+plot_logit <- function(species_str, test_logit) {
   
-print(confint(test_logit))
-print(exp(cbind(OR = coef(test_logit), confint(test_logit))))
+  print(confint(test_logit))
+  print(exp(cbind(OR = coef(test_logit), confint(test_logit))))
   
-##TODO ##TODO 
-newdata2 <- with(p.a.species[['Ostrea lurida']], data.frame(Temperature = rep(seq(from = 7.17, to = 22.6, length.out = 100),
+   
+  newdata2 <- with(p.a.species[[species_str]], data.frame(Temperature = rep(seq(from = 7.17, to = 22.6, length.out = 100),
                                                 2), pH_new = mean(pH_new), Season = factor(rep(c('Summer','Winter'), each = 100))))
 
-newdata3 <- cbind(newdata2, predict(test_logit, newdata = newdata2, type = "link",
+  newdata3 <- cbind(newdata2, predict(test_logit, newdata = newdata2, type = "link",
                                     se = TRUE))
 
-newdata3 <- within(newdata3, {
-  PredictedProb <- plogis(fit)
-  LL <- plogis(fit - (1.96 * se.fit))
-  UL <- plogis(fit + (1.96 * se.fit))
-})
+  newdata3 <- within(newdata3, {
+    PredictedProb <- plogis(fit)
+    LL <- plogis(fit - (1.96 * se.fit))
+    UL <- plogis(fit + (1.96 * se.fit))
+  })
 
-head(newdata3)
+  head(newdata3)
 
-ggplot(newdata3, aes(x = Temperature, y = PredictedProb)) + geom_ribbon(aes(ymin = LL,
+  x <- ggplot(newdata3, aes(x = Temperature, y = PredictedProb)) + geom_ribbon(aes(ymin = LL,
   ymax = UL, fill = Season), alpha = 0.2) + geom_line(aes(colour = Season),
-  size = 1) + labs(title='Fucus distichus')
+  size = 1) + labs(title=species_str)
+  
+  return(x)
+  }
+
+plot_logit('Nereocystis luetkeana', test_logit)
+
 ##TODO
 # replicate graph from Terrie's student's published paper for p/a data
 # known spawning month for invertebrates nReads 
