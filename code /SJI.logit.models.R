@@ -59,26 +59,33 @@ for(i in unique(presence.absence$species)){
   
 }
 
-# gametophye might be long lived, sporophyt annual 
 # LOGIT FUNCTION =======================================
+# takes species string -> returns logit object
+# model takes season(factor), pH(cont) and temperature(cont) as inputs
+# TODO make function take independent variables as inputs
 # ======================================================
 species_logit <- function(species_str){
 
   mylogit <- glm(presence ~ Season + pH_new + Temperature, data = p.a.species[[species_str]], family = "binomial", maxit=100)
   print(p.a.species[[species_str]])
-  print(mylogit)
   
+  print(mylogit)
   confint(mylogit)
+  
   return(mylogit)
   
   }
+# ======================================================
 
+# call the logit function 
+test_logit <- species_logit('Balanus glandula')
 
-test_logit <- species_logit('Nereocystis luetkeana')
-
+# display results 
 summary(test_logit)
 
-# LOGIT exploration and visualization ==================
+# VISUAlIZE LOGIT MODEL AS PROBABILITY  ================
+# takes logit object and species string as input
+# holds pH constant to visualize temp gradient 
 # ======================================================
 max(presence.absence$Temperature)
 min(presence.absence$Temperature)
@@ -88,12 +95,14 @@ plot_logit <- function(species_str, test_logit) {
   print(confint(test_logit))
   print(exp(cbind(OR = coef(test_logit), confint(test_logit))))
   
-   
-  newdata2 <- with(p.a.species[[species_str]], data.frame(Temperature = rep(seq(from = 7.17, to = 22.6, length.out = 100),
-                                                2), pH_new = mean(pH_new), Season = factor(rep(c('Summer','Winter'), each = 100))))
+  # create range of temps, for both "Summer" and "Winter" factors, hold pH constant  
+  newdata2 <- with(p.a.species[[species_str]], data.frame(
+                Temperature = rep(seq(from = 7.17, to = 22.6, length.out = 100),2), 
+                pH_new = mean(pH_new), 
+                Season = factor(rep(c('Summer','Winter'), each = 100))))
 
   newdata3 <- cbind(newdata2, predict(test_logit, newdata = newdata2, type = "link",
-                                    se = TRUE))
+                se = TRUE))
 
   newdata3 <- within(newdata3, {
     PredictedProb <- plogis(fit)
@@ -102,7 +111,8 @@ plot_logit <- function(species_str, test_logit) {
   })
 
   head(newdata3)
-
+  
+  # plot the output 
   x <- ggplot(newdata3, aes(x = Temperature, y = PredictedProb)) + geom_ribbon(aes(ymin = LL,
   ymax = UL, fill = Season), alpha = 0.2) + geom_line(aes(colour = Season),
   size = 1) + labs(title=species_str)
@@ -110,9 +120,9 @@ plot_logit <- function(species_str, test_logit) {
   return(x)
   }
 
-plot_logit('Nereocystis luetkeana', test_logit)
+plot_logit('Balanus glandula', test_logit)
 
 ##TODO
 # replicate graph from Terrie's student's published paper for p/a data
 # known spawning month for invertebrates nReads 
-# habitat depth of detected organisms 
+# habitat depth of detected organisms? 
