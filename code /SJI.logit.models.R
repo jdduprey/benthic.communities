@@ -1,23 +1,24 @@
 # ============================================
-# Joe's first attempt at regression models
+# Joe's first attempt at logistic regression models
 # for San Juan project
-# Last edited: 05/06/2021
+# Last edited: 05/18/2021
 # ============================================
 library('tidyverse')
 library('dplyr')
 library('ggplot2')
 
+# by.sample.species already has technical replicates merged
 by.sample.species <- read.csv('../data/by.sample.species.csv')
+# all the good environmental data 
 events <- read.csv('../data/events.joe.format.csv')
-# filter data to just san juans
 
 # filter out non-san juan data (comment out later)
 SJI.sample.species <- by.sample.species # %>%
   #separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) %>%
   #filter(site %in% c('LK','CP','FH')) 
 
-
-# use all detected species in San Juans as a base ?? what makes an absense ?? 
+# use all species detected at least once as a base 
+# TODO need more practice with pivot_wider and pivot_longer  
 presence.absence <- SJI.sample.species %>%
   select(sample, species, nReads) %>%
   pivot_wider(names_from=sample, values_from=nReads, values_fill=list(nReads=0))
@@ -38,19 +39,21 @@ presence.absence <- presence.absence %>%
 # connect with environmental data to use as continuous variables
 presence.absence <- inner_join(presence.absence, events) 
 
+# create site and date column in addition to "sample" 
 presence.absence <- presence.absence %>%
   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) 
 
-# build a beautiful logistic model for every species
+# now we can build a beautiful logistic model for every species
 xtabsdf <- as.data.frame(xtabs(~ presence + sample, data = presence.absence))
 presence.absence$sample <- factor(presence.absence$sample)
 presence.absence$species <- factor(presence.absence$species)
 presence.absence$site <- factor(presence.absence$site)
 presence.absence$Area <- factor(presence.absence$Area)
 
-# need list of dataframes for each species to make logit more managable 
+# need list of dataframes for each species to make logit models more manageable 
 p.a.species <- list()
 
+# loop through all species, creating a dataframe for each 
 for(i in unique(presence.absence$species)){
   print(i)
   one.species <- presence.absence %>%
@@ -122,7 +125,8 @@ plot_logit <- function(species_str, test_logit) {
 
 plot_logit('Balanus glandula', test_logit)
 
-##TODO
+# ======================================================
+##TODO so i don't forget 
 # replicate graph from Terrie's student's published paper for p/a data
 # known spawning month for invertebrates nReads 
 # habitat depth of detected organisms? 
