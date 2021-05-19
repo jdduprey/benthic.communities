@@ -50,6 +50,7 @@ presence.absence$species <- factor(presence.absence$species)
 presence.absence$site <- factor(presence.absence$site)
 presence.absence$Area <- factor(presence.absence$Area)
 
+write.csv(presence.absence,"../data/benthic.presence.absence.csv", row.names = FALSE)
 # need list of dataframes for each species to make logit models more manageable 
 p.a.species <- list()
 
