@@ -118,9 +118,11 @@ plot_logit <- function(species_str, test_logit) {
   head(newdata3)
   
   # plot the output 
-  logit_plot <- ggplot(newdata3, aes(x = Temperature, y = PredictedProb)) + geom_ribbon(aes(ymin = LL,
-  ymax = UL, fill = Season), alpha = 0.2) + geom_line(aes(colour = Season),
-  size = 1) + labs(title=species_str)
+  logit_plot <- ggplot(newdata3, aes(x = Temperature, y = PredictedProb)) + 
+    geom_ribbon(aes(ymin = LL,  ymax = UL, fill = Season), alpha = 0.2) + 
+    geom_line(aes(colour = Season),size = 1) + 
+    geom_point(data= p.a.species[[species_str]], aes(x = Temperature, y = presence, colour = Season))
+    labs(title=species_str)
   
   return(logit_plot)
   }
