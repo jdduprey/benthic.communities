@@ -132,8 +132,11 @@ plot_logit <- function(species_str, test_logit) {
 plot_logit('Littorina sitkana', test_logit)
 
 # ======================================================
+# ======================================================
 
 # TODO so i don't forget 
+# benthic community vs benthic community in the water column
+# what portion of detected species have planktonic phase? 
 # gametes/plankton vs adults - eli fish vs shrimp vs crab <- model?
 # replicate graph from Terrie's student's published paper for p/a data
 # known spawning month for invertebrates nReads 
