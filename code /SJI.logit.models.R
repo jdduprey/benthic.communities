@@ -82,7 +82,7 @@ species_logit <- function(species_str){
 # ======================================================
 
 # call the logit function 
-test_logit <- species_logit('Littorina sitkana')
+test_logit <- species_logit('Gracilaria vermiculophylla')
 
 # display results 
 summary(test_logit)
@@ -120,16 +120,16 @@ plot_logit <- function(species_str, test_logit) {
   # plot the output 
   logit_plot <- ggplot(newdata3, aes(x = Temperature, y = PredictedProb)) + 
     geom_ribbon(aes(ymin = LL,  ymax = UL, fill = Season), alpha = 0.2) + 
-    geom_line(aes(colour = Season),size = 1) + 
-    geom_point(data= p.a.species[[species_str]], aes(x = Temperature, y = presence, colour = Season))
-    labs(title=species_str)
+    geom_line(aes(colour = Season),size = 1) +
+    geom_point(data= p.a.species[[species_str]], aes(x = Temperature, y = presence, colour = Season)) +
+    labs(title=species_str) 
   
   return(logit_plot)
   }
 # ======================================================
 
 # call the visualize function 
-plot_logit('Littorina sitkana', test_logit)
+plot_logit('Gracilaria vermiculophylla', test_logit)
 
 # ======================================================
 # ======================================================
