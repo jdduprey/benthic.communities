@@ -98,6 +98,8 @@ Index.check <- myIndex %>%
   summarize(max(eDNA_index),
             min(eDNA_index))
 
+write.csv(myIndex,"../data/eDNAindex.avg.reps.csv", row.names = FALSE)
+
 #things that occur only once in the data will have both max and min of 1.  
 
 ####RPK stopped here, because let's get the above right before anything else...
