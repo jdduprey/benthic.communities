@@ -18,7 +18,7 @@ events <- read.csv('../data/events.joe.format.csv')
 
 #split up site and date
 sd.events <- events %>% 
-  separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2)
+  separate(col=sample, remove=FALSE, into=c("site", "date"), sep = '_')
   
 # merge hashes by species - is this correct 
 species.annotated <- hash.annotated %>%
@@ -88,4 +88,13 @@ species.df.sj <- species.by.sample.alltax %>%
 ggplot(data=species.df.sj, aes(x=date, y=richness, group=site)) +
   geom_line(aes(color=site))
 
+fraser.df <- sd.events %>%
+  filter(site %in% c('CP', 'LK', 'FH'))
 
+ggplot(data=fraser.df, aes(x=date, y=Salinity.new, group=site)) +
+  geom_line(aes(color=site))
+
+ggplot(data=fraser.df, aes(x=date, y=Temperature, group=site)) +
+  geom_line(aes(color=site))
+
+fraser.df <- inner_join(fraser.df, species.df.sj)
