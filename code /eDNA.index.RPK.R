@@ -18,6 +18,7 @@ taxonomy.table <- read.csv('../data/all.taxonomy.20190130.csv') # hash with taxa
 # get table with sample, nReads, hash, and taxa information - why do we lose hashes here? 
 ASV.tax <- inner_join(ASV.table, taxonomy.table)
 
+#nested.events <- nest(ASV.table, data=!sample)
 # ==================================================
 # This is the step I am least confident in
 # merge replicates

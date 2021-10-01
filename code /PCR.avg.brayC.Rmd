@@ -16,8 +16,10 @@ library(dplyr)
 ## Working Towards Research Question for HC/SJ Data
 
 psuedocode 
-1) get read avgs, this time accounting for the fact that there are 2 PCR reps
+later) get read avgs, this time accounting for the fact that there are 2 PCR reps
 and 3 PCR reps
+
+1) calculate eDNA index, also account for non detections THEN do BC dissimilarity
 
 2) recreate basic boxplots of bethic communities, maybe look into the insect
 data that Ryan keeps mentioning
@@ -27,7 +29,15 @@ data that Ryan keeps mentioning
 4) In another script: recreating Moncho's k-means analysis 
 
 ```{r}
-summary(cars)
+# I HAVE TO CALCULATE INDEX AFTER INSERTING 0s I THINK... 
+eDNAindex <- read.csv("../data/eDNAindex.avg.reps.csv")
+
+eDNAindex.PA <- eDNAindex %>%
+  select(sample, species, eDNA_index) %>%
+  pivot_wider(names_from=sample, values_from=eDNA_index, values_fill=list(eDNA_index=0))
+
+eDNAindex.PA <- eDNAindex.PA %>%  
+  pivot_longer(!species, names_to='sample', values_to='eDNA_index') 
 ```
 
 ## Including Plots
