@@ -1,0 +1,33 @@
+---
+title: "PCR.avg.brayC"
+author: "Joe Duprey"
+date: "10/1/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(dplyr)
+```
+
+## Data Exploration and Visualization 
+## Working Towards Research Question for HC/SJ Data
+
+psuedocode 
+1) get read avgs, this time accounting for the fact that there are 2 PCR reps
+and 3 PCR reps
+
+2) recreate basic boxplots of bethic communities, maybe look into the insect
+data that Ryan keeps mentioning
+
+3) Bray Curtis and Jaccard heatmaps could be interesting 
+
+4) In another script: recreating Moncho's k-means analysis 
+
+```{r}
+summary(cars)
+```
+
+## Including Plots

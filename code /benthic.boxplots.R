@@ -11,12 +11,12 @@ library('dplyr')
 library('ggplot2')
 library('data.table')
 
-by.sample.species <- read.csv('../data/by.sample.species.csv')
+by.sample.species <- read.csv('../data/by.sample.species.csv') # reads merged by tech and bio
 benthic.presence.absence <- read.csv('../data/benthic.presence.absence.csv')
 hash.annotated <- read.csv('../data/hash.annotated.csv') # Mocho's hashes with taxa info
-events <- read.csv('../data/events.joe.format.csv')
+events <- read.csv('../data/events.joe.format.csv') # event table
 
-#split up site and date
+# split date and site in event table
 sd.events <- events %>% 
   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = '_')
   
@@ -31,9 +31,10 @@ species.by.sample.alltax <- species.by.sample.alltax %>%
   filter(benthos %in% c('BEN','Both')) %>%
   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) 
 
+# write to file the table with benthic community and its higher taxonomy
 write.csv(species.by.sample.alltax, '../data/species.by.sample.alltax.csv')
 
-
+# richness by phylum (or different division if altered)
 new.df <- species.by.sample.alltax %>%
   group_by(sample, phylum, .drop=FALSE) %>%
   summarise(richness = n()) %>%
@@ -42,6 +43,7 @@ new.df <- species.by.sample.alltax %>%
            fill = list(richness = 0)) %>%
   separate(sample, into = c("site","date" ), sep = "_", remove = F)
 
+# Moncho's code to check for NA's #need to learn more about ungroup()
 new.df %>%
   ungroup() %>%
   summarise (sum(is.na(sample)),
@@ -49,6 +51,7 @@ new.df %>%
              sum(is.na(phylum)),
              sum(richness == 0))
 
+# function to select specific kingdom/phylum/order etc use with above code 
 taxa_filter <- function(df, taxa) {
   filt.df <- df %>%
     filter(phylum %in% c(taxa))
@@ -56,16 +59,17 @@ taxa_filter <- function(df, taxa) {
   return(filt.df)
 }
 
+# create filtered dataframe to plot 
 x<-taxa_filter(new.df, 'Arthropoda')
 
-# test <- taxa_richness(by.sample.species, by.sample.species$phylum, 'Cnidaria')
-
+# simple boxplot function for x df 
 ggfun <- function(df) {
 ggplot(df, aes(x=site, y=richness)) + 
   geom_boxplot()
 
 }
 
+# test it out 
 ggfun(x)
 
 
