@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 library(tidyverse)
 library(dplyr)
+library(vegan)
 ```
 
 ## Data Exploration and Visualization 
@@ -26,10 +27,12 @@ data that Ryan keeps mentioning
 
 3) Bray Curtis and Jaccard heatmaps could be interesting 
 
-4) In another script: recreating Moncho's k-means analysis 
+4) In another script: recreating Moncho's k-means analysis -> this begins at line 369 of manuscript.main.analysis
+
+## calculate eDNA index with absences included
+does this even make a difference for BC? 
 
 ```{r}
-# I HAVE TO CALCULATE INDEX AFTER INSERTING 0s I THINK... 
 eDNAindex <- read.csv("../data/eDNAindex.avg.reps.csv")
 
 eDNAindex.PA <- eDNAindex %>%
@@ -38,6 +41,22 @@ eDNAindex.PA <- eDNAindex %>%
 
 eDNAindex.PA <- eDNAindex.PA %>%  
   pivot_longer(!species, names_to='sample', values_to='eDNA_index') 
+
+# why does NA show up here
+Index.check.PA <- eDNAindex.PA %>% 
+  group_by(species) %>% 
+  summarize(max(eDNA_index),
+            min(eDNA_index))
+
+Index.check <- eDNAindex %>%
+  group_by(species) %>% 
+  summarize(max(eDNA_index),
+            min(eDNA_index))
 ```
 
 ## Including Plots
+
+```{r}
+data(varespec)
+```
+
