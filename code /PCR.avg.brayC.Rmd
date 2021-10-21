@@ -11,6 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(dplyr)
 library(vegan)
+library(ggplot2)
 ```
 
 ## Data Exploration and Visualization 
@@ -60,21 +61,53 @@ data(varespec)
 wide.eDNA.index <- eDNAindex.PA %>%
   pivot_wider(names_from = species, values_from =eDNA_index)
 
+wide.eDNA.index <- wide.eDNA.index %>%
+  separate(col=sample, into=c('site','date'), sep='[_]', remove=FALSE) %>%
+  filter(site %in% c('PO','LL','TR','TW','SA'))
+
 # save sample names as vector
 sample_sites <- wide.eDNA.index$sample
 
 # get rid of sample names so we can use vegdist()
 wide.eDNA.index <- wide.eDNA.index %>%
-  select(-sample)
+  select(-c(sample, date, site))
 
 # calculate parewise dissimilarities - next step reproduce figure in emily's tides paper! 
 dist.matrix <- vegdist(wide.eDNA.index, method='bray')
 ```
 
 ```{r}
-wide.eDNA.index %>%
-  metaMDS(trace = F) %>%
-  ordiplot(type = "none") %>%
-  text("sites")
+# wide.eDNA.index %>%
+#   metaMDS(trace = F) %>%
+#   ordiplot(type = "none") %>%
+#   text("sites")
+```
+
+Replicating Eily's metaMDS code 
+```{r}
+pca.raw.bc.nmds <- metaMDS(wide.eDNA.index, distance = "bray")
+pca.raw.bc.MDS1 <- pca.raw.bc.nmds$points[,1] #store nmds values
+pca.raw.bc.MDS2 <- pca.raw.bc.nmds$points[,2] #store nmds values 
+
+raw.pca.to.plot <- cbind(sample_sites, pca.raw.bc.MDS1, pca.raw.bc.MDS2)
+
+raw.pca.to.plot <- raw.pca.to.plot %>%
+  as.data.frame() %>%
+  separate(col=sample_sites, into=c('site','date'), sep='[_]') %>%
+  separate(col=date, into=c('year','month'), sep=4) %>%
+  mutate(season = case_when(
+    month %in% c('01','03','10','11') ~ 'cold',
+    month %in% c('05','06','07','08','09') ~ 'warm'
+  ))
+```
+
+Replicating Eily's plotting code 
+```{r PCA plots}
+ggplot(raw.pca.to.plot, aes(x=pca.raw.bc.MDS1, y=pca.raw.bc.MDS2)) +
+  geom_point(size=4, aes(color=factor(site), shape=factor(season))) +
+  theme_bw() +
+  labs(x="PC1",y="PC2", color="Site") +
+  ggtitle('COI - eDNA index - Bray Curtis')
+
 ```
 
