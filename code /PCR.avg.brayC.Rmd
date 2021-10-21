@@ -71,3 +71,10 @@ wide.eDNA.index <- wide.eDNA.index %>%
 dist.matrix <- vegdist(wide.eDNA.index, method='bray')
 ```
 
+```{r}
+wide.eDNA.index %>%
+  metaMDS(trace = F) %>%
+  ordiplot(type = "none") %>%
+  text("sites")
+```
+

@@ -15,11 +15,11 @@ myIndex <- myIndex %>%
   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2)
 
 kelp <- myIndex %>%
-  filter(species %in% c('Littorina plena')) %>%
+  filter(species %in% c('Fucus distichus')) %>%
   filter(site %in% c('CP','FH', 'LK'))
 
 snails <- myIndex %>%
-  filter(species %in% c('Littorina plena')) %>%
+  filter(species %in% c('Fucus distichus')) %>%
   filter(site %in% c('LL','TW','SA','PO'))
 
 
