@@ -1,0 +1,70 @@
+---
+title: "capscale_attempt"
+author: "Joe Duprey"
+date: "10/25/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(vegan)
+```
+
+Moncho and Emily's function
+
+```{r}
+CAPSUPP_PRESABS <- function(df, TAXON){
+  
+      myData <- df %>%
+        mutate(edna = ifelse(edna > 0, 1, 0)) %>%
+        spread(key = Taxon, value = edna, fill = 0) %>%
+        dplyr::rename("presence" = TAXON) %>%
+        column_to_rownames("sample")
+      
+      full.cap.results <- capscale(
+        myData[, -which(names(myData) == "presence")] ~
+        myData[, which(names(myData) == "presence")],
+        dist = "jaccard", add =TRUE)  #what add=TRUE do? 
+      
+      community <- full.cap.results %>% 
+        scores() %>% 
+        magrittr::extract2("species") %>%
+        as.data.frame() %>% 
+        rownames_to_column("Taxon") %>% 
+        arrange(desc(abs(CAP1))) %>% #hmmm, how can we make this in the direction of the HAB cluster, whether + or -?
+        head(10)
+        
+        return(community)
+      
+}
+
+```
+
+```{r}
+#load longform draft on eDNA index
+all_taxa_long <- read.csv("../data/longform_eDNAind_draft.csv")
+
+all_taxa_long <- rename(all_taxa_long, Taxon = species) 
+all_taxa_long <- rename(all_taxa_long, edna = eDNA_index) 
+
+```
+
+
+
+```{r}
+#input to CAPSCALE_PRESEBS - what does this mean?? is long form eDNA index
+#it looks like emily and moncho limited it to detections above 10% but i'll skip that for now 
+
+#focalTaxa <- c("Alexandrium_2b2", "Alexandrium_3fc", "Hematodinium_449", "Karlodinium_8ed","Karlodinium_a27", "Pseudonitzschia_4e5", "Pseudonitzschia_d36", "Pseudonitzschia_d40") 
+
+focalTaxa <- c("Ostrea lurida", "Oncorhynchus keta", "Littorina plena")
+
+#asv.edna.all10 is long form csv with TAXON | SAMPLE | eDNA index 
+
+for (i in focalTaxa){
+  assign(paste0(i, "_capsupp"),
+         CAPSUPP_PRESABS(all_taxa_long, i)
+         )
+}
+```
+

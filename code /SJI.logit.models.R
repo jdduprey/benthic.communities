@@ -1,7 +1,7 @@
 # ============================================
 # BENTHIC SPECIES LOGISTIC REGRESSION MODELS for PRESENCE/ABSENCE 
 # Joe's first attempt 
-# Last edited: 05/18/2021
+# Last edited: 10/25/2021
 # ============================================
 library('tidyverse')
 library('dplyr')
@@ -39,9 +39,19 @@ presence.absence <- presence.absence %>%
 # connect with environmental data to use as continuous variables
 presence.absence <- inner_join(presence.absence, events) 
 
+# ==================================================
+# filter by region
+presence.absence <- presence.absence %>% 
+  filter(Area %in% c("Hood Canal"))
+
 # create site and date column in addition to "sample" 
 presence.absence <- presence.absence %>%
-  separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) 
+  separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) %>%
+  separate(col=date, remove=FALSE, into=c("year", "month"), sep = 5) %>%
+  mutate(ostrea_spn = case_when(
+    month %in% c("05","06","07","08") ~ "yes",
+    month %in% c("09","11","01","03") ~ "no"
+  ))
 
 # now we can build a beautiful logistic model for every species
 xtabsdf <- as.data.frame(xtabs(~ presence + sample, data = presence.absence))
@@ -70,7 +80,7 @@ for(i in unique(presence.absence$species)) {
 # ======================================================
 species_logit <- function(species_str){
 
-  mylogit <- glm(presence ~ Season + pH_new + Temperature, data = p.a.species[[species_str]], family = "binomial", maxit=100)
+  mylogit <- glm(presence ~ ostrea_spn + pH_new + Temperature, data = p.a.species[[species_str]], family = "binomial", maxit=100)
   print(p.a.species[[species_str]])
   
   print(mylogit)
@@ -82,7 +92,7 @@ species_logit <- function(species_str){
 # ======================================================
 
 # call the logit function 
-test_logit <- species_logit('Gracilaria vermiculophylla')
+test_logit <- species_logit("Ostrea lurida")
 
 # display results 
 summary(test_logit)
@@ -104,7 +114,7 @@ plot_logit <- function(species_str, test_logit) {
   newdata2 <- with(p.a.species[[species_str]], data.frame(
                 Temperature = rep(seq(from = 7.17, to = 22.6, length.out = 100),2), 
                 pH_new = mean(pH_new), 
-                Season = factor(rep(c('Summer','Winter'), each = 100))))
+                ostrea_spn = factor(rep(c('yes','no'), each = 100))))
 
   newdata3 <- cbind(newdata2, predict(test_logit, newdata = newdata2, type = "link",
                 se = TRUE))
@@ -119,9 +129,9 @@ plot_logit <- function(species_str, test_logit) {
   
   # plot the output 
   logit_plot <- ggplot(newdata3, aes(x = Temperature, y = PredictedProb)) + 
-    geom_ribbon(aes(ymin = LL,  ymax = UL, fill = Season), alpha = 0.2) + 
-    geom_line(aes(colour = Season),size = 1) +
-    geom_point(data= p.a.species[[species_str]], aes(x = Temperature, y = presence, colour = Season)) +
+    geom_ribbon(aes(ymin = LL,  ymax = UL, fill = ostrea_spn), alpha = 0.2) + 
+    geom_line(aes(colour = ostrea_spn),size = 1) +
+    geom_point(data= p.a.species[[species_str]], aes(x = Temperature, y = presence, colour = ostrea_spn)) +
     labs(title=species_str) 
   
   return(logit_plot)
@@ -129,7 +139,7 @@ plot_logit <- function(species_str, test_logit) {
 # ======================================================
 
 # call the visualize function 
-plot_logit('Gracilaria vermiculophylla', test_logit)
+plot_logit("Ostrea lurida", test_logit)
 
 # ======================================================
 # ======================================================
@@ -142,3 +152,4 @@ plot_logit('Gracilaria vermiculophylla', test_logit)
 # known spawning month for invertebrates nReads 
 # habitat depth of detected organisms? 
 # replicate interactive app to view relative abundance and community structure
+

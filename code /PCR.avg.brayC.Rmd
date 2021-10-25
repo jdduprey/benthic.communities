@@ -53,11 +53,11 @@ Index.check <- eDNAindex %>%
             min(eDNA_index))
 
 # filter by values in annotated csv 
-eDNAindex.PA <- left_join(eDNAindex.PA, species_annotated) %>%
-  filter(benthos %in% c("BEN","both")) %>%
-  select(species, sample, eDNA_index)
+# eDNAindex.PA <- left_join(eDNAindex.PA, species_annotated) %>%
+#   filter(benthos %in% c("BEN","both")) %>%
+#   select(species, sample, eDNA_index)
   
-
+write_csv(eDNAindex.PA, "../data/longform_eDNAind_draft.csv")
 ```
 
 ## Including Plots

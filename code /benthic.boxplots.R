@@ -15,6 +15,13 @@ by.sample.species <- read.csv('../data/by.sample.species.csv') # reads merged by
 benthic.presence.absence <- read.csv('../data/benthic.presence.absence.csv')
 hash.annotated <- read.csv('../data/hash.annotated.csv') # Mocho's hashes with taxa info
 events <- read.csv('../data/events.joe.format.csv') # event table
+more_hashes <- read.csv("../data/all.taxonomy.20190130.csv")
+
+# fish_food_bugs <- hash.annotated %>%
+#    filter(phylum %in% c("Arthropoda")) %>%
+#    filter(benthos %in% c("None"))
+# 
+# write_csv(fish_food_bugs, "../data/temp/fish_food_bugs.csv")
 
 # split date and site in event table
 sd.events <- events %>% 
@@ -24,15 +31,15 @@ sd.events <- events %>%
 species.annotated <- hash.annotated %>%
   distinct(species, .keep_all=TRUE) 
 
+write.csv(species.annotated, '../data/species_annotated.csv')
+
 # counting species abundance the only way joe knows how atm 
 # by.sample.species$itr <- 1
 species.by.sample.alltax <- left_join(by.sample.species, species.annotated, by='species')
 species.by.sample.alltax <- species.by.sample.alltax %>%
-  filter(benthos %in% c('BEN', 'Both', 'PLK')) %>%
+  filter(benthos %in% c('None',"PLK","BEN","Both")) %>%
   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) 
 
-by_taxa_richness <- species.by.sample.alltax %>%
-  filter(phylum %in% c('Chordata'))
 
 # write to file the table with benthic community and its higher taxonomy
 write.csv(species.by.sample.alltax, '../data/species.by.sample.alltax.csv')
@@ -51,8 +58,19 @@ n_detections_df %>%
   ungroup() %>%
   summarise (sum(is.na(sample)),
              sum(is.na(site)),
-             sum(is.na(phylum)),
+             sum(is.na(species)),
              sum(richness == 0))
+
+# make a dataframe that shows how often each species is seen - in genera or at each site 
+total_detections <- n_detections_df %>%
+  select(species, richness) %>%
+  group_by(species) %>% ## group by sample or month or date etc.... 
+  mutate(n_detections = sum(richness)) %>%
+  distinct(species, n_detections)
+
+total_detections <- left_join(total_detections, species.annotated)
+
+write_csv(total_detections, "../data/total_detections_by_species.csv")
 
 # function to select specific kingdom/phylum/order etc use with above code 
 taxa_filter <- function(df, taxa) {
@@ -63,7 +81,9 @@ taxa_filter <- function(df, taxa) {
 }
 
 # create filtered dataframe to plot 
-n_detections_of_taxa <-taxa_filter(new.df, 'Chordata')
+n_detections_of_taxa <-taxa_filter(n_detections_df, 'Arthropoda')
+
+write_csv(n_detections_of_taxa, "../data/temp/fish_food_events.csv")
 
 # simple boxplot function for x df 
 ggfun <- function(df) {
