@@ -1,7 +1,7 @@
 ---
 title: "PCR.avg.brayC"
 author: "Joe Duprey"
-date: "10/8/2021"
+date: "Last Edited 10/25/2021"
 output: html_document
 ---
 
@@ -32,6 +32,7 @@ data that Ryan keeps mentioning
 
 ```{r}
 eDNAindex <- read.csv("../data/eDNAindex.avg.reps.csv")
+species_annotated <- read.csv("../data/species_annotated.csv")
 
 eDNAindex.PA <- eDNAindex %>%
   select(sample, species, eDNA_index) %>%
@@ -50,11 +51,19 @@ Index.check <- eDNAindex %>%
   group_by(species) %>% 
   summarize(max(eDNA_index),
             min(eDNA_index))
+
+# filter by values in annotated csv 
+eDNAindex.PA <- left_join(eDNAindex.PA, species_annotated) %>%
+  filter(benthos %in% c("BEN","both")) %>%
+  select(species, sample, eDNA_index)
+  
+
 ```
 
 ## Including Plots
 
 ```{r}
+# example data 
 data(varespec)
 
 # wide data to match vegdist() example above data(varespec) --looking good so far 10/8/2021
@@ -63,7 +72,7 @@ wide.eDNA.index <- eDNAindex.PA %>%
 
 wide.eDNA.index <- wide.eDNA.index %>%
   separate(col=sample, into=c('site','date'), sep='[_]', remove=FALSE) %>%
-  filter(site %in% c('PO','LL','TR','TW','SA'))
+  filter(site %in% c('CP','LK','FH'))
 
 # save sample names as vector
 sample_sites <- wide.eDNA.index$sample
@@ -85,7 +94,7 @@ dist.matrix <- vegdist(wide.eDNA.index, method='bray')
 
 Replicating Eily's metaMDS code 
 ```{r}
-pca.raw.bc.nmds <- metaMDS(wide.eDNA.index, distance = "bray")
+pca.raw.bc.nmds <- metaMDS(wide.eDNA.index, distance = "jaccard")
 pca.raw.bc.MDS1 <- pca.raw.bc.nmds$points[,1] #store nmds values
 pca.raw.bc.MDS2 <- pca.raw.bc.nmds$points[,2] #store nmds values 
 
@@ -104,10 +113,9 @@ raw.pca.to.plot <- raw.pca.to.plot %>%
 Replicating Eily's plotting code 
 ```{r PCA plots}
 ggplot(raw.pca.to.plot, aes(x=pca.raw.bc.MDS1, y=pca.raw.bc.MDS2)) +
-  geom_point(size=4, aes(color=factor(site), shape=factor(season))) +
+  geom_point(size=3, aes(color=factor(site), shape=factor(season))) +
   theme_bw() +
   labs(x="PC1",y="PC2", color="Site") +
-  ggtitle('COI - eDNA index - Bray Curtis')
-
+  ggtitle('COI - eDNA index - Bray Curtis') 
 ```
 

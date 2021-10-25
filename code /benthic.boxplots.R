@@ -38,16 +38,16 @@ by_taxa_richness <- species.by.sample.alltax %>%
 write.csv(species.by.sample.alltax, '../data/species.by.sample.alltax.csv')
 
 # richness by phylum (or different division if altered)
-new.df <- species.by.sample.alltax %>%
-  group_by(sample, phylum, .drop=FALSE) %>%
+n_detections_df <- species.by.sample.alltax %>%
+  group_by(sample, species, .drop=FALSE) %>%
   summarise(richness = n()) %>%
   ungroup() %>%
-  complete(sample, phylum,
+  complete(sample, species,
            fill = list(richness = 0)) %>%
   separate(sample, into = c("site","date" ), sep = "_", remove = F)
 
 # Moncho's code to check for NA's #need to learn more about ungroup()
-new.df %>%
+n_detections_df %>%
   ungroup() %>%
   summarise (sum(is.na(sample)),
              sum(is.na(site)),
