@@ -8,7 +8,9 @@ library('dplyr')
 library('ggplot2')
 
 # by.sample.species already has technical replicates merged
-by.sample.species <- read.csv('../data/by.sample.species.csv')
+by.sample.species <- read_csv("../data/by.sample.species.csv")
+species_annotated <- read.csv("../data/species_annotated.csv")
+total_detections_by_species <- read.csv("../data/total_detections_by_species.csv")
 # all the good environmental data 
 events <- read.csv('../data/events.joe.format.csv')
 
@@ -80,7 +82,7 @@ for(i in unique(presence.absence$species)) {
 # ======================================================
 species_logit <- function(species_str){
 
-  mylogit <- glm(presence ~ ostrea_spn + pH_new + Temperature, data = p.a.species[[species_str]], family = "binomial", maxit=100)
+  mylogit <- glm(presence ~ Season + pH_new + Temperature, data = p.a.species[[species_str]], family = "binomial", maxit=100)
   print(p.a.species[[species_str]])
   
   print(mylogit)
@@ -92,7 +94,7 @@ species_logit <- function(species_str){
 # ======================================================
 
 # call the logit function 
-test_logit <- species_logit("Ostrea lurida")
+test_logit <- species_logit("Lottia paradigitalis")
 
 # display results 
 summary(test_logit)
@@ -114,7 +116,7 @@ plot_logit <- function(species_str, test_logit) {
   newdata2 <- with(p.a.species[[species_str]], data.frame(
                 Temperature = rep(seq(from = 7.17, to = 22.6, length.out = 100),2), 
                 pH_new = mean(pH_new), 
-                ostrea_spn = factor(rep(c('yes','no'), each = 100))))
+                Season = factor(rep(c('Summer','Winter'), each = 100))))
 
   newdata3 <- cbind(newdata2, predict(test_logit, newdata = newdata2, type = "link",
                 se = TRUE))
@@ -129,17 +131,17 @@ plot_logit <- function(species_str, test_logit) {
   
   # plot the output 
   logit_plot <- ggplot(newdata3, aes(x = Temperature, y = PredictedProb)) + 
-    geom_ribbon(aes(ymin = LL,  ymax = UL, fill = ostrea_spn), alpha = 0.2) + 
-    geom_line(aes(colour = ostrea_spn),size = 1) +
-    geom_point(data= p.a.species[[species_str]], aes(x = Temperature, y = presence, colour = ostrea_spn)) +
-    labs(title=species_str) 
+    geom_ribbon(aes(ymin = LL,  ymax = UL, fill = Season), alpha = 0.2) + 
+    geom_line(aes(colour = Season),size = 1) +
+    geom_point(data= p.a.species[[species_str]], aes(x = Temperature, y = presence, colour = Season)) +
+    labs(title=species_str, y="Probability of Detection") 
   
   return(logit_plot)
   }
 # ======================================================
 
 # call the visualize function 
-plot_logit("Ostrea lurida", test_logit)
+plot_logit("Lottia paradigitalis", test_logit)
 
 # ======================================================
 # ======================================================
