@@ -57,7 +57,19 @@ all_taxa_long <- rename(all_taxa_long, edna = eDNA_index)
 
 #focalTaxa <- c("Alexandrium_2b2", "Alexandrium_3fc", "Hematodinium_449", "Karlodinium_8ed","Karlodinium_a27", "Pseudonitzschia_4e5", "Pseudonitzschia_d36", "Pseudonitzschia_d40") 
 
-focalTaxa <- c("Ostrea lurida", "Oncorhynchus keta", "Littorina plena")
+focalTaxa <- c("Ostrea lurida", "Oncorhynchus keta", "Littorina plena",
+               "Paracalanus sp. C AC-2013","Protoperidinium cf. depressum",
+               "Pseudocalanus newmani","Centropages abdominalis",
+               "Porichthys notatus","Saprolegnia diclina", "Aphanomyces sp. BOLD:AAO9952")
+
+#L. ramosa belongs to the genu Lichtheimia (syn. Mycocladus, Absidia proparte). It is most common in #soil, decaying plant debris, and foodstuffs.
+
+#Saprolegnia, like most oomycetes, is both a saprotroph and necrotroph. Typically feeding on waste #from fish or other dead cells, they will also take advantage of creatures that have been injured. An #infection is known as oomycosis.
+
+# OOmyceets
+# A very large number of diseases in agriculture and aquaculture are caused by fungal-like micro-organisms, classified as Oomycetes or water moulds. Collectively, oomycetes represent a huge threat to global food security. In addition, several oomycetes can cause environmental disasters, by wiping out native species of trees, crustacians and amphibians. The group representing the aquatic oomycetes are relatively understudied in contrast to their terrestrial counterparts that predominantly infect plants (e.g. Phytophthora, Pythium and Bremia spp.). This review focuses on the unique characteristics of two aquatic Oomycetes, Saprolegnia parasitica and Saprolegnia diclina with respect to their impact on aquaculture, animal health and the surrounding environment. The species characteristics, ecology, biology, infectivity and identification methods are described and the latest research insights are discussed.
+
+# In field crops, damage by Pythium spp. is often limited to the area affected, as the motile zoospores require ample surface water to travel long distances. Additionally, the capillaries formed by soil particles act as a natural filter and effectively trap many zoospores. 
 
 #asv.edna.all10 is long form csv with TAXON | SAMPLE | eDNA index 
 

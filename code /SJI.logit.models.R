@@ -94,7 +94,7 @@ species_logit <- function(species_str){
 # ======================================================
 
 # call the logit function 
-test_logit <- species_logit("Lottia paradigitalis")
+test_logit <- species_logit("Saprolegnia diclina")
 
 # display results 
 summary(test_logit)
@@ -141,7 +141,7 @@ plot_logit <- function(species_str, test_logit) {
 # ======================================================
 
 # call the visualize function 
-plot_logit("Lottia paradigitalis", test_logit)
+plot_logit("Saprolegnia diclina", test_logit)
 
 # ======================================================
 # ======================================================
