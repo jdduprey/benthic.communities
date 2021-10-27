@@ -1,7 +1,7 @@
 # ============================================
 # BENTHIC SPECIES LOGISTIC REGRESSION MODELS for PRESENCE/ABSENCE 
 # Joe's first attempt 
-# Last edited: 10/25/2021
+# Last edited: 10/27/2021
 # ============================================
 library('tidyverse')
 library('dplyr')

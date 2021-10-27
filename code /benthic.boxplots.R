@@ -125,3 +125,13 @@ ggplot(data=fraser.df, aes(x=date, y=Temperature, group=site)) +
   geom_line(aes(color=site))
 
 fraser.df <- inner_join(fraser.df, species.df.sj)
+
+
+# invasive barn
+loxo <- by.sample.species %>%
+  filter(species %in% c("Loxothylacus panopaei"))
+
+loxo_Events <- by.sample.species %>%
+  filter(sample %in% loxo$sample)
+
+
