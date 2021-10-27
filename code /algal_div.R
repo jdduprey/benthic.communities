@@ -40,7 +40,7 @@ benthic_algae <- species.by.sample.alltax %>%
                         ))
 
 benthic_inverts <- species.by.sample.alltax %>%
-  filter(kingdom %in% c("Cnidaria", "Arthropoda", "Annelida", "Mollusca",
+  filter(phylum %in% c("Cnidaria", "Arthropoda", "Annelida", "Mollusca",
                        "Bryozoa", "Echinodermata", "Nemertea", "Entoprocta",
                        "Brachiopoda", "Nematoda"
                        ))
@@ -66,7 +66,7 @@ benthic_inv_rich <- benthic_inverts %>%
   separate(sample, into = c("site","date" ), sep = "_", remove = F)
 
 # Moncho's code to check for NA's #need to learn more about ungroup()
-benthic_alg_rich %>%
+benthic_inv_rich %>%
   ungroup() %>%
   summarise (sum(is.na(sample)),
              sum(is.na(site)),
@@ -93,7 +93,7 @@ ggfun <- function(df, ylab) {
 }
 
 # test it out 
-ggfun(benthic_alg_rich, 'Benthic Algal Richness')
+ggfun(benthic_inv_rich, 'Benthic Invert Richness')
 
 
 species.df <- benthic_algae %>%
