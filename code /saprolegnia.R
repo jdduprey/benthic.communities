@@ -147,4 +147,5 @@ ggplot(sapro_pori, aes(site, date, fill=overlap)) +
 # =====================================
 sapro_events <- left_join(sapro_index, events)
 
-plot(x=sapro_events$log_index, y=sapro_events$Temperature)
+plot(x=sapro_events$Salinity, y=sapro_events$log_index)
+plot(x=sapro_events$Salinity.new, y=sapro_events$log_index)

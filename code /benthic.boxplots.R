@@ -46,10 +46,10 @@ write.csv(species.by.sample.alltax, '../data/species.by.sample.alltax.csv')
 
 # richness by phylum (or different division if altered)
 n_detections_df <- species.by.sample.alltax %>%
-  group_by(sample, species, .drop=FALSE) %>%
+  group_by(sample, phylum, .drop=FALSE) %>%
   summarise(richness = n()) %>%
   ungroup() %>%
-  complete(sample, species,
+  complete(sample, phylum,
            fill = list(richness = 0)) %>%
   separate(sample, into = c("site","date" ), sep = "_", remove = F)
 
@@ -58,15 +58,15 @@ n_detections_df %>%
   ungroup() %>%
   summarise (sum(is.na(sample)),
              sum(is.na(site)),
-             sum(is.na(species)),
+             sum(is.na(phylum)),
              sum(richness == 0))
 
 # make a dataframe that shows how often each species is seen - in genera or at each site 
 total_detections <- n_detections_df %>%
-  select(species, richness) %>%
-  group_by(species) %>% ## group by sample or month or date etc.... 
+  select(phylum, richness) %>%
+  group_by(phylum) %>% ## group by sample or month or date etc.... 
   mutate(n_detections = sum(richness)) %>%
-  distinct(species, n_detections)
+  distinct(phylum, n_detections)
 
 total_detections <- left_join(total_detections, species.annotated)
 
@@ -81,9 +81,9 @@ taxa_filter <- function(df, taxa) {
 }
 
 # create filtered dataframe to plot 
-n_detections_of_taxa <-taxa_filter(n_detections_df, 'Arthropoda')
+n_detections_of_taxa <-taxa_filter(n_detections_df, 'Oomycetes')
 
-write_csv(n_detections_of_taxa, "../data/temp/fish_food_events.csv")
+write_csv(n_detections_of_taxa, "../data/temp/oomycetes.csv")
 
 # simple boxplot function for x df 
 ggfun <- function(df) {
@@ -102,7 +102,7 @@ species.df <- species.by.sample.alltax %>%
   separate(sample, into = c("site","date" ), sep = "_", remove = F) %>%
   filter(site %in% c('LL','PO','SA','TR','TW'))
   
-ggplot(species.df, aes(site, date, fill=richness)) + 
+ggplot(n_detections_of_taxa, aes(site, date, fill=richness)) + 
   geom_tile() + 
   scale_fill_viridis()
 
