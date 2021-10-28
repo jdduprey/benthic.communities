@@ -35,4 +35,7 @@ https://www-jstor-org.offcampus.lib.washington.edu/stable/27696011?seq=7#metadat
 saprolegnia review
 https://www.cabi.org/isc/datasheet/71941#tooverview
 
+https://www.frontiersin.org/articles/10.3389/fvets.2020.00083/full
+see refs 6+7
+
 Researchers are often surprised to find that many fungi detected in marine environments are already well characterized from soil or plant habitats, even when those marine samples are collected from locations far from obvious terrestrial inputs. Tempting as it may be to interpret these data as evidence that a large proportion of marine fungi are metabolically inactive flotsam (as spores or relictual DNA), evidence suggests otherwise. Strong correlations with abiotic environmental conditions (8, 21) and gene expression data (22) suggest that at least some fungi display a truly amphibious ability
