@@ -30,4 +30,6 @@ https://journals.asm.org/doi/10.1128/mBio.01189-18
 
 https://www.researchgate.net/publication/282428544_A_world_without_parasites_Exploring_the_hidden_ecology_of_infection
 
+https://www-jstor-org.offcampus.lib.washington.edu/stable/27696011?seq=7#metadata_info_tab_contents
+
 Researchers are often surprised to find that many fungi detected in marine environments are already well characterized from soil or plant habitats, even when those marine samples are collected from locations far from obvious terrestrial inputs. Tempting as it may be to interpret these data as evidence that a large proportion of marine fungi are metabolically inactive flotsam (as spores or relictual DNA), evidence suggests otherwise. Strong correlations with abiotic environmental conditions (8, 21) and gene expression data (22) suggest that at least some fungi display a truly amphibious ability
