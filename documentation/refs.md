@@ -44,7 +44,30 @@ https://www.cabi.org/isc/datasheet/71941#tooverview
 see refs 6+7
 https://www.frontiersin.org/articles/10.3389/fvets.2020.00083/full
 
-book!
+general fish disease book
 Fish diseases and disorders. Volume 3: viral, bacterial and fungal infections.
 
+catch and release of salmon worsens fungal spread
+https://cdnsciencepub.com/doi/pdf/10.1139/cjfas-2021-0089
+
+1968 heated dispute about aquatic vs estuary saprolegnia
+https://www.nature.com/articles/217875a0
+
+alaska Fish and Game disease overview
+https://www.adfg.alaska.gov/static/species/disease/pdfs/fish_disease_book.pdf
+
+freshwater saprolegnia worse in warm months siberia
+https://aslopubs.onlinelibrary.wiley.com/doi/10.1002/lno.11550
+
+halophytophthroa eelgrass pathogen
+https://www.readcube.com/articles/10.3389/fmicb.2020.01467
+
+Anisolpidiales pathogen of brown algae 
+https://www.tandfonline.com/doi/full/10.1080/09670262.2016.1252857
+
 Researchers are often surprised to find that many fungi detected in marine environments are already well characterized from soil or plant habitats, even when those marine samples are collected from locations far from obvious terrestrial inputs. Tempting as it may be to interpret these data as evidence that a large proportion of marine fungi are metabolically inactive flotsam (as spores or relictual DNA), evidence suggests otherwise. Strong correlations with abiotic environmental conditions (8, 21) and gene expression data (22) suggest that at least some fungi display a truly amphibious ability
+
+press
+https://www.kitsapgov.com/pw/Documents/Kitsap_Salmon_Guide_Teachable_Moments.pdf
+
+https://www.hakaimagazine.com/news/fuzzy-fish/
