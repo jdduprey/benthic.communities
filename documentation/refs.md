@@ -32,6 +32,7 @@ https://digitalcommons.library.umaine.edu/cgi/viewcontent.cgi?article=1279&conte
 
 # marine fungi
 
+fungi in the marine environment - open questions, unsolved problems 
 https://journals.asm.org/doi/10.1128/mBio.01189-18
 
 https://www.researchgate.net/publication/282428544_A_world_without_parasites_Exploring_the_hidden_ecology_of_infection
@@ -62,7 +63,7 @@ https://aslopubs.onlinelibrary.wiley.com/doi/10.1002/lno.11550
 halophytophthroa eelgrass pathogen
 https://www.readcube.com/articles/10.3389/fmicb.2020.01467
 
-Anisolpidiales pathogen of brown algae 
+Anisolpidiales pathogen of brown algae
 https://www.tandfonline.com/doi/full/10.1080/09670262.2016.1252857
 
 Researchers are often surprised to find that many fungi detected in marine environments are already well characterized from soil or plant habitats, even when those marine samples are collected from locations far from obvious terrestrial inputs. Tempting as it may be to interpret these data as evidence that a large proportion of marine fungi are metabolically inactive flotsam (as spores or relictual DNA), evidence suggests otherwise. Strong correlations with abiotic environmental conditions (8, 21) and gene expression data (22) suggest that at least some fungi display a truly amphibious ability
