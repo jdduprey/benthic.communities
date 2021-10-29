@@ -25,6 +25,9 @@ https://www.sciencedirect.com/science/article/pii/S1749461313000286
 oomycetes parasitizing diatoms eDNA
 https://www.frontiersin.org/articles/10.3389/fmicb.2018.02918/full
 
+saprolegnia parasitica in marine breams?
+https://www.researchgate.net/publication/334490815_First_Report_of_Saprolegnia_parasitica_from_a_Marine_Species_Gilthead_Seabream_Sparus_aurata_in_Brackish_Water_Conditions
+
 https://digitalcommons.library.umaine.edu/cgi/viewcontent.cgi?article=1279&context=honors
 
 # marine fungi
