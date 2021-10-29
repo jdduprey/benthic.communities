@@ -18,9 +18,12 @@ https://orca.cardiff.ac.uk/130012/12/Matthewsamneded130012.pdf
 
 https://canalrivertrust.org.uk/enjoy-the-waterways/fishing/caring-for-our-fish/guide-to-fish-health/saprolegnia-in-wild-salmonids
 
-diclina, parasitica, aquaculture 
+diclina, parasitica, aquaculture
 https://www.sciencedirect.com/science/article/pii/S1749461313000286
 https://www.sciencedirect.com/science/article/pii/S1749461313000286
+
+oomycetes parasitizing diatoms eDNA
+https://www.frontiersin.org/articles/10.3389/fmicb.2018.02918/full
 
 https://digitalcommons.library.umaine.edu/cgi/viewcontent.cgi?article=1279&context=honors
 
@@ -37,5 +40,8 @@ https://www.cabi.org/isc/datasheet/71941#tooverview
 
 see refs 6+7
 https://www.frontiersin.org/articles/10.3389/fvets.2020.00083/full
+
+book!
+Fish diseases and disorders. Volume 3: viral, bacterial and fungal infections.
 
 Researchers are often surprised to find that many fungi detected in marine environments are already well characterized from soil or plant habitats, even when those marine samples are collected from locations far from obvious terrestrial inputs. Tempting as it may be to interpret these data as evidence that a large proportion of marine fungi are metabolically inactive flotsam (as spores or relictual DNA), evidence suggests otherwise. Strong correlations with abiotic environmental conditions (8, 21) and gene expression data (22) suggest that at least some fungi display a truly amphibious ability
