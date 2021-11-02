@@ -33,6 +33,9 @@ data that Ryan keeps mentioning
 ```{r}
 eDNAindex <- read.csv("../data/eDNAindex.avg.reps.csv")
 species_annotated <- read.csv("../data/species_annotated.csv")
+hash_annotated <- read.csv('../data/hash.annotated.csv') # Mocho's hashes with taxa info
+total_detections_by_species <- read.csv("../data/total_detections_by_species.csv")
+
 
 eDNAindex.PA <- eDNAindex %>%
   select(sample, species, eDNA_index) %>%
@@ -58,6 +61,18 @@ Index.check <- eDNAindex %>%
 #   select(species, sample, eDNA_index)
   
 write_csv(eDNAindex.PA, "../data/longform_eDNAind_draft.csv")
+
+species_test <- total_detections_by_species %>%
+  filter(kingdom %in% c("Fungi") | phylum %in% c("Oomycetes")) %>%
+  filter(n_detections >= 7)
+  
+
+eDNAindex.PA <- left_join(eDNAindex.PA, total_detections_by_species) %>%
+  filter(kingdom %in% c("Fungi") | phylum %in% c("Oomycetes")) %>%
+  filter(n_detections >= 7) %>%
+  select(species, sample, eDNA_index)
+
+
 ```
 
 ## Including Plots
@@ -72,7 +87,7 @@ wide.eDNA.index <- eDNAindex.PA %>%
 
 wide.eDNA.index <- wide.eDNA.index %>%
   separate(col=sample, into=c('site','date'), sep='[_]', remove=FALSE) %>%
-  filter(site %in% c('CP','LK','FH'))
+  filter(site %in% c("PO","LL","SA","TR","TW")) 
 
 # save sample names as vector
 sample_sites <- wide.eDNA.index$sample
@@ -118,4 +133,5 @@ ggplot(raw.pca.to.plot, aes(x=pca.raw.bc.MDS1, y=pca.raw.bc.MDS2)) +
   labs(x="PC1",y="PC2", color="Site") +
   ggtitle('COI - eDNA index - Bray Curtis') 
 ```
+
 

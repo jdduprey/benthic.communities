@@ -75,7 +75,8 @@ write_csv(total_detections, "../data/total_detections_by_species.csv")
 # function to select specific kingdom/phylum/order etc use with above code 
 taxa_filter <- function(df, taxa) {
   filt.df <- df %>%
-    filter(phylum %in% c(taxa))
+    filter(phylum %in% c(taxa)) %>%
+    separate(date, into=c("year", "month"), sep=4)
   
   return(filt.df)
 }
@@ -87,7 +88,7 @@ write_csv(n_detections_of_taxa, "../data/temp/oomycetes.csv")
 
 # simple boxplot function for x df 
 ggfun <- function(df) {
-ggplot(df, aes(x=site, y=richness)) + 
+ggplot(df, aes(x=month, y=richness)) + 
   geom_boxplot()
 
 }

@@ -12,6 +12,12 @@ https://www.tandfonline.com/doi/full/10.1080/17451000.2016.1142091
 
 # some oomyceetes refs
 
+saprolegnia strains are broad spectrum pathogens
+https://www.sciencedirect.com/science/article/pii/S1878614613001311
+
+aquatic fungi in iraqi estuary 
+https://link.springer.com/article/10.1007/BF00032723
+
 https://www.int-res.com/articles/dao_oa/d114p189.pdf
 
 https://orca.cardiff.ac.uk/130012/12/Matthewsamneded130012.pdf
@@ -32,15 +38,29 @@ https://digitalcommons.library.umaine.edu/cgi/viewcontent.cgi?article=1279&conte
 
 # marine fungi
 
-fungi in the marine environment - open questions, unsolved problems 
+fungi in the marine environment - open questions, unsolved problems
 https://journals.asm.org/doi/10.1128/mBio.01189-18
 
 https://www.researchgate.net/publication/282428544_A_world_without_parasites_Exploring_the_hidden_ecology_of_infection
 
 https://www-jstor-org.offcampus.lib.washington.edu/stable/27696011?seq=7#metadata_info_tab_contents
 
+Unaccounted mortality in salmon fisheries:
+non-retention in gillnets and effects on estimates of
+spawners
+Matthew R. Baker*1 and Daniel E. Schindler1
+
+terrestrial oomycetes in philipine estuaries
+https://asbp.org.ph/wp-content/uploads/2020/09/PJSB-IJD2-2020-007.pdf
+
 saprolegnia review
 https://www.cabi.org/isc/datasheet/71941#tooverview
+
+aphanomyces persist in salt water?
+https://www.jstor.org/stable/3759908
+
+big pathology book - still no answer to where salmonids infected
+http://dl.uncw.edu/digilib/Biology/Fungi/Taxonomy%20and%20Systematics/Padgett%20Book/BIOLOGY/CHAPTER_29/Text_29.pdf
 
 see refs 6+7
 https://www.frontiersin.org/articles/10.3389/fvets.2020.00083/full
