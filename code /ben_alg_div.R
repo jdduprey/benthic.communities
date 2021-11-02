@@ -1,9 +1,9 @@
 #===================================================
 # Joe Duprey
-# Benthic diversity boxplots
-# overall species richness, algae vs inverts, 
-# and by phylum/higher taxonomy
-# last edited 06/08/2021
+# Algal Diversity vs Everything Diversity? 
+# How does it change with conditions? Wave Energy, North/South, recorded params, by site? 
+# --- Exploring possible research questions --- 
+# last edited 11/02/2021
 #===================================================
 library('viridis')
 library('tidyverse')
@@ -26,7 +26,7 @@ more_hashes <- read.csv("../data/all.taxonomy.20190130.csv")
 # split date and site in event table
 sd.events <- events %>% 
   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = '_')
-  
+
 # merge hashes by species - is this correct 
 species.annotated <- hash.annotated %>%
   distinct(species, .keep_all=TRUE) 
@@ -88,9 +88,9 @@ write_csv(n_detections_of_taxa, "../data/temp/oomycetes.csv")
 
 # simple boxplot function for x df 
 ggfun <- function(df) {
-ggplot(df, aes(x=site, y=richness)) + 
-  geom_boxplot()
-
+  ggplot(df, aes(x=site, y=richness)) + 
+    geom_boxplot()
+  
 }
 
 # test it out 
@@ -102,7 +102,7 @@ species.df <- species.by.sample.alltax %>%
   summarise(richness = n()) %>%
   separate(sample, into = c("site","date" ), sep = "_", remove = F) %>%
   filter(site %in% c('LL','PO','SA','TR','TW'))
-  
+
 ggplot(n_detections_of_taxa, aes(site, date, fill=richness)) + 
   geom_tile() + 
   scale_fill_viridis()
@@ -116,23 +116,5 @@ species.df.sj <- species.by.sample.alltax %>%
 ggplot(data=species.df.sj, aes(x=date, y=richness, group=site)) +
   geom_line(aes(color=site))
 
-fraser.df <- sd.events %>%
-  filter(site %in% c('CP', 'LK', 'FH'))
-
-ggplot(data=fraser.df, aes(x=date, y=Salinity.new, group=site)) +
-  geom_line(aes(color=site))
-
-ggplot(data=fraser.df, aes(x=date, y=Temperature, group=site)) +
-  geom_line(aes(color=site))
-
-fraser.df <- inner_join(fraser.df, species.df.sj)
-
-
-# invasive barn
-loxo <- by.sample.species %>%
-  filter(species %in% c("Loxothylacus panopaei"))
-
-loxo_Events <- by.sample.species %>%
-  filter(sample %in% loxo$sample)
 
 
