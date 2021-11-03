@@ -17,12 +17,6 @@ hash.annotated <- read.csv('../data/hash.annotated.csv') # Mocho's hashes with t
 events <- read.csv('../data/events.joe.format.csv') # event table
 more_hashes <- read.csv("../data/all.taxonomy.20190130.csv")
 
-# fish_food_bugs <- hash.annotated %>%
-#    filter(phylum %in% c("Arthropoda")) %>%
-#    filter(benthos %in% c("None"))
-# 
-# write_csv(fish_food_bugs, "../data/temp/fish_food_bugs.csv")
-
 # split date and site in event table
 sd.events <- events %>% 
   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = '_')
@@ -31,58 +25,90 @@ sd.events <- events %>%
 species.annotated <- hash.annotated %>%
   distinct(species, .keep_all=TRUE) 
 
-write.csv(species.annotated, '../data/species_annotated.csv')
+# write.csv(species.annotated, '../data/species_annotated.csv')
 
 # counting species abundance the only way joe knows how atm 
 # by.sample.species$itr <- 1
 species.by.sample.alltax <- left_join(by.sample.species, species.annotated, by='species')
 species.by.sample.alltax <- species.by.sample.alltax %>%
-  filter(benthos %in% c('None',"PLK","BEN","Both")) %>%
-  separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) 
+  filter(benthos %in% c("BEN", "Both")) %>%
+  separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) #%>%
+  #filter(site %in% c("LL", "PO", "SA", "TR", 'TW'))
+
+print(unique(species.by.sample.alltax$phylum))
+
+# joe's first attempt to filter by benthic algea (micro and macro) and 
+# invertebrates (micro and macro)
+
+benthic_algae <- species.by.sample.alltax %>%
+  filter(phylum %in% c("Florideophyceae", "Phaeophyceae", "Bacillariophyta",
+                       "Bangiophyceae", "Compsopogonophyceae", "Rhodophyta"))
 
 
-# write to file the table with benthic community and its higher taxonomy
-write.csv(species.by.sample.alltax, '../data/species.by.sample.alltax.csv')
+benthic_inverts <- species.by.sample.alltax %>%
+  filter(phylum %in% c("Cnidaria", "Arthropoda", "Annelida", "Mollusca",
+                       "Bryozoa", "Echinodermata", "Nemertea", "Entoprocta",
+                       "Brachiopoda", "Nematoda"))
+
 
 # richness by phylum (or different division if altered)
-n_detections_df <- species.by.sample.alltax %>%
-  group_by(sample, kingdom, .drop=FALSE) %>%
+#===================================================
+
+n_detections_algae <- benthic_algae %>%
+  group_by(sample, species, .drop=FALSE) %>%
   summarise(richness = n()) %>%
   ungroup() %>%
-  complete(sample, kingdom,
+  complete(sample, species,
            fill = list(richness = 0)) %>%
-  separate(sample, into = c("site","date" ), sep = "_", remove = F)
+  separate(sample, into = c("site","date" ), sep = "_", remove = F) %>%
+  separate(date, into = c("year", "month"), sep = 4, remove = F)
+
+n_detections_inv <- benthic_inverts %>%
+  group_by(sample, species, .drop=FALSE) %>%
+  summarise(richness = n()) %>%
+  ungroup() %>%
+  complete(sample, species,
+           fill = list(richness = 0)) %>%
+  separate(sample, into = c("site","date"), sep = "_", remove = F) %>%
+  separate(date, into = c("year", "month"), sep = 4, remove = F)
+
+#===================================================
 
 # Moncho's code to check for NA's #need to learn more about ungroup()
-n_detections_df %>%
+n_detections_algae %>%
   ungroup() %>%
   summarise (sum(is.na(sample)),
              sum(is.na(site)),
-             sum(is.na(phylum)),
+             sum(is.na(species)),
              sum(richness == 0))
 
-# make a dataframe that shows how often each species is seen - in genera or at each site 
-total_detections <- n_detections_df %>%
-  select(kingdom, richness) %>%
-  group_by(kingdom) %>% ## group by sample or month or date etc.... 
-  mutate(n_detections = sum(richness)) %>%
-  distinct(kingdom, n_detections)
+# make a dataframe that shows how often each species is seen - in general or at each site 
+detect_by_site_alg <- n_detections_algae %>%
+  select(richness, sample, site, year, month) %>%
+  group_by(sample) %>% ## group by sample or month or date etc.... 
+  mutate(n_detections_alg = sum(richness)) %>%
+  distinct(sample, site, year, month, n_detections_alg)
 
-total_detections <- left_join(total_detections, species.annotated)
+detect_by_site_inv <- n_detections_inv %>%
+  select(richness, sample, site, year, month) %>%
+  group_by(sample) %>% ## group by sample or month or date etc.... 
+  mutate(n_detections_inv = sum(richness)) %>%
+  distinct(sample, site, year, month, n_detections_inv)
 
-write_csv(total_detections, "../data/total_detections_by_species.csv")
+inv_vs_alg <- left_join(detect_by_site_alg, detect_by_site_inv)
+
+ggplot(inv_vs_alg, aes(x=n_detections_alg, y=n_detections_inv, color=month)) +
+  labs(title="Total Invert Richness vs Total Alg Richness",
+       x="Algal Richness", y = "Invertebrate Richness") +
+  geom_point()
+  
+
+# write_csv(total_detections, "../data/total_detections_by_species.csv")
 
 # function to select specific kingdom/phylum/order etc use with above code 
-taxa_filter <- function(df, taxa) {
-  filt.df <- df %>%
-    filter(kingdom %in% c(taxa)) %>%
-    separate(date, into=c("year", "month"), sep=4)
-  
-  return(filt.df)
-}
 
 # create filtered dataframe to plot 
-n_detections_of_taxa <-taxa_filter(n_detections_df, 'Fungi')
+n_detections_of_taxa <-taxa_filter(n_detections_algae, 'Fungi')
 
 write_csv(n_detections_of_taxa, "../data/temp/oomycetes.csv")
 

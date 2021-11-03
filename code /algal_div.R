@@ -1,9 +1,9 @@
 #===================================================
 # Joe Duprey
-# Algal Diversity vs Everthing Diversity? 
+# Algal Diversity vs Everything Diversity? 
 # How does it change with conditions? Wave Energy, North/South, recorded params, by site? 
 # --- Exploring possible research questions --- 
-# last edited 10/20/2021
+# last edited 11/02/2021
 #===================================================
 library('viridis')
 library('tidyverse')
@@ -28,7 +28,7 @@ species.annotated <- hash.annotated %>%
 # by.sample.species$itr <- 1
 species.by.sample.alltax <- left_join(by.sample.species, species.annotated, by='species')
 species.by.sample.alltax <- species.by.sample.alltax %>%
-  filter(benthos %in% c('BEN', 'Both')) %>%
+  filter(benthos %in% c('BEN', 'Both', "None", "PLK")) %>%
   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) 
 
 print(unique(species.by.sample.alltax$phylum))
@@ -45,12 +45,10 @@ benthic_inverts <- species.by.sample.alltax %>%
                        "Brachiopoda", "Nematoda"
                        ))
 
-# write to file the table with benthic community and its higher taxonomy
-write.csv(species.by.sample.alltax, '../data/species.by.sample.alltax.csv')
 
 # richness by phylum (or different division if altered)
 benthic_alg_rich <- benthic_algae %>%
-  group_by(sample, .drop=FALSE) %>%
+  group_by(sample, species, .drop=FALSE) %>%
   summarise(richness = n()) %>%
   ungroup() %>%
   complete(sample,
