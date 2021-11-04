@@ -97,50 +97,96 @@ detect_by_site_inv <- n_detections_inv %>%
 
 inv_vs_alg <- left_join(detect_by_site_alg, detect_by_site_inv)
 
-ggplot(inv_vs_alg, aes(x=n_detections_alg, y=n_detections_inv, color=month)) +
+ggplot(inv_vs_alg, aes(x=n_detections_alg, y=n_detections_inv, color=site)) +
   labs(title="Total Invert Richness vs Total Alg Richness",
        x="Algal Richness", y = "Invertebrate Richness") +
   geom_point()
   
+# look at environmental parameters
+inv_vs_alg$rich_ratio <- inv_vs_alg$n_detections_inv/inv_vs_alg$n_detections_alg
+inv_vs_alg$total_rich <- inv_vs_alg$n_detections_alg + inv_vs_alg$n_detections_inv
 
-# write_csv(total_detections, "../data/total_detections_by_species.csv")
+hist(x=inv_vs_alg$n_detections_alg, breaks=20)
+hist(x=inv_vs_alg$n_detections_inv, breaks=20)
 
-# function to select specific kingdom/phylum/order etc use with above code 
+hist(x=inv_vs_alg$rich_ratio, breaks=20)
 
-# create filtered dataframe to plot 
-n_detections_of_taxa <-taxa_filter(n_detections_algae, 'Fungi')
+inv_vs_alg_events <- left_join(inv_vs_alg, events)
 
-write_csv(n_detections_of_taxa, "../data/temp/oomycetes.csv")
+# lots of plots! 
+ggplot(inv_vs_alg_events, aes(x=Temperature, y=rich_ratio, color=site)) +
+  labs(title="Richness Ratio Inv/Alg",
+       x="Temperature", y = "Ratio Inv/Alg") +
+  geom_point()
 
-# simple boxplot function for x df 
-ggfun <- function(df) {
-  ggplot(df, aes(x=site, y=richness)) + 
-    geom_boxplot()
+pH_plot_df <- inv_vs_alg_events %>%
+  filter(sample != "LL_201711")
   
-}
+ggplot(pH_plot_df, aes(x=pH_new, y=rich_ratio, color=site)) +
+  labs(title="Richness Ratio Inv/Alg",
+       x="pH", y = "Ratio Inv/Alg") +
+  geom_point()
 
-# test it out 
-ggfun(n_detections_of_taxa )
+ggplot(pH_plot_df, aes(x=pH_new, y=rich_ratio, color=site)) +
+  labs(title="Richness Ratio Inv/Alg",
+       x="pH", y = "Ratio Inv/Alg") +
+  geom_point()
 
+ggplot(inv_vs_alg_events, aes(x=Salinity, y=rich_ratio, color=site)) +
+  labs(title="Richness Ratio Inv/Alg",
+       x="Salinity", y = "Ratio Inv/Alg") +
+  geom_point()
 
-species.df <- species.by.sample.alltax %>%
-  group_by(sample, .drop=FALSE) %>%
-  summarise(richness = n()) %>%
-  separate(sample, into = c("site","date" ), sep = "_", remove = F) %>%
-  filter(site %in% c('LL','PO','SA','TR','TW'))
+ggplot(inv_vs_alg_events, aes(x=total_rich, y=rich_ratio, color=site)) +
+  labs(title="Richness Ratio Inv/Alg vs Total Detections",
+       x="Total Richness", y = "Ratio Inv/Alg") +
+  geom_point()
 
-ggplot(n_detections_of_taxa, aes(site, date, fill=richness)) + 
-  geom_tile() + 
-  scale_fill_viridis()
+ggplot(inv_vs_alg_events, aes(x=Salinity, y=total_rich, color=site)) +
+  labs(title="Total Benthic Richness Salinity",
+       x="Salinity", y = "Total Richness") +
+  geom_point()
 
-species.df.sj <- species.by.sample.alltax %>%
-  group_by(sample, .drop=FALSE) %>%
-  summarise(richness = n()) %>%
-  separate(sample, into = c("site","date" ), sep = "_", remove = F) %>%
-  filter(site %in% c('CP','LK','FH'))
+ggplot(inv_vs_alg_events, aes(x=Salinity, y=total_rich, color=site)) +
+  labs(title="Total Benthic Richness Salinity",
+       x="Salinity", y = "Total Richness") +
+  geom_point()
 
-ggplot(data=species.df.sj, aes(x=date, y=richness, group=site)) +
-  geom_line(aes(color=site))
+ggplot(inv_vs_alg_events, aes(x=Temperature, y=total_rich, color=site)) +
+  labs(title="Total Benthic Richness Temp",
+       x="Temp", y = "Total Richness") +
+  geom_point()
 
+HC_inv_vs_alg <- inv_vs_alg_events %>%
+  filter(site %in% c("LL", "PO", "SA", "TR", 'TW')) %>%
+  filter(sample != "LL_201711")
 
+ggplot(HC_inv_vs_alg, aes(x=pH_new, y=total_rich, color=site)) +
+  labs(title="Total Benthic Richness pH",
+       x="pH", y = "Total Richness") +
+  geom_point()
 
+# ggplot(inv_vs_alg_events, aes(x=cluster, y=total_rich, color=site)) +
+#   labs(title="Cluster Data",
+#        x="Cluster", y = "Total Richness") +
+#   geom_point()
+
+ggplot(inv_vs_alg_events, aes(x=site, y=total_rich)) +
+  labs(title="Total Benthic Richness by Site",
+       x="Site", y = "Total Richness ") +
+  geom_boxplot()
+
+ggplot(inv_vs_alg_events, aes(x=month, y=total_rich)) +
+  labs(title="Total Benthic Richness by Month",
+       x="Month", y = "Total Richness") +
+  geom_boxplot()
+
+ggplot(inv_vs_alg_events, aes(x=month, y=n_detections_alg)) +
+  labs(title="Total Algal Richness by Month",
+       x="Month", y = "Algal Richness") +
+  geom_boxplot()
+
+ggplot(inv_vs_alg_events, aes(x=month, y=n_detections_inv)) +
+  labs(title="Total Invert Richness by Month",
+       x="Month", y = "Invert Richness") +
+  geom_boxplot()
