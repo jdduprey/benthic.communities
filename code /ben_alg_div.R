@@ -3,7 +3,7 @@
 # Algal Diversity vs Everything Diversity? 
 # How does it change with conditions? Wave Energy, North/South, recorded params, by site? 
 # --- Exploring possible research questions --- 
-# last edited 11/02/2021
+# last edited 11/04/2021
 #===================================================
 library('viridis')
 library('tidyverse')
@@ -73,6 +73,17 @@ n_detections_inv <- benthic_inverts %>%
   separate(date, into = c("year", "month"), sep = 4, remove = F)
 
 #===================================================
+# lets get data frames for total detections of the selected algae and inverts 
+sum_detections_alg <- n_detections_algae %>%
+  group_by(species) %>%
+  mutate(sum_detections = sum(richness)) %>%
+  distinct(species, sum_detections)
+  
+sum_detections_inv <- n_detections_inv %>%
+  group_by(species) %>%
+  mutate(sum_detections = sum(richness)) %>%
+  distinct(species, sum_detections)
+#===================================================
 
 # Moncho's code to check for NA's #need to learn more about ungroup()
 n_detections_algae %>%
@@ -90,10 +101,10 @@ detect_by_site_alg <- n_detections_algae %>%
   distinct(sample, site, year, month, n_detections_alg)
 
 detect_by_site_inv <- n_detections_inv %>%
-  select(richness, sample, site, year, month) %>%
+  select(richness, sample, site, year, month, date) %>%
   group_by(sample) %>% ## group by sample or month or date etc.... 
   mutate(n_detections_inv = sum(richness)) %>%
-  distinct(sample, site, year, month, n_detections_inv)
+  distinct(sample, site, year, month, date, n_detections_inv)
 
 inv_vs_alg <- left_join(detect_by_site_alg, detect_by_site_inv)
 
@@ -181,12 +192,63 @@ ggplot(inv_vs_alg_events, aes(x=month, y=total_rich)) +
        x="Month", y = "Total Richness") +
   geom_boxplot()
 
-ggplot(inv_vs_alg_events, aes(x=month, y=n_detections_alg)) +
-  labs(title="Total Algal Richness by Month",
-       x="Month", y = "Algal Richness") +
+#boxplot algal richness by site 
+ggplot(inv_vs_alg_events, aes(x=site, y=n_detections_alg)) +
+  labs(title="Total Algal Richness by Site",
+       x="Site", y = "Algal Richness") +
+  geom_boxplot()
+
+#boxplot invert richness by site 
+ggplot(inv_vs_alg_events, aes(x=site, y=n_detections_inv)) +
+  labs(title="Total Invert Richness by Site",
+       x="Site", y = "Benthic Invert Richness") +
   geom_boxplot()
 
 ggplot(inv_vs_alg_events, aes(x=month, y=n_detections_inv)) +
   labs(title="Total Invert Richness by Month",
        x="Month", y = "Invert Richness") +
   geom_boxplot()
+
+SA_inv_vs_alg <- inv_vs_alg_events %>%
+  filter(site %in% c("SA")) %>% 
+  select(date, n_detections_alg, n_detections_inv) %>%
+  pivot_longer(cols = c(n_detections_alg, n_detections_inv), names_to = "taxa")
+
+FH_inv_vs_alg <- inv_vs_alg_events %>%
+  filter(site %in% c("FH")) %>% 
+  select(date, n_detections_alg, n_detections_inv) %>%
+  pivot_longer(cols = c(n_detections_alg, n_detections_inv), names_to = "taxa")
+
+ggplot(SA_inv_vs_alg, aes(x=date, y=value, group=taxa)) +
+  labs(title="Salisbury Time Series?",
+       x="Month", y = "Taxa Richness") +
+  geom_line(aes(color=taxa)) +
+  geom_point(aes(color=taxa))
+
+ggplot(FH_inv_vs_alg, aes(x=date, y=value, group=taxa)) +
+  labs(title="Friday Harbor Time Series?",
+       x="Month", y = "Taxa Richness") +
+  geom_line(aes(color=taxa)) +
+  geom_point(aes(color=taxa))
+
+CP_inv_vs_alg <- inv_vs_alg_events %>%
+  filter(site %in% c("CP")) %>% 
+  select(date, n_detections_alg, n_detections_inv) %>%
+  pivot_longer(cols = c(n_detections_alg, n_detections_inv), names_to = "taxa")
+
+ggplot(CP_inv_vs_alg, aes(x=date, y=value, group=taxa)) +
+  labs(title="Cattle Point Time Series?",
+       x="Month", y = "Taxa Richness") +
+  geom_line(aes(color=taxa)) +
+  geom_point(aes(color=taxa))
+
+LL_inv_vs_alg <- inv_vs_alg_events %>%
+  filter(site %in% c("LL")) %>% 
+  select(date, n_detections_alg, n_detections_inv) %>%
+  pivot_longer(cols = c(n_detections_alg, n_detections_inv), names_to = "taxa")
+
+ggplot(LL_inv_vs_alg, aes(x=date, y=value, group=taxa)) +
+  labs(title="Lilliwaup Time Series?",
+       x="Month", y = "Taxa Richness") +
+  geom_line(aes(color=taxa)) +
+  geom_point(aes(color=taxa))
