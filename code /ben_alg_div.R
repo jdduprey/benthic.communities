@@ -109,9 +109,11 @@ detect_by_site_inv <- n_detections_inv %>%
 inv_vs_alg <- left_join(detect_by_site_alg, detect_by_site_inv)
 
 ggplot(inv_vs_alg, aes(x=n_detections_alg, y=n_detections_inv, color=site)) +
-  labs(title="Total Invert Richness vs Total Alg Richness",
+  labs(title="Total Benthic Invert Richness vs Total Benthic Algal Richness",
        x="Algal Richness", y = "Invertebrate Richness") +
   geom_point()
+
+ggsave("../figures/inv_vs_alg_rich_scatter.png")
   
 # look at environmental parameters
 inv_vs_alg$rich_ratio <- inv_vs_alg$n_detections_inv/inv_vs_alg$n_detections_alg
