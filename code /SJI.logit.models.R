@@ -1,7 +1,7 @@
 # ============================================
 # BENTHIC SPECIES LOGISTIC REGRESSION MODELS for PRESENCE/ABSENCE 
 # Joe's first attempt 
-# Last edited: 10/27/2021
+# Last edited: 11/08/2021
 # ============================================
 library('tidyverse')
 library('dplyr')
@@ -44,16 +44,12 @@ presence.absence <- inner_join(presence.absence, events)
 # ==================================================
 # filter by region
 presence.absence <- presence.absence %>% 
-  filter(Area %in% c("Hood Canal"))
+  filter(Area %in% c("San Juan Island","Hood Canal"))
 
 # create site and date column in addition to "sample" 
 presence.absence <- presence.absence %>%
   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) %>%
-  separate(col=date, remove=FALSE, into=c("year", "month"), sep = 5) %>%
-  mutate(ostrea_spn = case_when(
-    month %in% c("05","06","07","08") ~ "yes",
-    month %in% c("09","11","01","03") ~ "no"
-  ))
+  separate(col=date, remove=FALSE, into=c("year", "month"), sep = 5)
 
 # now we can build a beautiful logistic model for every species
 xtabsdf <- as.data.frame(xtabs(~ presence + sample, data = presence.absence))
@@ -94,7 +90,7 @@ species_logit <- function(species_str){
 # ======================================================
 
 # call the logit function 
-test_logit <- species_logit("Saprolegnia diclina")
+test_logit <- species_logit("Nereocystis luetkeana")
 
 # display results 
 summary(test_logit)
@@ -136,12 +132,14 @@ plot_logit <- function(species_str, test_logit) {
     geom_point(data= p.a.species[[species_str]], aes(x = Temperature, y = presence, colour = Season)) +
     labs(title=species_str, y="Probability of Detection") 
   
+  ggsave("logit_nereocystis.png")
+  
   return(logit_plot)
   }
 # ======================================================
 
 # call the visualize function 
-plot_logit("Saprolegnia diclina", test_logit)
+plot_logit("Nereocystis luetkeana", test_logit)
 
 # ======================================================
 # ======================================================
