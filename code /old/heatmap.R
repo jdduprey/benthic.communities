@@ -2,7 +2,7 @@
 # Joe Duprey
 # Benthic eDNA index heatmap 
 # and by phylum/higher taxonomy?
-# last edited 06/10/2021
+# last edited 11/08/2021
 #===================================================
 
 library('tidyverse')
@@ -20,7 +20,7 @@ kelp <- myIndex %>%
 
 snails <- myIndex %>%
   filter(species %in% c('Fucus distichus')) %>%
-  filter(site %in% c('LL','TW','SA','PO'))
+  filter(site %in% c('LL','TW','SA','PO',"TR"))
 
 
 ggplot(kelp, aes(site, date, fill=log_index)) +

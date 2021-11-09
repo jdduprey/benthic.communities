@@ -132,7 +132,7 @@ plot_logit <- function(species_str, test_logit) {
     geom_point(data= p.a.species[[species_str]], aes(x = Temperature, y = presence, colour = Season)) +
     labs(title=species_str, y="Probability of Detection") 
   
-  ggsave("logit_nereocystis.png")
+  ggsave("../figures/logit_nereocystis.png")
   
   return(logit_plot)
   }

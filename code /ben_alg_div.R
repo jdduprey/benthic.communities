@@ -78,6 +78,8 @@ sum_detections_alg <- n_detections_algae %>%
   group_by(species) %>%
   mutate(sum_detections = sum(richness)) %>%
   distinct(species, sum_detections)
+
+# write_csv(sum_detections_alg, "../documentation/ben_alg_life_his.csv")
   
 sum_detections_inv <- n_detections_inv %>%
   group_by(species) %>%
