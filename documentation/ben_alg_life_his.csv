@@ -1,11 +1,11 @@
 species,n_detections,macroalgae,growth,life_history
-Cylindrotheca closterium,79,FALSE,,"benthic diatom, harmful? "
+Cylindrotheca closterium,79,FALSE,,"""mudflat"" diatom - harmful? "
 Gracilaria vermiculophylla,34,TRUE,,"""inhibits the growth and survival of native algae through competition (Council of Europe 2009; Hamman et al. n.d."""
 Hincksia hincksiae,34,FALSE*,,brown algae
-Pinnularia sp. 5 CS-2011,28,FALSE,,"unicellular, fresh water algae, also estuarine"
+Pinnularia sp. 5 CS-2011,28,FALSE,,unicellular - fresh water algae - also estuarine
 Caulacanthus ustulatus,23,TRUE,,"tufted red algae, epiphytic on mussels and fucus, upper intertidal zone "
 Chondracanthus exasperatus,22,TRUE,,"red algae ""turkish towel"""
-Plagiogramma sp. IAL-2014a,22,FALSE,,benthic diatom 
+Plagiogramma sp. IAL-2014a,22,FALSE,,diatom 
 Ralfsioid sp. 4GWS,22,TRUE,,crustose brown algae
 Chordariaceae sp. 7 AP-2014,21,,,brown algae
 Mazzaella splendens,21,TRUE,,red alga
@@ -15,40 +15,40 @@ Fucus distichus,17,TRUE,,fucus!
 Hildenbrandia sp. 27GWS,17,TRUE,slow,crustose red algae
 Laminariocolax aecidioides,16,,,possibly endophytic? brown algae
 Nereocystis luetkeana,16,TRUE,,bull kelp
-Gomphonema clevei,15,FALSE,,benthic diatom 
+Gomphonema clevei,15,FALSE,,diatom 
 Leathesia marina,15,TRUE,,mid to low intertidal globular! 
 Wildemania sp. 5POR,15,TRUE,,red algae
-Sellaphora pupula,14,FALSE,,benthi diatom
+Sellaphora pupula,14,FALSE,,diatom
 Callithamnion corymbosum,13,TRUE,,filamentous red algae 
 Smithora naiadum,13,TRUE,,epiphyte of sea grass
-Wildemania amplissima,13,TRUE,,"red algae, low intertidal, high subtidal"
-Pyropia fallax,12,TRUE,,red
-Pyropia haitanensis,12,TRUE,,red
+Wildemania amplissima,13,TRUE,,red algae - low intertidal - high subtidal
+Pyropia fallax,12,TRUE,,red algae
+Pyropia haitanensis,12,TRUE,,red algae
 Acrochaetium arcuatum,11,TRUE,,red filamentous
 Petalonia fascia,11,TRUE,,brown algae crustose and vegetative stage
 Chordariaceae sp. 2 AP-2014,10,,,brown algae
 Ectocarpus siliculosus,10,TRUE,,filamentous brown algae
-Halidrys siliquosa,10,,,
-Cylindrotheca fusiformis,9,,,
-Gelidiophycus freshwateri,9,,,
-Sarcodiotheca sp. 2gaudichaudii,9,,,
-Ceramium sp. 3Cal,8,,,
-Devaleraea mollis,8,,,
-Martensia jejuensis,7,,,
-Mazzaella rosea,7,,,
-Mazzaella sp. GWS-2013b,7,,,
-Microcladia coulteri,7,,,
-Nitzschia palea,7,,,
-Prionitis sternbergii,7,,,
-Sellaphora bacillum,7,,,
-Mastocarpus alaskensis,6,,,
-Microspongium alariae,6,,,
-Pyropia perforata,6,,,
-Acrochaetium moniliforme,5,,,
-Callophyllis flabellulata,5,,,
-Chordariaceae sp. 17 AP-2014,5,,,
-Pyropia nereocystis,5,,,
-Smithora sp. 1naiadum,5,,,
+Halidrys siliquosa,10,TRUE,,brown algae - mid intertidal
+Cylindrotheca fusiformis,9,FALSE,,diatom 
+Gelidiophycus freshwateri,9,,,"""a new genus of algae from east asia"" "
+Sarcodiotheca sp. 2gaudichaudii,9,TRUE,,red algae - branching hard - substrates 
+Ceramium sp. 3Cal,8,TRUE,,red algae
+Devaleraea mollis,8,TRUE,,red algae
+Martensia jejuensis,7,TRUE,,red algae
+Mazzaella rosea,7,TRUE,,red algae
+Mazzaella sp. GWS-2013b,7,TRUE,,red algae
+Microcladia coulteri,7,TRUE,,epiphyte? Red algae 
+Nitzschia palea,7,FALSE,,diatom
+Prionitis sternbergii,7,TRUE,,red algae
+Sellaphora bacillum,7,FALSE,,diatom 
+Mastocarpus alaskensis,6,TRUE,,red algae
+Microspongium alariae,6,FALSE,,brown algal endophyte? 
+Pyropia perforata,6,TRUE,,red algae
+Acrochaetium moniliforme,5,TRUE,,red algae branching
+Callophyllis flabellulata,5,TRUE,,red algae branching
+Chordariaceae sp. 17 AP-2014,5,,,brown algae
+Pyropia nereocystis,5,TRUE,,red algae
+Smithora sp. 1naiadum,5,TRUE,,"epiphyte of sea grass, red algae "
 Wildemania sp. HK-2011,5,,,
 Callithamnion pikeanum,4,,,
 Cystoseira geminata,4,,,
