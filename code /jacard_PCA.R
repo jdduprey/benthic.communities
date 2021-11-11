@@ -24,24 +24,12 @@ more_hashes <- read.csv("../data/all.taxonomy.20190130.csv")
 species.annotated <- hash.annotated %>%
   distinct(species, .keep_all=TRUE) 
 
-# joe's first attempt to filter by benthic algea (micro and macro) and 
-# invertebrates (micro and macro)
-
-# benthic_algae <- species.by.sample.alltax %>%
-#   filter(phylum %in% c("Florideophyceae", "Phaeophyceae", "Bacillariophyta",
-#                        "Bangiophyceae", "Compsopogonophyceae", "Rhodophyta"))
-# 
-# 
-# benthic_inverts <- species.by.sample.alltax %>%
-#   filter(phylum %in% c("Cnidaria", "Arthropoda", "Annelida", "Mollusca",
-#                        "Bryozoa", "Echinodermata", "Nemertea", "Entoprocta",
-#                        "Brachiopoda", "Nematoda"))
-
+#===================================================
 # taxa filters
 arthropod_list <- c("Arthropoda")
-ben_algae_list <- c("Florideophyceae", "Phaeophyceae", "Bacillariophyta", 
+algae_list <- c("Florideophyceae", "Phaeophyceae", "Bacillariophyta", 
                     "Bangiophyceae", "Compsopogonophyceae", "Rhodophyta")
-ben_invert_list <- c("Cnidaria", "Arthropoda", "Annelida", "Mollusca",
+invert_list <- c("Cnidaria", "Arthropoda", "Annelida", "Mollusca",
                      "Bryozoa", "Echinodermata", "Nemertea", "Entoprocta",
                      "Brachiopoda", "Nematoda")
 
@@ -65,8 +53,10 @@ species.by.sample.alltax <- left_join(by.sample.species, species.annotated, by='
 # FUNCTION takes as input df with all present sampling events and annotations 
 # for example species.by.sample.alltax in this script 
 # returns long form presence and absence data with the selected phyla included
-filter_get_PA_data <- function(all_tax_df, phyla_list, 
-                               life_listry, location_list, 
+filter_get_PA_data <- function(all_tax_df, 
+                               phyla_list, 
+                               life_listry, 
+                               location_list, 
                                detection_cutoff=0) {
   
   # filter on taxanomic grouping and life history 
@@ -95,46 +85,48 @@ filter_get_PA_data <- function(all_tax_df, phyla_list,
     ungroup()
   
   print(paste("Initial nrows detection df:", nrow(n_detections_taxa_df)))
+  print(paste("Initial taxa", nrow(sum_detections_taxa)))
   
+  #TODO I think I fixed the filter by n_detections -joe 10/11/2021
   retained_taxa <- sum_detections_taxa %>%
     filter(sum_detections > detection_cutoff)
   
-  n_det_ret_taxa_df <- left_join(retained_taxa, n_detections_taxa_df)
+  n_detections_taxa_df <- n_detections_taxa_df %>%
+    filter(species %in% unique(retained_taxa$species))
   
   print(paste("Number of retained taxa:", nrow(retained_taxa)))
-  print(paste("New nrows detection df:", nrow(n_det_ret_taxa_df)))
+  print(paste("New nrows detection df:", nrow(n_detections_taxa_df)))
 
-  
-  
   # now on to the jacard PCA part of the function
-  meta_df <- n_det_ret_taxa_df %>%
+  meta_df <- n_detections_taxa_df %>%
     select(sample, site, date, year, month) %>%
     distinct(sample, site, date, year, month)
   
   # get data into the right form for vegan PCA 
-  wide_pa <- n_det_ret_taxa_df %>%
+  wide_pa <- n_detections_taxa_df %>%
     select(sample, species, richness) %>%
     pivot_wider(names_from = species, values_from = richness) %>%
     select(-sample)
   
-  # get correct format for jaccard 
-  
   # glorious list of things I want to return 
-  taxa_data_list <- list("PA_df_initial" = n_detections_taxa_df, 
-                         "PA_df_retained" = n_det_ret_taxa_df,
+  taxa_data_list <- list("PA_df" = n_detections_taxa_df, 
                          "metadata" = meta_df,
+                         "sum" = sum_detections_taxa,
                          "wide_PA" = wide_pa)
   
   return(taxa_data_list)
   }
 
+x <- algae_data$sum
+y <- algae_data$PA_df
+
 # test filter_get_PA_data() function 
 #===================================================
 algae_data <- filter_get_PA_data(species.by.sample.alltax, 
-                                 ben_algae_list, 
-                                 ben_only,
+                                 algae_list, 
+                                 plk_only,
                                  hood_canal_only,
-                                 3)
+                                 8)
 #===================================================
 
 # takes as input wide presence absence dataframe 
@@ -144,10 +136,8 @@ plot_NMDS_eil <- function(wide_PA_df) {
   jaccard_MDS1 <- jaccard_nmds$points[,1] #store nmds values
   jaccard_MDS2 <- jaccard_nmds$points[,2] #store nmds values 
   
-  # meta_test <- algae_data$metadata
-  
   jaccard_to_plot <- cbind(algae_data$metadata, jaccard_MDS1, jaccard_MDS2)
-  
+  print(jaccard_to_plot)
   
   NMDS_plot <- ggplot(jaccard_to_plot, aes(x=jaccard_MDS1, y=jaccard_MDS2)) +
     geom_point(size=3, aes(color=factor(site))) +  # shape=factor())
