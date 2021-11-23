@@ -37,7 +37,7 @@ write.csv(species.annotated, '../data/species_annotated.csv')
 # by.sample.species$itr <- 1
 species.by.sample.alltax <- left_join(by.sample.species, species.annotated, by='species')
 species.by.sample.alltax <- species.by.sample.alltax %>%
-  filter(benthos %in% c('None',"PLK","BEN","Both")) %>%
+  filter(benthos %in% c("PLK","BEN","Both")) %>%
   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) 
 
 
@@ -46,10 +46,10 @@ write.csv(species.by.sample.alltax, '../data/species.by.sample.alltax.csv')
 
 # richness by phylum (or different division if altered)
 n_detections_df <- species.by.sample.alltax %>%
-  group_by(sample, phylum, .drop=FALSE) %>%
+  group_by(sample, species, .drop=FALSE) %>%
   summarise(richness = n()) %>%
   ungroup() %>%
-  complete(sample, phylum,
+  complete(sample, species,
            fill = list(richness = 0)) %>%
   separate(sample, into = c("site","date" ), sep = "_", remove = F)
 
@@ -58,19 +58,20 @@ n_detections_df %>%
   ungroup() %>%
   summarise (sum(is.na(sample)),
              sum(is.na(site)),
-             sum(is.na(phylum)),
+             sum(is.na(species)),
              sum(richness == 0))
 
 # make a dataframe that shows how often each species is seen - in genera or at each site 
 total_detections <- n_detections_df %>%
-  select(phylum, richness, sample) %>%
-  group_by(phylum, sample) %>% ## group by sample or month or date etc.... 
+  select(species, richness, sample) %>%
+  group_by(species) %>% ## group by sample or month or date etc.... 
   mutate(n_detections = sum(richness)) %>%
-  distinct(phylum, n_detections, sample)
+  distinct(species, n_detections) %>%
+  arrange(desc(n_detections))
 
-#total_detections_by_phylum <- left_join(total_detections, species.annotated)
+total_detections_by_species <- left_join(total_detections, species.annotated)
 
-total_detections <- total_detections %>%
+total_detections_by_species <- total_detections_by_species %>%
   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = "_") %>%
   separate(col=date, remove=FALSE, into=c("year", "month"), sep = 4) 
 
@@ -78,7 +79,7 @@ total_detections$date <- as.factor(total_detections$date)
 total_detections$year <- as.factor(total_detections$year)
 total_detections$month <- as.factor(total_detections$month)
 
-write_csv(total_detections, "../data/total_detections_by_phylum.csv")
+write_csv(total_detections, "../data/n_detections_by_species_nov.csv")
 
 # function to select specific kingdom/phylum/order etc use with above code 
 taxa_filter <- function(df, taxa) {
