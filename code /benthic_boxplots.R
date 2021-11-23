@@ -37,7 +37,7 @@ write.csv(species.annotated, '../data/species_annotated.csv')
 # by.sample.species$itr <- 1
 species.by.sample.alltax <- left_join(by.sample.species, species.annotated, by='species')
 species.by.sample.alltax <- species.by.sample.alltax %>%
-  filter(benthos %in% c("PLK","BEN","Both")) %>%
+  filter(benthos %in% c("None","PLK","BEN","Both")) %>%
   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) 
 
 
@@ -81,7 +81,8 @@ total_detections$date <- as.factor(total_detections$date)
 total_detections$year <- as.factor(total_detections$year)
 total_detections$month <- as.factor(total_detections$month)
 
-write_csv(total_detections, "../data/n_detections_by_species_nov.csv")
+write_csv(invasive_review_df, "../data/invasives_review.csv")
+#write_csv(total_detections, "../data/n_detections_by_species_nov.csv")
 
 # function to select specific kingdom/phylum/order etc use with above code 
 taxa_filter <- function(df, taxa) {
