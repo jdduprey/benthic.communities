@@ -70,6 +70,8 @@ total_detections <- n_detections_df %>%
   arrange(desc(n_detections))
 
 total_detections_by_species <- left_join(total_detections, species.annotated)
+invasive_review_df <- total_detections_by_species %>%
+  select(species, n_detections, group_fv, benthos)
 
 total_detections_by_species <- total_detections_by_species %>%
   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = "_") %>%
