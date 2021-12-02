@@ -50,7 +50,7 @@ nonnative_vec[duplicated(nonnative_vec$species),]
 
 species_annotated <- left_join(nonnative_vec, species_annotated)
 # now use code from benthic boxplots 
-# TODO QA THIS BIT RIGHT HERE UGH
+# TODO QA THIS BIT RIGHT HERE UGH - the species do not align 1:!
 species_by_sample_alltax <- left_join(by_sample_species, species_annotated, by='species')
 species_by_sample_alltax <- species_by_sample_alltax %>%
   filter(benthos %in% c("None","PLK","BEN","Both")) %>%
