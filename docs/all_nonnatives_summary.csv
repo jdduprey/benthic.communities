@@ -149,12 +149,13 @@ Lacuna vincta,10,undetermined,BEN,0,worms,,,
 Littorina sitkana,10,undetermined,BEN,0,worms,,,
 Mesocentrotus franciscanus,10,echinoderm,BEN,0,worms,,,
 Nicolea zostericola,10,polychaete,BEN,0,encyclopedia of puget sound,,,
-Orthopyxis integra,10,hydrozoan,Both,0,worms,,,
 Odonthalia floccosa,10,"algae, red",PLK,0,algaebase,,,"algalcom, macroalgae, why PLK? "
 Phacellophora camtschatica,10,hydrozoan,Both,0,worms,,,
 Penicillium rubens,10,fungi,None,0,fungi,,,
+Phacellophora camtschatica,10,"jelly, jellyfish",Both,0,worms,,,
 Phytophthora riparia,10,undetermined,None,0,fungi,,,
 Halidrys siliquosa,10,"algae, brown",BEN,possible,worms,tbd,,no document pacific dist
+Orthopyxis integra,10,hydrozoan,Both,0,worms,,,
 Karlodinium veneficum,10,flagellate,PLK,possible,worms algaebase,tbd,,"harmful algae, seems ubiquitous but not documented in puget sound"
 Monocorophium acherusicum,9,undetermined,BEN,1,worms invasions.si.edu,tbd,,"some uncertainty, native to europe, balast water introduction"
 Alitta sp. CMC01,9,polychaete,BEN,single,,,,
@@ -403,3 +404,4 @@ Syllis alternata CMC01,1,polychaete,BEN,single,,,,
 Tonicella lineata,1,undetermined,BEN,0,worms,,,
 Tortanus discaudatus,1,copepod,PLK,0,worms,,,
 Urile penicillatus,1,undetermined,None,0,worms,,,brandt's cormorant 
+,,,,24,,,,
