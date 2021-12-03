@@ -7,7 +7,6 @@
 #
 # merge distributions into existing dataframes, examine spatial/temporal trends
 # ====================================================
-
 library(tidyverse)
 library(vegan)
 
@@ -16,46 +15,62 @@ just_nonnative <- read.csv("../docs/just_the_suspects.csv")
 species_annotated <- read.csv("../data/species_annotated.csv")
 by_sample_species <- read.csv('../data/by.sample.species.csv') # reads merged by tech and bio
 
-
 nonnative_vec <- nonnative_status %>%
   select(species, nonnative)
 
-# BEGIN QA CHECK
+# QA CHECK
 # ====================================================
-# get rid of NAs
+# get rid of NA species 
 species_annotated <- species_annotated %>%
   filter(!(is.na(species)))
 
 nonnative_vec <- nonnative_vec %>%
   filter(!(is.na(species)))
+
+by_sample_species <- by_sample_species %>%
+  filter(!(is.na(species)))
 # ====================================================
-
 unique(nonnative_vec$nonnative)
-
 #QA distribution annotation data with other dataframes 
 QA_species <- inner_join(nonnative_vec, species_annotated)
 
-QA <- species_annotated$species[!(species_annotated$species %in% QA_species$species)]
+QA <- species_annotated$species[!(species_annotated$species 
+                                  %in% QA_species$species)]
 print(QA)
 
-QA <- nonnative_vec$species[!(nonnative_vec$species %in% species_annotated$species)]
+QA <- nonnative_vec$species[!(nonnative_vec$species 
+                              %in% species_annotated$species)]
 print(QA)
 
-QA <- species_annotated$species[!(species_annotated$species %in% nonnative_vec$species)]
+QA <- species_annotated$species[!(species_annotated$species 
+                                  %in% nonnative_vec$species)]
 print(QA)
 
 length(unique(nonnative_vec$species))
-nonnative_vec[duplicated(nonnative_vec$species),]
-# ====================================================
+nonnative_vec[duplicated(nonnative_vec$species),] #good, no duplicates now
 
+# comparing by sample species and nonnative_vec
+QA <- unique(by_sample_species$species)[!(unique(by_sample_species$species)) 
+                                        %in% nonnative_vec$species]
+print(QA)
+
+QA <- nonnative_vec$species[!(nonnative_vec$species
+                                        %in% unique(by_sample_species$species))]
+print(QA)
+
+unique(by_sample_species$species)
+
+#by_sample_species_vec <- as.data.frame(unique(by_sample_species$species))
+# ====================================================
 species_annotated <- left_join(nonnative_vec, species_annotated)
 # now use code from benthic boxplots 
-# TODO QA THIS BIT RIGHT HERE UGH - the species do not align 1:!
+# TODO I think the DF is changing length because NAs in by_sample_species
 species_by_sample_alltax <- left_join(by_sample_species, species_annotated, by='species')
 species_by_sample_alltax <- species_by_sample_alltax %>%
   filter(benthos %in% c("None","PLK","BEN","Both")) %>%
   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) 
 
+unique(species_by_sample_alltax$nonnative)
 # richness by species (or different division if altered)
 n_detections_df <- species_by_sample_alltax %>%
   group_by(sample, species, .drop=FALSE) %>%
@@ -73,3 +88,46 @@ n_detections_df %>%
              sum(is.na(species)),
              sum(richness == 0))
 
+n_detections_df <- left_join(n_detections_df, nonnative_vec)
+
+
+taxa_filter <- function(df, dist_status) {
+  filt.df <- df %>%
+    filter(nonnative %in% dist_status) %>%
+    separate(date, into=c("year", "month"), sep=4)
+  
+  return(filt.df)
+}
+
+nonnatives_for_plot <- taxa_filter(n_detections_df, c(1, "possible"))
+just_nonnative_present <- nonnatives_for_plot %>%
+  filter(richness == 1)
+
+# TODO double check this code 
+total_nn_detections <- nonnatives_for_plot %>%
+  select(species, richness, sample) %>%
+  group_by(sample) %>% ## group by sample or month or date etc.... 
+  mutate(n_detections = sum(richness)) %>%
+  distinct(sample, n_detections)
+
+total_nn_detections <- total_nn_detections %>%
+  separate(sample, into = c("site","date" ), sep = "_", remove = F) %>%
+  separate(date, into=c("year", "month"), sep=4) %>%
+  mutate(
+    region = case_when(
+      site %in% c("CP", "FH", "LK") ~ "SJI",
+      site %in% c("LL", "PO", "SA", "TR", "TW") ~ "HC"
+    )
+  )
+  
+
+ggplot(total_nn_detections, aes(x=site, y=n_detections)) + 
+  labs(title = "Richness of Probable Non-Native Species",
+       x="Month", y="N Detections") +
+  geom_boxplot()
+
+ggplot(total_nn_detections, aes(x=region, y=n_detections)) + 
+  geom_boxplot()
+
+# just to see 
+one.way <- aov(n_detections)
