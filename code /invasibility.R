@@ -80,7 +80,7 @@ n_detections_df <- species_by_sample_alltax %>%
            fill = list(richness = 0)) %>%
   separate(sample, into = c("site","date" ), sep = "_", remove = F)
 
-# Moncho's code to check for NA's #need to learn more about ungroup()
+# Moncho's code to check for NA's 
 n_detections_df %>%
   ungroup() %>%
   summarise (sum(is.na(sample)),
@@ -100,7 +100,7 @@ taxa_filter <- function(df, dist_status) {
 }
 
 nonnatives_for_plot <- taxa_filter(n_detections_df, c(1, "possible"))
-just_nonnative_present <- nonnatives_for_plot %>%
+just_nonnative_events <- nonnatives_for_plot %>%
   filter(richness == 1)
 
 # TODO double check this code 
@@ -129,5 +129,33 @@ ggplot(total_nn_detections, aes(x=site, y=n_detections)) +
 ggplot(total_nn_detections, aes(x=region, y=n_detections)) + 
   geom_boxplot()
 
-# just to see 
-one.way <- aov(n_detections)
+ggplot(total_nn_detections, aes(x=region, y=n_detections)) + 
+  geom_violin()
+
+ggplot(total_nn_detections, aes(x=region, y=n_detections)) + 
+  geom_boxplot()
+
+# lets just get a total number of unique nonnative detections for each region
+# HC vs SJI 
+just_nonnative_events <- just_nonnative_events %>%
+  filter(nonnative %in% c(1, "possible")) # change this between c(1, "possible") and c(1) 
+# for probably vs possible nonnatives. 
+
+unique_species_by_region <- just_nonnative_events %>%
+  mutate(
+    region = case_when(
+      site %in% c("CP", "FH", "LK") ~ "SJI",
+      site %in% c("LL", "PO", "SA", "TR", "TW") ~ "HC"
+    )) %>%
+  distinct(species, region) # change this to site to get site summary 
+
+barchart_df <- unique_species_by_region %>%
+  group_by(region) %>% # change this to site to get site summary 
+  mutate(n_species = n()) %>%
+  distinct(region, n_species) # change to site to get site summary 
+
+ggplot(barchart_df, aes(x=region, y=n_species)) +
+  labs(title = "Possible Non-Natives Detected by Site",
+       x="Site", y="N Species") +
+  geom_bar(stat="identity")
+  
