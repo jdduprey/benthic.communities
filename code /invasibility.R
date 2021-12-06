@@ -1,11 +1,13 @@
-# Invasibility 
+# INVASIBILITY
 # Joe Duprey
+# Last Edited: 23/03/2021
 # ====================================================
 # "I would pick a few things you're confident in, and do a prelim analysis, 
 # to see if the hypothesis holds water. Then, if it does, we can do more work 
 # on the finer details of making sure each species is correctly ID'd"
 #
-# merge distributions into existing dataframes, examine spatial/temporal trends
+# merge species distribution data (nonnative_vec) into existing dataframes
+# xamine spatial/temporal trends
 # ====================================================
 library(tidyverse)
 library(vegan)
@@ -90,7 +92,6 @@ n_detections_df %>%
 
 n_detections_df <- left_join(n_detections_df, nonnative_vec)
 
-
 taxa_filter <- function(df, dist_status) {
   filt.df <- df %>%
     filter(nonnative %in% dist_status) %>%
@@ -99,7 +100,7 @@ taxa_filter <- function(df, dist_status) {
   return(filt.df)
 }
 
-nonnatives_for_plot <- taxa_filter(n_detections_df, c(1, "possible"))
+nonnatives_for_plot <- taxa_filter(n_detections_df, c(1))
 just_nonnative_events <- nonnatives_for_plot %>%
   filter(richness == 1)
 
@@ -119,8 +120,9 @@ total_nn_detections <- total_nn_detections %>%
       site %in% c("LL", "PO", "SA", "TR", "TW") ~ "HC"
     )
   )
-  
 
+# plotting 
+# ====================================================  
 ggplot(total_nn_detections, aes(x=site, y=n_detections)) + 
   labs(title = "Richness of Probable Non-Native Species",
        x="Month", y="N Detections") +
@@ -136,6 +138,7 @@ ggplot(total_nn_detections, aes(x=region, y=n_detections)) +
   geom_boxplot()
 
 # lets just get a total number of unique nonnative detections for each region
+# ====================================================  
 # HC vs SJI 
 just_nonnative_events <- just_nonnative_events %>%
   filter(nonnative %in% c(1, "possible")) # change this between c(1, "possible") and c(1) 
