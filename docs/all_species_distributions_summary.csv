@@ -121,7 +121,7 @@ Oncorhynchus keta,13,undetermined,PLK,0,worms encyclopedia of puget sound,,,
 Pseudocalanus moultoni,13,copepod,PLK,0,worms,,,
 Smithora naiadum,13,"algae, red",BEN,0,algaebase,,,
 Wildemania amplissima,13,"algae, red",BEN,0,biodiversity of CC,,,
-Callithamnion corymbosum,13,undetermined,BEN,possible,worms encyclopedia of puget sound,tbd,,native genus in ps but corymbosu has atlantic dist 
+Callithamnion corymbosum,13,undetermined,BEN,1,worms encyclopedia of puget sound,tbd,,Terrie - this is a red alga evidently native to the UK
 Podosira stelligera,13,diatom,PLK,possible,worms algaebase,tbd,,"documented east US, europe, NZ, aus"
 Aurelia labiata,12,"jelly, jellyfish",Both,0,worms,,,
 Emplectonema sp. 1 TCH-2015,12,undetermined,BEN,single,,,,
@@ -165,7 +165,7 @@ Nitzschia cf. recta RT-2009,9,diatom,PLK,single,,,,
 Sarcodiotheca sp. 2gaudichaudii,9,undetermined,BEN,single,,,,
 Thelepus sp. CMC01,9,polychaete,BEN,single,,,,
 Cylindrotheca fusiformis,9,diatom,BEN,possible,worms algaebase,tbd,,"only documented in europe, asia "
-Gelidiophycus freshwateri,9,undetermined,BEN,possible,algaebase,tbd,,"only documented in korea, east asia"
+Gelidiophycus freshwateri,9,undetermined,BEN,1,algaebase,tbd,,Terrie - this is a red alga endemic to east Asia (non-native in PNW)
 Ceramium sp. 3Cal,8,undetermined,BEN,single,,,,
 Devaleraea mollis,8,undetermined,BEN,0,algaebase,,,
 Evasterias troschelii,8,undetermined,BEN,0,worms,,,
@@ -246,7 +246,7 @@ Platichthys stellatus,4,"fish, benthic",BEN,0,worms,,,
 Polychaeta sp. BOLD:ACQ0474,4,polychaete,None,single,,,,
 Polyneura latissima,4,"algae, red",BEN,0,algaebase,,,
 Schizobranchia insignis,4,polychaete,BEN,0,worms,,,
-Notheia anomala,4,undetermined,BEN,possible,algaebase,tbd,,only documented in australia and NZ 
+Notheia anomala,4,undetermined,BEN,1,algaebase,tbd,,"Terrie - brown alga, non native, This is a puzzling occurrence b/c this species is an obligate piphyte of the brown alga hormosira banks which is native to Australia and NZ but to my knowledge has never been reported on this coast, so if its here, what is the host?"
 Polydora lingshuiensis,4,polychaete,BEN,possible,https://doi.org/10.11646/zootaxa.3986.1.4,tbd,,shellfish parasite wood lab works on this
 Arca avellana,3,undetermined,BEN,1,worms,tbd,,"philippines, subtropical, some naming confusion?"
 Bougainvillia muscus,3,hydrozoan,Both,1,invasions.si.edu,tbd,,
@@ -287,7 +287,7 @@ Thalassiosira pseudonana,3,diatom,PLK,0,algaebase,,,
 Thysanoessa raschii,3,krill,PLK,0,worms,,,
 Trebouxia aggregata,3,"algae, green",PLK,0,algaebase,,,
 Clytia languida,3,hydrozoan,Both,possible,"worms, world hydrozoa database",tbd,,"unaccepted name, accepted as Clytia hemisphaerica "
-Lacuna pallidula,3,undetermined,BEN,possible,worms,tbd,,"only documented in atlantic, but lots of local lacuna? "
+Lacuna pallidula,3,undetermined,BEN,1,worms,tbd,,Terrie - Lacuna pallidula is a gastropod mollusc - probably non-native 
 Bursaphelenchus cocophilus,2,worm,None,1,tx invasives,tbd,,Terrestrial invasive! Ornamental palm pest
 Gelidium vagum,2,undetermined,BEN,1,worms,tbd,,recently introduced from east asia https://www.researchgate.net/publication/273689493_Mitochondrial_cox1_and_cob_sequence_diversities_in_Gelidium_vagum_Gelidiales_Rhodophyta_in_Korea
 Macoma petalum,2,undetermined,BEN,1,worms invasions.si.edu,tbd,,
@@ -327,7 +327,7 @@ Pseudocalanus acuspes,2,copepod,PLK,0,worms,,,
 Rhyacodrilus falciformis,2,earthworm,BEN,0,nonmarine,,,
 Sarocladium implicatum,2,fungi,None,0,fungi,,,
 Scytosiphon lomentaria,2,"algae, brown",BEN,0,worms,,,
-Striaria attenuata,2,"algae, brown",BEN,possible,worms ,tbd,,"ask terrie about this one, seems to be documented everywhere but here"
+Striaria attenuata,2,"algae, brown",BEN,1,worms ,tbd,,Terrie - Striaria attenuata is non-native https://invasions.si.edu/nemesis/chesreport/species_summary/Striaria%20attenuata
 Aphroditella hastata,1,polychaete,BEN,1,worms,tbd,,documented only in atlantic and med 
 Gari maculosa,1,undetermined,BEN,1,worms obis,tbd,,"native range australia, south africa, indian ocean "
 Hediste diadroma,1,polychaete,BEN,1,worms,tbd,,"only documented in japan, cryptic invader https://link.springer.com/article/10.1007/s00227-013-2328-z"
@@ -364,7 +364,7 @@ Leptosynapta clarki,1,undetermined,BEN,0,worms,,,
 Loxosomella sp. JM-2012,1,NA,BEN,single,,,,
 Marionina sp. F LM-2012,1,earthworm,BEN,0,nonmarine,,,
 Melanosiphon intestinalis,1,"algae, brown",BEN,0,worms algaebase,,,
-Dinobryon divergens,1,algae,PLK,possible,worms algaebase,tbd,,documented just about everyone but westcoast US
+Dinobryon divergens,1,algae,PLK,possible,worms algaebase,tbd,,Terrie - Dinobryon divergens is a chrysophycean (yellow-green) alga that inhabits freshwater (https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/dinobryon). Not sure about the origins of this particular species.
 Metridium senile,1,undetermined,BEN,0,worms,,,
 Microgadus proximus,1,undetermined,PLK,0,worms,,,
 Echiniscoides pollocki,1,NA,BEN,possible,worms,tbd,,can a tartigrade be nonnative? 
@@ -374,7 +374,8 @@ Neochromadora poecilosomoides,1,worm,BEN,low,worms,,,"only documented in north s
 Notophyllum foliosum,1,polychaete,BEN,possible,worms,tbd,,documented once in NE pacific
 Octolasion tyrtaeum,1,earthworm,BEN,0,nonmarine,,,
 Pedospumella encystans,1,algae,PLK,0,freshwater,,,
-Peltogaster paguri,1,undetermined,None,possible,worms,tbd,,"parasitic cirripede, only documented in north sea, atlantic "
+Peltogaster paguri,1,undetermined,None,1,worms,tbd,,"Terrie - Peltogaster paguri is a parasitic copepod apparently native to the North Sea, where its host is native:
+http://species-identification.org/species.php?species_group=crustacea&id=86"
 Phascolosoma agassizii,1,polychaete,BEN,0,worms,,,
 Phoca vitulina,1,undetermined,None,0,worms,,,harbor seal!
 Phytophthora bilorbang,1,undetermined,None,0,fungi,,,
