@@ -44,7 +44,7 @@ presence.absence <- inner_join(presence.absence, events)
 # ==================================================
 # filter by region
 presence.absence <- presence.absence %>% 
-  filter(Area %in% c("San Juan Island","Hood Canal"))
+  filter(Area %in% c("Hood Canal"))
 
 # create site and date column in addition to "sample" 
 presence.absence <- presence.absence %>%
@@ -90,7 +90,7 @@ species_logit <- function(species_str){
 # ======================================================
 
 # call the logit function 
-test_logit <- species_logit("Nereocystis luetkeana")
+test_logit <- species_logit("Gracilaria vermiculophylla")
 
 # display results 
 summary(test_logit)
@@ -139,7 +139,7 @@ plot_logit <- function(species_str, test_logit) {
 # ======================================================
 
 # call the visualize function 
-plot_logit("Nereocystis luetkeana", test_logit)
+plot_logit("Gracilaria vermiculophylla", test_logit)
 
 # ======================================================
 # ======================================================

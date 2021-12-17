@@ -17,6 +17,7 @@ just_nonnative <- read.csv("../docs/just_the_suspects.csv")
 species_annotated <- read.csv("../data/species_annotated.csv")
 by_sample_species <- read.csv('../data/by.sample.species.csv') # reads merged by tech and bio
 
+
 nonnative_vec <- nonnative_status %>%
   select(species, nonnative)
 
@@ -101,6 +102,9 @@ taxa_filter <- function(df, dist_status) {
 }
 
 nonnatives_for_plot <- taxa_filter(n_detections_df, c(1))
+allspecies_for_plot <- taxa_filter(n_detections_df, c(1, 0, "possible", "low", "single"))
+
+
 just_nonnative_events <- nonnatives_for_plot %>%
   filter(richness == 1)
 
@@ -110,6 +114,12 @@ total_nn_detections <- nonnatives_for_plot %>%
   group_by(sample) %>% ## group by sample or month or date etc.... 
   mutate(n_detections = sum(richness)) %>%
   distinct(sample, n_detections)
+
+total_allspec_detections <- allspecies_for_plot %>%
+  select(species, richness, sample) %>%
+  group_by(sample) %>% ## group by sample or month or date etc.... 
+  mutate(all_sp_detections = sum(richness)) %>%
+  distinct(sample, all_sp_detections)
 
 total_nn_detections <- total_nn_detections %>%
   separate(sample, into = c("site","date" ), sep = "_", remove = F) %>%
@@ -121,11 +131,44 @@ total_nn_detections <- total_nn_detections %>%
     )
   )
 
+total_allspec_detections <- total_allspec_detections %>%
+  separate(sample, into = c("site","date" ), sep = "_", remove = F) %>%
+  separate(date, into=c("year", "month"), sep=4) %>%
+  mutate(
+    region = case_when(
+      site %in% c("CP", "FH", "LK") ~ "SJI",
+      site %in% c("LL", "PO", "SA", "TR", "TW") ~ "HC"
+    )
+  )
+
+nonnative_vs_all_species <- left_join(total_nn_detections, total_allspec_detections)
+
 # plotting 
 # ====================================================  
+#scatterplot non-native vs native
+ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=site)) +
+  labs(title = "Richness Ratio by Site",
+       x = "Total Richness", y = "Non-Native Richness") +
+  geom_point()
+
+
+png(file="../figures/richness_ratio_region.png",
+    width=800, height=450)
+
+ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=region)) +
+  labs(title = "Richness Ratio by Region",
+       x = "Total Richness", y = "Non-Native Richness") +
+  geom_point()
+dev.off()
+
+ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=month)) +
+  labs(title = "Richness Ratio by Month",
+       x = "Total Richness", y = "Non-Native Richness") +
+  geom_point()
+
 ggplot(total_nn_detections, aes(x=site, y=n_detections)) + 
   labs(title = "Richness of Probable Non-Native Species",
-       x="Month", y="N Detections") +
+       x="Site", y="N Detections") +
   geom_boxplot()
 
 ggplot(total_nn_detections, aes(x=region, y=n_detections)) + 
@@ -161,4 +204,7 @@ ggplot(barchart_df, aes(x=region, y=n_species)) +
   labs(title = "Possible Non-Natives Detected by Site",
        x="Site", y="N Species") +
   geom_bar(stat="identity")
+
+# plot proportion of non-native detections by region 
+# ====================================================  
   
