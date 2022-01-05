@@ -12,6 +12,7 @@
 library(tidyverse)
 library(vegan)
 library(gplots)
+library(ggplot2)
 
 nonnative_status <- read.csv("../docs/all_species_distributions_summary.csv")
 just_nonnative <- read.csv("../docs/just_the_suspects.csv")
@@ -69,7 +70,7 @@ species_annotated <- left_join(nonnative_vec, species_annotated)
 # now use code from benthic boxplots 
 species_by_sample_alltax <- left_join(by_sample_species, species_annotated, by='species')
 species_by_sample_alltax <- species_by_sample_alltax %>%
-  filter(benthos %in% c("None","PLK","BEN","Both")) %>%
+  filter(benthos %in% c("None","PLK","BEN","Both")) %>% #TODO SHOULD I FILTER OUT "None" here? (probably not) how will that impact results? 
   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) 
 
 # sanity check should read "0" "1" "single "low" "possible" (non-native status categories)
@@ -165,7 +166,6 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
        x = "Total Richness", y = "Non-Native Richness") +
   geom_point()
 
-
 png(file="../figures/richness_ratio_region.png",
     width=800, height=450)
 
@@ -173,9 +173,6 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
   labs(title = "Richness Ratio by Region",
        x = "Total Richness", y = "Non-Native Richness") +
   geom_point()
-
-
-dev.off()
 
 ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=month)) +
   labs(title = "Richness Ratio by Month",
@@ -209,7 +206,7 @@ unique_species_by_region <- just_nonnative_events %>%
       site %in% c("CP", "FH", "LK") ~ "SJI",
       site %in% c("LL", "PO", "SA", "TR", "TW") ~ "HC"
     )) %>%
-  distinct(species, region) # change this to site to get site summary 
+  distinct(species, region) ### change this to site to get site summary 
 
 unique_nat_species_by_region <- just_native_events %>%
   mutate(
@@ -217,29 +214,29 @@ unique_nat_species_by_region <- just_native_events %>%
       site %in% c("CP", "FH", "LK") ~ "SJI",
       site %in% c("LL", "PO", "SA", "TR", "TW") ~ "HC"
     )) %>%
-  distinct(species, region) # change this to site to get site summary 
+  distinct(species, region) ### change this to site to get site summary 
 
 barchart_df <- unique_species_by_region %>%
-  group_by(region) %>% # change this to site to get site summary 
+  group_by(region) %>% ### change this to site to get site summary 
   mutate(n_nonn_species = n()) %>%
-  distinct(region, n_nonn_species) # change to site to get site summary 
+  distinct(region, n_nonn_species) ### change to site to get site summary 
 
 native_barchart_df <- unique_nat_species_by_region %>%
-  group_by(region) %>% # change this to site to get site summary 
+  group_by(region) %>% ### change this to site to get site summary 
   mutate(n_native_species = n()) %>%
-  distinct(region, n_native_species) # change to site to get site summary 
+  distinct(region, n_native_species) ### change to site to get site summary 
 
 # combine the unique non-native species from each region with the 
 # unique native species into a single table, this could be modified
 # to be by site as well - which might be more relevant to the research question
-chi_sq_df <- data.frame(region = barchart_df$region,
+chi_sq_df <- data.frame(region = barchart_df$region,    ### SITE/REGION
                             nonative = barchart_df$n_nonn_species,
                             native = native_barchart_df$n_native_species)
 
 # format the 2xX table into right format for chi-squared test
-row.names(chi_sq_df) <- chi_sq_df$region
+row.names(chi_sq_df) <- chi_sq_df$region ### SITE/REGION
 chi_sq_df <- chi_sq_df %>%
-  select(-region)
+  select(-region) ### SITE/REGION
 
 # chi_sq_df$nonative <- c(12, 24) right on the line if alpha is 0.05, ask ryan how
 # to interpret, what if we are off by a species or two
@@ -252,10 +249,8 @@ print(chi_sq_matrix)
 chisq.test(chi_sq_df)
 
 ggplot(barchart_df, aes(x=region, y=n_nonn_species)) +
-  labs(title = "Possible Non-Natives Detected by Site",
+  labs(title = "Probable Non-Natives Detected by Region",
        x="Site", y="N Species") +
   geom_bar(stat="identity")
 
-# plot proportion of non-native detections by region 
-# ====================================================  
   
