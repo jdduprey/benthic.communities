@@ -1,13 +1,13 @@
 # INVASIBILITY
 # Joe Duprey
-# Last Edited: 23/03/2021
+# Last Edited: 05/01/2022
 # ====================================================
 # "I would pick a few things you're confident in, and do a prelim analysis, 
 # to see if the hypothesis holds water. Then, if it does, we can do more work 
 # on the finer details of making sure each species is correctly ID'd"
 #
 # merge species distribution data (nonnative_vec) into existing dataframes
-# xamine spatial/temporal trends
+# examine spatial/temporal trends
 # ====================================================
 library(tidyverse)
 library(vegan)
@@ -64,11 +64,10 @@ print(QA)
 
 unique(by_sample_species$species)
 
-#by_sample_species_vec <- as.data.frame(unique(by_sample_species$species))
+
 # ====================================================
 species_annotated <- left_join(nonnative_vec, species_annotated)
 # now use code from benthic boxplots 
-# TODO I think the DF is changing length because NAs in by_sample_species
 species_by_sample_alltax <- left_join(by_sample_species, species_annotated, by='species')
 species_by_sample_alltax <- species_by_sample_alltax %>%
   filter(benthos %in% c("None","PLK","BEN","Both")) %>%
@@ -84,7 +83,7 @@ n_detections_df <- species_by_sample_alltax %>%
            fill = list(richness = 0)) %>%
   separate(sample, into = c("site","date" ), sep = "_", remove = F)
 
-# Moncho's code to check for NA's 
+# check for NA's 
 n_detections_df %>%
   ungroup() %>%
   summarise (sum(is.na(sample)),
@@ -94,6 +93,7 @@ n_detections_df %>%
 
 n_detections_df <- left_join(n_detections_df, nonnative_vec)
 
+# function to filter out taxa by non-native / native status
 taxa_filter <- function(df, dist_status) {
   filt.df <- df %>%
     filter(nonnative %in% dist_status) %>%
@@ -102,9 +102,9 @@ taxa_filter <- function(df, dist_status) {
   return(filt.df)
 }
 
+# use function to get df of all species, and just non-natives 
 nonnatives_for_plot <- taxa_filter(n_detections_df, c(1))
 allspecies_for_plot <- taxa_filter(n_detections_df, c(1, 0, "possible", "low", "single"))
-
 
 just_nonnative_events <- nonnatives_for_plot %>%
   filter(richness == 1)
