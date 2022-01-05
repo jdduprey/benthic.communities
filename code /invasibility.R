@@ -18,7 +18,6 @@ just_nonnative <- read.csv("../docs/just_the_suspects.csv")
 species_annotated <- read.csv("../data/species_annotated.csv")
 by_sample_species <- read.csv('../data/by.sample.species.csv') # reads merged by tech and bio
 
-
 nonnative_vec <- nonnative_status %>%
   select(species, nonnative)
 
@@ -73,7 +72,9 @@ species_by_sample_alltax <- species_by_sample_alltax %>%
   filter(benthos %in% c("None","PLK","BEN","Both")) %>%
   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) 
 
+# sanity check should read "0" "1" "single "low" "possible" (non-native status categories)
 unique(species_by_sample_alltax$nonnative)
+
 # richness by species (or different division if altered)
 n_detections_df <- species_by_sample_alltax %>%
   group_by(sample, species, .drop=FALSE) %>%
@@ -91,6 +92,7 @@ n_detections_df %>%
              sum(is.na(species)),
              sum(richness == 0))
 
+# df contains species, site, date, non-native status and whether species was detected or not 
 n_detections_df <- left_join(n_detections_df, nonnative_vec)
 
 # function to filter out taxa by non-native / native status
@@ -106,27 +108,30 @@ taxa_filter <- function(df, dist_status) {
 nonnatives_for_plot <- taxa_filter(n_detections_df, c(1))
 allspecies_for_plot <- taxa_filter(n_detections_df, c(1, 0, "possible", "low", "single"))
 
+# filter out all EXCEPT probable non-natives
 just_nonnative_events <- nonnatives_for_plot %>%
   filter(richness == 1)
 
-# filter out all but probable non-natives
+# filter out probable non-natives 
 just_native_events <- allspecies_for_plot %>%
   filter(richness == 1) %>%
   filter(nonnative %in% c(0, "possible", "low", "single")) # change as appropriate for chisquared format
 
-# TODO double check this code 
+# sum presence absence to get non-native richness for each sampling event 
 total_nn_detections <- nonnatives_for_plot %>%
   select(species, richness, sample) %>%
   group_by(sample) %>% ## group by sample or month or date etc.... 
   mutate(n_detections = sum(richness)) %>%
   distinct(sample, n_detections)
 
+# sum presence absence to get native richness for each sampling event 
 total_allspec_detections <- allspecies_for_plot %>%
   select(species, richness, sample) %>%
   group_by(sample) %>% ## group by sample or month or date etc.... 
   mutate(all_sp_detections = sum(richness)) %>%
   distinct(sample, all_sp_detections)
 
+# add region, year and month to non-native richness df 
 total_nn_detections <- total_nn_detections %>%
   separate(sample, into = c("site","date" ), sep = "_", remove = F) %>%
   separate(date, into=c("year", "month"), sep=4) %>%
@@ -137,6 +142,7 @@ total_nn_detections <- total_nn_detections %>%
     )
   )
 
+# add region, year and month to native richness df 
 total_allspec_detections <- total_allspec_detections %>%
   separate(sample, into = c("site","date" ), sep = "_", remove = F) %>%
   separate(date, into=c("year", "month"), sep=4) %>%
@@ -147,9 +153,11 @@ total_allspec_detections <- total_allspec_detections %>%
     )
   )
 
+
+# combine df to single handy df 
 nonnative_vs_all_species <- left_join(total_nn_detections, total_allspec_detections)
 
-# plotting 
+# EXPLORATORY PLOTTING 
 # ====================================================  
 #scatterplot non-native vs native
 ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=site)) +
@@ -165,6 +173,8 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
   labs(title = "Richness Ratio by Region",
        x = "Total Richness", y = "Non-Native Richness") +
   geom_point()
+
+
 dev.off()
 
 ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=month)) +
