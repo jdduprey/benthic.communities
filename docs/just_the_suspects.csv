@@ -1,11 +1,11 @@
 ﻿species,n_detections,group_fv,benthos,nonnative,source,blast,blast_notes,notes
 Gracilaria vermiculophylla,34,"algae, red",BEN,1,algaebase,100%,species genome 100% identity,well studied invader
-Ruditapes philippinarum,25,undetermined,BEN,1,worms,tbd,,manila clams!
-Caulacanthus ustulatus,23,undetermined,BEN,1,algaebase,tbd,,
+Ruditapes philippinarum,25,undetermined,BEN,1,worms,98% no conflict,,manila clams!
+Caulacanthus ustulatus,23,undetermined,BEN,1,algaebase,100%,,
 Nuttallia olivacea,17,undetermined,BEN,1,worms,tbd,,
 Azumapecten farreri,13,undetermined,BEN,1,worms,conflict (96.15%),other blast results appear to be invasive as well,farrers scallop chinese aquaculture species
 Crassostrea gigas,13,undetermined,BEN,1,worms,tbd,,
-Callithamnion corymbosum,13,undetermined,BEN,1,worms encyclopedia of puget sound,tbd,,Terrie - this is a red alga evidently native to the UK
+Callithamnion corymbosum,13,undetermined,BEN,1,worms encyclopedia of puget sound,100%,,Terrie - this is a red alga evidently native to the UK
 Monocorophium acherusicum,9,undetermined,BEN,1,worms invasions.si.edu,tbd,,"some uncertainty, native to europe, balast water introduction"
 Gelidiophycus freshwateri,9,undetermined,BEN,1,algaebase,tbd,,Terrie - this is a red alga endemic to east Asia (non-native in PNW)
 Botrylloides violaceus,6,tunicate,BEN,1,worms,tbd,,nonnative from australia!

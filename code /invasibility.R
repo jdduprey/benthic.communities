@@ -1,6 +1,6 @@
 # INVASIBILITY
 # Joe Duprey
-# Last Edited: 05/01/2022
+# Last Edited: 01/13/2022
 # ====================================================
 # "I would pick a few things you're confident in, and do a prelim analysis, 
 # to see if the hypothesis holds water. Then, if it does, we can do more work 
@@ -64,7 +64,6 @@ print(QA)
 
 unique(by_sample_species$species)
 
-
 # ====================================================
 species_annotated <- left_join(nonnative_vec, species_annotated)
 # now use code from benthic boxplots 
@@ -106,7 +105,7 @@ taxa_filter <- function(df, dist_status) {
 }
 
 # use function to get df of all species, and just non-natives 
-nonnatives_for_plot <- taxa_filter(n_detections_df, c(1))
+nonnatives_for_plot <- taxa_filter(n_detections_df, c(1)) ###### SWITCH FROM PROBABLE TO POSSIBLE ######
 allspecies_for_plot <- taxa_filter(n_detections_df, c(1, 0, "possible", "low", "single"))
 
 # filter out all EXCEPT probable non-natives
@@ -135,7 +134,7 @@ total_allspec_detections <- allspecies_for_plot %>%
 # add region, year and month to non-native richness df 
 total_nn_detections <- total_nn_detections %>%
   separate(sample, into = c("site","date" ), sep = "_", remove = F) %>%
-  separate(date, into=c("year", "month"), sep=4) %>%
+  separate(date, into = c("year", "month"), sep = 4) %>%
   mutate(
     region = case_when(
       site %in% c("CP", "FH", "LK") ~ "SJI",
@@ -146,7 +145,7 @@ total_nn_detections <- total_nn_detections %>%
 # add region, year and month to native richness df 
 total_allspec_detections <- total_allspec_detections %>%
   separate(sample, into = c("site","date" ), sep = "_", remove = F) %>%
-  separate(date, into=c("year", "month"), sep=4) %>%
+  separate(date, into = c("year", "month"), sep = 4) %>%
   mutate(
     region = case_when(
       site %in% c("CP", "FH", "LK") ~ "SJI",
@@ -166,9 +165,6 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
        x = "Total Richness", y = "Non-Native Richness") +
   geom_point()
 
-png(file="../figures/richness_ratio_region.png",
-    width=800, height=450)
-
 ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=region)) +
   labs(title = "Richness Ratio by Region",
        x = "Total Richness", y = "Non-Native Richness") +
@@ -181,7 +177,7 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
 
 ggplot(total_nn_detections, aes(x=site, y=n_detections)) + 
   labs(title = "Richness of Probable Non-Native Species",
-       x="Site", y="N Detections") +
+       x = "Site", y = "N Detections") +
   geom_boxplot()
 
 ggplot(total_nn_detections, aes(x=region, y=n_detections)) + 
@@ -196,8 +192,8 @@ ggplot(total_nn_detections, aes(x=region, y=n_detections)) +
 # lets just get a total number of unique nonnative detections for each region
 # ====================================================  
 # HC vs SJI 
-just_nonnative_events <- just_nonnative_events %>%
-  filter(nonnative %in% c(1)) # change this between c(1, "possible") and c(1) 
+# just_nonnative_events <- just_nonnative_events %>%
+#   filter(nonnative %in% c(1)) # change this between c(1, "possible") and c(1) 
 # for probably vs possible nonnatives. 
 
 unique_species_by_region <- just_nonnative_events %>%
@@ -246,11 +242,12 @@ chi_sq_matrix <- as.table(as.matrix(chi_sq_df))
 print(chi_sq_matrix)
 
 # CHI SQUARED TEST 
-chisq.test(chi_sq_df)
+results <- chisq.test(chi_sq_df)
+print(results)
 
 ggplot(barchart_df, aes(x=region, y=n_nonn_species)) +
   labs(title = "Probable Non-Natives Detected by Region",
-       x="Site", y="N Species") +
+       x = "Site", y = "N Species") +
   geom_bar(stat="identity")
 
   
