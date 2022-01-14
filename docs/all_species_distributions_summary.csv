@@ -331,7 +331,7 @@ Keratella cochlearis,1,rotifer,BEN,low,worms,,,"accepted name Keratella tecta, d
 Neochromadora poecilosomoides,1,worm,BEN,low,worms,,,"only documented in north sea, black sea, europe"
 Proceraea okadai,1,polychaete,BEN,low,worms,,,documented once in japan
 Melosira nummuloides,26,diatom,PLK,0,worms,,,"documented in atlantic, california "
-Cliona chilensis,25,sponge,BEN,possible,worms,conflict (99%),,"shellfish parasite low information, other cliona in PS, other BLAST returns include Cliona celata, Clionaopsis platei, "
+Cliona chilensis,25,sponge,BEN,1,worms,99%,,"shellfish parasite low information, other cliona in PS, other BLAST returns include Cliona celata, Clionaopsis platei, "
 Stelligera rigida,19,sponge,BEN,possible,worms,conflict (85%),,"accepted as Stelligera montagui, appears to be recorded mostly in europe and britain"
 Hecatonema maculans,18,"algae, brown",BEN,possible,worms,tbd,,uncertain distribution but mostly atlantic
 Haramonas dimorpha,16,undetermined,None,possible,algaebase,tbd,,only one detection - australian mangrove

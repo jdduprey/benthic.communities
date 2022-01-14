@@ -181,13 +181,10 @@ ggplot(total_nn_detections, aes(x=site, y=n_detections)) +
   geom_boxplot()
 
 ggplot(total_nn_detections, aes(x=region, y=n_detections)) + 
+  labs(title = "Richness of Probable Non-Native Species",
+       x = "Region", y = "N Detections") +
   geom_boxplot()
 
-ggplot(total_nn_detections, aes(x=region, y=n_detections)) + 
-  geom_violin()
-
-ggplot(total_nn_detections, aes(x=region, y=n_detections)) + 
-  geom_boxplot()
 
 # lets just get a total number of unique nonnative detections for each region
 # ====================================================  

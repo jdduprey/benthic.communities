@@ -30,7 +30,7 @@ Melanothamnus harveyi,1,"algae, red",PLK,1,worms algaebase,tbd,,
 Mytilicola orientalis,1,copepod,PLK,1,worms invasions.si.edu,tbd,,
 Peltogaster paguri,1,undetermined,None,1,worms,tbd,,"Terrie - Peltogaster paguri is a parasitic copepod apparently native to the North Sea, where its host is native:
 http://species-identification.org/species.php?species_group=crustacea&id=86"
-Cliona chilensis,25,sponge,BEN,possible,worms,conflict (99%),,"shellfish parasite low information, other cliona in PS, other BLAST returns include Cliona celata, Clionaopsis platei, "
+Cliona chilensis,25,sponge,BEN,1,worms,99%,,"shellfish parasite low information, other cliona in PS, other BLAST returns include Cliona celata, Clionaopsis platei, "
 Stelligera rigida,19,sponge,BEN,possible,worms,conflict (85%),,"accepted as Stelligera montagui, appears to be recorded mostly in europe and britain"
 Hecatonema maculans,18,"algae, brown",BEN,possible,worms,tbd,,uncertain distribution but mostly atlantic
 Haramonas dimorpha,16,undetermined,None,possible,algaebase,tbd,,only one detection - australian mangrove
