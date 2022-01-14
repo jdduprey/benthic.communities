@@ -10,7 +10,7 @@ Monocorophium acherusicum,9,undetermined,BEN,1,worms invasions.si.edu,conflict 9
 Gelidiophycus freshwateri,9,undetermined,BEN,1,algaebase,conflict 98%,,Terrie - this is a red alga endemic to east Asia (non-native in PNW)
 Botrylloides violaceus,6,tunicate,BEN,1,worms,100%,,nonnative from australia!
 Loxothylacus panopaei,6,undetermined,None,1,worms,conflict 90% ,other blast results invasive as well,no records at all from pacific…
-Notheia anomala,4,undetermined,BEN,1,algaebase,tbd,,"Terrie - brown alga, non native, This is a puzzling occurrence b/c this species is an obligate piphyte of the brown alga hormosira banks which is native to Australia and NZ but to my knowledge has never been reported on this coast, so if its here, what is the host?"
+Notheia anomala,4,undetermined,BEN,1,algaebase,conflict,other blast results invasive as well,"Terrie - brown alga, non native, This is a puzzling occurrence b/c this species is an obligate piphyte of the brown alga hormosira banks which is native to Australia and NZ but to my knowledge has never been reported on this coast, so if its here, what is the host?"
 Arca avellana,3,undetermined,BEN,1,worms,tbd,,"philippines, subtropical, some naming confusion?"
 Bougainvillia muscus,3,hydrozoan,Both,1,invasions.si.edu,tbd,,
 Clytia folleata,3,hydrozoan,Both,1,worms sealifebase.ca,tbd,,
@@ -30,7 +30,6 @@ Melanothamnus harveyi,1,"algae, red",PLK,1,worms algaebase,tbd,,
 Mytilicola orientalis,1,copepod,PLK,1,worms invasions.si.edu,tbd,,
 Peltogaster paguri,1,undetermined,None,1,worms,tbd,,"Terrie - Peltogaster paguri is a parasitic copepod apparently native to the North Sea, where its host is native:
 http://species-identification.org/species.php?species_group=crustacea&id=86"
-Melosira nummuloides,26,diatom,PLK,possible,worms,tbd,,"documented in atlantic, california "
 Cliona chilensis,25,sponge,BEN,possible,worms,conflict (99%),,"shellfish parasite low information, other cliona in PS, other BLAST returns include Cliona celata, Clionaopsis platei, "
 Stelligera rigida,19,sponge,BEN,possible,worms,conflict (85%),,"accepted as Stelligera montagui, appears to be recorded mostly in europe and britain"
 Hecatonema maculans,18,"algae, brown",BEN,possible,worms,tbd,,uncertain distribution but mostly atlantic
