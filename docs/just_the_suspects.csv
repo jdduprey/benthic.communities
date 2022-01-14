@@ -3,13 +3,13 @@ Gracilaria vermiculophylla,34,"algae, red",BEN,1,algaebase,100%,species genome 1
 Ruditapes philippinarum,25,undetermined,BEN,1,worms,98% no conflict,,manila clams!
 Caulacanthus ustulatus,23,undetermined,BEN,1,algaebase,100%,,
 Nuttallia olivacea,17,undetermined,BEN,1,worms,tbd,,
-Azumapecten farreri,13,undetermined,BEN,1,worms,conflict (96.15%),other blast results appear to be invasive as well,farrers scallop chinese aquaculture species
+Azumapecten farreri,13,undetermined,BEN,1,worms,conflict 96%,other blast results appear to be invasive as well,farrers scallop chinese aquaculture species
 Crassostrea gigas,13,undetermined,BEN,1,worms,tbd,,
 Callithamnion corymbosum,13,undetermined,BEN,1,worms encyclopedia of puget sound,100%,,Terrie - this is a red alga evidently native to the UK
-Monocorophium acherusicum,9,undetermined,BEN,1,worms invasions.si.edu,tbd,,"some uncertainty, native to europe, balast water introduction"
-Gelidiophycus freshwateri,9,undetermined,BEN,1,algaebase,tbd,,Terrie - this is a red alga endemic to east Asia (non-native in PNW)
-Botrylloides violaceus,6,tunicate,BEN,1,worms,tbd,,nonnative from australia!
-Loxothylacus panopaei,6,undetermined,None,1,worms,tbd,,no records at all from pacific…
+Monocorophium acherusicum,9,undetermined,BEN,1,worms invasions.si.edu,conflict 90% ,,"some uncertainty, native to europe, balast water introduction"
+Gelidiophycus freshwateri,9,undetermined,BEN,1,algaebase,conflict 98%,,Terrie - this is a red alga endemic to east Asia (non-native in PNW)
+Botrylloides violaceus,6,tunicate,BEN,1,worms,100%,,nonnative from australia!
+Loxothylacus panopaei,6,undetermined,None,1,worms,conflict 90% ,other blast results invasive as well,no records at all from pacific…
 Notheia anomala,4,undetermined,BEN,1,algaebase,tbd,,"Terrie - brown alga, non native, This is a puzzling occurrence b/c this species is an obligate piphyte of the brown alga hormosira banks which is native to Australia and NZ but to my knowledge has never been reported on this coast, so if its here, what is the host?"
 Arca avellana,3,undetermined,BEN,1,worms,tbd,,"philippines, subtropical, some naming confusion?"
 Bougainvillia muscus,3,hydrozoan,Both,1,invasions.si.edu,tbd,,
