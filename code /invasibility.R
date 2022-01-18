@@ -296,9 +296,13 @@ print(site_results)
 rank_sum_df_site <- chi_sq_df_site
 
 #rank_sum_df_region$prop <- rank_sum_df_region$nonative / rank_sum_df_region$native
-rank_sum_df_site$prop <- rank_sum_df_site$nonative / rank_sum_df_site$native  
+rank_sum_df_site$prop <- round(rank_sum_df_site$nonative / rank_sum_df_site$native, digits = 3)  
 
 rank_sum_df_site$waveE <- c(1, 3, 2, 6, 7, 4, 5, 8)
+
+pdf("../figures/2022/ranksum_table.pdf")
+grid.table(rank_sum_df_site)
+dev.off()
 
 wilcox_result <- wilcox.test(rank_sum_df_site$prop, rank_sum_df_site$waveE)
 print(wilcox_result)
