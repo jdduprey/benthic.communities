@@ -8,6 +8,9 @@
 #
 # merge species distribution data (nonnative_vec) into existing dataframes
 # examine spatial/temporal trends
+# meeting wint 2022
+# ep83b49
+# http://whenisgood.net/sw4zpns/results/ep83b49
 # ====================================================
 library(tidyverse)
 library(vegan)
@@ -275,16 +278,27 @@ pdf("../figures/2022/site_table.pdf")
 grid.table(chi_sq_df_site)
 dev.off()
 
-  
 # chi_sq_df$nonative <- c(12, 24) right on the line if alpha is 0.05, ask ryan how
 # to interpret, what if we are off by a species or two
 # what is the role of the test here? 
 
 # CHI SQUARED TEST 
+# ====================================================  
 region_results <- chisq.test(chi_sq_df_region)
 print(region_results)
 
 site_results <- chisq.test(chi_sq_df_site)
 print(site_results)
 
-  
+# RANK SUM TEST
+# ====================================================  
+#rank_sum_df_region <- chi_sq_df_region
+rank_sum_df_site <- chi_sq_df_site
+
+#rank_sum_df_region$prop <- rank_sum_df_region$nonative / rank_sum_df_region$native
+rank_sum_df_site$prop <- rank_sum_df_site$nonative / rank_sum_df_site$native  
+
+rank_sum_df_site$waveE <- c(1, 3, 2, 6, 7, 4, 5, 8)
+
+wilcox_result <- wilcox.test(rank_sum_df_site$prop, rank_sum_df_site$waveE)
+print(wilcox_result)
