@@ -13,6 +13,8 @@ library(tidyverse)
 library(vegan)
 library(gplots)
 library(ggplot2)
+library(gridExtra)
+library(tidystats)
 
 nonnative_status <- read.csv("../docs/all_species_distributions_summary.csv")
 just_nonnative <- read.csv("../docs/just_the_suspects.csv")
@@ -164,26 +166,35 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
   labs(title = "Richness Ratio by Site",
        x = "Total Richness", y = "Non-Native Richness") +
   geom_point()
+ggsave(filename="../figures/2022/richness_ratio_by_site.png")
+
 
 ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=region)) +
   labs(title = "Richness Ratio by Region",
        x = "Total Richness", y = "Non-Native Richness") +
   geom_point()
+ggsave(filename="../figures/2022/richness_ratio_by_region.png")
+
 
 ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=month)) +
   labs(title = "Richness Ratio by Month",
        x = "Total Richness", y = "Non-Native Richness") +
   geom_point()
+ggsave(filename="../figures/2022/richness_ratio_by_month.png")
+
 
 ggplot(total_nn_detections, aes(x=site, y=n_detections)) + 
   labs(title = "Richness of Probable Non-Native Species",
        x = "Site", y = "N Detections") +
   geom_boxplot()
+ggsave(filename="../figures/2022/probable_nonnative_richness.png")
+
 
 ggplot(total_nn_detections, aes(x=region, y=n_detections)) + 
   labs(title = "Richness of Probable Non-Native Species",
        x = "Region", y = "N Detections") +
   geom_boxplot()
+ggsave(filename="../figures/2022/region_probable_nonn_richness.png")
 
 
 # lets just get a total number of unique nonnative detections for each region
@@ -201,6 +212,9 @@ unique_species_by_region <- just_nonnative_events %>%
     )) %>%
   distinct(species, region) ### change this to site to get site summary 
 
+unique_species_by_site <- just_nonnative_events %>%
+  distinct(species, site)
+
 unique_nat_species_by_region <- just_native_events %>%
   mutate(
     region = case_when(
@@ -209,42 +223,68 @@ unique_nat_species_by_region <- just_native_events %>%
     )) %>%
   distinct(species, region) ### change this to site to get site summary 
 
-barchart_df <- unique_species_by_region %>%
+unique_nat_species_by_site <- just_native_events %>%
+  distinct(species, site)
+
+region_barchart_df <- unique_species_by_region %>%
   group_by(region) %>% ### change this to site to get site summary 
   mutate(n_nonn_species = n()) %>%
   distinct(region, n_nonn_species) ### change to site to get site summary 
 
-native_barchart_df <- unique_nat_species_by_region %>%
+site_barchart_df <- unique_species_by_site %>%
+  group_by(site) %>%
+  mutate(n_nonn_species = n()) %>%
+  distinct(site, n_nonn_species)
+
+region_native_barchart_df <- unique_nat_species_by_region %>%
   group_by(region) %>% ### change this to site to get site summary 
   mutate(n_native_species = n()) %>%
   distinct(region, n_native_species) ### change to site to get site summary 
 
+site_native_barchart_df <- unique_nat_species_by_site %>%
+  group_by(site) %>%
+  mutate(n_native_species = n()) %>%
+  distinct(site, n_native_species)
+
 # combine the unique non-native species from each region with the 
 # unique native species into a single table, this could be modified
 # to be by site as well - which might be more relevant to the research question
-chi_sq_df <- data.frame(region = barchart_df$region,    ### SITE/REGION
-                            nonative = barchart_df$n_nonn_species,
-                            native = native_barchart_df$n_native_species)
+chi_sq_df_region <- data.frame(region = region_barchart_df$region,    ### SITE/REGION
+                            nonative = region_barchart_df$n_nonn_species,
+                            native = region_native_barchart_df$n_native_species)
+
+chi_sq_df_site <- data.frame(site = site_barchart_df$site,
+                             nonative = site_barchart_df$n_nonn_species,
+                             native = site_native_barchart_df$n_native_species)
+
 
 # format the 2xX table into right format for chi-squared test
-row.names(chi_sq_df) <- chi_sq_df$region ### SITE/REGION
-chi_sq_df <- chi_sq_df %>%
-  select(-region) ### SITE/REGION
+row.names(chi_sq_df_region) <- chi_sq_df_region$region ### SITE/REGION
+chi_sq_df_region <- chi_sq_df_region %>%
+  select(-region)
 
+pdf("../figures/2022/region_table.pdf")
+grid.table(chi_sq_df_region)
+dev.off()
+
+row.names(chi_sq_df_site) <- chi_sq_df_site$site
+chi_sq_df_site <- chi_sq_df_site %>%
+  select(-site)
+
+pdf("../figures/2022/site_table.pdf")
+grid.table(chi_sq_df_site)
+dev.off()
+
+  
 # chi_sq_df$nonative <- c(12, 24) right on the line if alpha is 0.05, ask ryan how
 # to interpret, what if we are off by a species or two
 # what is the role of the test here? 
 
-chi_sq_matrix <- as.table(as.matrix(chi_sq_df))
-print(chi_sq_matrix)
-
 # CHI SQUARED TEST 
-results <- chisq.test(chi_sq_df)
-print(results)
+region_results <- chisq.test(chi_sq_df_region)
+print(region_results)
 
-ggplot(barchart_df, aes(x=region, y=n_nonn_species)) +
-  labs(title = "Probable Non-Natives Detected by Region",
-       x = "Site", y = "N Species") +
-  geom_bar(stat="identity")
+site_results <- chisq.test(chi_sq_df_site)
+print(site_results)
 
   
