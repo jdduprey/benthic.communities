@@ -259,7 +259,7 @@ Urile penicillatus,1,undetermined,None,0,worms,,,brandt's cormorant
 Gracilaria vermiculophylla,34,"algae, red",BEN,1,algaebase,100%,species genome 100% identity,well studied invader
 Ruditapes philippinarum,25,undetermined,BEN,1,worms,tbd,,manila clams!
 Caulacanthus ustulatus,23,undetermined,BEN,1,algaebase,tbd,,
-Nuttallia olivacea,17,undetermined,BEN,1,worms,tbd,,
+Nuttallia olivacea,17,undetermined,BEN,1,worms,99.30%,,
 Azumapecten farreri,13,undetermined,BEN,1,worms,conflict (96.15%),other blast results appear to be invasive as well,farrers scallop chinese aquaculture species
 Crassostrea gigas,13,undetermined,BEN,1,worms,tbd,,
 Callithamnion corymbosum,13,undetermined,BEN,1,worms encyclopedia of puget sound,tbd,,Terrie - this is a red alga evidently native to the UK
@@ -333,7 +333,7 @@ Proceraea okadai,1,polychaete,BEN,low,worms,,,documented once in japan
 Melosira nummuloides,26,diatom,PLK,0,worms,,,"documented in atlantic, california "
 Cliona chilensis,25,sponge,BEN,1,worms,99%,,"shellfish parasite low information, other cliona in PS, other BLAST returns include Cliona celata, Clionaopsis platei, "
 Stelligera rigida,19,sponge,BEN,possible,worms,conflict (85%),,"accepted as Stelligera montagui, appears to be recorded mostly in europe and britain"
-Hecatonema maculans,18,"algae, brown",BEN,possible,worms,tbd,,uncertain distribution but mostly atlantic
+Hecatonema maculans,18,"algae, brown",BEN,possible,worms,conflict,,uncertain distribution but mostly atlantic
 Haramonas dimorpha,16,undetermined,None,possible,algaebase,tbd,,only one detection - australian mangrove
 Scopalina ruetzleri,15,sponge,BEN,possible,worms,conflict (88%),,"scopalina sp has cosmopolitin dist But ruezleri is caribbean dist, BLAST has competing IDs, many of which are other nonnatives see: https://www.reabic.net/journals/bir/2021/2/BIR_2021_Harbo_etal.pdf"
 Podosira stelligera,13,diatom,PLK,possible,worms algaebase,tbd,,"documented east US, europe, NZ, aus"
