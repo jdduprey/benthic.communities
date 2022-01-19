@@ -18,6 +18,7 @@ library(gplots)
 library(ggplot2)
 library(gridExtra)
 library(tidystats)
+library(RColorBrewer)
 
 nonnative_status <- read.csv("../docs/all_species_distributions_summary.csv")
 just_nonnative <- read.csv("../docs/just_the_suspects.csv")
@@ -143,9 +144,11 @@ total_nn_detections <- total_nn_detections %>%
   mutate(
     region = case_when(
       site %in% c("CP", "FH", "LK") ~ "SJI",
-      site %in% c("LL", "PO", "SA", "TR", "TW") ~ "HC"
-    )
-  )
+      site %in% c("LL", "PO", "SA", "TR", "TW") ~ "HC")) %>%
+  mutate(
+    season = case_when(
+      month %in% c("05", "06", "07", "08", "09") ~ "warm",
+      month %in% c("10", "11", "01", "03") ~ "cool"))
 
 # add region, year and month to native richness df 
 total_allspec_detections <- total_allspec_detections %>%
@@ -178,12 +181,26 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
   geom_point()
 ggsave(filename="../figures/2022/richness_ratio_by_region.png")
 
+# color palate for months 
+month_colors <- c("01" = "#5E4FA2", "03" = "#3288BD", "05" = "#ABDDA4", "06" = "#F46D43", "07" = "#D53E4F",
+                  "08" = "#9E0142", "09" = "#FEE08B", "10" = "#E6F598", "11" = "#66C2A5")
+
 
 ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=month)) +
   labs(title = "Richness Ratio by Month",
        x = "Total Richness", y = "Non-Native Richness") +
-  geom_point()
+  geom_point() +
+  scale_color_manual(values = month_colors)
 ggsave(filename="../figures/2022/richness_ratio_by_month.png")
+
+season_colors <- c("warm" = "#D53E4F", "cool" = "#3288BD")
+
+ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=season)) +
+  labs(title = "Richness Ratio by Season",
+       x = "Total Richness", y = "Non-Native Richness") +
+  geom_point() +
+  scale_color_manual(values = season_colors)
+ggsave(filename="../figures/2022/richness_ratio_by_season.png")
 
 
 ggplot(total_nn_detections, aes(x=site, y=n_detections)) + 
