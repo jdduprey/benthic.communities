@@ -172,8 +172,8 @@ nonnative_vs_all_species <- left_join(total_nn_detections, total_allspec_detecti
 #scatterplot non-native vs native
 
 ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=site)) +
-  labs(title = "Richness Ratio by Site",
-       x = "Total Richness", y = "Non-Native Richness") +
+  labs(title = "Richness by Site",
+       x = "Native Richness", y = "Non-Native Richness") +
   geom_point() +
   scale_color_brewer(palette="Spectral")
 ggsave(filename="../figures/2022/richness_ratio_by_site.png")
