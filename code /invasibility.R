@@ -161,6 +161,8 @@ total_allspec_detections <- total_allspec_detections %>%
     )
   )
 
+total_nn_detections$site <- factor(total_nn_detections$site, 
+                                        levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))
 
 # combine df to single handy df 
 nonnative_vs_all_species <- left_join(total_nn_detections, total_allspec_detections)
@@ -168,10 +170,12 @@ nonnative_vs_all_species <- left_join(total_nn_detections, total_allspec_detecti
 # EXPLORATORY PLOTTING 
 # ====================================================  
 #scatterplot non-native vs native
+
 ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=site)) +
   labs(title = "Richness Ratio by Site",
        x = "Total Richness", y = "Non-Native Richness") +
-  geom_point()
+  geom_point() +
+  scale_color_brewer(palette="Spectral")
 ggsave(filename="../figures/2022/richness_ratio_by_site.png")
 
 
