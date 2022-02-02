@@ -167,9 +167,13 @@ total_nn_detections$site <- factor(total_nn_detections$site,
 # combine df to single handy df 
 nonnative_vs_all_species <- left_join(total_nn_detections, total_allspec_detections)
 
+nonnative_vs_all_species$prop_nn <- nonnative_vs_all_species$n_detections/nonnative_vs_all_species$all_sp_detections
+
 # EXPLORATORY PLOTTING 
 # ====================================================  
 #scatterplot non-native vs native
+
+##TODO is it non-native or all species joe - figure it out
 
 ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=site)) +
   labs(title = "Richness by Site",
@@ -206,12 +210,19 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
   scale_color_manual(values = season_colors)
 ggsave(filename="../figures/2022/richness_ratio_by_season.png")
 
-
+# raw number boxplot
 ggplot(total_nn_detections, aes(x=site, y=n_detections)) + 
   labs(title = "Richness of Probable Non-Native Species",
        x = "Site", y = "N Detections") +
   geom_boxplot()
 ggsave(filename="../figures/2022/probable_nonnative_richness.png")
+
+# proportion boxplot
+ggplot(nonnative_vs_all_species, aes(x=site, y=prop_nn)) + 
+  labs(title = "Proportion of Non-Native Species",
+       x = "Site", y = "N Detections") +
+  geom_boxplot()
+ggsave(filename="../figures/2022/proportion_probable_nn.png")
 
 
 ggplot(total_nn_detections, aes(x=region, y=n_detections)) + 
