@@ -23,7 +23,8 @@ library(RColorBrewer)
 nonnative_status <- read.csv("../docs/all_species_distributions_summary.csv")
 just_nonnative <- read.csv("../docs/just_the_suspects.csv")
 species_annotated <- read.csv("../data/species_annotated.csv")
-by_sample_species <- read.csv('../data/by.sample.species.csv') # reads merged by tech and bio
+by_sample_species <- read.csv("../data/by.sample.species.csv") # reads merged by tech and bio
+enviro_data <- read.csv("../data/HC_enviro_data.csv")
 
 nonnative_vec <- nonnative_status %>%
   select(species, nonnative)
@@ -232,6 +233,31 @@ ggplot(total_nn_detections, aes(x=region, y=n_detections)) +
 ggsave(filename="../figures/2022/region_probable_nonn_richness.png")
 
 
+# SALINITY SCATTERPLOT 
+# ====================================================  
+salinity_plot_df <- left_join(total_nn_detections, enviro_data)
+
+ggplot(salinity_plot_df, aes(x = Salinity, y = n_detections, color = site)) +
+  labs(title = "Non-Native Species Richness by Salinity",
+       x = "Salinity", y = "Richness") +
+  geom_point() +
+  theme_classic()
+ggsave(filename="../figures/2022/nn_richness_salinity.png")
+
+ggplot(salinity_plot_df, aes(x = Temperature, y = n_detections, color = site)) +
+  labs(title = "Non-Native Species Richness by Temperature",
+       x = "Temperature (C)", y = "Richness") +
+  geom_point() +
+  theme_classic()
+ggsave(filename="../figures/2022/nn_richness_temp.png")
+
+ggplot(salinity_plot_df, aes(x = DIC, y = n_detections, color = site)) +
+  labs(title = "Non-Native Species Richness by DIC",
+       x = "DIC", y = "Richness") +
+  geom_point() +
+  theme_classic()
+ggsave(filename="../figures/2022/nn_richness_DIC.png")
+
 # lets just get a total number of unique nonnative detections for each region
 # ====================================================  
 # HC vs SJI 
@@ -314,7 +340,7 @@ dev.off()
 # to interpret, what if we are off by a species or two
 # what is the role of the test here? 
 
-# CHI SQUARED TEST 
+# CHI SQUARED TEST ##TODO## moving away from this approach based on Hood Canal data 
 # ====================================================  
 region_results <- chisq.test(chi_sq_df_region)
 print(region_results)
@@ -322,7 +348,7 @@ print(region_results)
 site_results <- chisq.test(chi_sq_df_site)
 print(site_results)
 
-# RANK SUM TEST
+# RANK SUM TEST ###TODO## I don't think this is set up correctly 
 # ====================================================  
 #rank_sum_df_region <- chi_sq_df_region
 rank_sum_df_site <- chi_sq_df_site
@@ -340,3 +366,4 @@ dev.off()
 
 wilcox_result <- wilcox.test(rank_sum_df_site$prop, rank_sum_df_site$waveE)
 print(wilcox_result)
+
