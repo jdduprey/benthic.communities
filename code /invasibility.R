@@ -170,6 +170,8 @@ nonnative_vs_all_species <- left_join(total_nn_detections, total_allspec_detecti
 
 nonnative_vs_all_species$prop_nn <- nonnative_vs_all_species$n_detections/nonnative_vs_all_species$all_sp_detections
 
+nonnative_vs_all_species$site <- factor(nonnative_vs_all_species$site, 
+                                   levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))
 # EXPLORATORY PLOTTING 
 # ====================================================  
 #scatterplot non-native vs native
@@ -241,7 +243,7 @@ ggplot(salinity_plot_df, aes(x = Salinity, y = n_detections, color = site)) +
   labs(title = "Non-Native Species Richness by Salinity",
        x = "Salinity", y = "Richness") +
   geom_point() +
-  theme_classic()
+  theme_classic() 
 ggsave(filename="../figures/2022/nn_richness_salinity.png")
 
 ggplot(salinity_plot_df, aes(x = Temperature, y = n_detections, color = site)) +
@@ -257,6 +259,18 @@ ggplot(salinity_plot_df, aes(x = DIC, y = n_detections, color = site)) +
   geom_point() +
   theme_classic()
 ggsave(filename="../figures/2022/nn_richness_DIC.png")
+
+# invasion rate across space and time 
+# ====================================================  
+nonnative_vs_all_species_heat <- nonnative_vs_all_species %>%
+  group_by(site, month) %>%
+  mutate(mean_nnn = mean(n_detections)) 
+
+ggplot(nonnative_vs_all_species_heat, aes(month, site, fill = prop_nn)) + 
+  geom_tile() +
+  theme_classic() +
+  scale_fill_distiller(palette = "Spectral") +
+  geom_text(aes(label=mean_nnn))
 
 # lets just get a total number of unique nonnative detections for each region
 # ====================================================  
