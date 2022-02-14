@@ -260,17 +260,6 @@ ggplot(salinity_plot_df, aes(x = DIC, y = n_detections, color = site)) +
   theme_classic()
 ggsave(filename="../figures/2022/nn_richness_DIC.png")
 
-# invasion rate across space and time 
-# ====================================================  
-nonnative_vs_all_species_heat <- nonnative_vs_all_species %>%
-  group_by(site, month) %>%
-  mutate(mean_nnn = mean(n_detections)) 
-
-ggplot(nonnative_vs_all_species_heat, aes(month, site, fill = prop_nn)) + 
-  geom_tile() +
-  theme_classic() +
-  scale_fill_distiller(palette = "Spectral") +
-  geom_text(aes(label=mean_nnn))
 
 # lets just get a total number of unique nonnative detections for each region
 # ====================================================  
@@ -349,6 +338,31 @@ chi_sq_df_site <- chi_sq_df_site %>%
 pdf("../figures/2022/site_table.pdf")
 grid.table(chi_sq_df_site)
 dev.off()
+
+
+# INVASION RATE ACROSS SPACE AND TIME (sites and months)
+# ====================================================  
+nonnative_vs_all_species_heat <- nonnative_vs_all_species %>%
+  group_by(site, month) %>%
+  mutate(mean_nnn = mean(n_detections)) 
+
+# this could be a facet plot situation 
+heat_slice_df <- chi_sq_df_site
+heat_slice_df$prop_nn <- heat_slice_df$nonative / heat_slice_df$native
+
+ggplot(heat_slice_df, aes(x = 1, y=site, fill = prop_nn)) + 
+  geom_tile() +
+  theme_classic() +
+  scale_fill_distiller(palette = "Spectral") +
+  geom_text(aes(label=nonative))
+ggsave(filename="../figures/2022/invasion_heatslice.png")
+
+ggplot(nonnative_vs_all_species_heat, aes(month, site, fill = prop_nn)) + 
+  geom_tile() +
+  theme_classic() +
+  scale_fill_distiller(palette = "Spectral") +
+  geom_text(aes(label=mean_nnn))
+ggsave(filename="../figures/2022/invasion_heatmap.png")
 
 # chi_sq_df$nonative <- c(12, 24) right on the line if alpha is 0.05, ask ryan how
 # to interpret, what if we are off by a species or two
