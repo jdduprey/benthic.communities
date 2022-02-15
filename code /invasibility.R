@@ -371,6 +371,7 @@ ggsave(filename="../figures/2022/invasion_heatmap.png")
 # stacked bar madness (sites and months)
 # ====================================================  
 stacked_bar_df <- left_join(unique_species_by_site, species_annotated) 
+propagule_stack <- left_join(unique_species_by_site, just_nonnative)
 
 stacked_bar_df$site <- factor(stacked_bar_df$site, 
                              levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))
@@ -383,12 +384,18 @@ phyla_colors <- c("Porifera" = "#feb24c", "Phaeophyceae" = "#a6611a", "Mollusca"
 ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) + 
   geom_bar(position = "stack", stat = "identity", color = "black") +
   scale_fill_manual(values = phyla_colors) +
+  labs(title="Unique Non-Native Species Detected by Site",
+       x ="Site", y = "Non-Native Species Detections", fill = "Phyla") +
   theme_classic() 
+ggsave(filename="../figures/2022/phyla_stack.png")
 
-ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) + 
+ggplot(propagule_stack, aes(x = site, y = nonnative, fill = aqua_balast)) + 
   geom_bar(position = "stack", stat = "identity", color = "black") +
-  scale_fill_brewer(palette = "Set2") +
+  labs(title="Possible Mechanism of Introduction",
+       x ="Site", y = "Non-Native Species Detections", fill = "Mechanism") +
   theme_classic() 
+ggsave(filename="../figures/2022/propagule_stack.png")
+
 
 # chi_sq_df$nonative <- c(12, 24) right on the line if alpha is 0.05, ask ryan how
 # to interpret, what if we are off by a species or two
