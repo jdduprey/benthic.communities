@@ -19,6 +19,7 @@ library(ggplot2)
 library(gridExtra)
 library(tidystats)
 library(RColorBrewer)
+library(ggpubr)
 
 nonnative_status <- read.csv("../docs/all_species_distributions_summary.csv")
 just_nonnative <- read.csv("../docs/just_the_suspects.csv")
@@ -182,7 +183,8 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
   labs(title = "Richness by Site",
        x = "Native Richness", y = "Non-Native Richness") +
   geom_point() +
-  scale_color_brewer(palette="Spectral")
+  scale_color_brewer(palette="Spectral") +
+  theme_classic()
 ggsave(filename="../figures/2022/richness_ratio_by_site.png")
 
 
@@ -201,7 +203,8 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
   labs(title = "Richness Ratio by Month",
        x = "Total Richness", y = "Non-Native Richness") +
   geom_point() +
-  scale_color_manual(values = month_colors)
+  scale_color_manual(values = month_colors) +
+  theme_classic()
 ggsave(filename="../figures/2022/richness_ratio_by_month.png")
 
 season_colors <- c("warm" = "#D53E4F", "cool" = "#3288BD")
@@ -252,14 +255,6 @@ ggplot(salinity_plot_df, aes(x = Temperature, y = n_detections, color = site)) +
   geom_point() +
   theme_classic()
 ggsave(filename="../figures/2022/nn_richness_temp.png")
-
-ggplot(salinity_plot_df, aes(x = DIC, y = n_detections, color = site)) +
-  labs(title = "Non-Native Species Richness by DIC",
-       x = "DIC", y = "Richness") +
-  geom_point() +
-  theme_classic()
-ggsave(filename="../figures/2022/nn_richness_DIC.png")
-
 
 # lets just get a total number of unique nonnative detections for each region
 # ====================================================  
@@ -358,7 +353,6 @@ ggplot(heat_slice_df, aes(x = 1, y=site, fill = prop_nn)) +
   theme_classic() +
   scale_fill_distiller(palette = "Spectral") +
   geom_text(aes(label=nonative))
-ggsave(filename="../figures/2022/invasion_heatslice.png")
 
 ggplot(nonnative_vs_all_species_heat, aes(month, site, fill = prop_nn)) + 
   geom_tile() +
@@ -401,14 +395,33 @@ avg_sal_df <- enviro_data %>%
   mutate(mean_sal = mean(Salinity)) %>%
   distinct(site, mean_sal)
 
-avg_sal_df$site <- factor(avg_sal_df$site, 
+mean_native_richness_df <- nonnative_vs_all_species %>%
+  mutate(nat_detections = all_sp_detections - n_detections) %>%
+  group_by(site) %>%
+  mutate(mean_nr = mean(nat_detections)) %>%
+  distinct(site, mean_nr)
+  
+sal_rich_story <- left_join(avg_sal_df, mean_native_richness_df)
+
+sal_rich_story$site <- factor(sal_rich_story$site, 
                               levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))  
 
 #TODO add error bar 
-ggplot(avg_sal_df, aes(x = site, y = mean_sal)) +
+#TODO story of non-native diversity: function of sal and native richness
+foo1 <- ggplot(sal_rich_story, aes(x = site, y = mean_sal)) +
   geom_point() +
   theme_classic()
 
+foo2 <- ggplot(sal_rich_story, aes(x = site, y = mean_nr)) +
+  geom_point() +
+  theme_classic()
+
+ggarrange(foo1, foo2, 
+          labels = c("A", "B"),
+          ncol = 2, nrow = 1)
+
+#stacked bar 
+  
 ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) + 
   geom_bar(position = "stack", stat = "identity", color = "black") +
   scale_fill_brewer(palette = "Accent") +
