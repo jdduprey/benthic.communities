@@ -383,6 +383,7 @@ phyla_colors <- c("Porifera" = "#FFFF33", "Phaeophyceae" = "#66c2a4", "Mollusca"
                   "Arthropoda" = "#fc8d59", "Annelida" = "#023858")
 
 
+#TODO fix the axis, this has the nice color scale though
 ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) + 
   geom_bar(position = "stack", stat = "identity", color = "black") +
   scale_fill_manual(values = phyla_colors) +
@@ -393,6 +394,20 @@ ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) +
 ggsave(filename="../figures/2022/phyla_stack.png")
 
 
+# maybe we can get it side by side with salinity
+avg_sal_df <- enviro_data %>%
+  separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) %>%
+  group_by(site) %>%
+  mutate(mean_sal = mean(Salinity)) %>%
+  distinct(site, mean_sal)
+
+avg_sal_df$site <- factor(avg_sal_df$site, 
+                              levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))  
+
+#TODO add error bar 
+ggplot(avg_sal_df, aes(x = site, y = mean_sal)) +
+  geom_point() +
+  theme_classic()
 
 ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) + 
   geom_bar(position = "stack", stat = "identity", color = "black") +
