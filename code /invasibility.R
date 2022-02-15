@@ -364,7 +364,9 @@ ggplot(nonnative_vs_all_species_heat, aes(month, site, fill = prop_nn)) +
   geom_tile() +
   theme_classic() +
   scale_fill_distiller(palette = "RdYlBu") +
-  geom_text(aes(label=mean_nnn))
+  geom_text(aes(label=mean_nnn)) +
+  labs(title="Proportion and Number of Non-Native Species",
+       x ="Month", y = "Site", fill = "Proportion Non-Natives") 
 ggsave(filename="../figures/2022/invasion_heatmap.png")
 
 
@@ -376,9 +378,9 @@ propagule_stack <- left_join(unique_species_by_site, just_nonnative)
 stacked_bar_df$site <- factor(stacked_bar_df$site, 
                              levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))
 
-phyla_colors <- c("Porifera" = "#feb24c", "Phaeophyceae" = "#a6611a", "Mollusca" = "#5e3c99", 
+phyla_colors <- c("Porifera" = "#FFFF33", "Phaeophyceae" = "#66c2a4", "Mollusca" = "#5e3c99", 
                   "Florideophyceae" = "#ca0020", "Cnidaria" = "#f7f7f7", "Chordata" = "#92c5de",
-                  "Arthropoda" = "#fc8d59", "Annelida" = "#1a9641")
+                  "Arthropoda" = "#fc8d59", "Annelida" = "#023858")
 
 
 ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) + 
@@ -386,13 +388,26 @@ ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) +
   scale_fill_manual(values = phyla_colors) +
   labs(title="Unique Non-Native Species Detected by Site",
        x ="Site", y = "Non-Native Species Detections", fill = "Phyla") +
-  theme_classic() 
+  theme_classic() +
+  scale_y_discrete(breaks=c("1","2","3","4","5","6","7")) 
+ggsave(filename="../figures/2022/phyla_stack.png")
+
+
+
+ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) + 
+  geom_bar(position = "stack", stat = "identity", color = "black") +
+  scale_fill_brewer(palette = "Accent") +
+  labs(title="Unique Non-Native Species Detected by Site",
+       x ="Site", y = "Non-Native Species Detections", fill = "Phyla") +
+  theme_classic() +
+  scale_y_discrete(breaks=c("1","2","3","4","5","6","7")) 
 ggsave(filename="../figures/2022/phyla_stack.png")
 
 ggplot(propagule_stack, aes(x = site, y = nonnative, fill = aqua_balast)) + 
   geom_bar(position = "stack", stat = "identity", color = "black") +
   labs(title="Possible Mechanism of Introduction",
        x ="Site", y = "Non-Native Species Detections", fill = "Mechanism") +
+  scale_fill_brewer(palette="Spectral") +
   theme_classic() 
 ggsave(filename="../figures/2022/propagule_stack.png")
 
