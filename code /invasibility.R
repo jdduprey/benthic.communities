@@ -350,6 +350,9 @@ nonnative_vs_all_species_heat <- nonnative_vs_all_species %>%
 heat_slice_df <- chi_sq_df_site
 heat_slice_df$prop_nn <- heat_slice_df$nonative / heat_slice_df$native
 
+heat_slice_df$site <- factor(heat_slice_df$site, 
+                                   levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))
+
 ggplot(heat_slice_df, aes(x = 1, y=site, fill = prop_nn)) + 
   geom_tile() +
   theme_classic() +
@@ -360,9 +363,32 @@ ggsave(filename="../figures/2022/invasion_heatslice.png")
 ggplot(nonnative_vs_all_species_heat, aes(month, site, fill = prop_nn)) + 
   geom_tile() +
   theme_classic() +
-  scale_fill_distiller(palette = "Spectral") +
+  scale_fill_distiller(palette = "RdYlBu") +
   geom_text(aes(label=mean_nnn))
 ggsave(filename="../figures/2022/invasion_heatmap.png")
+
+
+# stacked bar madness (sites and months)
+# ====================================================  
+stacked_bar_df <- left_join(unique_species_by_site, species_annotated) 
+
+stacked_bar_df$site <- factor(stacked_bar_df$site, 
+                             levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))
+
+phyla_colors <- c("Porifera" = "#feb24c", "Phaeophyceae" = "#a6611a", "Mollusca" = "#5e3c99", 
+                  "Florideophyceae" = "#ca0020", "Cnidaria" = "#f7f7f7", "Chordata" = "#92c5de",
+                  "Arthropoda" = "#fc8d59", "Annelida" = "#1a9641")
+
+
+ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) + 
+  geom_bar(position = "stack", stat = "identity", color = "black") +
+  scale_fill_manual(values = phyla_colors) +
+  theme_classic() 
+
+ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) + 
+  geom_bar(position = "stack", stat = "identity", color = "black") +
+  scale_fill_brewer(palette = "Set2") +
+  theme_classic() 
 
 # chi_sq_df$nonative <- c(12, 24) right on the line if alpha is 0.05, ask ryan how
 # to interpret, what if we are off by a species or two
