@@ -398,47 +398,38 @@ ggsave(filename="../figures/2022/phyla_stack.png")
 
 
 # maybe we can get it side by side with salinity
-avg_sal_df <- enviro_data %>%
-  separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) %>%
-  group_by(site) %>%
-  mutate(mean_sal = mean(Salinity)) %>%
-  distinct(site, mean_sal)
-
-mean_native_richness_df <- nonnative_vs_all_species %>%
-  mutate(nat_detections = all_sp_detections - n_detections) %>%
-  group_by(site) %>%
-  mutate(mean_nr = mean(nat_detections)) %>%
-  distinct(site, mean_nr)
-  
-sal_rich_story <- left_join(avg_sal_df, mean_native_richness_df)
-
-sal_rich_story$site <- factor(sal_rich_story$site, 
-                              levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))  
+# avg_sal_df <- enviro_data %>%
+#   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) %>%
+#   group_by(site) %>%
+#   mutate(mean_sal = mean(Salinity)) %>%
+#   distinct(site, mean_sal)
+# 
+# mean_native_richness_df <- nonnative_vs_all_species %>%
+#   mutate(nat_detections = all_sp_detections - n_detections) %>%
+#   group_by(site) %>%
+#   mutate(mean_nr = mean(nat_detections)) %>%
+#   distinct(site, mean_nr)
+#   
+# sal_rich_story <- left_join(avg_sal_df, mean_native_richness_df)
+# 
+# sal_rich_story$site <- factor(sal_rich_story$site, 
+#                               levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))  
 
 #TODO add error bar 
 #TODO story of non-native diversity: function of sal and native richness
-foo1 <- ggplot(sal_rich_story, aes(x = site, y = mean_sal)) +
-  geom_point() +
-  theme_classic()
+# foo1 <- ggplot(sal_rich_story, aes(x = site, y = mean_sal)) +
+#   geom_point() +
+#   theme_classic()
+# 
+# foo2 <- ggplot(sal_rich_story, aes(x = site, y = mean_nr)) +
+#   geom_point() +
+#   theme_classic()
+# 
+# ggarrange(foo1, foo2, 
+#           labels = c("A", "B"),
+#           ncol = 2, nrow = 1)
 
-foo2 <- ggplot(sal_rich_story, aes(x = site, y = mean_nr)) +
-  geom_point() +
-  theme_classic()
-
-ggarrange(foo1, foo2, 
-          labels = c("A", "B"),
-          ncol = 2, nrow = 1)
-
-#stacked bar 
-  
-ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) + 
-  geom_bar(position = "stack", stat = "identity", color = "black") +
-  scale_fill_brewer(palette = "Accent") +
-  labs(title="Unique Non-Native Species Detected by Site",
-       x ="Site", y = "Non-Native Species Detections", fill = "Phyla") +
-  theme_classic() +
-  scale_y_discrete(breaks=c("1","2","3","4","5","6","7")) 
-ggsave(filename="../figures/2022/phyla_stack.png")
+#stacked bar continued
 
 ggplot(propagule_stack, aes(x = site, y = nonnative, fill = aqua_balast)) + 
   geom_bar(position = "stack", stat = "identity", color = "black") +
