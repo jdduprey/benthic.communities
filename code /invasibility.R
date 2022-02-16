@@ -220,7 +220,9 @@ ggsave(filename="../figures/2022/richness_ratio_by_season.png")
 ggplot(total_nn_detections, aes(x=site, y=n_detections)) + 
   labs(title = "Richness of Probable Non-Native Species",
        x = "Site", y = "N Detections") +
-  geom_boxplot()
+  geom_boxplot() +
+  theme_classic() +
+  scale_y_continuous(breaks=1:9)
 ggsave(filename="../figures/2022/probable_nonnative_richness.png")
 
 # proportion boxplot
@@ -240,21 +242,25 @@ ggsave(filename="../figures/2022/region_probable_nonn_richness.png")
 
 # SALINITY SCATTERPLOT 
 # ====================================================  
-salinity_plot_df <- left_join(total_nn_detections, enviro_data)
 
-ggplot(salinity_plot_df, aes(x = Salinity, y = n_detections, color = site)) +
-  labs(title = "Non-Native Species Richness by Salinity",
-       x = "Salinity", y = "Richness") +
-  geom_point() +
-  theme_classic() 
-ggsave(filename="../figures/2022/nn_richness_salinity.png")
+enviro_plot_df <- left_join(nonnative_vs_all_species, enviro_data)
 
-ggplot(salinity_plot_df, aes(x = Temperature, y = n_detections, color = site)) +
-  labs(title = "Non-Native Species Richness by Temperature",
-       x = "Temperature (C)", y = "Richness") +
+ggplot(enviro_plot_df, aes(x = Salinity, y = prop_nn, color = site)) +
+  labs(title = "Non-Native Species Proportion by Salinity",
+       x = "Salinity", y = "Proportion Non-Native", color = "Site") +
   geom_point() +
+  scale_color_brewer(palette="Paired") +
   theme_classic()
-ggsave(filename="../figures/2022/nn_richness_temp.png")
+ggsave(filename="../figures/2022/nn_prop_salinity.png")
+
+
+ggplot(enviro_plot_df, aes(x = Temperature, y = prop_nn, color = site)) +
+  labs(title = "Non-Native Species Proportion by Temperature",
+       x = "Temperature (C)", y = "Proportion Non-Native", color = "Site") +
+  geom_point() +
+  scale_color_brewer(palette="Paired") +
+  theme_classic()
+ggsave(filename="../figures/2022/nn_prop_temp.png")
 
 # lets just get a total number of unique nonnative detections for each region
 # ====================================================  
@@ -372,6 +378,9 @@ propagule_stack <- left_join(unique_species_by_site, just_nonnative)
 stacked_bar_df$site <- factor(stacked_bar_df$site, 
                              levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))
 
+stacked_bar_df <- stacked_bar_df %>%
+  mutate(nonnative = as.integer(nonnative))
+
 phyla_colors <- c("Porifera" = "#FFFF33", "Phaeophyceae" = "#66c2a4", "Mollusca" = "#5e3c99", 
                   "Florideophyceae" = "#ca0020", "Cnidaria" = "#f7f7f7", "Chordata" = "#92c5de",
                   "Arthropoda" = "#fc8d59", "Annelida" = "#023858")
@@ -384,7 +393,7 @@ ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) +
   labs(title="Unique Non-Native Species Detected by Site",
        x ="Site", y = "Non-Native Species Detections", fill = "Phyla") +
   theme_classic() +
-  scale_y_discrete(breaks=c("1","2","3","4","5","6","7")) 
+  scale_y_continuous(breaks=0:16, limits = c(0,16)) 
 ggsave(filename="../figures/2022/phyla_stack.png")
 
 
@@ -471,3 +480,7 @@ dev.off()
 wilcox_result <- wilcox.test(rank_sum_df_site$prop, rank_sum_df_site$waveE)
 print(wilcox_result)
 
+# linear regression proportion of nn ~ temperature
+# ====================================================  
+linear_mod <- lm(prop_nn ~ Temperature, data = enviro_plot_df) 
+linear_mod
