@@ -393,7 +393,7 @@ ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) +
   labs(title="Unique Non-Native Species Detected by Site",
        x ="Site", y = "Non-Native Species Detections", fill = "Phyla") +
   theme_classic() +
-  scale_y_continuous(breaks=0:16, limits = c(0,16)) 
+  scale_y_continuous(breaks=0:16, limits = c(0,16), expand = c(0,0)) 
 ggsave(filename="../figures/2022/phyla_stack.png")
 
 
