@@ -26,3 +26,6 @@ species_hash_seq <- species_hash_seq %>%
 species_hash_seq <- species_hash_seq %>%
   filter(!is.na(Sequence)) %>%
   select(Hash, Sequence)
+
+write_csv(species_hash_seq, "../data/possible_NIS_qc.csv")
+
