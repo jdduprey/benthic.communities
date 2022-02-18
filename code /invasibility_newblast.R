@@ -1,4 +1,4 @@
-# INVASIBILITY  #TODO UPDATE nonative status to reflect new IDs
+# INVASIBILITY
 # Joe Duprey
 # Last Edited: 01/13/2022
 # ====================================================

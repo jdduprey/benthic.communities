@@ -29,3 +29,24 @@ species_hash_seq <- species_hash_seq %>%
 
 write_csv(species_hash_seq, "../data/possible_NIS_qc.csv")
 
+# load in the BLAST results
+#========================================================
+blast_output <- read.csv("../data/possible_NIS_BLAST.txt", header = FALSE, sep = "\t" )
+
+
+colnames(blast_output) <- c("Hash", "sseqid", "sacc", "pident", "length",
+                            "mismatch", "gapopen", "qcovus", "qstart",
+                            "qend", "sstart", "send", "evalue", "bitscore",
+                            "staxids", "qlen", "sscinames", "sseq")
+
+
+qc_blast_df <- blast_output %>%
+  select(Hash, pident, bitscore, sscinames)
+
+species_hash_df <- hash_annotated %>%
+  select(Hash, species)
+
+test_df <- left_join(qc_blast_df, species_hash_df)
+
+probable_nn_df <- test_df %>%
+  filter(species %in% unique(just_nonnative$species))
