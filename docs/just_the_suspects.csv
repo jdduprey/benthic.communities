@@ -10,7 +10,7 @@ Monocorophium acherusicum,9,undetermined,BEN,1,worms invasions.si.edu,100,0,conf
 Gelidiophycus freshwateri,9,undetermined,BEN,1,algaebase,100,0,conflict 98%,,Terrie - this is a red alga endemic to east Asia (non-native in PNW)
 Botrylloides violaceus,6,tunicate,BEN,1,worms,100,0,100%,,nonnative from australia!
 Loxothylacus panopaei,6,undetermined,None,1,worms,89.54,0,conflict 90% ,other blast results invasive as well,no records at all from pacific…
-Notheia anomala,4,undetermined,BEN,1,algaebase,85.21,0,absent,94% thraustochytrium (arctic species),"Terrie - brown alga, non native, This is a puzzling occurrence b/c this species is an obligate piphyte of the brown alga hormosira banks which is native to Australia and NZ but to my knowledge has never been reported on this coast, so if its here, what is the host?"
+Notheia anomala,4,undetermined,BEN,0,algaebase,85.21,0,absent,94% thraustochytrium (arctic species),"Terrie - brown alga, non native, This is a puzzling occurrence b/c this species is an obligate piphyte of the brown alga hormosira banks which is native to Australia and NZ but to my knowledge has never been reported on this coast, so if its here, what is the host?"
 Arca avellana,3,undetermined,BEN,0,worms,100,0,tbd,,INCORRECT ID - NATIVE Humilaria kennerleyi
 Bougainvillia muscus,3,hydrozoan,Both,1,invasions.si.edu,100,0,tbd,,cryptogenic? 
 Clytia folleata,3,hydrozoan,Both,1,worms sealifebase.ca,89.77,,tbd,,
@@ -21,7 +21,7 @@ Gelidium vagum,2,undetermined,BEN,1,worms,100,0,tbd,,recently introduced from ea
 Macoma petalum,2,undetermined,BEN,1,worms invasions.si.edu,,0,tbd,,
 Musculista senhousia,2,"bivalve, mussels",BEN,1,worms invasions.si.edu,96.16,,95.19%,no native relatives,"arcuatula senhousia - native to kurile islands, russia, japan, singapore, in some instances native suspension feeder have declined or disappeared in presence "
 Pennaria disticha,2,hydrozoan,BEN,1,worms invasions.si.edu,85,0,tbd,cryptic?,"native to east coast, invasive in hawaii, not documented on west coast"
-Striaria attenuata,2,"algae, brown",BEN,1,worms ,88.78,0,tbd,,Terrie - Striaria attenuata is non-native https://invasions.si.edu/nemesis/chesreport/species_summary/Striaria%20attenuata
+Striaria attenuata,2,"algae, brown",BEN,0,worms ,88.78,0,tbd,,Terrie - Striaria attenuata is non-native https://invasions.si.edu/nemesis/chesreport/species_summary/Striaria%20attenuata
 Aphroditella hastata,1,polychaete,BEN,1,worms,91,,tbd,,documented only in atlantic and med 
 Gari maculosa,1,undetermined,BEN,1,worms obis,100,1,tbd,,gari masculos new ID
 Hediste diadroma,1,polychaete,BEN,1,worms,99.67,0,tbd,,"only documented in japan, cryptic invader https://link.springer.com/article/10.1007/s00227-013-2328-z"

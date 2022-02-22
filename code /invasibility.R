@@ -1,4 +1,6 @@
-# INVASIBILITY  #TODO UPDATE nonative status to reflect new IDs
+# INVASIBILITY  
+#TODO UPDATE nonative status to reflect new IDs
+#TODO look up the 3rd database moncho mentioned, then purge low ID species
 # Joe Duprey
 # Last Edited: 01/13/2022
 # ====================================================
@@ -21,8 +23,8 @@ library(tidystats)
 library(RColorBrewer)
 library(ggpubr)
 
-nonnative_status <- read.csv("../docs/all_species_distributions_summary.csv")
-just_nonnative <- read.csv("../docs/just_the_suspects.csv")
+nonnative_status <- read.csv("../docs/feb22_all_species_dist.csv")
+#just_nonnative <- read.csv("../docs/just_the_suspects.csv")
 species_annotated <- read.csv("../data/species_annotated.csv")
 by_sample_species <- read.csv("../data/by.sample.species.csv") # reads merged by tech and bio
 enviro_data <- read.csv("../data/HC_enviro_data.csv")
@@ -185,14 +187,14 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
   geom_point() +
   scale_color_brewer(palette="Spectral") +
   theme_classic()
-ggsave(filename="../figures/2022/richness_ratio_by_site.png")
+ggsave(filename="../figures/feb_2022/richness_ratio_by_site.png")
 
 
 ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=region)) +
   labs(title = "Richness Ratio by Region",
        x = "Total Richness", y = "Non-Native Richness") +
   geom_point()
-ggsave(filename="../figures/2022/richness_ratio_by_region.png")
+ggsave(filename="../figures/feb_2022/richness_ratio_by_region.png")
 
 # color palate for months 
 month_colors <- c("01" = "#5E4FA2", "03" = "#3288BD", "05" = "#ABDDA4", "06" = "#F46D43", "07" = "#D53E4F",
@@ -205,7 +207,7 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
   geom_point() +
   scale_color_manual(values = month_colors) +
   theme_classic()
-ggsave(filename="../figures/2022/richness_ratio_by_month.png")
+ggsave(filename="../figures/feb_2022/richness_ratio_by_month.png")
 
 season_colors <- c("warm" = "#D53E4F", "cool" = "#3288BD")
 
@@ -214,7 +216,7 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
        x = "Total Richness", y = "Non-Native Richness") +
   geom_point() +
   scale_color_manual(values = season_colors)
-ggsave(filename="../figures/2022/richness_ratio_by_season.png")
+ggsave(filename="../figures/feb_2022/richness_ratio_by_season.png")
 
 # raw number boxplot
 ggplot(total_nn_detections, aes(x=site, y=n_detections)) + 
@@ -223,21 +225,21 @@ ggplot(total_nn_detections, aes(x=site, y=n_detections)) +
   geom_boxplot() +
   theme_classic() +
   scale_y_continuous(breaks=1:9)
-ggsave(filename="../figures/2022/probable_nonnative_richness.png")
+ggsave(filename="../figures/feb_2022/probable_nonnative_richness.png")
 
 # proportion boxplot
 ggplot(nonnative_vs_all_species, aes(x=site, y=prop_nn)) + 
   labs(title = "Proportion of Non-Native Species",
        x = "Site", y = "N Detections") +
   geom_boxplot()
-ggsave(filename="../figures/2022/proportion_probable_nn.png")
+ggsave(filename="../figures/feb_2022/proportion_probable_nn.png")
 
 
 ggplot(total_nn_detections, aes(x=region, y=n_detections)) + 
   labs(title = "Richness of Probable Non-Native Species",
        x = "Region", y = "N Detections") +
   geom_boxplot()
-ggsave(filename="../figures/2022/region_probable_nonn_richness.png")
+ggsave(filename="../figures/feb_2022/region_probable_nonn_richness.png")
 
 
 # SALINITY SCATTERPLOT 
@@ -251,7 +253,7 @@ ggplot(enviro_plot_df, aes(x = Salinity, y = prop_nn, color = site)) +
   geom_point() +
   scale_color_brewer(palette="Paired") +
   theme_classic()
-ggsave(filename="../figures/2022/nn_prop_salinity.png")
+ggsave(filename="../figures/feb_2022/nn_prop_salinity.png")
 
 
 ggplot(enviro_plot_df, aes(x = Temperature, y = prop_nn, color = site)) +
@@ -260,7 +262,7 @@ ggplot(enviro_plot_df, aes(x = Temperature, y = prop_nn, color = site)) +
   geom_point() +
   scale_color_brewer(palette="Paired") +
   theme_classic()
-ggsave(filename="../figures/2022/nn_prop_temp.png")
+ggsave(filename="../figures/feb_2022/nn_prop_temp.png")
 
 # lets just get a total number of unique nonnative detections for each region
 # ====================================================  
@@ -328,7 +330,7 @@ row.names(chi_sq_df_region) <- chi_sq_df_region$region ### SITE/REGION
 chi_sq_df_region <- chi_sq_df_region %>%
   select(-region)
 
-pdf("../figures/2022/region_table.pdf")
+pdf("../figures/feb_2022/region_table.pdf")
 grid.table(chi_sq_df_region)
 dev.off()
 
@@ -336,7 +338,7 @@ row.names(chi_sq_df_site) <- chi_sq_df_site$site
 chi_sq_df_site <- chi_sq_df_site %>%
   select(-site)
 
-pdf("../figures/2022/site_table.pdf")
+pdf("../figures/feb_2022/site_table.pdf")
 grid.table(chi_sq_df_site)
 dev.off()
 
@@ -367,7 +369,7 @@ ggplot(nonnative_vs_all_species_heat, aes(month, site, fill = prop_nn)) +
   geom_text(aes(label=mean_nnn)) +
   labs(title="Proportion and Number of Non-Native Species",
        x ="Month", y = "Site", fill = "Proportion Non-Natives") 
-ggsave(filename="../figures/2022/invasion_heatmap.png")
+ggsave(filename="../figures/feb_2022/invasion_heatmap.png")
 
 
 # stacked bar madness (sites and months)
@@ -383,8 +385,9 @@ stacked_bar_df <- stacked_bar_df %>%
 
 phyla_colors <- c("Porifera" = "#FFFF33", "Phaeophyceae" = "#66c2a4", "Mollusca" = "#5e3c99", 
                   "Florideophyceae" = "#ca0020", "Cnidaria" = "#f7f7f7", "Chordata" = "#92c5de",
-                  "Arthropoda" = "#fc8d59", "Annelida" = "#023858")
+                  "Arthropoda" = "#fc8d59", "Annelida" = "#023858", "Bangiophyceae" = "#662506")
 
+print(unique(stacked_bar_df$phylum))
 
 #TODO fix the axis, this has the nice color scale though
 ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) + 
@@ -394,7 +397,7 @@ ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) +
        x ="Site", y = "Non-Native Species Detections", fill = "Phyla") +
   theme_classic() +
   scale_y_continuous(breaks=0:16, limits = c(0,16), expand = c(0,0)) 
-ggsave(filename="../figures/2022/phyla_stack.png")
+ggsave(filename="../figures/feb_2022/phyla_stack.png")
 
 
 # maybe we can get it side by side with salinity
@@ -437,7 +440,7 @@ ggplot(propagule_stack, aes(x = site, y = nonnative, fill = aqua_balast)) +
        x ="Site", y = "Non-Native Species Detections", fill = "Mechanism") +
   scale_fill_brewer(palette="Spectral") +
   theme_classic() 
-ggsave(filename="../figures/2022/propagule_stack.png")
+ggsave(filename="../figures/feb_2022/propagule_stack.png")
 
 
 # chi_sq_df$nonative <- c(12, 24) right on the line if alpha is 0.05, ask ryan how
@@ -464,7 +467,7 @@ rank_sum_df_site$waveE <- c(1, 3, 2, 6, 7, 4, 5, 8)
 rank_sum_df_site <- rank_sum_df_site %>%
   arrange(waveE)
 
-pdf("../figures/2022/ranksum_table.pdf")
+pdf("../figures/feb_2022/ranksum_table.pdf")
 grid.table(rank_sum_df_site)
 dev.off()
 
