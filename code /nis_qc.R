@@ -1,11 +1,12 @@
 # ========================================================================
 # Joe Duprey
 # Last Edited: February 18, 2022
-# create fasta for ryan for QC
 # ========================================================================
 library(tidyverse)
 
-# data
+# data 
+#TODO use all_species_dist instead of just_nonnative 
+#TODO create CSV for hashes that got missed
 just_nonnative <- read.csv("../docs/just_the_suspects.csv")
 hash_annotated <- read.csv("../data/hash.annotated.csv")
 hash_key <- read.csv("../data/Moncho_Hash_Key_all_together.csv")
@@ -103,18 +104,16 @@ colnames(blast_output) <- c("Hash", "sseqid", "sacc", "pident", "length",
 # qcovhsp means Query Coverage Per HSP
 # qcovus means Query Coverage Per Unique Subject (blastn only)
 
-
 #========================================================
 # select the most relevant (for now) columns from the feb blast output
 qc_blast_df <- blast_output %>%
   select(Hash, pident, bitscore, sscinames)
 
-
 species_hash_df <- hash_annotated %>%
   select(Hash, species)
 
-test_df <- left_join(qc_blast_df, species_hash_df)
+possible_nn_df <- left_join(qc_blast_df, species_hash_df)
 
-
-probable_nn_df <- test_df %>%
+probable_nn_df <- possible_nn_df %>%
   filter(species %in% unique(just_nonnative$species))
+
