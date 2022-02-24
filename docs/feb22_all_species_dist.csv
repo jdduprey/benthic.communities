@@ -266,11 +266,11 @@ Callithamnion corymbosum,13,undetermined,BEN,1,worms encyclopedia of puget sound
 Monocorophium acherusicum,9,undetermined,BEN,1,worms invasions.si.edu,tbd,,"some uncertainty, native to europe, balast water introduction"
 Gelidiophycus freshwateri,9,undetermined,BEN,1,algaebase,tbd,,Terrie - this is a red alga endemic to east Asia (non-native in PNW)
 Botrylloides violaceus,6,tunicate,BEN,1,worms,tbd,,nonnative from australia!
-Loxothylacus panopaei,6,undetermined,None,1,worms,tbd,,no records at all from pacific…
+Loxothylacus panopaei,6,undetermined,None,0,worms,tbd,,no records at all from pacific…
 Notheia anomala,4,undetermined,BEN,0,algaebase,tbd,,"Terrie - brown alga, non native, This is a puzzling occurrence b/c this species is an obligate piphyte of the brown alga hormosira banks which is native to Australia and NZ but to my knowledge has never been reported on this coast, so if its here, what is the host?"
 Arca avellana,3,undetermined,BEN,0,worms,tbd,,"philippines, subtropical, some naming confusion?"
 Bougainvillia muscus,3,hydrozoan,Both,1,invasions.si.edu,tbd,,
-Clytia folleata,3,hydrozoan,Both,1,worms sealifebase.ca,tbd,,
+Clytia folleata,3,hydrozoan,Both,0,worms sealifebase.ca,tbd,,
 Lomentaria hakodatensis,3,undetermined,BEN,1,worms,tbd,,some uncertainty but is increasing in abundance 
 Mya arenaria,3,undetermined,BEN,1,worms invasions.si.edu,tbd,,introduced to west coast? 
 Lacuna pallidula,3,undetermined,BEN,0,worms,tbd,,Terrie - Lacuna pallidula is a gastropod mollusc - probably non-native 
@@ -278,9 +278,9 @@ Bursaphelenchus cocophilus,2,worm,None,low,tx invasives,tbd,,Terrestrial invasiv
 Gelidium vagum,2,undetermined,BEN,1,worms,tbd,,recently introduced from east asia https://www.researchgate.net/publication/273689493_Mitochondrial_cox1_and_cob_sequence_diversities_in_Gelidium_vagum_Gelidiales_Rhodophyta_in_Korea
 Macoma petalum,2,undetermined,BEN,1,worms invasions.si.edu,tbd,,
 Musculista senhousia,2,"bivalve, mussels",BEN,1,worms invasions.si.edu,95.19%,no native relatives?,"arcuatula senhousia - native to kurile islands, russia, japan, singapore, in some instances native suspension feeder have declined or disappeared in presence "
-Pennaria disticha,2,hydrozoan,BEN,1,worms invasions.si.edu,tbd,,"native to east coast, invasive in hawaii, not documented on west coast"
+Pennaria disticha,2,hydrozoan,BEN,0,worms invasions.si.edu,tbd,,"native to east coast, invasive in hawaii, not documented on west coast"
 Striaria attenuata,2,"algae, brown",BEN,0,worms ,tbd,,Terrie - Striaria attenuata is non-native https://invasions.si.edu/nemesis/chesreport/species_summary/Striaria%20attenuata
-Aphroditella hastata,1,polychaete,BEN,1,worms,tbd,,documented only in atlantic and med 
+Aphroditella hastata,1,polychaete,BEN,0,worms,tbd,,documented only in atlantic and med 
 Gari maculosa,1,undetermined,BEN,1,worms obis,tbd,,"native range australia, south africa, indian ocean "
 Hediste diadroma,1,polychaete,BEN,1,worms,tbd,,"only documented in japan, cryptic invader https://link.springer.com/article/10.1007/s00227-013-2328-z"
 Melanothamnus harveyi,1,"algae, red",PLK,1,worms algaebase,tbd,,
