@@ -10,7 +10,7 @@ library(tidyverse)
 just_nonnative <- read.csv("../docs/just_the_suspects.csv")
 hash_annotated <- read.csv("../data/hash.annotated.csv")
 hash_key <- read.csv("../data/Moncho_Hash_Key_all_together.csv")
-all_species_dist <- read.csv("../docs/all_species_distributions_summary.csv")
+all_species_dist <- read.csv("../docs/feb22_all_species_dist.csv")
 
 # get hashes and seqs
 hash_key <- hash_key %>%
@@ -106,6 +106,16 @@ colnames(blast_output) <- c("Hash", "sseqid", "sacc", "pident", "length",
 
 #========================================================
 # select the most relevant (for now) columns from the feb blast output
+
+just_nonnative <- all_species_dist %>% 
+  filter(nonnative %in% c("1")) 
+
+native <- all_species_dist %>%
+  filter(nonnative %in% c("0", "possible", "single", "low"))
+
+low <- all_species_dist %>%
+  filter(nonnative %in% c("low"))
+  
 qc_blast_df <- blast_output %>%
   select(Hash, pident, bitscore, sscinames)
 
@@ -117,3 +127,5 @@ possible_nn_df <- left_join(qc_blast_df, species_hash_df)
 probable_nn_df <- possible_nn_df %>%
   filter(species %in% unique(just_nonnative$species))
 
+low_df <- possible_nn_df %>%
+  filter(species %in% unique(low$species))

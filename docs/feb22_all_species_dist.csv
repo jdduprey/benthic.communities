@@ -321,7 +321,7 @@ Cyphoderia cf. compressa,3,nonmarine,PLK,low,algaebase,,,
 Fistulifera solaris,3,diatom,PLK,low,algaebase,,,"only documented once, in japan"
 Halicyclops itohi,3,copepod,PLK,low,worms,,,"only documented once, in japan"
 Platyias quadricornis,3,rotifer,BEN,low,worms,,,
-Nitokra spinipes,2,copepod,PLK,low,worms,,,"only documented in baltic, north sea"
+Nitokra spinipes,2,copepod,PLK,1,worms,,,"only documented in baltic, north sea"
 Pinnularia parvulissima,2,undetermined,BEN,low,,,,
 Capitella nonatoi,1,polychaete,BEN,low,worms,,,
 Haslea ostrearia,1,diatom,PLK,low,worms algaebase,,,"only documented in atlantic, baltic, north sea"
@@ -331,7 +331,7 @@ Keratella cochlearis,1,rotifer,BEN,low,worms,,,"accepted name Keratella tecta, d
 Neochromadora poecilosomoides,1,worm,BEN,low,worms,,,"only documented in north sea, black sea, europe"
 Proceraea okadai,1,polychaete,BEN,low,worms,,,documented once in japan
 Melosira nummuloides,26,diatom,PLK,0,worms,,,"documented in atlantic, california "
-Cliona chilensis,25,sponge,BEN,1,worms,99%,,"shellfish parasite low information, other cliona in PS, other BLAST returns include Cliona celata, Clionaopsis platei, "
+Cliona chilensis,25,sponge,BEN,0,worms,99%,,"shellfish parasite low information, other cliona in PS, other BLAST returns include Cliona celata, Clionaopsis platei, "
 Stelligera rigida,19,sponge,BEN,possible,worms,conflict (85%),,"accepted as Stelligera montagui, appears to be recorded mostly in europe and britain"
 Hecatonema maculans,18,"algae, brown",BEN,0,worms,conflict,,uncertain distribution but mostly atlantic
 Haramonas dimorpha,16,undetermined,None,0,algaebase,tbd,,only one detection - australian mangrove

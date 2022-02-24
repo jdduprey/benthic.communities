@@ -29,7 +29,7 @@ Melanothamnus harveyi,1,"algae, red",PLK,1,worms algaebase,98.72,0,tbd,
 Mytilicola orientalis,1,copepod,PLK,1,worms invasions.si.edu,100,0,tbd,
 Peltogaster paguri,1,undetermined,None,0,worms,92.23,0,tbd,"Terrie - Peltogaster paguri is a parasitic copepod apparently native to the North Sea, where its host is native:
 http://species-identification.org/species.php?species_group=crustacea&id=86"
-Cliona chilensis,25,sponge,BEN,1,worms,99.68,0,99%,"shellfish parasite low information, other cliona in PS, other BLAST returns include Cliona celata, Clionaopsis platei, "
+Cliona chilensis,25,sponge,BEN,0,worms,99.68,0,99%,"def can't rule out native - shellfish parasite low information, other cliona in PS, other BLAST returns include Cliona celata, Clionaopsis platei, "
 Stelligera rigida,19,sponge,BEN,0,worms,85,0,conflict (85%),"accepted as Stelligera montagui, appears to be recorded mostly in europe and britain"
 Hecatonema maculans,18,"algae, brown",BEN,0,worms,100,1,conflict,likely local Chordaria and not Hecatonema teminale 
 Haramonas dimorpha,16,undetermined,None,0,algaebase,85.76,0,90%,only one detection - australian mangrove
@@ -54,3 +54,4 @@ Dinobryon divergens,1,algae,PLK,0,worms algaebase,,,tbd,Terrie - Dinobryon diver
 Echiniscoides pollocki,1,NA,BEN,possible,worms,82.65,,tbd,can a tartigrade be nonnative? 
 Notophyllum foliosum,1,polychaete,BEN,0,worms,,1,tbd,documented once in NE pacific
 Stenhelia pubescens,1,copepod,PLK,1,worms,100,0,tbd,east asian copepod
+Nitokra spinipes,2,copepod,PLK,1,worms,98.9,0,,"baltic and atlantic native range, documented as invasive in russia brackish lakes and SF bay "
