@@ -129,3 +129,17 @@ probable_nn_df <- possible_nn_df %>%
 
 low_df <- possible_nn_df %>%
   filter(species %in% unique(low$species))
+
+# final round BLAST QC nicknack species
+#========================================================
+
+final_qc <- just_nonnative %>%
+  filter(pident %in% c("QC"))
+
+qc_df <- species_hash_seq %>%
+  filter(species %in% unique(final_qc$species)) %>%
+  na.omit() %>%
+  select(Hash, Sequence)
+
+write_csv(qc_df, "../data/final_NIS_qc.csv")
+

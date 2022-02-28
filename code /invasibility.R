@@ -28,6 +28,7 @@ nonnative_status <- read.csv("../docs/feb22_all_species_dist.csv")
 species_annotated <- read.csv("../data/species_annotated.csv")
 by_sample_species <- read.csv("../data/by.sample.species.csv") # reads merged by tech and bio
 enviro_data <- read.csv("../data/HC_enviro_data.csv")
+use_index <- read.csv("../data/park_events.csv")
 
 nonnative_vec <- nonnative_status %>%
   select(species, nonnative)
@@ -242,10 +243,13 @@ ggplot(total_nn_detections, aes(x=region, y=n_detections)) +
 ggsave(filename="../figures/feb_2022/region_probable_nonn_richness.png")
 
 
-# SALINITY SCATTERPLOT 
+# SALINITY, TEMP, USE SCATTERPLOTS
 # ====================================================  
 
 enviro_plot_df <- left_join(nonnative_vs_all_species, enviro_data)
+use_plot_df <- left_join(enviro_plot_df, use_index)
+
+use_plot_df$visitors <- as.integer(use_plot_df$visitors)
 
 ggplot(enviro_plot_df, aes(x = Salinity, y = prop_nn, color = site)) +
   labs(title = "Non-Native Species Proportion by Salinity",
@@ -263,6 +267,15 @@ ggplot(enviro_plot_df, aes(x = Temperature, y = prop_nn, color = site)) +
   scale_color_brewer(palette="Paired") +
   theme_classic()
 ggsave(filename="../figures/feb_2022/nn_prop_temp.png")
+
+
+ggplot(use_plot_df, aes(x = visitors, y = prop_nn, color = site)) +
+  labs(title = "Non-Native Species Proportion by Park Visitors",
+       x = "Visitors", y = "Proportion Non-Native", color = "Site") +
+  geom_point() +
+  scale_color_brewer(palette="Paired") +
+  theme_classic()
+ggsave(filename="../figures/feb_2022/nn_prop_visitors.png")
 
 # lets just get a total number of unique nonnative detections for each region
 # ====================================================  
@@ -396,43 +409,11 @@ ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) +
   labs(title="Unique Non-Native Species Detected by Site",
        x ="Site", y = "Non-Native Species Detections", fill = "Phyla") +
   theme_classic() +
-  scale_y_continuous(breaks=0:16, limits = c(0,16), expand = c(0,0)) 
+  scale_y_continuous(breaks=0:16, limits = c(0,17), expand = c(0,0)) 
 ggsave(filename="../figures/feb_2022/phyla_stack.png")
-
-
-# maybe we can get it side by side with salinity
-# avg_sal_df <- enviro_data %>%
-#   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) %>%
-#   group_by(site) %>%
-#   mutate(mean_sal = mean(Salinity)) %>%
-#   distinct(site, mean_sal)
-# 
-# mean_native_richness_df <- nonnative_vs_all_species %>%
-#   mutate(nat_detections = all_sp_detections - n_detections) %>%
-#   group_by(site) %>%
-#   mutate(mean_nr = mean(nat_detections)) %>%
-#   distinct(site, mean_nr)
-#   
-# sal_rich_story <- left_join(avg_sal_df, mean_native_richness_df)
-# 
-# sal_rich_story$site <- factor(sal_rich_story$site, 
-#                               levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))  
 
 #TODO add error bar 
 #TODO story of non-native diversity: function of sal and native richness
-# foo1 <- ggplot(sal_rich_story, aes(x = site, y = mean_sal)) +
-#   geom_point() +
-#   theme_classic()
-# 
-# foo2 <- ggplot(sal_rich_story, aes(x = site, y = mean_nr)) +
-#   geom_point() +
-#   theme_classic()
-# 
-# ggarrange(foo1, foo2, 
-#           labels = c("A", "B"),
-#           ncol = 2, nrow = 1)
-
-#stacked bar continued
 
 ggplot(propagule_stack, aes(x = site, y = nonnative, fill = aqua_balast)) + 
   geom_bar(position = "stack", stat = "identity", color = "black") +
