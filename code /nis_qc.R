@@ -107,8 +107,8 @@ colnames(blast_output) <- c("Hash", "sseqid", "sacc", "pident", "length",
 #========================================================
 # select the most relevant (for now) columns from the feb blast output
 
-just_nonnative <- all_species_dist %>% 
-  filter(nonnative %in% c("1")) 
+# just_nonnative <- all_species_dist %>% 
+#   filter(nonnative %in% c("1")) 
 
 native <- all_species_dist %>%
   filter(nonnative %in% c("0", "possible", "single", "low"))
@@ -142,4 +142,16 @@ qc_df <- species_hash_seq %>%
   select(Hash, Sequence)
 
 write_csv(qc_df, "../data/final_NIS_qc.csv")
+
+# load back in the final QC run 
+#========================================================
+final_output <- read.csv("../data/final_NIS_QC.txt", header = FALSE, sep = "\t" )
+
+# columns according to Ryan
+colnames(final_output) <- c("Hash", "sseqid", "sacc", "pident", "length",
+                            "mismatch", "gapopen", "qcovus", "qstart",
+                            "qend", "sstart", "send", "evalue", "bitscore",
+                            "staxids", "qlen", "sscinames", "sseq")
+
+final_nn_df <- left_join(final_output, species_hash_df)
 

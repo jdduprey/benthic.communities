@@ -1,6 +1,5 @@
 # INVASIBILITY  
 #TODO UPDATE nonative status to reflect new IDs
-#TODO look up the 3rd database moncho mentioned, then purge low ID species
 # Joe Duprey
 # Last Edited: 01/13/2022
 # ====================================================
@@ -189,6 +188,50 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
   scale_color_brewer(palette="Spectral") +
   theme_classic()
 ggsave(filename="../figures/feb_2022/richness_ratio_by_site.png")
+
+# calculate SE and SD error bars! 
+error_bar_plt <- nonnative_vs_all_species %>%
+  group_by(site) %>%
+  mutate(mean_detections = mean(n_detections)) %>%
+  mutate(mean_all_sp = mean(all_sp_detections)) %>%
+  mutate(SE_nonnative = sd(n_detections) / sqrt(n())) %>%
+  mutate(SE_all_sp = sd(all_sp_detections) / sqrt(n())) %>%
+  mutate(ymin = mean_detections - 0.5 * SE_nonnative) %>%
+  mutate(ymax = mean_detections + 0.5 * SE_nonnative) %>%
+  mutate(xmin = mean_all_sp - 0.5 * SE_all_sp) %>%
+  mutate(xmax = mean_all_sp + 0.5 * SE_all_sp)
+
+SD_bar_plt <- nonnative_vs_all_species %>%
+  group_by(site) %>%
+  mutate(mean_detections = mean(n_detections)) %>%
+  mutate(mean_all_sp = mean(all_sp_detections)) %>%
+  mutate(SE_nonnative = sd(n_detections)) %>%
+  mutate(SE_all_sp = sd(all_sp_detections)) %>%
+  mutate(ymin = mean_detections - 0.5 * SE_nonnative) %>%
+  mutate(ymax = mean_detections + 0.5 * SE_nonnative) %>%
+  mutate(xmin = mean_all_sp - 0.5 * SE_all_sp) %>%
+  mutate(xmax = mean_all_sp + 0.5 * SE_all_sp)
+
+# plots with error bars SE vs SD 
+ggplot(error_bar_plt, aes(x=mean_all_sp, y=mean_detections, color=site)) +
+  labs(title = "Richness by Site",
+       x = "Native Richness", y = "Non-Native Richness") +
+  geom_point() +
+  scale_color_brewer(palette="Spectral") +
+  theme_classic() +
+  geom_errorbar(aes(ymin=ymin,ymax=ymax)) +
+  geom_errorbarh(aes(xmin=xmin,xmax=xmax)) +
+  scale_y_continuous(breaks=0:7)
+
+ggplot(SD_bar_plt, aes(x=mean_all_sp, y=mean_detections, color=site)) +
+  labs(title = "Richness by Site",
+       x = "Native Richness", y = "Non-Native Richness") +
+  geom_point() +
+  scale_color_brewer(palette="Spectral") +
+  theme_classic() +
+  geom_errorbar(aes(ymin=ymin,ymax=ymax)) +
+  geom_errorbarh(aes(xmin=xmin,xmax=xmax)) +
+  scale_y_continuous(breaks=0:7)
 
 
 ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=region)) +

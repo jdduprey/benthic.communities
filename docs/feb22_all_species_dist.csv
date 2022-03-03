@@ -260,7 +260,7 @@ Gracilaria vermiculophylla,34,"algae, red",BEN,1,algaebase,100%,species genome 1
 Ruditapes philippinarum,25,undetermined,BEN,1,worms,tbd,,manila clams!
 Caulacanthus ustulatus,23,undetermined,BEN,1,algaebase,tbd,,
 Nuttallia olivacea,17,undetermined,BEN,1,worms,99.30%,,
-Azumapecten farreri,13,undetermined,BEN,1,worms,conflict (96.15%),other blast results appear to be invasive as well,farrers scallop chinese aquaculture species
+Azumapecten farreri,13,undetermined,BEN,0,worms,conflict (96.15%),other blast results appear to be invasive as well,farrers scallop chinese aquaculture species
 Crassostrea gigas,13,undetermined,BEN,1,worms,tbd,,
 Callithamnion corymbosum,13,undetermined,BEN,1,worms encyclopedia of puget sound,tbd,,Terrie - this is a red alga evidently native to the UK
 Monocorophium acherusicum,9,undetermined,BEN,1,worms invasions.si.edu,tbd,,"some uncertainty, native to europe, balast water introduction"
@@ -281,7 +281,7 @@ Musculista senhousia,2,"bivalve, mussels",BEN,1,worms invasions.si.edu,95.19%,no
 Pennaria disticha,2,hydrozoan,BEN,0,worms invasions.si.edu,tbd,,"native to east coast, invasive in hawaii, not documented on west coast"
 Striaria attenuata,2,"algae, brown",BEN,0,worms ,tbd,,Terrie - Striaria attenuata is non-native https://invasions.si.edu/nemesis/chesreport/species_summary/Striaria%20attenuata
 Aphroditella hastata,1,polychaete,BEN,0,worms,tbd,,documented only in atlantic and med 
-Gari maculosa,1,undetermined,BEN,1,worms obis,tbd,,"native range australia, south africa, indian ocean "
+Gari maculosa,1,undetermined,BEN,0,worms obis,tbd,,"native range australia, south africa, indian ocean "
 Hediste diadroma,1,polychaete,BEN,1,worms,tbd,,"only documented in japan, cryptic invader https://link.springer.com/article/10.1007/s00227-013-2328-z"
 Melanothamnus harveyi,1,"algae, red",PLK,1,worms algaebase,tbd,,
 Mytilicola orientalis,1,copepod,PLK,1,worms invasions.si.edu,tbd,,
