@@ -1,57 +1,23 @@
-﻿species,n_detections,group_fv,benthos,nonnative,source,pident,name_change,manual_blast,notes
-Gracilaria vermiculophylla,34,"algae, red",BEN,1,algaebase,100,0,100%,well studied invader
-Ruditapes philippinarum,25,undetermined,BEN,1,worms,100,0,98%,manila clams!
-Caulacanthus ustulatus,23,undetermined,BEN,1,algaebase,100,1,100%,
-Nuttallia olivacea,17,undetermined,BEN,1,worms,100,1,99.30%,
-Azumapecten farreri,13,undetermined,BEN,0,worms,87.5,0,conflict 96%,farrers scallop chinese aquaculture species
-Crassostrea gigas,13,undetermined,BEN,1,worms,100,0,conflict 94%,
-Callithamnion corymbosum,13,undetermined,BEN,1,worms encyclopedia of puget sound,100,0,100%,Terrie - this is a red alga evidently native to the UK
-Monocorophium acherusicum,9,undetermined,BEN,1,worms invasions.si.edu,100,0,conflict 90% ,"some uncertainty, native to europe, balast water introduction"
-Gelidiophycus freshwateri,9,undetermined,BEN,1,algaebase,100,0,conflict 98%,Terrie - this is a red alga endemic to east Asia (non-native in PNW)
-Botrylloides violaceus,6,tunicate,BEN,1,worms,100,0,100%,nonnative from australia!
-Loxothylacus panopaei,6,undetermined,None,0,worms,89.54,0,conflict 90% ,no records at all from pacific…
-Notheia anomala,4,undetermined,BEN,0,algaebase,85.21,0,absent,"Terrie - brown alga, non native, This is a puzzling occurrence b/c this species is an obligate piphyte of the brown alga hormosira banks which is native to Australia and NZ but to my knowledge has never been reported on this coast, so if its here, what is the host?"
-Arca avellana,3,undetermined,BEN,0,worms,100,0,tbd,INCORRECT ID - NATIVE Humilaria kennerleyi
-Bougainvillia muscus,3,hydrozoan,Both,1,invasions.si.edu,100,0,tbd,cryptogenic? 
-Clytia folleata,3,hydrozoan,Both,0,worms sealifebase.ca,89.77,1,tbd,low  pident
-Lomentaria hakodatensis,3,undetermined,BEN,1,worms,100,0,,some uncertainty but is increasing in abundance 
-Mya arenaria,3,undetermined,BEN,1,worms invasions.si.edu,100,1,,"both 100 mya arenaria, mya japonica both nonnative"
-Lacuna pallidula,3,undetermined,BEN,0,worms,99.68,0,tbd,INCORRECT ID - NATIVE Lacuna variegata
-Gelidium vagum,2,undetermined,BEN,1,worms,100,0,tbd,recently introduced from east asia https://www.researchgate.net/publication/273689493_Mitochondrial_cox1_and_cob_sequence_diversities_in_Gelidium_vagum_Gelidiales_Rhodophyta_in_Korea
-Macoma petalum,2,undetermined,BEN,1,worms invasions.si.edu,95.19,0,tbd,
-Musculista senhousia,2,"bivalve, mussels",BEN,1,worms invasions.si.edu,96.16,1,95.19%,"arcuatula senhousia - native to kurile islands, russia, japan, singapore, in some instances native suspension feeder have declined or disappeared in presence "
-Pennaria disticha,2,hydrozoan,BEN,0,worms invasions.si.edu,85,0,tbd,"native to east coast, invasive in hawaii, not documented on west coast"
-Striaria attenuata,2,"algae, brown",BEN,0,worms ,88.78,0,tbd,Terrie - Striaria attenuata is non-native https://invasions.si.edu/nemesis/chesreport/species_summary/Striaria%20attenuata
-Aphroditella hastata,1,polychaete,BEN,0,worms,91,0,tbd,documented only in atlantic and med 
-Gari maculosa,1,undetermined,BEN,0,worms obis,100,1,tbd,Macoma calcarea is updated ID
-Hediste diadroma,1,polychaete,BEN,1,worms,99.67,0,tbd,"only documented in japan, cryptic invader https://link.springer.com/article/10.1007/s00227-013-2328-z"
-Melanothamnus harveyi,1,"algae, red",PLK,1,worms algaebase,98.72,0,tbd,
-Mytilicola orientalis,1,copepod,PLK,1,worms invasions.si.edu,100,0,tbd,
-Peltogaster paguri,1,undetermined,None,0,worms,92.23,0,tbd,"Terrie - Peltogaster paguri is a parasitic copepod apparently native to the North Sea, where its host is native:
-http://species-identification.org/species.php?species_group=crustacea&id=86"
-Cliona chilensis,25,sponge,BEN,0,worms,99.68,0,99%,"def can't rule out native - shellfish parasite low information, other cliona in PS, other BLAST returns include Cliona celata, Clionaopsis platei, "
-Stelligera rigida,19,sponge,BEN,0,worms,85,0,conflict (85%),"accepted as Stelligera montagui, appears to be recorded mostly in europe and britain"
-Hecatonema maculans,18,"algae, brown",BEN,0,worms,100,1,conflict,likely local Chordaria and not Hecatonema teminale 
-Haramonas dimorpha,16,undetermined,None,0,algaebase,85.76,0,90%,only one detection - australian mangrove
-Scopalina ruetzleri,15,sponge,BEN,0,worms,88.39,0,conflict (88%),"scopalina sp has cosmopolitin dist But ruezleri is caribbean dist, BLAST has competing IDs, many of which are other nonnatives see: https://www.reabic.net/journals/bir/2021/2/BIR_2021_Harbo_etal.pdf"
-Podosira stelligera,13,diatom,PLK,0,worms algaebase,100,0,100%,"documented east US, europe, NZ, aus"
-Pyropia haitanensis,12,"algae, red",BEN,1,algaebase,99.67,1,100%,haitanensis native to china? 
-Synchaeta pectinata,12,rotifer,BEN,possible,worms,90.47,0,90%,"low information, black sea, New Zealand??"
-Halidrys siliquosa,10,"algae, brown",BEN,possible,worms,83,,tbd,no document pacific dist
-Karlodinium veneficum,10,flagellate,PLK,possible,worms algaebase,100,0,tbd,"harmful algae, seems ubiquitous but not documented in puget sound"
-Cylindrotheca fusiformis,9,diatom,BEN,0,worms algaebase,,,tbd,"only documented in europe, asia "
-Amphicaryon earnesti,8,hydrozoan,PLK,0,https://escholarship.org/content/qt6zm3c9zb/qt6zm3c9zb_noSplash_398849147e68b68dcc5876a54f9f614c.pdf,86,,tbd,
-Leuckartiara octona,8,hydrozoan,Both,0,worms,99.68,1,tbd,San Juan Type Locality native
-Nanomia cara,8,siphonophore,PLK,0,worms,85,,tbd,west coast distribution listed as inaccurate
-Martensia jejuensis,7,"algae, red",BEN,possible,worms algaebase,85,,tbd,"only documented in marshal islands, japan, korea, taiwan"
-Amathia vidovici,6,bryozoan,BEN,possible,worms,86,,tbd,only documented in west atlantic 
-Euclymene oerstedi,5,polychaete,BEN,possible,worms algaebase,88,,tbd,"only documented in atlantic, gulf of mex, some reference to similar worms being introduced with oyster farming https://link.springer.com/article/10.1007/s10530-011-0096-6"
-Kellia porculus,5,undetermined,BEN,possible,worms,84,,tbd,"marine mollusks of japan, south china, little information available"
-Polydora lingshuiensis,4,polychaete,BEN,possible,https://doi.org/10.11646/zootaxa.3986.1.4,83.5,,tbd,shellfish parasite wood lab works on this
-Clytia languida,3,hydrozoan,Both,possible,"worms, world hydrozoa database",90,,tbd,"unaccepted name, accepted as Clytia hemisphaerica "
-Ameritella mitchelli,1,undetermined,BEN,possible,worms,,,tbd,"naming confusion, only documented in atlantic "
-Dinobryon divergens,1,algae,PLK,0,worms algaebase,,,tbd,Terrie - Dinobryon divergens is a chrysophycean (yellow-green) alga that inhabits freshwater (https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/dinobryon). Not sure about the origins of this particular species.
-Echiniscoides pollocki,1,NA,BEN,possible,worms,82.65,,tbd,can a tartigrade be nonnative? 
-Notophyllum foliosum,1,polychaete,BEN,0,worms,100,1,tbd,documented once in NE pacific
-Stenhelia pubescens,1,copepod,PLK,1,worms,100,0,tbd,east asian copepod
-Nitokra spinipes,2,copepod,PLK,1,worms,98.9,0,,"baltic and atlantic native range, documented as invasive in russia brackish lakes and SF bay "
+﻿species,n_detections,group_fv,benthos,nonnative,source,pident,name_change,QC_temp,notes
+Gracilaria vermiculophylla,34,"algae, red",BEN,1,algaebase,100,0,1,well studied invader
+Ruditapes philippinarum,25,undetermined,BEN,1,worms,100,0,1,manila clams!
+Caulacanthus ustulatus,23,undetermined,BEN,1,algaebase,100,1,1,
+Nuttallia olivacea,17,undetermined,BEN,1,worms,100,1,1,
+Crassostrea gigas,13,undetermined,BEN,1,worms,100,0,1,
+Callithamnion corymbosum,13,undetermined,BEN,1,worms encyclopedia of puget sound,100,0,1,Terrie - this is a red alga evidently native to the UK
+Monocorophium acherusicum,9,undetermined,BEN,1,worms invasions.si.edu,100,0,1,"some uncertainty, native to europe, balast water introduction"
+Gelidiophycus freshwateri,9,undetermined,BEN,1,algaebase,100,0,1,Terrie - this is a red alga endemic to east Asia (non-native in PNW)
+Botrylloides violaceus,6,tunicate,BEN,1,worms,100,0,1,nonnative from australia!
+Bougainvillia muscus,3,hydrozoan,Both,1,invasions.si.edu,100,0,1,cryptogenic? 
+Lomentaria hakodatensis,3,undetermined,BEN,1,worms,100,0,1,some uncertainty but is increasing in abundance 
+Mya arenaria,3,undetermined,BEN,1,worms invasions.si.edu,100,1,1,"both 100 mya arenaria, mya japonica both nonnative"
+Gelidium vagum,2,undetermined,BEN,1,worms,100,0,1,recently introduced from east asia https://www.researchgate.net/publication/273689493_Mitochondrial_cox1_and_cob_sequence_diversities_in_Gelidium_vagum_Gelidiales_Rhodophyta_in_Korea
+Macoma petalum,2,undetermined,BEN,1,worms invasions.si.edu,95.19,0,1,
+Musculista senhousia,2,"bivalve, mussels",BEN,1,worms invasions.si.edu,96.16,1,1,"arcuatula senhousia - native to kurile islands, russia, japan, singapore, in some instances native suspension feeder have declined or disappeared in presence "
+Hediste diadroma,1,polychaete,BEN,1,worms,99.67,0,1,"only documented in japan, cryptic invader https://link.springer.com/article/10.1007/s00227-013-2328-z"
+Melanothamnus harveyi,1,"algae, red",PLK,1,worms algaebase,98.72,0,1,
+Mytilicola orientalis,1,copepod,PLK,1,worms invasions.si.edu,100,0,1,
+Pyropia haitanensis,12,"algae, red",BEN,1,algaebase,99.67,1,1,haitanensis native to china? 
+Notophyllum foliosum,1,polychaete,BEN,0,worms,100,1,,documented once in NE pacific
+Stenhelia pubescens,1,copepod,PLK,1,worms,100,0,1,east asian copepod
+Nitokra spinipes,2,copepod,PLK,1,worms,98.9,0,1,"baltic and atlantic native range, documented as invasive in russia brackish lakes and SF bay "

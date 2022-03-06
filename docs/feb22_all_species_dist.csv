@@ -285,7 +285,7 @@ Gari maculosa,1,undetermined,BEN,0,worms obis,tbd,,"native range australia, sout
 Hediste diadroma,1,polychaete,BEN,1,worms,tbd,,"only documented in japan, cryptic invader https://link.springer.com/article/10.1007/s00227-013-2328-z"
 Melanothamnus harveyi,1,"algae, red",PLK,1,worms algaebase,tbd,,
 Mytilicola orientalis,1,copepod,PLK,1,worms invasions.si.edu,tbd,,
-Peltogaster paguri,1,undetermined,None,1,worms,tbd,,"Terrie - Peltogaster paguri is a parasitic copepod apparently native to the North Sea, where its host is native:
+Peltogaster paguri,1,undetermined,None,0,worms,tbd,,"Terrie - Peltogaster paguri is a parasitic copepod apparently native to the North Sea, where its host is native:
 http://species-identification.org/species.php?species_group=crustacea&id=86"
 Minutocellus polymorphus,84,diatom,PLK,low,worms,,,
 Bathycoccus prasinos,80,algae,PLK,low,worms,,,
