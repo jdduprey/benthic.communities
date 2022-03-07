@@ -423,8 +423,10 @@ ggplot(nonnative_vs_all_species_heat, aes(month, site, fill = prop_nn)) +
   theme_classic() +
   scale_fill_distiller(palette = "RdYlBu") +
   geom_text(aes(label=mean_nnn)) +
-  labs(title="Proportion and Number of Non-Native Species",
-       x ="Month", y = "Site", fill = "Proportion Non-Natives") 
+  labs(title="Proportion and Mean Richness of Non-Native Species",
+       x ="Month", y = "Site", fill = "Proportion") +
+  theme(axis.line=element_blank(),
+        axis.ticks=element_blank())
 ggsave(filename="../figures/feb_2022/invasion_heatmap.png")
 
 

@@ -5,8 +5,6 @@
 library(tidyverse)
 
 # Data
-#TODO use all_species_dist instead of just_nonnative 
-#TODO create CSV for hashes that got missed
 just_nonnative <- read.csv("../docs/just_the_suspects.csv")
 hash_annotated <- read.csv("../data/hash.annotated.csv")
 hash_key <- read.csv("../data/Moncho_Hash_Key_all_together.csv")
