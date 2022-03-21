@@ -9,7 +9,7 @@ just_nonnative <- read.csv("../docs/just_the_suspects.csv")
 hash_annotated <- read.csv("../data/hash.annotated.csv")
 hash_key <- read.csv("../data/Moncho_Hash_Key_all_together.csv")
 all_species_dist <- read.csv("../docs/feb22_all_species_dist.csv")
-
+nn_results_table <- read.csv("../docs/nn_results_table.csv")
 # get hashes and seqs
 hash_key <- hash_key %>%
   select(Hash, Sequence)
@@ -121,6 +121,13 @@ species_hash_df <- hash_annotated %>%
   select(Hash, species)
 
 possible_nn_df <- left_join(qc_blast_df, species_hash_df)
+
+# CREATE RESULTS TABLE 
+#========================================================
+table_species <- possible_nn_df %>%
+  distinct(species)
+
+merged_table <- left_join(nn_results_table, possible_nn_df, by=c("species"))
 
 probable_nn_df <- possible_nn_df %>%
   filter(species %in% unique(just_nonnative$species))

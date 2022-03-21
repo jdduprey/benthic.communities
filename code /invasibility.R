@@ -1,7 +1,7 @@
 # INVASIBILITY  
-#TODO UPDATE nonative status to reflect new IDs
+# TODO UPDATE non-native status to reflect new IDs
 # Joe Duprey
-# Last Edited: 01/13/2022
+# Last Edited: 03/16/2022
 # ====================================================
 # "I would pick a few things you're confident in, and do a prelim analysis, 
 # to see if the hypothesis holds water. Then, if it does, we can do more work 
@@ -9,12 +9,8 @@
 #
 # merge species distribution data (nonnative_vec) into existing dataframes
 # examine spatial/temporal trends
-# meeting wint 2022
-# ep83b49
-# http://whenisgood.net/sw4zpns/results/ep83b49
 # ====================================================
 library(tidyverse)
-library(vegan)
 library(gplots)
 library(ggplot2)
 library(gridExtra)
@@ -187,7 +183,7 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
   geom_point() +
   scale_color_brewer(palette="Spectral") +
   theme_classic()
-ggsave(filename="../figures/feb_2022/richness_ratio_by_site.png")
+ggsave(filename="../figures/draft/richness_ratio_by_site.png")
 
 # calculate SE and SD error bars! 
 error_bar_plt <- nonnative_vs_all_species %>%
@@ -222,6 +218,7 @@ ggplot(error_bar_plt, aes(x=mean_all_sp, y=mean_detections, color=site)) +
   geom_errorbar(aes(ymin=ymin,ymax=ymax)) +
   geom_errorbarh(aes(xmin=xmin,xmax=xmax)) +
   scale_y_continuous(breaks=0:7)
+ggsave(filename="../figures/draft/SE_richness.png")
 
 ggplot(SD_bar_plt, aes(x=mean_all_sp, y=mean_detections, color=site)) +
   labs(title = "Richness by Site",
@@ -232,13 +229,13 @@ ggplot(SD_bar_plt, aes(x=mean_all_sp, y=mean_detections, color=site)) +
   geom_errorbar(aes(ymin=ymin,ymax=ymax)) +
   geom_errorbarh(aes(xmin=xmin,xmax=xmax)) +
   scale_y_continuous(breaks=0:7)
-
+ggsave(filename="../figures/draft/SD_richness.png")
 
 ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=region)) +
   labs(title = "Richness Ratio by Region",
        x = "Total Richness", y = "Non-Native Richness") +
   geom_point()
-ggsave(filename="../figures/feb_2022/richness_ratio_by_region.png")
+ggsave(filename="../figures/draft/richness_ratio_by_region.png")
 
 # color palate for months 
 month_colors <- c("01" = "#5E4FA2", "03" = "#3288BD", "05" = "#ABDDA4", "06" = "#F46D43", "07" = "#D53E4F",
@@ -251,7 +248,7 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
   geom_point() +
   scale_color_manual(values = month_colors) +
   theme_classic()
-ggsave(filename="../figures/feb_2022/richness_ratio_by_month.png")
+ggsave(filename="../figures/draft/richness_ratio_by_month.png")
 
 season_colors <- c("warm" = "#D53E4F", "cool" = "#3288BD")
 
@@ -260,7 +257,7 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
        x = "Total Richness", y = "Non-Native Richness") +
   geom_point() +
   scale_color_manual(values = season_colors)
-ggsave(filename="../figures/feb_2022/richness_ratio_by_season.png")
+ggsave(filename="../figures/draft/richness_ratio_by_season.png")
 
 # raw number boxplot
 ggplot(total_nn_detections, aes(x=site, y=n_detections)) + 
@@ -269,29 +266,31 @@ ggplot(total_nn_detections, aes(x=site, y=n_detections)) +
   geom_boxplot() +
   theme_classic() +
   scale_y_continuous(breaks=1:9)
-ggsave(filename="../figures/feb_2022/probable_nonnative_richness.png")
+ggsave(filename="../figures/draft/probable_nonnative_richness.png")
 
 # proportion boxplot
 ggplot(nonnative_vs_all_species, aes(x=site, y=prop_nn)) + 
   labs(title = "Proportion of Non-Native Species",
-       x = "Site", y = "N Detections") +
-  geom_boxplot()
-ggsave(filename="../figures/feb_2022/proportion_probable_nn.png")
+       x = "Site", y = "Proportion Non-Native") +
+  geom_boxplot() +
+  theme_classic()
+ggsave(filename="../figures/draft/proportion_probable_nn.png")
 
-
+# region non-native detection boxplot (less interesting with QCed data)
 ggplot(total_nn_detections, aes(x=region, y=n_detections)) + 
   labs(title = "Richness of Probable Non-Native Species",
        x = "Region", y = "N Detections") +
   geom_boxplot()
-ggsave(filename="../figures/feb_2022/region_probable_nonn_richness.png")
+ggsave(filename="../figures/draft/region_probable_nonn_richness.png")
 
 
 # SALINITY, TEMP, USE SCATTERPLOTS
 # ====================================================  
 
 enviro_plot_df <- left_join(nonnative_vs_all_species, enviro_data)
-use_plot_df <- left_join(enviro_plot_df, use_index)
 
+# state park use data, likely not useful
+use_plot_df <- left_join(enviro_plot_df, use_index)
 use_plot_df$visitors <- as.integer(use_plot_df$visitors)
 
 ggplot(enviro_plot_df, aes(x = Salinity, y = prop_nn, color = site)) +
@@ -300,7 +299,7 @@ ggplot(enviro_plot_df, aes(x = Salinity, y = prop_nn, color = site)) +
   geom_point() +
   scale_color_brewer(palette="Paired") +
   theme_classic()
-ggsave(filename="../figures/feb_2022/nn_prop_salinity.png")
+ggsave(filename="../figures/draft/nn_prop_salinity.png")
 
 
 ggplot(enviro_plot_df, aes(x = Temperature, y = prop_nn, color = site)) +
@@ -309,7 +308,7 @@ ggplot(enviro_plot_df, aes(x = Temperature, y = prop_nn, color = site)) +
   geom_point() +
   scale_color_brewer(palette="Paired") +
   theme_classic()
-ggsave(filename="../figures/feb_2022/nn_prop_temp.png")
+ggsave(filename="../figures/draft/nn_prop_temp.png")
 
 
 ggplot(use_plot_df, aes(x = visitors, y = prop_nn, color = site)) +
@@ -318,7 +317,7 @@ ggplot(use_plot_df, aes(x = visitors, y = prop_nn, color = site)) +
   geom_point() +
   scale_color_brewer(palette="Paired") +
   theme_classic()
-ggsave(filename="../figures/feb_2022/nn_prop_visitors.png")
+ggsave(filename="../figures/draft/nn_prop_visitors.png")
 
 # lets just get a total number of unique nonnative detections for each region
 # ====================================================  
@@ -386,7 +385,7 @@ row.names(chi_sq_df_region) <- chi_sq_df_region$region ### SITE/REGION
 chi_sq_df_region <- chi_sq_df_region %>%
   select(-region)
 
-pdf("../figures/feb_2022/region_table.pdf")
+pdf("../figures/draft/region_table.pdf")
 grid.table(chi_sq_df_region)
 dev.off()
 
@@ -394,7 +393,7 @@ row.names(chi_sq_df_site) <- chi_sq_df_site$site
 chi_sq_df_site <- chi_sq_df_site %>%
   select(-site)
 
-pdf("../figures/feb_2022/site_table.pdf")
+pdf("../figures/draft/site_table.pdf")
 grid.table(chi_sq_df_site)
 dev.off()
 
@@ -406,18 +405,19 @@ nonnative_vs_all_species_heat <- nonnative_vs_all_species %>%
   mutate(mean_nnn = mean(n_detections)) 
 
 # this could be a facet plot situation 
-heat_slice_df <- chi_sq_df_site
-heat_slice_df$prop_nn <- heat_slice_df$nonative / heat_slice_df$native
+# heat_slice_df <- chi_sq_df_site
+# heat_slice_df$prop_nn <- heat_slice_df$nonative / heat_slice_df$native
+# 
+# heat_slice_df$site <- factor(heat_slice_df$site, 
+#                                    levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))
+# 
+# ggplot(heat_slice_df, aes(x = 1, y=site, fill = prop_nn)) + 
+#   geom_tile() +
+#   theme_classic() +
+#   scale_fill_distiller(palette = "Spectral") +
+#   geom_text(aes(label=nonative))
 
-heat_slice_df$site <- factor(heat_slice_df$site, 
-                                   levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))
-
-ggplot(heat_slice_df, aes(x = 1, y=site, fill = prop_nn)) + 
-  geom_tile() +
-  theme_classic() +
-  scale_fill_distiller(palette = "Spectral") +
-  geom_text(aes(label=nonative))
-
+# actual heatmap 
 ggplot(nonnative_vs_all_species_heat, aes(month, site, fill = prop_nn)) + 
   geom_tile() +
   theme_classic() +
@@ -427,13 +427,15 @@ ggplot(nonnative_vs_all_species_heat, aes(month, site, fill = prop_nn)) +
        x ="Month", y = "Site", fill = "Proportion") +
   theme(axis.line=element_blank(),
         axis.ticks=element_blank())
-ggsave(filename="../figures/feb_2022/invasion_heatmap.png")
+ggsave(filename="../figures/draft/invasion_heatmap.png")
 
 
 # stacked bar madness (sites and months)
 # ====================================================  
 stacked_bar_df <- left_join(unique_species_by_site, species_annotated) 
-propagule_stack <- left_join(unique_species_by_site, just_nonnative)
+
+#TODO make the propagule bar chart - i do think this would be informative
+#propagule_stack <- left_join(unique_species_by_site, nonnative_status)
 
 stacked_bar_df$site <- factor(stacked_bar_df$site, 
                              levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))
@@ -441,13 +443,15 @@ stacked_bar_df$site <- factor(stacked_bar_df$site,
 stacked_bar_df <- stacked_bar_df %>%
   mutate(nonnative = as.integer(nonnative))
 
-phyla_colors <- c("Porifera" = "#FFFF33", "Phaeophyceae" = "#66c2a4", "Mollusca" = "#5e3c99", 
-                  "Florideophyceae" = "#ca0020", "Cnidaria" = "#f7f7f7", "Chordata" = "#92c5de",
-                  "Arthropoda" = "#fc8d59", "Annelida" = "#023858", "Bangiophyceae" = "#662506")
+#TODO these colors should be changed for visual clarity 
+phyla_colors <- c("Mollusca" = "#5e3c99", "Florideophyceae" = "#ca0020", 
+                  "Cnidaria" = "#66c2a4", "Chordata" = "#92c5de",
+                  "Arthropoda" = "#fc8d59", "Annelida" = "#023858", 
+                  "Bangiophyceae" = "#662506")
 
 print(unique(stacked_bar_df$phylum))
 
-#TODO fix the axis, this has the nice color scale though
+# stacked bar plot code 
 ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) + 
   geom_bar(position = "stack", stat = "identity", color = "black") +
   scale_fill_manual(values = phyla_colors) +
@@ -455,25 +459,25 @@ ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) +
        x ="Site", y = "Non-Native Species Detections", fill = "Phyla") +
   theme_classic() +
   scale_y_continuous(breaks=0:16, limits = c(0,17), expand = c(0,0)) 
-ggsave(filename="../figures/feb_2022/phyla_stack.png")
+ggsave(filename="../figures/draft/phyla_stack.png")
 
+#TODO MISC TODOS 
 #TODO add error bar 
 #TODO story of non-native diversity: function of sal and native richness
-
+#TODO propagule stacked bar chart BELOW
 ggplot(propagule_stack, aes(x = site, y = nonnative, fill = aqua_balast)) + 
   geom_bar(position = "stack", stat = "identity", color = "black") +
   labs(title="Possible Mechanism of Introduction",
        x ="Site", y = "Non-Native Species Detections", fill = "Mechanism") +
   scale_fill_brewer(palette="Spectral") +
   theme_classic() 
-ggsave(filename="../figures/feb_2022/propagule_stack.png")
-
+ggsave(filename="../figures/draft/propagule_stack.png")
 
 # chi_sq_df$nonative <- c(12, 24) right on the line if alpha is 0.05, ask ryan how
 # to interpret, what if we are off by a species or two
 # what is the role of the test here? 
 
-# CHI SQUARED TEST ##TODO## moving away from this approach based on Hood Canal data 
+# CHI SQUARED TEST 
 # ====================================================  
 region_results <- chisq.test(chi_sq_df_region)
 print(region_results)
@@ -481,7 +485,7 @@ print(region_results)
 site_results <- chisq.test(chi_sq_df_site)
 print(site_results)
 
-# RANK SUM TEST ###TODO## I don't think this is set up correctly 
+#TODO RANK SUM TEST I don't think this is set up correctly 
 # ====================================================  
 #rank_sum_df_region <- chi_sq_df_region
 rank_sum_df_site <- chi_sq_df_site
@@ -490,17 +494,30 @@ rank_sum_df_site <- chi_sq_df_site
 rank_sum_df_site$prop <- round(rank_sum_df_site$nonative / rank_sum_df_site$native, digits = 3)  
 
 rank_sum_df_site$waveE <- c(1, 3, 2, 6, 7, 4, 5, 8)
+
 rank_sum_df_site <- rank_sum_df_site %>%
   arrange(waveE)
 
-pdf("../figures/feb_2022/ranksum_table.pdf")
+pdf("../figures/draft/ranksum_table.pdf")
 grid.table(rank_sum_df_site)
 dev.off()
 
+#TODO appropriate stats tbd
 wilcox_result <- wilcox.test(rank_sum_df_site$prop, rank_sum_df_site$waveE)
 print(wilcox_result)
 
-# linear regression proportion of nn ~ temperature
+# linear regression 
+#TODO flow data!? !? ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 # ====================================================  
 linear_mod <- lm(prop_nn ~ Temperature, data = enviro_plot_df) 
+sal_mod <- lm(prop_nn ~ Salinity, data = enviro_plot_df)
+
 linear_mod
+summary(linear_mod)
+
+sal_mod
+summary(sal_mod)
+
+.0076924 / 0.01
+# 1 degree celsius increase = ~ 0.77% increase in invasion rate
+# in Salish Sea
