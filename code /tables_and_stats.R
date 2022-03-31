@@ -13,3 +13,4 @@ nonnatives <- nonnative_status %>%
   filter(nonnative %in% c("1"))
 
 nonnatives_annonated <- left_join(nonnatives, species_annotated)
+

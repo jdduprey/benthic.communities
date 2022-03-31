@@ -221,8 +221,7 @@ ggplot(error_bar_plt, aes(x=mean_all_sp, y=mean_detections, color=site)) +
 ggsave(filename="../figures/draft/SE_richness.png")
 
 ggplot(SD_bar_plt, aes(x=mean_all_sp, y=mean_detections, color=site)) +
-  labs(title = "Richness by Site",
-       x = "Native Richness", y = "Non-Native Richness") +
+  labs(x = "Native Species Richness", y = "Non-Native Species Richness") +
   geom_point() +
   scale_color_brewer(palette="Spectral") +
   theme_classic() +
@@ -276,6 +275,11 @@ ggplot(nonnative_vs_all_species, aes(x=site, y=prop_nn)) +
   theme_classic()
 ggsave(filename="../figures/draft/proportion_probable_nn.png")
 
+# calc mean invasion rate for draft
+calc_mean_nn_vs_all_sp <- nonnative_vs_all_species %>%
+  group_by(site) %>%
+  summarise(median_rate = median(prop_nn))
+
 # region non-native detection boxplot (less interesting with QCed data)
 ggplot(total_nn_detections, aes(x=region, y=n_detections)) + 
   labs(title = "Richness of Probable Non-Native Species",
@@ -302,9 +306,9 @@ ggplot(enviro_plot_df, aes(x = Salinity, y = prop_nn, color = site)) +
 ggsave(filename="../figures/draft/nn_prop_salinity.png")
 
 
+#TODO add regression line 
 ggplot(enviro_plot_df, aes(x = Temperature, y = prop_nn, color = site)) +
-  labs(title = "Non-Native Species Proportion by Temperature",
-       x = "Temperature (C)", y = "Proportion Non-Native", color = "Site") +
+  labs(x = "Temperature (C)", y = "Proportion Non-Native", color = "Site") +
   geom_point() +
   scale_color_brewer(palette="Paired") +
   theme_classic()
