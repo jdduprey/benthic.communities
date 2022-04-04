@@ -525,3 +525,10 @@ summary(sal_mod)
 .0076924 / 0.01
 # 1 degree celsius increase = ~ 0.77% increase in invasion rate
 # in Salish Sea
+
+# getting clean df for poisson regression / beta reg 
+# ====================================================  
+species_counts_inv_rate <- enviro_plot_df %>%
+  rename(nn_sp_richness = n_detections,
+         all_sp_richness = all_sp_detections) %>%
+  select(-c("X"))

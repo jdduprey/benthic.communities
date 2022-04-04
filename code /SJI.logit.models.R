@@ -1,7 +1,7 @@
 # ============================================
 # BENTHIC SPECIES LOGISTIC REGRESSION MODELS for PRESENCE/ABSENCE 
 # Joe's first attempt 
-# Last edited: 11/08/2021
+# Last edited: 03/31/2022
 # ============================================
 library('tidyverse')
 library('dplyr')
@@ -44,7 +44,7 @@ presence.absence <- inner_join(presence.absence, events)
 # ==================================================
 # filter by region
 presence.absence <- presence.absence %>% 
-  filter(Area %in% c("San Juan Island"))
+  filter(Area %in% c("Hood Canal"))
 
 # create site and date column in addition to "sample" 
 presence.absence <- presence.absence %>%
@@ -78,7 +78,7 @@ for(i in unique(presence.absence$species)) {
 # ======================================================
 species_logit <- function(species_str){
 
-  mylogit <- glm(presence ~ Season + pH_new + Temperature, data = p.a.species[[species_str]], family = "binomial", maxit=100)
+  mylogit <- glm(presence ~ Temperature, data = p.a.species[[species_str]], family = "binomial", maxit=100)
   print(p.a.species[[species_str]])
   
   print(mylogit)
@@ -90,7 +90,7 @@ species_logit <- function(species_str){
 # ======================================================
 
 # call the logit function 
-test_logit <- species_logit("Caulacanthus ustulatus")
+test_logit <- species_logit("Gelidiophycus freshwateri")
 
 # display results 
 summary(test_logit)
@@ -110,9 +110,8 @@ plot_logit <- function(species_str, test_logit) {
   
   # create range of temps, for both "Summer" and "Winter" factors, hold pH constant  
   newdata2 <- with(p.a.species[[species_str]], data.frame(
-                Temperature = rep(seq(from = 7.17, to = 22.6, length.out = 100),2), 
-                pH_new = mean(pH_new), 
-                Season = factor(rep(c('Summer','Winter'), each = 100))))
+                Temperature = rep(seq(from = 7.17, to = 22.6, length.out = 100),2)
+                ))
 
   newdata3 <- cbind(newdata2, predict(test_logit, newdata = newdata2, type = "link",
                 se = TRUE))
@@ -127,19 +126,19 @@ plot_logit <- function(species_str, test_logit) {
   
   # plot the output 
   logit_plot <- ggplot(newdata3, aes(x = Temperature, y = PredictedProb)) + 
-    geom_ribbon(aes(ymin = LL,  ymax = UL, fill = Season), alpha = 0.2) + 
-    geom_line(aes(colour = Season),size = 1) +
-    geom_point(data= p.a.species[[species_str]], aes(x = Temperature, y = presence, colour = Season)) +
+    geom_ribbon(aes(ymin = LL,  ymax = UL), alpha = 0.2) + 
+    geom_line(size = 1) +
+    geom_point(data= p.a.species[[species_str]], aes(x = Temperature, y = presence)) +
     labs(title=species_str, y="Probability of Detection") 
   
-  ggsave("../figures/logit_nereocystis.png")
+  ggsave("../figures/draft/logit/Gelidiophycus_freshwateri.png")
   
   return(logit_plot)
   }
 # ======================================================
 
 # call the visualize function 
-plot_logit("Caulacanthus ustulatus", test_logit)
+plot_logit("Gelidiophycus freshwateri", test_logit)
 
 # ======================================================
 # ======================================================
