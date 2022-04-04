@@ -532,3 +532,5 @@ species_counts_inv_rate <- enviro_plot_df %>%
   rename(nn_sp_richness = n_detections,
          all_sp_richness = all_sp_detections) %>%
   select(-c("X"))
+
+write.csv(species_counts_inv_rate, file = "../data/species_counts_inv_rate.csv")
