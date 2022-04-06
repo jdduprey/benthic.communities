@@ -90,7 +90,7 @@ species_logit <- function(species_str){
 # ======================================================
 
 # call the logit function 
-test_logit <- species_logit("Gelidiophycus freshwateri")
+test_logit <- species_logit("Pseudochattonella farcimen")
 
 # display results 
 summary(test_logit)
@@ -129,16 +129,17 @@ plot_logit <- function(species_str, test_logit) {
     geom_ribbon(aes(ymin = LL,  ymax = UL), alpha = 0.2) + 
     geom_line(size = 1) +
     geom_point(data= p.a.species[[species_str]], aes(x = Temperature, y = presence)) +
-    labs(title=species_str, y="Probability of Detection") 
+    labs(title=species_str, y="Probability of Detection") +
+    theme_classic() 
   
-  ggsave("../figures/draft/logit/Gelidiophycus_freshwateri.png")
+  ggsave("../figures/draft/logit/Pseudochattonella_farcimen.png")
   
   return(logit_plot)
   }
 # ======================================================
 
 # call the visualize function 
-plot_logit("Gelidiophycus freshwateri", test_logit)
+plot_logit("Pseudochattonella farcimen", test_logit)
 
 # ======================================================
 # ======================================================

@@ -4,7 +4,7 @@
 library(tidyverse)
 library(rstanarm)
 
-a <- read.csv("joe_invasives.csv", row.names = 1) %>% 
+a <- read.csv("../data/joe_invasives.csv", row.names = 1) %>% 
   mutate(native_richness = all_sp_richness - nn_sp_richness) %>% 
   drop_na()
 
