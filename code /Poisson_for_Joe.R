@@ -65,6 +65,7 @@ a %>%
   geom_point() +
   geom_point(aes(x = Temperature, y = poisMod3_pred), col = "orange") #plot model prediction
 
+
 #Model 4:  Temperature + Native Species Richness
 poisMod4 <- stan_glm(nn_sp_richness ~ Temperature + native_richness, 
                      data = a,
@@ -72,6 +73,14 @@ poisMod4 <- stan_glm(nn_sp_richness ~ Temperature + native_richness,
                      prior = normal(0,1),
                      prior_intercept = normal(0,1),
                      seed = 1233)
+pp_check(poisMod4, plotfun = "stat") #posterior predictive check; the observed (y) should be in the center of the plausible values (yrep)
+plot(poisMod4) #param estimates; temperature is more important than native richness
+
+a$poisMod4_pred <- posterior_predict(poisMod4) %>% colMeans() # values predicted by the model)
+a %>% 
+  ggplot(aes(x = Temperature, y = nn_sp_richness)) +
+  geom_point() +
+  geom_point(aes(x = Temperature, y = poisMod4_pred), col = "purple") #plot model prediction
 
 #Model 5:  Native Species Richness
 poisMod5 <- stan_glm(nn_sp_richness ~ native_richness, 
@@ -80,8 +89,14 @@ poisMod5 <- stan_glm(nn_sp_richness ~ native_richness,
                      prior = normal(0,1),
                      prior_intercept = normal(0,1),
                      seed = 1233)
+pp_check(poisMod5, plotfun = "stat") #posterior predictive check; the observed (y) should be in the center of the plausible values (yrep)
+plot(poisMod5) #param estimates
 
-
+a$poisMod5_pred <- posterior_predict(poisMod5) %>% colMeans() # values predicted by the model)
+a %>% 
+  ggplot(aes(x = native_richness, y = nn_sp_richness)) +
+  geom_point() +
+  geom_point(aes(x = native_richness, y = poisMod5_pred), col = "blue") #plot model prediction
 
 #########Model Comparison
 

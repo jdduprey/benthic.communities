@@ -18,7 +18,7 @@ library(tidystats)
 library(RColorBrewer)
 library(ggpubr)
 
-nonnative_status <- read.csv("../docs/feb22_all_species_dist.csv")
+nonnative_status <- read.csv("../docs/FINAL_all_species_dist.csv")
 #just_nonnative <- read.csv("../docs/just_the_suspects.csv")
 species_annotated <- read.csv("../data/species_annotated.csv")
 by_sample_species <- read.csv("../data/by.sample.species.csv") # reads merged by tech and bio

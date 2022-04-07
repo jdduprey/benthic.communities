@@ -5,12 +5,12 @@
 # I might suggest: the richness for each bottle is the sum of detections across 
 # replicates.  Then, we treat the bottles as independent of one another, 
 # nested within site/times
-# CONTINUE EDITING AT ROW 314
+# TODO CONTINUE EDITING AT ROW 314
 # ====================================================
 library(tidyverse)
 library(ggplot2)
 
-nonnative_status <- read.csv("../docs/feb22_all_species_dist.csv")
+nonnative_status <- read.csv("../docs/FINAL_all_species_dist.csv")
 species_annotated <- read.csv("../data/species_annotated.csv")
 enviro_data <- read.csv("../data/HC_enviro_data.csv")
 by_sample_species <- read.csv("../data/by.sample.species.csv") # reads merged by tech and bio
@@ -190,6 +190,16 @@ nonnative_vs_all_species$prop_nn <- nonnative_vs_all_species$n_detections/nonnat
 
 nonnative_vs_all_species$site <- factor(nonnative_vs_all_species$site, 
                                         levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))
+
+nn_vs_all_species_ryan <- nonnative_vs_all_species %>%
+  rename("nn_detections"="n_detections") %>%
+  mutate(native = all_sp_detections - nn_detections) %>%
+  separate(sample, into = c("event", "foo"), sep = 9, remove = F) %>%
+  rename("ID"="sample","sample"="event") %>%
+  left_join(enviro_data) %>%
+  select(-c("foo","X"))
+
+write.csv(nn_vs_all_species_ryan, file = "../data/joe_data_by_rep.csv")
 # EXPLORATORY PLOTTING 
 # ====================================================  
 #scatterplot non-native vs native
