@@ -23,20 +23,41 @@ species_hash_seq <- (left_join(hash_annotated, hash_key))
 # for the Feb 2022 BLAST query, lets check updated alignments
 # for the cryptogenic, possible and probable NIS 
 # more accurate definitions "possible" "cryptogenic" "probable" 
+print(unique(all_species_dist$nonnative))
 possible_nis <- all_species_dist %>%
   filter(nonnative %in% c("possible", "low", "1"))
 
 # get down to a dataframe with each row being a unique species, hash and sequence
-species_hash_seq <- species_hash_seq %>%
+posnn_species_hash_seq <- species_hash_seq %>%
   distinct(Hash, species, Sequence) %>%
   filter(species %in% unique(possible_nis$species))
 
 # get rid of the funky NAs, why are they there? also we just need a hash for Ryan query
-species_hash_seq <- species_hash_seq %>%
+posnn_species_hash_seq <- posnn_species_hash_seq %>%
   filter(!is.na(Sequence)) %>%
   select(Hash, Sequence)
 
-write_csv(species_hash_seq, "../data/possible_NIS_qc.csv")
+write_csv(posnn_species_hash_seq, "../data/possible_NIS_qc.csv")
+
+# ====================================================
+# TODO 04/07/2022
+# instead of classifying <95% identity as natives, per feedback
+# we need to bin these into unclassified, but we will need to 
+# double check all this with nBLAST
+natives_to_check <- all_species_dist %>% 
+  filter(nonnative %in% c("0", "single"))
+
+natives_to_check_hash_seq <- species_hash_seq %>% 
+  distinct(Hash, species, Sequence) %>%
+  filter(species %in% unique(natives_to_check$species))
+
+natives_to_check_hash_seq <- natives_to_check_hash_seq %>%
+  filter(!is.na(Sequence))
+
+write_csv(natives_to_check_hash_seq, "../data/natives_to_check_qc.csv")
+
+
+
 
 # load in the BLAST results
 #========================================================
