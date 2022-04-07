@@ -37,7 +37,7 @@ posnn_species_hash_seq <- posnn_species_hash_seq %>%
   filter(!is.na(Sequence)) %>%
   select(Hash, Sequence)
 
-write_csv(posnn_species_hash_seq, "../data/possible_NIS_qc.csv")
+write_csv(posnn_species_hash_seq, "../data/QC/possible_NIS_qc.csv")
 
 # ====================================================
 # TODO 04/07/2022
@@ -54,7 +54,7 @@ natives_to_check_hash_seq <- species_hash_seq %>%
 natives_to_check_hash_seq <- natives_to_check_hash_seq %>%
   filter(!is.na(Sequence))
 
-write_csv(natives_to_check_hash_seq, "../data/natives_to_check_qc.csv")
+write_csv(natives_to_check_hash_seq, "../data/QC/natives_to_check_qc.csv")
 
 
 
