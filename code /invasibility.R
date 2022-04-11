@@ -171,6 +171,9 @@ nonnative_vs_all_species$prop_nn <- nonnative_vs_all_species$n_detections/nonnat
 
 nonnative_vs_all_species$site <- factor(nonnative_vs_all_species$site, 
                                    levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))
+
+write.csv(nonnative_vs_all_species, "../data/monthly_invasion_data.csv")
+
 # EXPLORATORY PLOTTING 
 # ====================================================  
 #scatterplot non-native vs native
