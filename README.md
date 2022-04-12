@@ -5,4 +5,4 @@
 * [species range data](https://github.com/jdduprey/benthic.communities/tree/main/docs)
 * [cleaning and exploratory viz](https://github.com/jdduprey/benthic.communities/blob/main/code%20/invasibility.R)
 * [latest visualizations for manuscript](https://github.com/jdduprey/benthic.communities/tree/main/figures/draft)
-* analysis: [logistic P/A](https://github.com/jdduprey/benthic.communities/blob/main/code%20/SJI_logit_models.R) $ [poisson regression](https://github.com/jdduprey/benthic.communities/blob/main/code%20/poisson_regression.R) 
+* analysis: [logistic P/A](https://github.com/jdduprey/benthic.communities/blob/main/code%20/SJI_logit_models.R) & [poisson regression](https://github.com/jdduprey/benthic.communities/blob/main/code%20/poisson_regression.R) 
