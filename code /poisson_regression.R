@@ -11,7 +11,8 @@ a <- read.csv("../data/joe_invasives.csv", row.names = 1) %>%
 #sanity check
 a %>% 
   ggplot(aes(x = Temperature, y = nn_sp_richness)) +
-    geom_point()
+    geom_point() +
+    theme_classic()
 
 
 #goal: do a regression where nn_sp_richness is the response variable, and where explanatory vars are T, Sal, and native_sp_richness
@@ -25,6 +26,8 @@ poisMod1 <- stan_glm(nn_sp_richness ~ Temperature,
                      prior = normal(0,1),
                      prior_intercept = normal(0,1))
 pp_check(poisMod1, plotfun = "stat") #posterior predictive check; the observed (y) should be in the center of the plausible values (yrep)
+
+b <- as.data.frame(posterior_predict(poisMod1))
 
 a$poisMod1_pred <- posterior_predict(poisMod1) %>% colMeans() # values predicted by the model)
 a %>% 

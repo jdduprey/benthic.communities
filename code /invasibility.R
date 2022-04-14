@@ -174,6 +174,10 @@ nonnative_vs_all_species$site <- factor(nonnative_vs_all_species$site,
 
 write.csv(nonnative_vs_all_species, "../data/monthly_invasion_data.csv")
 
+# how many unique sampling events?
+
+print(unique(nonnative_vs_all_species$sample))
+
 # EXPLORATORY PLOTTING 
 # ====================================================  
 #scatterplot non-native vs native
