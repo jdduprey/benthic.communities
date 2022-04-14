@@ -18,20 +18,25 @@ bold_site <- c("bold('TW')","bold('PO')","bold('LL')","bold('TR')",
 site_meta$hab_type <- hab_type
 site_meta$hab_type <- hab_type
 
+site_colors <- c("mudflat" = "#a50f15", "intermediate" = "#54278f", "rocky" = "#253494")
+
 p <- ggplot() + 
   geom_sf(data=NW_coast, col = 1, fill = "ivory") +
   coord_sf(xlim = -c(125, 122), ylim = c(47,49)) +
   geom_point(data = site_meta, 
              aes(x = long, y = lat, color = hab_type), size = 4, alpha = 0.8) +
+  scale_color_manual(values = site_colors) +
   xlab(NULL) + ylab(NULL) +
   ggrepel::geom_text_repel(data = site_meta, 
                            aes(x = long, y = lat, label = bold_site), size = 6, parse = TRUE) +
   theme_bw() + 
   theme(panel.background = element_rect(fill = "white"),
         axis.text = element_text(size = 8, colour = 1),
-        panel.grid = element_line(colour = NA)) 
+        panel.grid = element_line(colour = NA),
+        legend.position="none") 
 
 p
+ggsave(filename="../figures/map/mapv1.png")
 
 
 
