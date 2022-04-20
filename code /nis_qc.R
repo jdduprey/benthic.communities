@@ -8,7 +8,7 @@ library(tidyverse)
 just_nonnative <- read.csv("../docs/just_the_suspects.csv")
 hash_annotated <- read.csv("../data/hash.annotated.csv")
 hash_key <- read.csv("../data/Moncho_Hash_Key_all_together.csv")
-all_species_dist <- read.csv("../docs/feb22_all_species_dist.csv")
+all_species_dist <- read.csv("../docs/FINAL_all_species_dist.csv")
 nn_results_table <- read.csv("../docs/nn_results_table.csv")
 # get hashes and seqs
 hash_key <- hash_key %>%
@@ -62,7 +62,7 @@ write_csv(natives_to_check_hash_seq, "../data/QC/natives_to_check_qc.csv")
 # load in the BLAST results
 #========================================================
 # blast output is tab delineated  
-blast_output <- read.csv("../data/possible_NIS_BLAST.txt", header = FALSE, sep = "\t" )
+blast_output <- read.csv("../data/QC/possible_NIS_BLAST.txt", header = FALSE, sep = "\t" )
 
 # columns according to Ryan
 colnames(blast_output) <- c("Hash", "sseqid", "sacc", "pident", "length",

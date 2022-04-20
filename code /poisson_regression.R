@@ -85,6 +85,7 @@ a %>%
   geom_point() +
   geom_point(aes(x = Temperature, y = poisMod4_pred), col = "purple") #plot model prediction
 
+
 #Model 5:  Native Species Richness
 poisMod5 <- stan_glm(nn_sp_richness ~ native_richness, 
                      data = a,
@@ -113,6 +114,8 @@ loo_compare(loo(poisMod1),
             loo(poisMod5))
 
 #here, model 4 is pretty strongly preferred
+summary(poisMod4, digits=3)
+summary(poisMod3, digits=3)
 
 #if we force it to use information criterion (WAIC), similar result, but with complaints.
 loo_compare(waic(poisMod1),
@@ -140,21 +143,36 @@ a %>%
 
 #split out into high/med/low native diversity environments, just to see what that looks like:
 p <- a %>% 
-  mutate(native_bin = cut(native_richness, 3, labels = FALSE)) %>% 
-  mutate(native_bin = case_when(native_bin == 1 ~ "Low Native Diversity",
-                                native_bin == 2 ~ "Medium Native Diversity",
-                                native_bin == 3 ~ "High Native Diversity")) %>% 
+  mutate(native_bin = cut(native_richness, c(24,52,107), labels = FALSE)) %>% 
+  mutate(native_bin = case_when(native_bin == 1 ~ "Lower Native Richness",
+                                native_bin == 2 ~ "Higher Native Richness")) %>%
   ggplot(aes(x = Temperature, y = nn_sp_richness)) +
   geom_point(col = "grey20") +
-  geom_point(aes(x = Temperature, y = poisMod4_pred), col = "orange") + #plot model prediction
-  geom_smooth(aes(x = Temperature, y = poisMod4_pred), col = "orange", se = F, method = "glm", method.args = list(family = "poisson")) +
+  geom_point(aes(x = Temperature, y = poisMod4_pred), col = "#fc4e2a") + #plot model prediction
+  geom_smooth(aes(x = Temperature, y = poisMod4_pred), col = "#fc4e2a", se = F, method = "glm", method.args = list(family = "poisson")) +
   geom_smooth(aes(x = Temperature, y = poisMod4_25), col = "grey50", se = F, method = "glm", method.args = list(family = "poisson")) +
   geom_smooth(aes(x = Temperature, y = poisMod4_75), col = "grey50", se = F, method = "glm", method.args = list(family = "poisson")) +
+  scale_y_continuous(breaks=c(0:9)) +
   facet_grid(~native_bin) +
-  ylab("Non-Native Diversity")
+  ylab("Non-Native Diversity") 
 p
 ggsave(p, file = "threeFacets_modelFit.pdf")
 
+print(table(p[["data"]]$native_bin))
 
-
+# plot high and low lines on the same graph
+q <- a %>% 
+  mutate(native_bin = cut(native_richness, c(24,52,107), labels = FALSE)) %>% 
+  mutate(native_bin = case_when(native_bin == 1 ~ "Lower Native Richness",
+                                native_bin == 2 ~ "Higher Native Richness")) %>%
+  ggplot(aes(x = Temperature, y = nn_sp_richness)) +
+  geom_point(col = "grey20") +
+  geom_point(aes(x = Temperature, y = poisMod4_pred), col = "#fc4e2a") + #plot model prediction
+  geom_smooth(aes(x = Temperature, y = poisMod4_pred), col = "#fc4e2a", se = F, method = "glm", method.args = list(family = "poisson")) +
+  geom_smooth(aes(x = Temperature, y = poisMod4_25), col = "grey50", se = F, method = "glm", method.args = list(family = "poisson")) +
+  geom_smooth(aes(x = Temperature, y = poisMod4_75), col = "grey50", se = F, method = "glm", method.args = list(family = "poisson")) +
+  facet_grid(~native_bin) +
+  ylab("Non-Native Diversity") 
+q
+ggsave(p, file = "threeFacets_modelFit.pdf")
 

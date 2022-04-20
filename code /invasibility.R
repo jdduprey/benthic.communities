@@ -1,5 +1,4 @@
 # INVASIBILITY  
-# TODO UPDATE non-native status to reflect new IDs
 # Joe Duprey
 # Last Edited: 03/16/2022
 # ====================================================
@@ -171,6 +170,11 @@ nonnative_vs_all_species$prop_nn <- nonnative_vs_all_species$n_detections/nonnat
 
 nonnative_vs_all_species$site <- factor(nonnative_vs_all_species$site, 
                                    levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))
+
+nn_vs_all_wnat <- nonnative_vs_all_species %>%
+  mutate(native_div = all_sp_detections - n_detections)
+print(max(nn_vs_all_wnat$native_div))
+print(min(nn_vs_all_wnat$native_div))
 
 write.csv(nonnative_vs_all_species, "../data/monthly_invasion_data.csv")
 
