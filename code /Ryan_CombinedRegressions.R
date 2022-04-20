@@ -46,17 +46,20 @@ a %>%
     geom_point(alpha = .2) +
     geom_line(stat = "smooth", aes(x = Temperature, y = meanPred, color = native_bin)) +
     geom_line(stat = "smooth", aes(x = Temperature, y = Pred10, color = native_bin), alpha = .5) +
-    geom_line(stat = "smooth", aes(x = Temperature, y = Pred90, color = native_bin), alpha = .5)
+    geom_line(stat = "smooth", aes(x = Temperature, y = Pred90, color = native_bin), alpha = .5) 
 
 #so, at mean temperature and median native richness for each bin, what's the expected difference in non-native richness between high and low native-richness bins?
 lowPred <- posterior_predict(stan1, 
                   data.frame(Temperature = mean(a$Temperature), 
                                        native_richness = median(a$native_richness[a$native_bin == "Low"])),
-                  draws = 1000)
+                  draws = 4000)
+
+
 highPred <- posterior_predict(stan1, 
                              data.frame(Temperature = mean(a$Temperature), 
                                         native_richness = median(a$native_richness[a$native_bin == "High"])),
-                             draws = 1000)
+                             draws = 4000)
+
 
 diffPred <- lowPred - highPred
 hist(diffPred)
@@ -80,11 +83,12 @@ a %>%
 lowPred <- posterior_predict(stan2, 
                              data.frame(Temperature = mean(a$Temperature), 
                                         native_richness = median(a$native_richness[a$native_bin == "Low"])),
-                             draws = 1000)
+                             draws = 4000)
 highPred <- posterior_predict(stan2, 
                               data.frame(Temperature = mean(a$Temperature), 
                                          native_richness = median(a$native_richness[a$native_bin == "High"])),
-                              draws = 1000)
+                              draws = 4000)
+
 
 diffPred <- lowPred - highPred
 hist(diffPred)
