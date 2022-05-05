@@ -4,7 +4,12 @@
 library(tidyverse)
 library(rstanarm)
 
-a <- read.csv("../data/joe_invasives.csv", row.names = 1) %>% 
+# a <- read.csv("../data/joe_invasives.csv", row.names = 1) %>% 
+#   mutate(native_richness = all_sp_richness - nn_sp_richness) %>% 
+#   drop_na()
+
+# updated counts as of 05/05/2022
+a <- read.csv("../data/species_counts_inv_rate.csv", row.names = 1) %>% 
   mutate(native_richness = all_sp_richness - nn_sp_richness) %>% 
   drop_na()
 
@@ -154,9 +159,12 @@ p <- a %>%
   geom_smooth(aes(x = Temperature, y = poisMod4_75), col = "grey50", se = F, method = "glm", method.args = list(family = "poisson")) +
   scale_y_continuous(breaks=c(0:9)) +
   facet_grid(~native_bin) +
-  ylab("Non-Native Diversity") 
+  theme_minimal() +
+  theme(panel.border = element_rect(color = "black", fill = NA, size = 1)) +
+  theme(text = element_text(size = 20)) +
+  ylab("Introduced Species Richness") 
 p
-ggsave(p, file = "threeFacets_modelFit.pdf")
+ggsave(p, file = "../figures/draft/two_Facets_modelFit.png")
 
 print(table(p[["data"]]$native_bin))
 

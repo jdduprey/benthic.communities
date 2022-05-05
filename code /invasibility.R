@@ -465,7 +465,7 @@ stacked_bar_df <- stacked_bar_df %>%
 phyla_colors <- c("Mollusca" = "#5e3c99", "Florideophyceae" = "#ca0020", 
                   "Cnidaria" = "#66c2a4", "Chordata" = "#92c5de",
                   "Arthropoda" = "#fc8d59", "Annelida" = "#023858", 
-                  "Bangiophyceae" = "#662506")
+                  "Bangiophyceae" = "#662506", "Dictyochophyceae" = "#fed976")
 
 print(unique(stacked_bar_df$phylum))
 
@@ -473,15 +473,17 @@ print(unique(stacked_bar_df$phylum))
 ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) + 
   geom_bar(position = "stack", stat = "identity", color = "black") +
   scale_fill_manual(values = phyla_colors) +
-  labs(title="Unique Non-Native Species Detected by Site",
-       x ="Site", y = "Non-Native Species Detections", fill = "Phyla") +
+  labs(title="Unique Introduced Species Detected by Site",
+       x ="Site", y = "Unique Introduced Species Detections", fill = "Phyla") +
   theme_classic() +
-  scale_y_continuous(breaks=0:16, limits = c(0,17), expand = c(0,0)) 
+  scale_y_continuous(breaks=0:16, limits = c(0,17), expand = c(0,0)) +
+  theme(legend.key.size = unit(1, 'cm'), #change legend key size
+        legend.key.height = unit(1, 'cm'), #change legend key height
+        legend.key.width = unit(1, 'cm'), #change legend key width
+        legend.title = element_text(size=14), #change legend title font size
+        legend.text = element_text(size=10)) #change legend text font size
 ggsave(filename="../figures/draft/phyla_stack.png")
 
-#TODO MISC TODOS 
-#TODO add error bar 
-#TODO story of non-native diversity: function of sal and native richness
 #TODO propagule stacked bar chart BELOW
 ggplot(propagule_stack, aes(x = site, y = nonnative, fill = aqua_balast)) + 
   geom_bar(position = "stack", stat = "identity", color = "black") +
@@ -548,3 +550,4 @@ species_counts_inv_rate <- enviro_plot_df %>%
   select(-c("X"))
 
 write.csv(species_counts_inv_rate, file = "../data/species_counts_inv_rate.csv")
+
