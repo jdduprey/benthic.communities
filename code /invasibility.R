@@ -161,7 +161,7 @@ total_allspec_detections <- total_allspec_detections %>%
   )
 
 total_nn_detections$site <- factor(total_nn_detections$site, 
-                                        levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))
+                                        levels = c("TW", "PO", "LL", "TR", "SA", "FH", "CP", "LK"))
 
 # combine df to single handy df 
 nonnative_vs_all_species <- left_join(total_nn_detections, total_allspec_detections)
@@ -169,7 +169,7 @@ nonnative_vs_all_species <- left_join(total_nn_detections, total_allspec_detecti
 nonnative_vs_all_species$prop_nn <- nonnative_vs_all_species$n_detections/nonnative_vs_all_species$all_sp_detections
 
 nonnative_vs_all_species$site <- factor(nonnative_vs_all_species$site, 
-                                   levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))
+                                   levels = c("TW", "PO", "LL", "TR", "SA", "FH", "CP", "LK"))
 
 nn_vs_all_wnat <- nonnative_vs_all_species %>%
   mutate(native_div = all_sp_detections - n_detections)
@@ -178,8 +178,11 @@ print(min(nn_vs_all_wnat$native_div))
 
 write.csv(nonnative_vs_all_species, "../data/monthly_invasion_data.csv")
 
-# how many unique sampling events?
+# are the variance and mean approximately equal?
+var(nonnative_vs_all_species$n_detections)
+mean(nonnative_vs_all_species$n_detections)
 
+# how many unique sampling events?
 print(unique(nonnative_vs_all_species$sample))
 
 # EXPLORATORY PLOTTING 
@@ -417,7 +420,8 @@ dev.off()
 # ====================================================  
 nonnative_vs_all_species_heat <- nonnative_vs_all_species %>%
   group_by(site, month) %>%
-  mutate(mean_nnn = mean(n_detections)) 
+  mutate(mean_nnn = mean(n_detections)) %>%
+  mutate(mean_prop_nn = mean(prop_nn))
 
 # this could be a facet plot situation 
 # heat_slice_df <- chi_sq_df_site
@@ -432,18 +436,17 @@ nonnative_vs_all_species_heat <- nonnative_vs_all_species %>%
 #   scale_fill_distiller(palette = "Spectral") +
 #   geom_text(aes(label=nonative))
 
-# actual heatmap 
-ggplot(nonnative_vs_all_species_heat, aes(month, site, fill = prop_nn)) + 
+# DEBUGGED HEATMAP using mean_prop_nn instead of prop_nn
+ggplot(nonnative_vs_all_species_heat, aes(month, site, fill = mean_prop_nn)) + 
   geom_tile() +
   theme_classic() +
   scale_fill_distiller(palette = "RdYlBu") +
   geom_text(aes(label=mean_nnn)) +
-  labs(title="Proportion and Mean Richness of Non-Native Species",
+  labs(title="Mean Proportion (color) and Richness (numeral) of Introduced Species",
        x ="Month", y = "Site", fill = "Proportion") +
   theme(axis.line=element_blank(),
         axis.ticks=element_blank())
 ggsave(filename="../figures/draft/invasion_heatmap.png")
-
 
 # stacked bar madness (sites and months)
 # ====================================================  
@@ -453,7 +456,7 @@ stacked_bar_df <- left_join(unique_species_by_site, species_annotated)
 #propagule_stack <- left_join(unique_species_by_site, nonnative_status)
 
 stacked_bar_df$site <- factor(stacked_bar_df$site, 
-                             levels = c("TW", "PO", "LL", "TR", "SA", "FH", "LK", "CP"))
+                             levels = c("TW", "PO", "LL", "TR", "SA", "FH", "CP", "LK"))
 
 stacked_bar_df <- stacked_bar_df %>%
   mutate(nonnative = as.integer(nonnative))
