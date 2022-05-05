@@ -184,3 +184,7 @@ q <- a %>%
 q
 ggsave(p, file = "threeFacets_modelFit.pdf")
 
+# ==============================================================
+# two dimensional plot of native richness and temperature
+
+

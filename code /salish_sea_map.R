@@ -11,7 +11,7 @@ invasion_data <- read.csv("../map/monthly_invasion_data.csv")
 
 
 # link site data with invasives data
-hab_type <- c("mudflat","mudflat","mudflat","mudflat","intermediate","rocky","rocky","rocky")
+hab_type <- c("mudflat","mudflat","mudflat","intermediate","intermediate","rocky","rocky","rocky")
 bold_site <- c("bold('TW')","bold('PO')","bold('LL')","bold('TR')",
                "bold('SA')","bold('FH')","bold('CP')","bold('LK')")
 
@@ -38,8 +38,24 @@ p <- ggplot() +
 p
 ggsave(filename="../figures/map/mapv1.png")
 
+# big letter map for presentation
+b <- ggplot() + 
+  geom_sf(data=NW_coast, col = 1, fill = "ivory") +
+  coord_sf(xlim = -c(125, 122), ylim = c(47,49)) +
+  geom_point(data = site_meta, 
+             aes(x = long, y = lat, color = hab_type), size = 4, alpha = 0.8) +
+  scale_color_manual(values = site_colors) +
+  xlab(NULL) + ylab(NULL) +
+  ggrepel::geom_text_repel(data = site_meta, 
+                           aes(x = long, y = lat, label = bold_site), size = 16, parse = TRUE) +
+  theme_bw() + 
+  theme(panel.background = element_rect(fill = "white"),
+        axis.text = element_text(size = 8, colour = 1),
+        panel.grid = element_line(colour = NA),
+        legend.position="none") 
 
-
+b
+ggsave(filename="../figures/map/big_letter_mapv1.png")
 
 # POSSIBLE BATHYMETRY CODE TO TRY LATER
 # # Load package
