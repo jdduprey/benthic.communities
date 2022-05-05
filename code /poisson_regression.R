@@ -3,6 +3,7 @@
 
 library(tidyverse)
 library(rstanarm)
+library(viridis)
 
 # a <- read.csv("../data/joe_invasives.csv", row.names = 1) %>% 
 #   mutate(native_richness = all_sp_richness - nn_sp_richness) %>% 
@@ -187,4 +188,28 @@ ggsave(p, file = "threeFacets_modelFit.pdf")
 # ==============================================================
 # two dimensional plot of native richness and temperature
 
+temps <- rep(seq(7, 23, by=1), 89)
+native_richness <- rep(seq(18, 106, by=1), each=17)
 
+heat_df <- as.data.frame(cbind(temps, native_richness))
+colnames(heat_df) <- c("Temperature", "native_richness")
+
+predictions <- posterior_predict(poisMod4, newdata = my_df) %>% colMeans()
+
+my_df$nn_pred <- predictions
+
+ggplot(my_df, aes(x=native_richness, y=Temperature, fill = nn_pred)) + 
+  geom_tile() +
+  theme_classic() +
+  scale_fill_distiller(palette = "RdYlBu") +
+  scale_fill_viridis() +
+  labs(x ="Native Species Richness", y = "Temperature", fill = "Predicted Introduced \n Species Richness") +
+  theme(axis.line=element_blank(),
+        axis.ticks=element_blank()) +
+  coord_equal()
+
+ggplot(a, aes(x=Temperature, y=native_richness, color=(month))) +
+  geom_point()
+
+cor(a$Temperature, a$native_richness)
+  
