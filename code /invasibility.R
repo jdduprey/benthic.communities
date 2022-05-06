@@ -173,6 +173,7 @@ nonnative_vs_all_species$site <- factor(nonnative_vs_all_species$site,
 
 nn_vs_all_wnat <- nonnative_vs_all_species %>%
   mutate(native_div = all_sp_detections - n_detections)
+
 print(max(nn_vs_all_wnat$native_div))
 print(min(nn_vs_all_wnat$native_div))
 
@@ -188,8 +189,6 @@ print(unique(nonnative_vs_all_species$sample))
 # EXPLORATORY PLOTTING 
 # ====================================================  
 #scatterplot non-native vs native
-
-##TODO is it non-native or all species joe - figure it out
 
 ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=site)) +
   labs(title = "Richness by Site",
@@ -548,6 +547,9 @@ species_counts_inv_rate <- enviro_plot_df %>%
   rename(nn_sp_richness = n_detections,
          all_sp_richness = all_sp_detections) %>%
   select(-c("X"))
+
+print(max(species_counts_inv_rate$Temperature, na.rm=TRUE))
+print(min(species_counts_inv_rate$Temperature, na.rm=TRUE))
 
 write.csv(species_counts_inv_rate, file = "../data/species_counts_inv_rate.csv")
 

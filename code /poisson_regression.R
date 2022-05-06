@@ -208,8 +208,6 @@ ggplot(my_df, aes(x=native_richness, y=Temperature, fill = nn_pred)) +
         axis.ticks=element_blank()) +
   coord_equal()
 
-ggplot(a, aes(x=Temperature, y=native_richness, color=(month))) +
-  geom_point()
 
 cor(a$Temperature, a$native_richness)
   
