@@ -188,17 +188,17 @@ ggsave(p, file = "threeFacets_modelFit.pdf")
 # ==============================================================
 # two dimensional plot of native richness and temperature
 
-temps <- rep(seq(7, 23, by=1), 89)
-native_richness <- rep(seq(18, 106, by=1), each=17)
+temps <- rep(seq(7, 23, by=1), 63)
+native_richness <- rep(seq(18, 80, by=1), each=17)
 
 heat_df <- as.data.frame(cbind(temps, native_richness))
 colnames(heat_df) <- c("Temperature", "native_richness")
 
-predictions <- posterior_predict(poisMod4, newdata = my_df) %>% colMeans()
+predictions <- posterior_predict(poisMod4, newdata = heat_df) %>% colMeans()
 
-my_df$nn_pred <- predictions
+heat_df$nn_pred <- predictions
 
-ggplot(my_df, aes(x=native_richness, y=Temperature, fill = nn_pred)) + 
+z <- ggplot(heat_df, aes(x=native_richness, y=Temperature, fill = nn_pred)) + 
   geom_tile() +
   theme_classic() +
   scale_fill_distiller(palette = "RdYlBu") +
@@ -206,7 +206,11 @@ ggplot(my_df, aes(x=native_richness, y=Temperature, fill = nn_pred)) +
   labs(x ="Native Species Richness", y = "Temperature", fill = "Predicted Introduced \n Species Richness") +
   theme(axis.line=element_blank(),
         axis.ticks=element_blank()) +
+  theme(axis.text.y=element_text(margin=margin(r=0))) +
+  theme(axis.text.x=element_text(margin=margin(r=0))) +
   coord_equal()
+
+ggsave(z, file = "../figures/draft/native_temp_heatmap.png")
 
 
 cor(a$Temperature, a$native_richness)

@@ -69,3 +69,19 @@ ggsave(filename="../figures/map/big_letter_mapv1.png")
 # plot(bat, image = TRUE, land = TRUE, lwd = 0.1, bpal = list(c(0, max(bat), greys), c(min(bat), 0, blues)))
 # plot(bat, lwd = 0.8, deep = 0, shallow = 0, step = 0, add = TRUE) # highlight coastline
 
+w <- ggplot() + 
+  geom_sf(data=NW_coast, col = 1, fill = "ivory") +
+  coord_sf(xlim = -c(125, 122), ylim = c(47,49)) +
+  geom_point(data = site_meta, 
+             aes(x = long, y = lat), size = 0.5, alpha = 0.8) +
+  scale_color_manual(values = site_colors) +
+  xlab(NULL) + ylab(NULL) +
+  ggrepel::geom_text_repel(data = site_meta, 
+                           aes(x = long, y = lat, label = bold_site), size = 14, parse = TRUE) +
+  theme_bw() + 
+  theme(panel.background = element_rect(fill = "white"),
+        axis.text = element_text(size = 8, colour = 1),
+        panel.grid = element_line(colour = NA),
+        legend.position="none") 
+
+w
