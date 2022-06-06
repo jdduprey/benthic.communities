@@ -110,6 +110,8 @@ a %>%
 
 #########Model Comparison
 
+
+
 #It's clear these models all give sensible results. Let's do a model comparison to see which we prefer, given the costs of increasing complexity in the model (i.e., danger of overfitting)
 
 #loo is leave-one-out cross-validation, useful for getting out-of-sample estimates of the model's predictive power
@@ -162,7 +164,7 @@ p <- a %>%
   facet_grid(~native_bin) +
   theme_minimal() +
   theme(panel.border = element_rect(color = "black", fill = NA, size = 1)) +
-  theme(text = element_text(size = 20)) +
+  theme(text = element_text(size = 17)) +
   ylab("Introduced Species Richness") 
 p
 ggsave(p, file = "../figures/draft/two_Facets_modelFit.png")

@@ -16,6 +16,7 @@ library(gridExtra)
 library(tidystats)
 library(RColorBrewer)
 library(ggpubr)
+library(ggsci)
 
 nonnative_status <- read.csv("../docs/FINAL_all_species_dist.csv")
 #just_nonnative <- read.csv("../docs/just_the_suspects.csv")
@@ -116,6 +117,8 @@ allspecies_for_plot <- taxa_filter(n_detections_df, c(1, 0, "possible", "low", "
 # filter out all EXCEPT probable non-natives
 just_nonnative_events <- nonnatives_for_plot %>%
   filter(richness == 1)
+write_csv(just_nonnative_events, "../data/just_nonnative_events.csv")
+
 
 # filter out probable non-natives 
 just_native_events <- allspecies_for_plot %>%
@@ -233,14 +236,16 @@ ggplot(error_bar_plt, aes(x=mean_all_sp, y=mean_detections, color=site)) +
   scale_y_continuous(breaks=0:7)
 ggsave(filename="../figures/draft/SE_richness.png")
 
+# use this font size for all figures
 ggplot(SD_bar_plt, aes(x=mean_all_sp, y=mean_detections, color=site)) +
-  labs(x = "Native Species Richness", y = "Non-Native Species Richness") +
+  labs(x = "Native Species Richness", y = "Introduced Species Richness") +
   geom_point() +
-  scale_color_brewer(palette="Spectral") +
+  scale_color_brewer(palette="Spectral", name="Site") +
   theme_classic() +
   geom_errorbar(aes(ymin=ymin,ymax=ymax)) +
   geom_errorbarh(aes(xmin=xmin,xmax=xmax)) +
-  scale_y_continuous(breaks=0:7)
+  scale_y_continuous(breaks=0:7) +
+  theme(text = element_text(size = 17)) 
 ggsave(filename="../figures/draft/SD_richness.png")
 
 ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=region)) +
@@ -273,8 +278,7 @@ ggsave(filename="../figures/draft/richness_ratio_by_season.png")
 
 # raw number boxplot
 ggplot(total_nn_detections, aes(x=site, y=n_detections)) + 
-  labs(title = "Richness of Probable Non-Native Species",
-       x = "Site", y = "N Detections") +
+  labs(x = "Site", y = "Introduced Species Richness") +
   geom_boxplot() +
   theme_classic() +
   scale_y_continuous(breaks=1:9)
@@ -282,10 +286,10 @@ ggsave(filename="../figures/draft/probable_nonnative_richness.png")
 
 # proportion boxplot
 ggplot(nonnative_vs_all_species, aes(x=site, y=prop_nn)) + 
-  labs(title = "Proportion of Non-Native Species",
-       x = "Site", y = "Proportion Non-Native") +
+  labs(x = "Site", y = "Invasion Rate") +
   geom_boxplot() +
-  theme_classic()
+  theme_classic() +
+  theme(text = element_text(size = 17)) 
 ggsave(filename="../figures/draft/proportion_probable_nn.png")
 
 # calc mean invasion rate for draft
@@ -297,6 +301,7 @@ calc_mean_nn_vs_all_sp <- nonnative_vs_all_species %>%
 ggplot(total_nn_detections, aes(x=region, y=n_detections)) + 
   labs(title = "Richness of Probable Non-Native Species",
        x = "Region", y = "N Detections") +
+  theme(text = element_text(size = 17)) +
   geom_boxplot()
 ggsave(filename="../figures/draft/region_probable_nonn_richness.png")
 
@@ -318,13 +323,13 @@ ggplot(enviro_plot_df, aes(x = Salinity, y = prop_nn, color = site)) +
   theme_classic()
 ggsave(filename="../figures/draft/nn_prop_salinity.png")
 
-
-#TODO add regression line 
+# DRAFT SCATTERPLOT
 ggplot(enviro_plot_df, aes(x = Temperature, y = prop_nn, color = site)) +
-  labs(x = "Temperature (C)", y = "Proportion Non-Native", color = "Site") +
+  labs(x = "Temperature (C)", y = "Invasion Rate", color = "Site") +
   geom_point() +
-  scale_color_brewer(palette="Paired") +
-  theme_classic()
+  scale_color_manual(values=pal_jco("default")(8)) +
+  theme_classic() +
+  theme(text = element_text(size = 17)) 
 ggsave(filename="../figures/draft/nn_prop_temp.png")
 
 
@@ -441,10 +446,11 @@ ggplot(nonnative_vs_all_species_heat, aes(month, site, fill = mean_prop_nn)) +
   theme_classic() +
   scale_fill_distiller(palette = "RdYlBu") +
   geom_text(aes(label=mean_nnn)) +
-  labs(title="Mean Proportion (color) and Richness (numeral) of Introduced Species",
-       x ="Month", y = "Site", fill = "Proportion") +
+  labs(title="Mean Invasion Rate (color) and Introduced Species Richness (numeral)",
+       x ="Month", y = "Site", fill = "Invasion Rate") +
   theme(axis.line=element_blank(),
-        axis.ticks=element_blank())
+        axis.ticks=element_blank()) +
+  theme(text = element_text(size = 13)) 
 ggsave(filename="../figures/draft/invasion_heatmap.png")
 
 # stacked bar madness (sites and months)
@@ -472,9 +478,9 @@ print(unique(stacked_bar_df$phylum))
 ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) + 
   geom_bar(position = "stack", stat = "identity", color = "black") +
   scale_fill_manual(values = phyla_colors) +
-  labs(title="Unique Introduced Species Detected by Site",
-       x ="Site", y = "Unique Introduced Species Detections", fill = "Phyla") +
+  labs(x ="Site", y = "Unique Introduced Species Detections", fill = "Phyla") +
   theme_classic() +
+  theme(text = element_text(size = 17)) +
   scale_y_continuous(breaks=0:16, limits = c(0,17), expand = c(0,0)) +
   theme(legend.key.size = unit(1, 'cm'), #change legend key size
         legend.key.height = unit(1, 'cm'), #change legend key height

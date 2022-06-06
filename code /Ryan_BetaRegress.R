@@ -1,10 +1,11 @@
+
 library(tidyverse)
 library(rstanarm)
 #library(lme4)
 library(betareg)
 #options(mc.cores = parallel::detectCores())
 
-a <- read.csv("joe_invasives.csv", row.names = 1) %>% 
+a <- read.csv("../data/joe_invasives.csv", row.names = 1) %>% 
   mutate(native_richness = all_sp_richness - nn_sp_richness) %>% 
   drop_na() %>% 
   mutate(prop_nn = ifelse(prop_nn == 0, 1e-7, prop_nn)) #can't be exactly zero for beta regression
@@ -24,7 +25,9 @@ a$stanPredict <- posterior_predict(stan1) %>% colMeans()
 a %>% 
   ggplot(aes(x = Temperature, y = prop_nn)) +
   geom_point() +
+  labs(x="Temperature", y="Invasion Rate") +
   geom_smooth(aes(x = Temperature, y = stanPredict), color = "lightblue", alpha = 0.5) +
-  geom_point(aes(x = Temperature, y = stanPredict), color = "blue")
+  geom_point(aes(x = Temperature, y = stanPredict), color = "blue") +
+  theme_minimal()
 
 
