@@ -24,13 +24,26 @@ one_line_per_species <- one_line_per_hash %>%
   group_by(species) %>%
   top_n(1, pident)
 
+nn_one_line_per_species <- nn_one_line_per_hash %>%
+  group_by(species) %>%
+  top_n(1, pident)
+
+
+# =============================
+#TODO select the lowest (or highest?? evalue )
+# see monchos comment
 
 
 # ==============================
 distinct_species <- one_line_per_species %>%
   distinct(species, pident)
 
-vec_pident <- left_join(nonnative_vec, distinct_species)
+nn_distinct_species <- nn_one_line_per_species %>%
+  distinct(species, pident)
+
+concatted_distinct_species <- bind_rows(distinct_species, nn_distinct_species)
+
+vec_pident <- left_join(nonnative_vec, concatted_distinct_species)
 
 sum(is.na(vec_pident$pident))
 
