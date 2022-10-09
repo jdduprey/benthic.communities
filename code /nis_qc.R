@@ -87,7 +87,7 @@ QCQA_invasive_df <- QCQA_invasive_df %>%
 
 length(unique(QCQA_invasive_df$species))
 # create BLAST output non-native 
-write_csv(QCQA_native_df, "../data/QC/BLAST_OUTPUT_NON_NATIVE.csv")
+write_csv(QCQA_invasive_df, "../data/QC/BLAST_OUTPUT_NON_NATIVE.csv")
 # TODO output single top result per seq/hash
 #========================================================
 
