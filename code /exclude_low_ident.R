@@ -22,11 +22,13 @@ nn_one_line_per_hash <- blast_output_non_native %>%
 # ==============================
 one_line_per_species <- one_line_per_hash %>%
   group_by(species) %>%
-  top_n(1, pident)
+  top_n(1, pident) %>%
+  slice_min(n=1, order_by=evalue)
 
 nn_one_line_per_species <- nn_one_line_per_hash %>%
   group_by(species) %>%
-  top_n(1, pident)
+  top_n(1, pident) %>%
+  slice_min(n=1, order_by=evalue)
 
 
 # =============================
@@ -36,10 +38,10 @@ nn_one_line_per_species <- nn_one_line_per_hash %>%
 
 # ==============================
 distinct_species <- one_line_per_species %>%
-  distinct(species, pident)
+  distinct(species, pident, evalue, Hash)
 
 nn_distinct_species <- nn_one_line_per_species %>%
-  distinct(species, pident)
+  distinct(species, pident, evalue, Hash)
 
 concatted_distinct_species <- bind_rows(distinct_species, nn_distinct_species)
 
