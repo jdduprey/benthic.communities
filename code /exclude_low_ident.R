@@ -23,12 +23,14 @@ nn_one_line_per_hash <- blast_output_non_native %>%
 one_line_per_species <- one_line_per_hash %>%
   group_by(species) %>%
   top_n(1, pident) %>%
-  slice_min(n=1, order_by=evalue)
+  slice_min(n=1, order_by=evalue) %>%
+  slice_max(n=1, order_by=Hash)
 
 nn_one_line_per_species <- nn_one_line_per_hash %>%
   group_by(species) %>%
   top_n(1, pident) %>%
-  slice_min(n=1, order_by=evalue)
+  slice_min(n=1, order_by=evalue) %>% 
+  slice_max(n=1, order_by=Hash)
 
 # create csv with pident, evalue, hash, species 
 # to clearly demonstrate how low pident ASVs were excluded 
