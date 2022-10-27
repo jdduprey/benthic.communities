@@ -30,12 +30,8 @@ nn_one_line_per_species <- nn_one_line_per_hash %>%
   top_n(1, pident) %>%
   slice_min(n=1, order_by=evalue)
 
-
-# =============================
-#TODO select the lowest (or highest?? evalue )
-# see monchos comment
-
-
+# create csv with pident, evalue, hash, species 
+# to clearly demonstrate how low pident ASVs were excluded 
 # ==============================
 distinct_species <- one_line_per_species %>%
   distinct(species, pident, evalue, Hash)
@@ -49,3 +45,4 @@ vec_pident <- left_join(nonnative_vec, concatted_distinct_species)
 
 sum(is.na(vec_pident$pident))
 
+write_csv(vec_pident, "../data/species_hash_pident_evalue_nativestatus.csv")
