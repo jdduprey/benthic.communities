@@ -175,19 +175,21 @@ ggsave(p, file = "../figures/draft/two_Facets_modelFit.png")
 
 print(table(p[["data"]]$native_bin))
 
-# plot high and low lines on the same graph
+# plot high andlow lines on the same graph
 q <- a %>% 
-  mutate(native_bin = cut(native_richness, c(24,52,107), labels = FALSE)) %>% 
+  mutate(native_bin = cut(native_richness, c(18,40,85), labels = FALSE)) %>% 
   mutate(native_bin = case_when(native_bin == 1 ~ "Lower Native Richness",
                                 native_bin == 2 ~ "Higher Native Richness")) %>%
-  ggplot(aes(x = Temperature, y = nn_sp_richness)) +
-  geom_point(col = "grey20") +
-  geom_point(aes(x = Temperature, y = poisMod4_pred), col = "#fc4e2a") + #plot model prediction
-  geom_smooth(aes(x = Temperature, y = poisMod4_pred), col = "#fc4e2a", se = F, method = "glm", method.args = list(family = "poisson")) +
-  geom_smooth(aes(x = Temperature, y = poisMod4_25), col = "grey50", se = F, method = "glm", method.args = list(family = "poisson")) +
-  geom_smooth(aes(x = Temperature, y = poisMod4_75), col = "grey50", se = F, method = "glm", method.args = list(family = "poisson")) +
-  facet_grid(~native_bin) +
-  ylab("Non-Native Diversity") 
+  ggplot(aes(x = Temperature, y = nn_sp_richness, color=native_bin)) +
+  geom_point() +
+  #geom_point(aes(x = Temperature, y = poisMod4_pred, color=native_bin)) + #plot model prediction
+  geom_smooth(aes(x = Temperature, y = poisMod4_pred, color=native_bin), se = F, method = "glm", method.args = list(family = "poisson")) +
+  geom_smooth(aes(x = Temperature, y = poisMod4_25, color=native_bin), se = F, method = "glm", method.args = list(family = "poisson"), linetype="dotted") +
+  geom_smooth(aes(x = Temperature, y = poisMod4_75, color=native_bin), se = F, method = "glm", method.args = list(family = "poisson"), linetype="dotted") +
+  #facet_grid(~native_bin) +
+  ylab("Non-Native Species Richness") +
+  theme_minimal() +
+  theme(panel.border = element_rect(color = "black", fill = NA, size = 1)) 
 q
 ggsave(p, file = "threeFacets_modelFit.pdf")
 
