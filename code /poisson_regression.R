@@ -150,8 +150,12 @@ a %>%
   geom_smooth(aes(x = Temperature, y = poisMod4_75), col = "grey50", se = F, method = "glm", method.args = list(family = "poisson"))
 
 #split out into high/med/low native diversity environments, just to see what that looks like:
+#TODO readjust bins for visualization with new values
+print(max(a$native_richness))
+print(min(a$native_richness))
+
 p <- a %>% 
-  mutate(native_bin = cut(native_richness, c(24,52,107), labels = FALSE)) %>% 
+  mutate(native_bin = cut(native_richness, c(18,40,85), labels = FALSE)) %>% 
   mutate(native_bin = case_when(native_bin == 1 ~ "Lower Native Richness",
                                 native_bin == 2 ~ "Higher Native Richness")) %>%
   ggplot(aes(x = Temperature, y = nn_sp_richness)) +
