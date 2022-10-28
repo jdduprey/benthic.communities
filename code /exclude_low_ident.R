@@ -47,4 +47,4 @@ vec_pident <- left_join(nonnative_vec, concatted_distinct_species)
 
 sum(is.na(vec_pident$pident))
 
-write_csv(vec_pident, "../data/species_hash_pident_evalue_nativestatus.csv")
+# write_csv(vec_pident, "../data/species_hash_pident_evalue_nativestatus.csv")

@@ -9,7 +9,7 @@ library(viridis)
 #   mutate(native_richness = all_sp_richness - nn_sp_richness) %>% 
 #   drop_na()
 
-# updated counts as of 05/05/2022
+# TODO update counts, last updated counts as of 05/05/2022
 a <- read.csv("../data/species_counts_inv_rate.csv", row.names = 1) %>% 
   mutate(native_richness = all_sp_richness - nn_sp_richness) %>% 
   drop_na()
