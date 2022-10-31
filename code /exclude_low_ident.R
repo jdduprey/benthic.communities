@@ -36,10 +36,10 @@ nn_one_line_per_species <- nn_one_line_per_hash %>%
 # to clearly demonstrate how low pident ASVs were excluded 
 # ==============================
 distinct_species <- one_line_per_species %>%
-  distinct(species, pident, evalue, Hash)
+  distinct(species, pident, evalue, Hash, qlen)
 
 nn_distinct_species <- nn_one_line_per_species %>%
-  distinct(species, pident, evalue, Hash)
+  distinct(species, pident, evalue, Hash, qlen)
 
 concatted_distinct_species <- bind_rows(distinct_species, nn_distinct_species)
 
@@ -47,4 +47,4 @@ vec_pident <- left_join(nonnative_vec, concatted_distinct_species)
 
 sum(is.na(vec_pident$pident))
 
-# write_csv(vec_pident, "../data/species_hash_pident_evalue_nativestatus.csv")
+#write_csv(vec_pident, "../data/species_hash_qlen_evalue_nativestatus.csv")

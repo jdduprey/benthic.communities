@@ -176,10 +176,11 @@ ggsave(p, file = "../figures/draft/two_Facets_modelFit.png")
 print(table(p[["data"]]$native_bin))
 
 # plot high andlow lines on the same graph
+# TODO fix color and legend label
 q <- a %>% 
   mutate(native_bin = cut(native_richness, c(18,40,85), labels = FALSE)) %>% 
-  mutate(native_bin = case_when(native_bin == 1 ~ "Lower Native Richness",
-                                native_bin == 2 ~ "Higher Native Richness")) %>%
+  mutate(native_bin = case_when(native_bin == 1 ~ "Lower Native Richness \nSamples",
+                                native_bin == 2 ~ "Higher Native Richness \nSamples")) %>%
   ggplot(aes(x = Temperature, y = nn_sp_richness, color=native_bin)) +
   geom_point() +
   #geom_point(aes(x = Temperature, y = poisMod4_pred, color=native_bin)) + #plot model prediction
@@ -189,6 +190,7 @@ q <- a %>%
   #facet_grid(~native_bin) +
   ylab("Non-Native Species Richness") +
   theme_minimal() +
+  scale_color_manual(values=c("#253494", "#e31a1c"), name="") +
   theme(panel.border = element_rect(color = "black", fill = NA, size = 1)) 
 q
 ggsave(p, file = "threeFacets_modelFit.pdf")
