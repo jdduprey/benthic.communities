@@ -207,42 +207,44 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
 ggsave(filename="../figures/draft/richness_ratio_by_site.png")
 
 # calculate SE and SD error bars! 
-error_bar_plt <- nonnative_vs_all_species %>%
-  group_by(site) %>%
-  mutate(mean_detections = mean(n_detections)) %>%
-  mutate(mean_all_sp = mean(all_sp_detections)) %>%
-  mutate(SE_nonnative = sd(n_detections) / sqrt(n())) %>%
-  mutate(SE_all_sp = sd(all_sp_detections) / sqrt(n())) %>%
-  mutate(ymin = mean_detections - 0.5 * SE_nonnative) %>%
-  mutate(ymax = mean_detections + 0.5 * SE_nonnative) %>%
-  mutate(xmin = mean_all_sp - 0.5 * SE_all_sp) %>%
-  mutate(xmax = mean_all_sp + 0.5 * SE_all_sp)
+# error_bar_plt <- nonnative_vs_all_species %>%
+#   group_by(site) %>%
+#   mutate(mean_detections = mean(n_detections)) %>%
+#   mutate(mean_all_sp = mean(all_sp_detections)) %>%
+#   mutate(SE_nonnative = sd(n_detections) / sqrt(n())) %>%
+#   mutate(SE_all_sp = sd(all_sp_detections) / sqrt(n())) %>%
+#   mutate(ymin = mean_detections - 0.5 * SE_nonnative) %>%
+#   mutate(ymax = mean_detections + 0.5 * SE_nonnative) %>%
+#   mutate(xmin = mean_all_sp - 0.5 * SE_all_sp) %>%
+#   mutate(xmax = mean_all_sp + 0.5 * SE_all_sp)
+SD_bar_plot_df <- nonnative_vs_all_species
+SD_bar_plot_df$native_richness <- SD_bar_plot_df$all_sp_detections - SD_bar_plot_df$n_detections
 
-SD_bar_plt <- nonnative_vs_all_species %>%
+SD_bar_plt <- SD_bar_plot_df %>%
   group_by(site) %>%
   mutate(mean_detections = mean(n_detections)) %>%
-  mutate(mean_all_sp = mean(all_sp_detections)) %>%
+  mutate(mean_native = mean(native_richness)) %>%
   mutate(SE_nonnative = sd(n_detections)) %>%
-  mutate(SE_all_sp = sd(all_sp_detections)) %>%
+  mutate(SE_native = sd(native_richness)) %>%
   mutate(ymin = mean_detections - 0.5 * SE_nonnative) %>%
   mutate(ymax = mean_detections + 0.5 * SE_nonnative) %>%
-  mutate(xmin = mean_all_sp - 0.5 * SE_all_sp) %>%
-  mutate(xmax = mean_all_sp + 0.5 * SE_all_sp)
+  mutate(xmin = mean_native - 0.5 * SE_native) %>%
+  mutate(xmax = mean_native + 0.5 * SE_native)
 
 # plots with error bars SE vs SD 
-ggplot(error_bar_plt, aes(x=mean_all_sp, y=mean_detections, color=site)) +
-  labs(title = "Richness by Site",
-       x = "Native Richness", y = "Non-Native Richness") +
-  geom_point() +
-  scale_color_brewer(palette="Spectral") +
-  theme_classic() +
-  geom_errorbar(aes(ymin=ymin,ymax=ymax)) +
-  geom_errorbarh(aes(xmin=xmin,xmax=xmax)) +
-  scale_y_continuous(breaks=0:7)
-ggsave(filename="../figures/draft/SE_richness.png")
+# ggplot(error_bar_plt, aes(x=mean_all_sp, y=mean_detections, color=site)) +
+#   labs(title = "Richness by Site",
+#        x = "Native Richness", y = "Non-Native Richness") +
+#   geom_point() +
+#   scale_color_brewer(palette="Spectral") +
+#   theme_classic() +
+#   geom_errorbar(aes(ymin=ymin,ymax=ymax)) +
+#   geom_errorbarh(aes(xmin=xmin,xmax=xmax)) +
+#   scale_y_continuous(breaks=0:7)
+# ggsave(filename="../figures/draft/SE_richness.png")
 
 # use this font size for all figures
-ggplot(SD_bar_plt, aes(x=mean_all_sp, y=mean_detections, color=site)) +
+ggplot(SD_bar_plt, aes(x=mean_native, y=mean_detections, color=site)) +
   labs(x = "Native Species Richness", y = "Non-native Species Richness") +
   geom_point() +
   scale_color_brewer(palette="Spectral", name="Site") +
