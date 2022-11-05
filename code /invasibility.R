@@ -116,7 +116,8 @@ taxa_filter <- function(df, dist_status) {
 
 # use function to get df of all species, and just non-natives 
 nonnatives_for_plot <- taxa_filter(n_detections_df, c(1)) ###### SWITCH FROM PROBABLE TO POSSIBLE ######
-allspecies_for_plot <- taxa_filter(n_detections_df, c(1, 0, "cryptogenic", "exclude"))
+allspecies_for_plot <- taxa_filter(n_detections_df, c(1, 0, "cryptogenic"))
+
 
 # filter out all EXCEPT probable non-natives
 just_nonnative_events <- nonnatives_for_plot %>%
@@ -127,7 +128,7 @@ write_csv(just_nonnative_events, "../data/just_nonnative_events.csv")
 # filter out probable non-natives 
 just_native_events <- allspecies_for_plot %>%
   filter(richness == 1) %>%
-  filter(nonnative %in% c(0, "cryptogenic", "exclude")) # change as appropriate for chisquared format
+  filter(nonnative %in% c(0, "cryptogenic")) 
 
 # sum presence absence to get non-native richness for each sampling event 
 total_nn_detections <- nonnatives_for_plot %>%

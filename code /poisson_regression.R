@@ -193,7 +193,7 @@ q <- a %>%
   scale_color_manual(values=c("#253494", "#e31a1c"), name="") +
   theme(panel.border = element_rect(color = "black", fill = NA, size = 1)) 
 q
-ggsave(p, file = "threeFacets_modelFit.pdf")
+ggsave(p, file = "overlapping_pois.pdf")
 
 # ==============================================================
 # two dimensional plot of native richness and temperature
