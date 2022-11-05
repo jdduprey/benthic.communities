@@ -394,36 +394,6 @@ site_native_barchart_df <- unique_nat_species_by_site %>%
   mutate(n_native_species = n()) %>%
   distinct(site, n_native_species)
 
-# combine the unique non-native species from each region with the 
-# unique native species into a single table, this could be modified
-# to be by site as well - which might be more relevant to the research question
-chi_sq_df_region <- data.frame(region = region_barchart_df$region,    ### SITE/REGION
-                            nonative = region_barchart_df$n_nonn_species,
-                            native = region_native_barchart_df$n_native_species)
-
-chi_sq_df_site <- data.frame(site = site_barchart_df$site,
-                             nonative = site_barchart_df$n_nonn_species,
-                             native = site_native_barchart_df$n_native_species)
-
-
-# format the 2xX table into right format for chi-squared test
-row.names(chi_sq_df_region) <- chi_sq_df_region$region ### SITE/REGION
-chi_sq_df_region <- chi_sq_df_region %>%
-  select(-region)
-
-pdf("../figures/draft/region_table.pdf")
-grid.table(chi_sq_df_region)
-dev.off()
-
-row.names(chi_sq_df_site) <- chi_sq_df_site$site
-chi_sq_df_site <- chi_sq_df_site %>%
-  select(-site)
-
-pdf("../figures/draft/site_table.pdf")
-grid.table(chi_sq_df_site)
-dev.off()
-
-
 # INVASION RATE ACROSS SPACE AND TIME (sites and months)
 # ====================================================  
 nonnative_vs_all_species_heat <- nonnative_vs_all_species %>%
