@@ -1,6 +1,5 @@
 # INVASIBILITY  
 # Joe Duprey
-# Last Edited: 03/16/2022
 # ====================================================
 # "I would pick a few things you're confident in, and do a prelim analysis, 
 # to see if the hypothesis holds water. Then, if it does, we can do more work 
@@ -293,7 +292,7 @@ ggsave(filename="../figures/draft/probable_nonnative_richness.png")
 
 # proportion boxplot
 ggplot(nonnative_vs_all_species, aes(x=site, y=prop_nn)) + 
-  labs(x = "Site", y = "Invasion Rate") +
+  labs(x = "Site", y = "Relative Non-native Richness") +
   geom_boxplot() +
   theme_classic() +
   theme(text = element_text(size = 17)) 
@@ -332,7 +331,7 @@ ggsave(filename="../figures/draft/nn_prop_salinity.png")
 
 # DRAFT SCATTERPLOT
 ggplot(enviro_plot_df, aes(x = Temperature, y = prop_nn, color = site)) +
-  labs(x = "Temperature (C)", y = "Invasion Rate", color = "Site") +
+  labs(x = "Temperature (C)", y = "Relative Non-native Richness", color = "Site") +
   geom_point() +
   scale_color_manual(values=pal_jco("default")(8)) +
   theme_classic() +
@@ -423,7 +422,7 @@ ggplot(nonnative_vs_all_species_heat, aes(month, site, fill = mean_prop_nn)) +
   theme_classic() +
   scale_fill_distiller(palette = "RdYlBu") +
   geom_text(aes(label=mean_nnn)) +
-  labs(x ="Month", y = "Site", fill = "Invasion Rate") +
+  labs(x ="Month", y = "Site", fill = "Relative \nNon-native \nRichness") +
   theme(axis.line=element_blank(),
         axis.ticks=element_blank()) +
   theme(text = element_text(size = 13)) 
@@ -432,23 +431,27 @@ ggsave(filename="../figures/draft/invasion_heatmap.png")
 # stacked bar madness (sites and months)
 # ====================================================  
 stacked_bar_df <- left_join(unique_species_by_site, species_annotated) 
+# save stacked_bar_df in order to make manual corrections to algal phyla/classes
+write_csv(stacked_bar_df, "../data/stacked_bar_df.csv")
+alga_stack <- read_csv("../data/stacked_bar_df_algal_corrections.csv")
 
 #TODO make the propagule bar chart - i do think this would be informative
 #propagule_stack <- left_join(unique_species_by_site, nonnative_status)
 
-stacked_bar_df$site <- factor(stacked_bar_df$site, 
+alga_stack$site <- factor(alga_stack$site, 
                              levels = c("TW", "PO", "LL", "TR", "SA", "FH", "CP", "LK"))
 
-stacked_bar_df <- stacked_bar_df %>%
+alga_stack <- alga_stack %>%
   mutate(nonnative = as.integer(nonnative))
 
-#TODO these colors should be changed for visual clarity 
-phyla_colors <- c("Mollusca" = "#5e3c99", "Florideophyceae" = "#ca0020", 
+phyla_colors <- c("Mollusca" = "#5e3c99", "Rhodophyta" = "#ca0020", 
                   "Cnidaria" = "#66c2a4", "Chordata" = "#92c5de",
                   "Arthropoda" = "#fc8d59", "Annelida" = "#023858", 
                   "Bangiophyceae" = "#662506", "Dictyochophyceae" = "#fed976")
 
 print(unique(stacked_bar_df$phylum))
+
+
 
 # stacked bar plot code 
 ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) + 
