@@ -447,14 +447,14 @@ alga_stack <- alga_stack %>%
 phyla_colors <- c("Mollusca" = "#5e3c99", "Rhodophyta" = "#ca0020", 
                   "Cnidaria" = "#66c2a4", "Chordata" = "#92c5de",
                   "Arthropoda" = "#fc8d59", "Annelida" = "#023858", 
-                  "Bangiophyceae" = "#662506", "Dictyochophyceae" = "#fed976")
+                  "Ochrophyta" = "#edbc3d")
 
-print(unique(stacked_bar_df$phylum))
+print(unique(alga_stack$phylum))
 
 
 
 # stacked bar plot code 
-ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) + 
+ggplot(alga_stack, aes(x = site, y = nonnative, fill = phylum)) + 
   geom_bar(position = "stack", stat = "identity", color = "black") +
   scale_fill_manual(values = phyla_colors) +
   labs(x ="Site", y = "Unique Non-native Species Detections", fill = "Phyla") +
