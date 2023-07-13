@@ -1,0 +1,405 @@
+species,nonnative,evalue,pident,Hash
+Pythium tracheiphilum,exclude,NA,NA,NA
+Navicula cryptocephala,exclude,NA,NA,NA
+Saprolegnia diclina,exclude,NA,NA,NA
+Lichtheimia ramosa,exclude,NA,NA,NA
+Blastocladiella emersonii,exclude,NA,NA,NA
+Pythium pachycaule,exclude,NA,NA,NA
+Pyramimonas parkeae,exclude,NA,NA,NA
+Pythium sp. CAL-2011c,exclude,NA,NA,NA
+Gomphonema clevei,exclude,NA,NA,NA
+Phytophthora multivora,exclude,NA,NA,NA
+Albugo candida,exclude,NA,NA,NA
+Apodachlya minima,exclude,NA,NA,NA
+Clytia gracilis,exclude,NA,NA,NA
+Navicula ramosissima,exclude,NA,NA,NA
+Phytophthora taxon paludosa,exclude,NA,NA,NA
+Anisolpidium ectocarpii,exclude,NA,NA,NA
+Ectocarpus siliculosus,exclude,NA,NA,NA
+Nicolea zostericola,exclude,NA,NA,NA
+Phytophthora riparia,exclude,NA,NA,NA
+Mayamaea permitis,exclude,NA,NA,NA
+Obelia bidentata,exclude,NA,NA,NA
+Aphanomyces sp. BOLD:AAO9952,exclude,NA,NA,NA
+Nitzschia palea,exclude,NA,NA,NA
+Pythium acanthicum,exclude,NA,NA,NA
+Sellaphora bacillum,exclude,NA,NA,NA
+Phytophthora megasperma,exclude,NA,NA,NA
+Polycirrus sp. CMC05,exclude,NA,NA,NA
+Salispina spinosa,exclude,NA,NA,NA
+Thelepus cincinnatus,exclude,NA,NA,NA
+Haptoglossa zoospora,exclude,NA,NA,NA
+Pinnularia acrosphaeria,exclude,NA,NA,NA
+Cordyceps militaris,exclude,NA,NA,NA
+Hartmannella cantabrigiensis,exclude,NA,NA,NA
+Lagenidium giganteum,exclude,NA,NA,NA
+Megacyclops viridis,exclude,NA,NA,NA
+Peronospora violae,exclude,NA,NA,NA
+Pinnularia subanglica,exclude,NA,NA,NA
+Pythium periplocum,exclude,NA,NA,NA
+Rhodomonas salina,exclude,NA,NA,NA
+Melosira ambiqua,exclude,NA,NA,NA
+Myxicola infundibulum CMC02,exclude,NA,NA,NA
+Phytophthora siskiyouensis,exclude,NA,NA,NA
+Phytophthora sp. 2 EEO-2011,exclude,NA,NA,NA
+Rhyacodrilus falciformis,exclude,NA,NA,NA
+Amynthas sp. FJ201111-06,exclude,NA,NA,NA
+Cochliopodium sp. SG-2014,exclude,NA,NA,NA
+Fistulifera pelliculosa,exclude,NA,NA,NA
+Glarea lozoyensis,exclude,NA,NA,NA
+Marionina sp. F LM-2012,exclude,NA,NA,NA
+Pedospumella encystans,exclude,NA,NA,NA
+Phytopythium helicoides,exclude,NA,NA,NA
+Plectus aquatilis,exclude,NA,NA,NA
+Pseudobradya attenuata,exclude,NA,NA,NA
+Pythium aff. diclinum,exclude,NA,NA,NA
+Spongospora subterranea,exclude,NA,NA,NA
+Azumapecten farreri,exclude,NA,NA,NA
+Loxothylacus panopaei,exclude,NA,NA,NA
+Notheia anomala,exclude,NA,NA,NA
+Clytia folleata,exclude,NA,NA,NA
+Bursaphelenchus cocophilus,exclude,NA,NA,NA
+Macoma petalum,exclude,NA,NA,NA
+Pennaria disticha,exclude,NA,NA,NA
+Striaria attenuata,exclude,NA,NA,NA
+Platyias quadricornis,exclude,NA,NA,NA
+Pinnularia parvulissima,exclude,NA,NA,NA
+Haramonas dimorpha,exclude,NA,NA,NA
+Halidrys siliquosa,exclude,NA,NA,NA
+Cylindrotheca fusiformis,exclude,NA,NA,NA
+Nanomia cara,exclude,NA,NA,NA
+Martensia jejuensis,exclude,NA,NA,NA
+Kellia porculus,exclude,NA,NA,NA
+Polydora lingshuiensis,exclude,NA,NA,NA
+Ameritella mitchelli,exclude,NA,NA,NA
+Chordariaceae sp. 7 AP-2014,exclude,NA,NA,NA
+Brachionidae sp. SHYT150702c,exclude,NA,NA,NA
+Chaetoceros sp. MBTD-CMFRI-S062,exclude,NA,NA,NA
+Navicula sp. BOLD:AAO6950,exclude,NA,NA,NA
+Chordariaceae sp. 2 AP-2014,exclude,NA,NA,NA
+Chaetoceros sp. MBTD-CMFRI-S045,exclude,NA,NA,NA
+Thelepus sp. CMC01,exclude,NA,NA,NA
+Chrysonoma sp. ANIC15,exclude,NA,NA,NA
+Tylos sp. clade D MM-2013,exclude,NA,NA,NA
+Haptoglossa sp. DM2 4/12,exclude,NA,NA,NA
+Placoneis sp. WJS-2015a,exclude,NA,NA,NA
+Loxosomella sp. JM-2012,exclude,NA,NA,NA
+Polychaeta sp. NB-Po356,exclude,NA,NA,NA
+Sphacelaria sp. 2 AP-2014,exclude,NA,NA,NA
+Micromonas pusilla,0,7.14E-161,100,6f98e637735b187cd156c79b8f022a0bc63d5fc5
+Cylindrotheca closterium,0,7.40E-136,100,d6639cd7025a587235583eed56bedf8178f0de32
+Chaetoceros socialis,0,1.55E-157,100,5846d022f4dc9c22f746488ff272c67a14358bc7
+Emiliania huxleyi,0,2.10E-121,100,ca3704dce2d78f94bdfb30d96ed89a4cb501024b
+Homo sapiens,0,7.14E-161,100,9ebd0bcbae3f4ee1f10ba13d858e85af17744e67
+Ditylum brightwellii,0,1.55E-157,100,ce4b631f7197a9ae1a25a7669453176e10d5856a
+Heterocapsa rotundata,0,1.55E-162,100,49f3860c3bfcdf72fae55203367fb01a5a27ca53
+Balanus glandula,0,7.14E-161,100,e88f257a811ab64fae1ab888fb3476aa6b16127c
+Littorina plena,0,7.14E-161,100,94d2f86435d8ddbb6dfd2b7dca137a7f99f242f7
+Protoperidinium cf. depressum,0,1.55E-162,100,9f2926db5af58c811ee6a0536f3190b206b3f087
+Pseudocalanus newmani,0,7.14E-161,100,17585e5fc601ba25d02d211cce3435af5a395c4d
+Lottia paradigitalis,0,7.14E-161,100,3f007703a93914cb5b5e0171f9c17ce5b30b401a
+Centropages abdominalis,0,7.14E-161,100,b8f4c7ca84715db8927c1fa502603a55d471c55c
+Acartia longiremis,0,7.14E-161,100,7310dcc0eabb15f0cde907e72f2aafb52096d131
+Balanus balanus,0,7.14E-161,100,def7571b9cdeb6c938dfb7d22b0a793f6a588aca
+Halichondria panicea,0,7.14E-161,100,cca5f41045b0a61fb8e919016701b50f441cd401
+Chthamalus dalli,0,2.00E-156,100,dc623066ed985c38d9b247d54524b311fa74c746
+Mytilus trossulus,0,7.14E-161,100,f3f98b86fede5a24c54d9d3757362f2445207d94
+Dendraster excentricus,0,7.14E-161,100,ecd49d946e17684c39f30b9b6f2502fa1675e256
+Membranipora membranacea,0,2.04E-141,100,be4750597645c2d51986e9d42d5cd1c98fd63948
+Pseudo-nitzschia hasleana,0,7.14E-161,100,4e584bddfd0f137937ad3cf9dcb09560936aa6e2
+Chondracanthus exasperatus,0,7.14E-161,100,0d69e93482c776c5619300f4d157be03c4c4051f
+Mazzaella splendens,0,7.14E-161,100,e6e5abd74e5054080c9b7e680a404d488242d52a
+Saxidomus gigantea,0,7.14E-161,100,8de8b48837c7c4dfd482f7a8a261ed203222fc9a
+Corallina vancouveriensis,0,7.14E-161,100,9c38cf57434c6790d94ce2e6587c1b4e3805fc15
+Semibalanus cariosus,0,7.14E-161,100,e56397b8e570129548d432a793614ba77c8a0b74
+Thelepus crispus,0,7.14E-161,100,73c80654aa649f25295efe54e76d315baa4b08fb
+Fucus distichus,0,7.14E-161,100,2ab67b2fda0e32aed8092f56d51213601b7999a9
+Nereis vexillosa,0,7.14E-161,100,035c135c2b278606c468c37d9e45bda43f053d70
+Nereocystis luetkeana,0,7.14E-161,100,47c7ddbe04be4633c912c4f90d3c34136e0bb992
+Polysiphonia hendryi,0,7.14E-161,100,ac0b62928cd9e48b5dd97908cc73b19a98c30370
+Porichthys notatus,0,7.14E-161,100,ec5cd74d72357ca76a3f22758951d31787ac9011
+Stephanopyxis turris,0,7.14E-161,100,1dd0877fe62a2372afb11c17e5ab2f19da812782
+Leathesia marina,0,7.14E-161,100,6da8e4419e0e8a11995977144108fd3f93f5fe55
+Littorina scutulata,0,7.14E-161,100,c50eff2015daa84cb9649c08c265532c76af0f65
+Strongylocentrotus droebachiensis,0,7.14E-161,100,45450ae32e7241c4f9ff1d77a183517eabc1c8dc
+Macoma nasuta,0,2.57E-160,100,10238902d3e2bf02944c188fab744d51e1af6b8f
+Oncorhynchus keta,0,7.14E-161,100,5849e601a7132ed5458d0f1a7ed94b5c83c71b74
+Smithora naiadum,0,7.14E-161,100,b3dfe8ed70991183fe386f070ee1d5a5373ba5e5
+Wildemania amplissima,0,7.14E-161,100,c1a67e67b62d836c1f4931f2cd4baa3bcf88d19e
+Hemigrapsus oregonensis,0,7.14E-161,100,3fffa7f992b4ee08ff0a6064f032691fbdc6dfd3
+Platynereis bicanaliculata,0,7.14E-161,100,ea625d2852a07a30bef375abc651408b6de471d1
+Pyropia fallax,0,7.14E-161,100,8b840ebf9be71fa8c1742747bb135b1d419c2f24
+Acrochaetium arcuatum,0,7.14E-161,100,6f6ff49e1f9584d2a3482a8649c13ae50bdd6be1
+Petalonia fascia,0,7.14E-161,100,a419c48e8f2f74d8779250f10300758e6cfb684f
+Pisaster ochraceus,0,7.14E-161,100,c7fd0efaaeea3e37f9b44a97a2c0fdd1582e9462
+Pterosiphonia bipinnata,0,7.14E-161,100,e9dd2e0184c92fac4728650509f30fe68e1eeae8
+Rhodotorula taiwanensis,0,7.14E-161,100,1dbc86d67295c0e72afdfb00d7d89771966ea6f3
+Boccardia proboscidea,0,7.14E-161,100,e3b5538e08b616a75f876dd93fc4431a1aa4a7cf
+Lacuna vincta,0,7.14E-161,100,6d576b6b0612be29d295752f6aa2ec7869ef35d4
+Littorina sitkana,0,7.14E-161,100,3f50cfe214160ace51e8a7cefe49445a40fb2a0a
+Mesocentrotus franciscanus,0,2.56E-160,100,a19bfe601d7dd26722164159d592001cfe58585f
+Odonthalia floccosa,0,7.14E-161,100,cc0a94bf8c7fe1b4274b2d44adec6891e8451b38
+Phacellophora camtschatica,0,7.14E-161,100,b5c54c111eb9ed6b896dad8022f1ae1a3d6ae0cf
+Penicillium rubens,0,7.14E-161,100,6bc93b2e3701300c6d46e4768655b3cbd48866ec
+Devaleraea mollis,0,7.14E-161,100,eaae1f1cb6f3efa59e1321422cc5d1b54f8d1ed6
+Evasterias troschelii,0,7.14E-161,100,38a7c1029a37241bb44b8ff9e629c30629f97584
+Gallus gallus,0,7.14E-161,100,344467a60c385dcb1665556874a4309471e827cd
+Leptasterias hexactis,0,7.14E-161,100,d5d12752e9dca5a62f964da275267d617e480c48
+Cymatogaster aggregata,0,7.14E-161,100,ffa9af3c2e6fcacb587d5aa3b7b6b27b726ffdfb
+Dodecaceria sp. CMC01,0,7.14E-161,100,b3d6bdb1b90236c17bbf72dc8cda864e031ee959
+Eunice valens,0,9.17E-160,100,984c43b2fbaf89effac01093a4f20c9d4bfbbb39
+Heterosigma akashiwo,0,7.14E-161,100,c9e04f71ace1eca46cf3fdbb6bcf6762e0d91615
+Mazzaella rosea,0,7.14E-161,100,e86b6f8a3d05c6a3e0cacb90d55d4e4345de2888
+Mazzaella sp. GWS-2013b,0,7.14E-161,100,f30efaeb62b24739ad238af5eeb96b819a472879
+Microcladia coulteri,0,9.24E-160,100,0978d080bb77b02c98a52779fbecaa639f7c255f
+Naineris dendritica CMC02,0,3.29E-159,100,7c8adf41bd8385562173c4dd20d71e04630ba0c5
+Prionitis sternbergii,0,7.14E-161,100,2b47fc7565abc8302682597c2b793831e5ee4189
+Chrysaora melanaster,0,7.14E-161,100,fc2ab513b90b22761785b93243b60a7b4e8fb51b
+Enophrys bison,0,7.14E-161,100,4b7f78065a8f5fe8ee11138959cfdc1b110f979f
+Mastocarpus alaskensis,0,7.14E-161,100,61c1197812c92a11d16e6d55b37359f38acce246
+Styela gibbsii,0,7.14E-161,100,fb94b3b8f50aa9e87a76cc7abb77c27f41dc7f1e
+Acrochaetium moniliforme,0,7.14E-161,100,b099e5c847b208a8d0570e5039b88cfaeddb5ad3
+Haliclystus sanjuanensis,0,7.14E-161,100,547015bbfabed0f66a78e1e104a9e0a175d0501b
+Hemipodia simplex,0,7.14E-161,100,147e973e714174591cb6dbced35312f6d1c69ac1
+Liparis florae,0,3.32E-159,100,eb1f533175e4b7d11450ca83297f4149986f1f1b
+Oligocottus maculosus,0,3.32E-159,100,f4ec0e657df713db53c9d4540043e5ab8bee3849
+Orthocladius sp. BOLD-2016,0,7.14E-161,100,2a467913d5751f2ac544ca7bba4b09ed0813def5
+Pyropia nereocystis,0,7.14E-161,100,46d2a64a8cbef14ff349ac80418c17419173fdbb
+Schistomeringos longicornis,0,7.14E-161,100,367c063b255e49d3a487022236ceacf69eec5207
+Tresus capax,0,7.14E-161,100,10aee0d90dbf8de29844d17f4f82f7cc34002ae3
+Ammodytes hexapterus,0,7.14E-161,100,3e78388f57123893f6ce2171843af16a80349404
+Callithamnion pikeanum,0,7.14E-161,100,f58c3cbf955b786acc9189963d32874cf03fc439
+Carcinonemertes errans,0,7.14E-161,100,e6903b14e2e8e86a670dd45cfec4f2dd60bf41ce
+Cystoseira geminata,0,3.32E-159,100,1d2ff288402489b5ced41d788ce606072affd770
+Hypomesus pretiosus,0,7.14E-161,100,97637b3b3617dae19c95a09777be76181191bf63
+Nassarius mendicus,0,7.14E-161,100,cd0da87e3ee81e62c05d08050e85ea1beb15b1ce
+Platichthys stellatus,0,7.14E-161,100,dea4237b6dd9c7285b505019035d80dfb716b877
+Polyneura latissima,0,7.14E-161,100,a78c3f8646003e70cf09ec658c23a7397dcc6c6f
+Schizobranchia insignis,0,7.14E-161,100,2f8238e8b72201b38768d46b32b1266ddc892f0c
+Calliarthron tuberculosum,0,7.14E-161,100,ea0cc4e8880f33b8fd0bf9ffd8430d876ed0c224
+Compsomyax subdiaphana,0,7.14E-161,100,00c6d6146ca4766fd548cfe45211b619813e0f11
+Lepidodinium chlorophorum,0,1.55E-162,100,e69134699e3763f1f81217eb2c43c05281bd67aa
+Manania gwilliami,0,7.14E-161,100,df98f92ef520ee3147c6814aa29ce64bf6b5dcc9
+Oncorhynchus tshawytscha,0,7.14E-161,100,e8ee68aa90303a35624aef553962c5af269d0e99
+Ophelina acuminata,0,7.14E-161,100,415bf12be0651ea9f8b4f005b02a1c1aa100860c
+Proboscidactyla flavicirrata,0,2.07E-131,100,fa58c01894cf47c0a58103c1a91cb2d950a87408
+Pseudolithophyllum sp. 2whidbeyense,0,7.14E-161,100,3b7fdeeea659acb454eff410e975aa96f084dfa7
+Rhinogobiops nicholsii,0,7.14E-161,100,bc05e30242eb908d09ed41d9387852aa805762c0
+Thalassiosira pseudonana,0,7.14E-161,100,1f13f7394b884ffdf4d25c0595e24ac673000d2f
+Thysanoessa raschii,0,7.14E-161,100,e85fabad965ec0be53b246e6cbd05d111c65e8b1
+Bothrioneurum vejdovskyanum,0,9.17E-160,100,4bdcf608e587a4a357afade1ee494d2f7b2ab877
+Cancer productus,0,7.14E-161,100,a0e0ca461c55fe2fa715aa849ba3e299f0b417d5
+Clunio tsushimensis,0,9.17E-160,100,e553d555493a3cc20f43ffa9a4acf7432e2cb1ff
+Egregia menziesii,0,7.14E-161,100,e681061cc41d62caa1c57394a428db44517c5608
+Evadne nordmanni,0,7.14E-161,100,0d5a2b9078937a5f710bae6768072e3908ce7f58
+Galactomyces candidum,0,7.14E-161,100,fc9fed56b0203902b5eff4eca28b358d4419813a
+Gelidium coulteri,0,7.14E-161,100,8b535a05b93a1a2d02bbae6a1182bd73fea8ceb8
+Halophytophthora avicenniae,0,7.14E-161,100,5b394a7063052fb4e5333959b41c90ab5b2f4c5c
+Maculaura alaskensis,0,7.14E-161,100,7798d5456f70680edda53cd34329423960638ed6
+Metridia pacifica,0,7.14E-161,100,3c75a77dca10c472e7abd3482d3cf288f7fb5fe5
+Modiolus modiolus,0,1.22E-143,100,d7e5976fd609746687c4c3f655b8dee7cee3e6d0
+Onchidoris bilamellata,0,2.56E-160,100,8c61b357b250c745e5e6e469c28a9b96d1dd0ce1
+Paranemertes californica,0,7.14E-161,100,6cd3dae6bcd1b228c39c696b5ee2005399f5d1a9
+Phoronopsis harmeri,0,7.14E-161,100,474de3b8d608ab6fbd912a81481133d4c6b475ea
+Scytosiphon lomentaria,0,7.14E-161,100,0997d59def2841b0fd7c7a08fcb688283517c799
+Acanthamoeba castellanii,0,7.14E-161,100,d4d1af3d3e299db2fc83ba0a4cad48e8bb68832d
+Bossiella frondescens,0,7.14E-161,100,f5d446ee8f6310e92172a7d39ff69ce36bbfee4a
+Calanus glacialis,0,1.21E-143,100,ada53d74d2911c95feba85264ba7c8a74254c46b
+Chironomidae sp. BOLD:ACC1767,0,7.14E-161,100,419cd299ee09537cc438eb3509ebd19816190259
+Citharichthys sordidus,0,7.14E-161,100,2a59dffd9852b6d4db1eebb07107e68b8f9382d9
+Galathowenia oculata,0,7.14E-161,100,459872f12aa1cf78e8eafa97db881ba6ef6af564
+Geminosyllis ohma,0,7.14E-161,100,77bda6fcd09136eee770c779578eee0a8f182e6d
+Harmothoe fragilis,0,7.14E-161,100,5e65c11f8ed2211ec507f17ba017272300555da4
+Melanosiphon intestinalis,0,7.14E-161,100,b5fff63b103fe3d9afabc85324d72989e386a45b
+Metridium senile,0,7.14E-161,100,466f304488f37975f504849b54e17b7cbd4d2f52
+Microgadus proximus,0,7.14E-161,100,4a8a0c4ec6659ae0f636b401de956f70f5c2143f
+Nais communis/variabilis complex sp. A1,0,7.14E-161,100,880f9f1ecaf906c946b4b02c00e412509e919b42
+Nais elinguis,0,7.14E-161,100,1e8dca7c8ae7af0b9956b7946da6cdc7cbb7e050
+Phoca vitulina,0,1.19E-158,100,24067aaaff3572d8d40b6c82d133203279e26495
+Pisaster brevispinus,0,7.14E-161,100,0083e370a92ac9df70edcc183e82e0c522a07fc4
+Plumularia lagenifera,0,7.14E-161,100,2ccfe38a0a13cb63f74087276dbd1461b5433e3b
+Pseudocalanus mimus,0,4.33E-153,100,210bc1b091892cccfaec34166993dca9f2e9caef
+Rhodoptilum plumosum,0,7.14E-161,100,d80692b0c68a2282490bbac4cb9931ac3a3441dc
+Urile penicillatus,0,7.14E-161,100,1b77eab6ffdc983da74857df2b9c3a1e1aab8029
+Gracilaria vermiculophylla,1,7.14E-161,100,a89a09379d8d22efdefd9f06f1c4f04c80da5c65
+Ruditapes philippinarum,1,7.14E-161,100,eb6e154ad3783ad881b92fa8986ea1e517cfd566
+Caulacanthus ustulatus,1,7.14E-161,100,fcd05564ba6afffcf9f8dece434f4c9f55425ed7
+Nuttallia olivacea,1,7.14E-161,100,3bd102092cf271a7c30088a5026020b63286429c
+Crassostrea gigas,1,6.96E-156,100,d40e19f66e76cc54b02ae688174877657d1bdd5e
+Callithamnion corymbosum,1,7.14E-161,100,5ff69e9f91d52b7ae4c76e89a79d1b67b44b0fb2
+Monocorophium acherusicum,1,7.14E-161,100,6f09afda42df08e5dbcce46aaa716e3203c03cf9
+Gelidiophycus freshwateri,1,7.14E-161,100,401056fec673fe4aaa1bd46840d87fbc0d3f7921
+Botrylloides violaceus,1,7.14E-161,100,2b7277cd2832663c69145711f7eccfc6f45d5f12
+Arca avellana,0,7.14E-161,100,c413e4b99630726d0a6c6100c5db9ecc1eb21703
+Bougainvillia muscus,1,7.14E-161,100,a2ff91ae83b266521461fb0185281aaa5e963cba
+Lomentaria hakodatensis,1,7.14E-161,100,453101246944b5d08b86386f5f6734041b3f4604
+Mya arenaria,1,1.55E-162,100,cb1cf4872d99436a87d7d490eb9ad43a9569a9d7
+Gelidium vagum,1,7.14E-161,100,f1f7807a1cbe3bf237818f85518b8ddb8fd1d38b
+Gari maculosa,0,1.59E-137,100,6810c816e8147a8c6ce93f63f0f8ffcbf949c056
+Mytilicola orientalis,1,1.70E-92,100,0124f9c1e949536ce587cd038df6e6f635a8a7d8
+Minutocellus polymorphus,cryptogenic,1.55E-157,100,9c1b08211a76599faa4a6763b8c564f85d586b36
+Bathycoccus prasinos,cryptogenic,7.14E-161,100,11a112ced1c85e620f6d97d82281a1bb58614e67
+Paracalanus sp. C AC-2013,cryptogenic,7.14E-161,100,a541fd228ef7d1d712ad202623c1590a3c883377
+Coscinodiscus wailesii,cryptogenic,7.14E-161,100,fc6da59f14ed9fb7c40da39ea9e462ae630cf8af
+Poteriospumella lacustris,cryptogenic,7.14E-161,100,b57949f2759ef72fe986ab28e641f624ddef6661
+Pseudochattonella farcimen,1,7.14E-161,100,af55f83e8bc1dae6fd7e3d9c3ce94c1930c87b98
+Skeletonema dohrnii,cryptogenic,7.14E-161,100,d21137b6a1acb9f0513ec20b4fb777f3188c446c
+Pycnococcus provasolii,cryptogenic,7.14E-161,100,d91e4f5a7edc004a4ac60506d91bf2a3ed5b17f1
+Skeletonema japonicum,cryptogenic,7.14E-161,100,6aafb6c5f7fd2dcecee1e0e6ed1c8b8bffc7422f
+Laminariocolax aecidioides,cryptogenic,7.14E-161,100,87ec3348af10b5a1c0ee901ba18700fd01a084ff
+Skeletonema cf. pseudocostatum,cryptogenic,7.14E-161,100,48238b65055a8a65e88dcab3a9c221a4a21c94fb
+Leucocryptos marina,cryptogenic,7.14E-161,100,b3e33e8dd0e662ce86effc0e615850ea1a5f71a5
+Cyphoderia cf. compressa,cryptogenic,1.20E-153,100,da1b7df21569fdcd247dfe83f3730568273fed92
+Proceraea okadai,cryptogenic,2.56E-160,100,17c1f3e1117f994372dc61f7bf165fb9add491d5
+Hecatonema maculans,0,7.14E-161,100,42bb447809611e17c60a33972d92a80fdee13bb0
+Podosira stelligera,0,1.55E-157,100,f00b49687ddb422c33e27fddd1549bb669875b3e
+Karlodinium veneficum,0,1.55E-162,100,69b4aa9c34f90d569caca6109c85f661d401ef20
+Dinobryon divergens,0,1.56E-152,100,b08659230c648262e0b52bab712e8b69ba2f6ac8
+Notophyllum foliosum,0,7.14E-161,100,53464ba96d870d0776668727bc6890efe809440d
+Stenhelia pubescens,1,7.14E-161,100,3a505be3cd83de376c0cdab1ddfe720a8f4ce8bb
+Aequorea sp. MW-2012,cryptogenic,7.14E-161,100,f203229d3eaf11958b12eba0a1b03a08b3007c11
+Plagiogramma sp. IAL-2014a,cryptogenic,7.19E-156,100,c6043a933c3d0e5005a44fd7ade51012890c2a36
+Ralfsioid sp. 4GWS,cryptogenic,7.14E-161,100,6404434cd8aa0b4f6351b547773cbdffa7fce5f4
+Platynereis sp. CMC02,cryptogenic,7.14E-161,100,5f83544bcb9b60588c89d222727232532a503060
+Wildemania sp. 5POR,cryptogenic,1.28E-108,100,7caeb29527913ec3e0f27874bd3da28ae49f50a3
+Emplectonema sp. 1 TCH-2015,cryptogenic,7.14E-161,100,55c45ddb9d8b4f3e61cba3891110aa1a0fc4f2c0
+Barantolla americana CMC01,cryptogenic,7.14E-161,100,b14e192ef4db4138ef5da5fa073aee9196146841
+Alitta sp. CMC01,cryptogenic,2.56E-160,100,b00efb51716eb4c2fb5a5fadfd90ca92e60a20bc
+Gymnodinium sp. NVA/RUS/2008,cryptogenic,1.55E-162,100,eb397adb4e28f5be1b7112437ff5b4e63299a958
+Euclymene sp. BOLD:ACG1020,cryptogenic,7.14E-161,100,90f6a1d25271eeaaf6a778b0fd07b5a2d11a6572
+Chordariaceae sp. 17 AP-2014,cryptogenic,3.32E-159,100,fde6421b05987fe6a9cf2f23184a2efa83e31975
+Smithora sp. 1naiadum,cryptogenic,7.14E-161,100,115fcb721d336bff5a77dc27fbc77af6209f0169
+Wildemania sp. HK-2011,cryptogenic,7.14E-161,100,b83c4e9a46aa866fa1cab7f6f392958fbe6680ce
+Microcladia sp. 1Cal,cryptogenic,7.14E-161,100,54c1986900147683572925549b605b9287318b93
+Polychaeta sp. BOLD:ACQ0474,cryptogenic,7.14E-161,100,cc3be3a4412990d18c51855a59f8662d3752d078
+Polynoidae sp. C_0250,cryptogenic,2.56E-160,100,2eb4c89a0e32b31b4beb0f5d91cd19962a6e1d42
+Opisthosyllis sp. CMC01,cryptogenic,7.14E-161,100,bdf1c20460654ab426d41a935463d7187700ffdd
+Polycirrus sp. CMC02,cryptogenic,7.14E-161,100,d1e7735778c82b0e25c40b1b3cb4c8f49789acd3
+Psocoptera sp. BOLD:ACB0984,cryptogenic,1.21E-148,100,a14d493abcb3b525eb449d241bd2564ca50eba6f
+Saccocirrus sp. CMC01,cryptogenic,7.14E-161,100,d5835694dee341f3a307eaa7f9d43d9257ccfdfc
+Thalassionema nitzschioides,0,3.32E-159,99.681,f2c557df3514fc8e0ed431a8826155df05706c32
+Calanus pacificus,0,3.32E-159,99.681,5a833e0a478a012b2b934b19b76eb311d63cf891
+Aurelia labiata,0,3.32E-159,99.681,93c5f99035437b05677ed16d83bdbaf5a0dbd2a5
+Acartia californiensis,0,3.32E-159,99.681,74fea00423c69e46f5f59c6088febdf0e324db0b
+Pyropia perforata,0,3.32E-159,99.681,0398d65193da50a353ba3299eab7ad014139fb39
+Nanomia bijuga,0,3.32E-159,99.681,0445b0faaa5c1ce2a079b6325951f55ba36ffb68
+Coryne eximia,0,3.32E-159,99.681,9ce1ab4e0f6cb99c549f9ef7a35e7f3405add1e3
+Glycera sp. CMC03,0,3.32E-159,99.681,6ceb9fdc89d836080cd49030124695057a315af9
+Articulospora tetracladia,0,3.32E-159,99.681,9338ed87b44573795d41524372ee15bfcc49364d
+Scolelepis squamata,0,3.32E-159,99.681,bc5419322ab84e003b8e442edcfaebaf67115854
+Crepipatella lingulata,0,3.32E-159,99.681,9cfd9515704a0e0b3a69656fb76e9beba9bb1486
+Chrysaora fuscescens,0,3.32E-159,99.681,484fe1335a33ea66de3e04e0bc0e5c4770e181cb
+Phascolosoma agassizii,0,3.32E-159,99.681,55ce23bb18864a147fe27cb9a45fafb5fd8072ba
+Lacuna pallidula,0,3.32E-159,99.681,6967a4dcdb02072eaec591fbbe4274ee4d91a0f1
+Cliona chilensis,0,3.32E-159,99.681,8647a587597a7af76d37057ad104d6aace8702dd
+Leuckartiara octona,0,3.32E-159,99.681,c0348e94b9f17b3ff8222aa29cef72374697b2f4
+Navicula sp. BOLD:AAO6949,cryptogenic,3.32E-159,99.681,66e1a14cece254691e0d8492b1047290eb79ae6c
+Chone magna CMC02,cryptogenic,3.32E-159,99.681,b074016d069e564387f67ad18a6e5bc181726411
+Syllis alternata CMC01,cryptogenic,3.32E-159,99.681,15c8de0d04fc86ac351cff57ddc70bcd2cf667ad
+Octolasion tyrtaeum,0,4.27E-158,99.678,4c7eaa94d2773a537d1194a18115b4c1a1a29d09
+Hediste diadroma,1,4.27E-158,99.678,5f3f8299e1a6a96e41031f6b44a5327e40b40507
+Myrionema balticum,0,1.55E-157,99.677,3d176fc7382e5e99a5383f0d57c5fee1b7e4f247
+Pyropia haitanensis,1,5.56E-157,99.676,bb1d8cdcf0e61d15679d93a8a4be5db80379bc83
+Ostrea lurida,0,3.24E-154,99.671,cedfd8e3aa1835541f5c4841fc86dbb967d9800c
+Halosydna brevisetosa,0,2.64E-140,99.642,5e6487a6d72735d95996c0407e4ef2e4ef6c63ce
+Thalassiosira nordenskioeldii,0,2.66E-135,99.63,391312bf9c2c070b0d1afdbc609959fec1c1773a
+Penicillium sclerotiorum,0,3.54E-114,99.569,75a32ac0ca5bb5c4393d6281232396dfb6e6f590
+Rhizosolenia setigera,0,1.55E-157,99.361,e5161e0442a32475dc05ba2d3a1cbd430f4a2035
+Dolichomastix tenuilepis,0,1.55E-157,99.361,24b292e98a0a8a948b90ea9afe8d86f1aab85925
+Neorhodomela oregona,0,1.55E-157,99.361,ec572e64d103ee04ff859035188660969d7ed544
+Stiliger fuscovittatus,0,1.55E-157,99.361,0d570a956da2ad3d00b103e6bed106d6f42b358e
+Phytophthora bilorbang,0,1.55E-157,99.361,9f19d8b35f541d1c3e67a5a609543272edf4be60
+Prionospio steenstrupi,0,1.55E-157,99.361,d59e27e92659c6afe1571881c53729273683e72c
+Sarcodiotheca sp. 2gaudichaudii,cryptogenic,1.55E-157,99.361,7b7bd961be05f144581f831b5828077d28c1840c
+Pectinaria granulata CMC01,cryptogenic,1.99E-156,99.357,a6dee6ad02a890df8321492b4772b05a5e682b47
+Thalassiosira punctigera,0,3.35E-154,99.349,6667a9090bbbf900fc104f144a3f52c731a6e20a
+Rostanga pulchra,0,2.03E-146,99.317,c79256f7823292157a90f0fc328f3e1370fe7645
+Bipalponephtys cornuta,0,5.76E-132,99.251,c0f08afc879ffb32596b54b998322bb78cae6438
+Hematodinium sp.,0,5.87E-127,99.225,449191325f3041ac38ee930757b92a531f859f79
+Synchaetomella acerina,0,7.19E-156,99.042,15df11e1817d0c855643ad74236463117d673f34
+Campanularia volubilis,0,7.19E-156,99.042,e961acd8ab0cb59fa41a927d80c45cef03d59341
+Polydora cornuta,0,7.19E-156,99.042,cf2a638277bc24f2ecebfb8a4ea248835452f508
+Grammonema striatula,cryptogenic,7.19E-156,99.042,e76c4d005a5220e71b2798ac024032cd984d4af0
+Melosira nummuloides,0,5.60E-152,99.023,cd442ae8372840ec1ce38b407aa06db88a292014
+Nitokra spinipes,1,3.44E-134,98.905,71358993d181845a897ce83e02c218fe18c41cef
+Nitzschia longissima,0,1.24E-133,98.901,682f91d9a735416ae4c048d3321d210adf363d65
+Trebouxia aggregata,0,3.35E-154,98.722,09d16eb32cdd4760c348a0f9042951bffd8e299e
+Aglaja ocelligera,0,3.35E-154,98.722,063bbfb6e6d3d18940b5a7c9bc8120987b3d5083
+Rhodophysema kjellmanii,0,9.31E-155,98.722,fd05bdceb9694a94ff577e82c205951e3e3890ec
+Melanothamnus harveyi,1,3.35E-154,98.722,5307dd7515ffa8b5d58717a810b754065eec759b
+Attheya longicornis,cryptogenic,3.35E-154,98.722,223a220178734017a25d5932cf30f478aae29b05
+Leitoscoloplos pugettensis CMC01,0,1.53E-152,98.718,7c676680197b60413b07f27d51d465c1366265c3
+Halicyclops itohi,cryptogenic,1.60E-132,98.54,b913bf7aad6e9b8117e5e240a1aefc0a962997d5
+Eucalanus bungii,0,1.56E-152,98.403,e63d3c091e12d586719f5c48eae4b5491940fcfd
+Microspongium alariae,cryptogenic,1.56E-152,98.403,f0177b12f93b06178b1911f6b1d779de2e5211d8
+Pseudo-nitzschia delicatissima,0,2.62E-145,98.333,d40b7574c01ee56d73eb6dc25f544a9b1e04c865
+Keratella cochlearis,cryptogenic,5.66E-152,98.095,9b1c328fc7697f9025e287f88d447a6746446c7e
+Tonicella lineata,0,7.25E-151,98.083,ec24622956048262c3cc53232ac53a4ccd2bad37
+Phaeocystis globosa,cryptogenic,7.25E-151,98.083,4dc52fdc04ae6b5ca0069b00c0ed9856e4cc23c0
+Pseudocalanus moultoni,0,2.61E-150,98.077,4de959601e00945a0b3051874e903eaacdf51c09
+Eucampia zodiacus,0,2.61E-150,98.077,0e7017ec97772687a238df6c987629206c6f698c
+Acila castrensis,0,2.61E-150,98.077,5444b75d63923dae7a8e6c7c5ae9d89d3189ec63
+Pythium contiguanum,0,2.61E-150,98.077,989def6c1d03c22be22bf5834388221e6cfc3c58
+Polycirrus sp. CMC06,cryptogenic,9.30E-150,98.071,adfbbf1cd2ac581d46c5c30fc56d0c190e8798c6
+Soranthera ulvoidea,0,3.37E-149,98.065,0c4c86876b1962866f38ca40250359cc2b84e5c4
+Asterionellopsis glacialis,0,1.22E-143,98,8cdc86e1938f88ff8379a39f9da5e8a403259c2f
+Harpacticoida sp. DNZ085,cryptogenic,3.37E-149,97.764,cce8528cf813615bf90e9af68e99d687e8ab664b
+Ceramium sp. 3Cal,cryptogenic,3.37E-149,97.764,9dbe9524cf62c6dca7f4f448da9485a41b74f505
+Pseudo-nitzschia cuspidata,0,1.57E-147,97.444,95ff4612e044ce701224559161b0fee270440df0
+Chrysochromulina sp. CCMP291,cryptogenic,1.57E-147,97.444,34ddd674c8eaad471c3a99957d45c67bdb91d2a8
+Acremonium cf. chrysogenum DAOM 226667,0,5.64E-147,97.436,401143c51643cb02d2e3bbe748b924ef64172205
+Dictyocha speculum,0,1.58E-142,97.36,e612cd1d28af77c2378a9fd9f8e53f591f58f991
+Hypogymnia vittata,0,1.58E-142,96.486,359babd3ef65d5e24df34ce3922530579dcbab25
+Cryptocotyle lingua,0,4.33E-138,96.393,f8e230c569b132d41930401c9deacad90391e0c2
+Musculista senhousia,1,7.35E-141,96.166,9fb80495589efb61c1089550cb300c9a9a5b7749
+Pseudocalanus acuspes,0,3.42E-139,95.847,e6928c0768a540d0682fa85d5ea4cc8bb3f30fe0
+Hildenbrandia sp. 27GWS,cryptogenic,1.23E-138,95.833,25043c29921a90add9da838dc500afbed6d5e855
+Orthopyxis integra,0,1.59E-137,95.527,5cc9d399de1658287868ca10ce9eedb9d2c95b64
+Triparma laevis,0,5.72E-137,95.513,74bd536a982117e99a75e40240e0e3b1b1f81a5c
+Dialonectria episphaeria,0,7.40E-136,95.208,f133e70abb5c426a474820d436ac9b57b6591525
+Cunea thuwala,0,7.40E-136,95.208,9393cbf7859bba20c4b049fe7c0a3658ae9798c7
+Nitzschia cf. promare,exclude,3.44E-134,94.888,ee5ff68ad7d97daf76700ed1c34a9ef3c61fea72
+Dasybranchus sp. DH1,exclude,3.44E-134,94.888,28576d9f039190736ee0a1b4c6f5fdfac6ef6757
+Cymbomonas tetramitiformis,exclude,3.47E-129,93.93,4db7fc5cafa31f3cd393e04977faead7e2eec40e
+Callophyllis flabellulata,exclude,2.15E-106,93.609,4041289da01feddac1f9633ea0d0b7ba4be66834
+Tortanus discaudatus,exclude,2.09E-126,93.569,da4d786be07787b1a967d25820675a0e7afb580e
+Leptosynapta clarki,exclude,1.26E-123,92.949,0fa20cfb64ffaab9b14558297dd23dd85711560e
+Nitzschia cf. recta RT-2009,exclude,4.52E-123,92.926,e9541d73275e63b41902fc1beb597861d37d7009
+Sellaphora pupula,exclude,1.62E-122,92.652,e068f4d9b88be8ab60872aafa09f089d8e7562e4
+Echiniscoides pollocki,exclude,1.26E-123,92.652,cca4e2af3fe00e8a4737b100441561c6f69a09cd
+Gomphonema parvulum,exclude,3.52E-119,92.508,f1d280721627963701aa922c0a050849afd0a665
+Cochliopodium larifeili,exclude,7.56E-121,92.332,697e2bef668228a7655d63bef9fa5bb0ff490323
+Muggiaea atlantica,exclude,2.75E-120,92.308,67699186f2500d9fed3b98c89a41824904dec096
+Peltogaster paguri,exclude,1.26E-118,92.233,0c80c3d1c3e4ea78badcbf7c4532267fb7f45d81
+Phaeocystis antarctica,exclude,1.64E-117,91.693,c6300747deca82826d4415110e0a0a55e293d9f0
+Sarocladium implicatum,exclude,7.61E-116,91.374,fc206c8dd24815230bec06dab9b89c7b31e3a7e0
+Aphroditella hastata,exclude,7.61E-116,91.374,e87d5cf581f6dc10adc704aa99c7d57d334065c4
+Neochromadora poecilosomoides,exclude,9.85E-115,91.111,439bb1b8a2393ea1edaa381f7c5b03388c2c25d5
+Pinnularia sp. 5 CS-2011,exclude,1.27E-113,91.026,b34e4b43823872625fc449249072d6400f15928e
+Cladophialophora bantiana,exclude,7.67E-111,90.879,c391385f2fee5c8bf43b7299e18a8d28dccd7b8f
+Navicula sp. BOLD:AAO6951,exclude,1.65E-112,90.735,781a7d39811800ce6d7a2b3264f0c6f8711c684f
+Ismaila chaihuiensis,exclude,5.93E-112,90.675,d37588427486d34075380da02e16453d4ee919c2
+Synchaeta pectinata,exclude,5.99E-112,90.476,06c382facc93cfae960231f361f1b6eff3569d14
+Anisolpidium rosenvingei,exclude,2.76E-110,90.385,b43effe3a5dcd00eb08c6dfd10eb1c2fc168320f
+Paramoeba pemaquidensis,exclude,2.76E-110,90.385,ccca0c1d6b4226ba295f6789b7b7fedbb85f4e74
+Clytia languida,exclude,3.57E-109,90.096,3e3703ea2691156855ca6632deaec6bcb1a665f9
+Thecamonas trahens,exclude,1.28E-108,90.064,6f7865ace9284f007b082a1045286789516f5ef5
+Cafeteria roenbergensis,exclude,1.28E-108,90.064,6404f3fa9d01405dad113b2d23029c9c90bbc531
+Phyllodoce medipapillata,exclude,6.03E-97,89.116,be75605c81222fc185b302bf7e5ac9090289e946
+Navicula glaciei,exclude,1.01E-99,89.109,db65972544a4360df1927aefbcf492d6ef1a0cf3
+Euclymene oerstedi,exclude,7.78E-101,88.498,ecf90daedebf8ee2b2a13113904910638004418e
+Scopalina ruetzleri,exclude,4.71E-93,88.396,fb022a7263747c2f39681de6d9a0da0df8887776
+Haslea ostrearia,exclude,4.81E-78,88.189,c569dc88b4317e493987fecd0ecd46b385ecf112
+Parvamoeba rugata,exclude,1.68E-97,87.859,265856eacca62697440bde80d28a7d47903564e3
+Asterionellopsis guyunusae,exclude,6.05E-97,87.821,46f9cececcf3ecfcc4d67b28ae58afdeac24b064
+Prasinoderma coloniale,exclude,6.05E-97,87.821,6ac00f203d56255090ad6a9df316573dfb7ade1c
+Capitella nonatoi,exclude,6.05E-97,87.821,caf81fc24f29d06008d821493f3c91f9ff6aefe8
+Amphicaryon earnesti,exclude,4.78E-83,86.441,7dc0f13f826a74e7c8cd807e693f92a68e3bb762
+Pedospumella sinomuralis,exclude,2.86E-85,85.993,99d0c9a7d790e0bb9cf77ee650ade4d376733997
+Amathia vidovici,exclude,1.71E-87,85.987,a111e09d3b9718208a4185b51c9ce5362d4763f0
+Fistulifera solaris,exclude,7.94E-86,85.623,d74e20176e457bdeb455a6e10f3b9d6285a59aa1
+Asterionellopsis tropicalis,exclude,2.88E-80,85.246,b9d0ea5aedd20587ed0915a9d0db054403e12ee6
+Hincksia hincksiae,exclude,2.30E-56,85.153,8a17c79fb1ddb2dac42e79d554c750133cfe1d6f
+Stelligera rigida,exclude,2.24E-76,85.085,a68ca700b401e06e23bdde27d4756019a1e3a0eb
+Chattonella subsalsa,exclude,4.81E-78,85.05,135564e9c33f7abcb19bbdbfc571af0ea2c77f82
+Hydra circumcincta,exclude,1.73E-77,85,2ab2df77a029ab2205df4e82078c684697d46f5f

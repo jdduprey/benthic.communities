@@ -1,6 +1,6 @@
 # ========================================================================
 # Joe Duprey
-# Last Edited: February 23, 2022
+# Last Edited: October 5, 2022
 # ========================================================================
 library(tidyverse)
 
@@ -34,13 +34,10 @@ posnn_species_hash_seq <- species_hash_seq %>%
 
 # get rid of the funky NAs, why are they there? also we just need a hash for Ryan query
 posnn_species_hash_seq <- posnn_species_hash_seq %>%
-  filter(!is.na(Sequence)) %>%
-  select(Hash, Sequence)
+  filter(!is.na(Sequence))
 
-write_csv(posnn_species_hash_seq, "../data/QC/possible_NIS_qc.csv")
-
+# write_csv(posnn_species_hash_seq, "../data/QC/possible_NIS_qc.csv")
 # ====================================================
-# TODO 04/07/2022
 # instead of classifying <95% identity as natives, per feedback
 # we need to bin these into unclassified, but we will need to 
 # double check all this with nBLAST
@@ -54,10 +51,24 @@ natives_to_check_hash_seq <- species_hash_seq %>%
 natives_to_check_hash_seq <- natives_to_check_hash_seq %>%
   filter(!is.na(Sequence))
 
-write_csv(natives_to_check_hash_seq, "../data/QC/natives_to_check_qc.csv")
+# write_csv(natives_to_check_hash_seq, "../data/QC/natives_to_check_qc.csv")
 
+#TODO load in natives blast output ###
+NATIVE_blast_output <- read.csv("../data/QC/natives_to_check_qc.txt", header = FALSE, sep = "\t" )
 
+colnames(NATIVE_blast_output) <- c("Hash", "sseqid", "sacc", "pident", "length",
+                            "mismatch", "gapopen", "qcovus", "qstart",
+                            "qend", "sstart", "send", "evalue", "bitscore",
+                            "staxids", "qlen", "sscinames", "sseq")
 
+QCQA_native_df <- left_join(NATIVE_blast_output, natives_to_check_hash_seq)
+QCQA_native_df <- QCQA_native_df %>%
+  select(evalue, pident, qlen, Hash, sscinames, species, Sequence)
+
+length(unique(QCQA_native_df$species))
+
+write_csv(QCQA_native_df, "../data/QC/BLAST_OUTPUT_NATIVE.csv")
+# TODO output single top result per seq/hash
 
 # load in the BLAST results
 #========================================================
@@ -69,6 +80,16 @@ colnames(blast_output) <- c("Hash", "sseqid", "sacc", "pident", "length",
                             "mismatch", "gapopen", "qcovus", "qstart",
                             "qend", "sstart", "send", "evalue", "bitscore",
                             "staxids", "qlen", "sscinames", "sseq")
+
+QCQA_invasive_df <- left_join(blast_output, posnn_species_hash_seq)
+QCQA_invasive_df <- QCQA_invasive_df %>%
+  select(evalue, pident, qlen, Hash, sscinames, species, Sequence)
+
+length(unique(QCQA_invasive_df$species))
+# create BLAST output non-native 
+write_csv(QCQA_invasive_df, "../data/QC/BLAST_OUTPUT_NON_NATIVE.csv")
+# TODO output single top result per seq/hash
+#========================================================
 
 # qgi means Query GI
 # qacc means Query accesion

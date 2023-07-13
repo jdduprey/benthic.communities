@@ -1,11 +1,9 @@
 # INVASIBILITY  
 # Joe Duprey
-# Last Edited: 03/16/2022
 # ====================================================
 # "I would pick a few things you're confident in, and do a prelim analysis, 
 # to see if the hypothesis holds water. Then, if it does, we can do more work 
 # on the finer details of making sure each species is correctly ID'd"
-#
 # merge species distribution data (nonnative_vec) into existing dataframes
 # examine spatial/temporal trends
 # ====================================================
@@ -18,7 +16,8 @@ library(RColorBrewer)
 library(ggpubr)
 library(ggsci)
 
-nonnative_status <- read.csv("../docs/FINAL_all_species_dist.csv")
+nonnative_status <- read.csv("../data/species_hash_pident_evalue_nativestatus.csv") # QCed VERSION FOR MANUSCIPT
+# nonnative_status <- read.csv("../docs/FINAL_all_species_dist.csv") # THIS VERSION USED IN THESIS
 #just_nonnative <- read.csv("../docs/just_the_suspects.csv")
 species_annotated <- read.csv("../data/species_annotated.csv")
 by_sample_species <- read.csv("../data/by.sample.species.csv") # reads merged by tech and bio
@@ -27,6 +26,10 @@ use_index <- read.csv("../data/park_events.csv")
 
 nonnative_vec <- nonnative_status %>%
   select(species, nonnative)
+
+
+table(nonnative_status$nonnative)
+
 
 # QA CHECK
 # ====================================================
@@ -75,7 +78,7 @@ species_annotated <- left_join(nonnative_vec, species_annotated)
 # now use code from benthic boxplots 
 species_by_sample_alltax <- left_join(by_sample_species, species_annotated, by='species')
 species_by_sample_alltax <- species_by_sample_alltax %>%
-  filter(benthos %in% c("None","PLK","BEN","Both")) %>% #TODO SHOULD I FILTER OUT "None" here? (probably not) how will that impact results? 
+  filter(benthos %in% c("None","PLK","BEN","Both")) %>% #decision made to not filter out "none" 
   separate(col=sample, remove=FALSE, into=c("site", "date"), sep = 2) 
 
 # sanity check should read "0" "1" "single "low" "possible" (non-native status categories)
@@ -112,7 +115,8 @@ taxa_filter <- function(df, dist_status) {
 
 # use function to get df of all species, and just non-natives 
 nonnatives_for_plot <- taxa_filter(n_detections_df, c(1)) ###### SWITCH FROM PROBABLE TO POSSIBLE ######
-allspecies_for_plot <- taxa_filter(n_detections_df, c(1, 0, "possible", "low", "single"))
+allspecies_for_plot <- taxa_filter(n_detections_df, c(1, 0, "cryptogenic"))
+
 
 # filter out all EXCEPT probable non-natives
 just_nonnative_events <- nonnatives_for_plot %>%
@@ -123,7 +127,7 @@ write_csv(just_nonnative_events, "../data/just_nonnative_events.csv")
 # filter out probable non-natives 
 just_native_events <- allspecies_for_plot %>%
   filter(richness == 1) %>%
-  filter(nonnative %in% c(0, "possible", "low", "single")) # change as appropriate for chisquared format
+  filter(nonnative %in% c(0, "cryptogenic")) 
 
 # sum presence absence to get non-native richness for each sampling event 
 total_nn_detections <- nonnatives_for_plot %>%
@@ -202,48 +206,50 @@ ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=
 ggsave(filename="../figures/draft/richness_ratio_by_site.png")
 
 # calculate SE and SD error bars! 
-error_bar_plt <- nonnative_vs_all_species %>%
-  group_by(site) %>%
-  mutate(mean_detections = mean(n_detections)) %>%
-  mutate(mean_all_sp = mean(all_sp_detections)) %>%
-  mutate(SE_nonnative = sd(n_detections) / sqrt(n())) %>%
-  mutate(SE_all_sp = sd(all_sp_detections) / sqrt(n())) %>%
-  mutate(ymin = mean_detections - 0.5 * SE_nonnative) %>%
-  mutate(ymax = mean_detections + 0.5 * SE_nonnative) %>%
-  mutate(xmin = mean_all_sp - 0.5 * SE_all_sp) %>%
-  mutate(xmax = mean_all_sp + 0.5 * SE_all_sp)
+# error_bar_plt <- nonnative_vs_all_species %>%
+#   group_by(site) %>%
+#   mutate(mean_detections = mean(n_detections)) %>%
+#   mutate(mean_all_sp = mean(all_sp_detections)) %>%
+#   mutate(SE_nonnative = sd(n_detections) / sqrt(n())) %>%
+#   mutate(SE_all_sp = sd(all_sp_detections) / sqrt(n())) %>%
+#   mutate(ymin = mean_detections - 0.5 * SE_nonnative) %>%
+#   mutate(ymax = mean_detections + 0.5 * SE_nonnative) %>%
+#   mutate(xmin = mean_all_sp - 0.5 * SE_all_sp) %>%
+#   mutate(xmax = mean_all_sp + 0.5 * SE_all_sp)
+SD_bar_plot_df <- nonnative_vs_all_species
+SD_bar_plot_df$native_richness <- SD_bar_plot_df$all_sp_detections - SD_bar_plot_df$n_detections
 
-SD_bar_plt <- nonnative_vs_all_species %>%
+SD_bar_plt <- SD_bar_plot_df %>%
   group_by(site) %>%
   mutate(mean_detections = mean(n_detections)) %>%
-  mutate(mean_all_sp = mean(all_sp_detections)) %>%
+  mutate(mean_native = mean(native_richness)) %>%
   mutate(SE_nonnative = sd(n_detections)) %>%
-  mutate(SE_all_sp = sd(all_sp_detections)) %>%
+  mutate(SE_native = sd(native_richness)) %>%
   mutate(ymin = mean_detections - 0.5 * SE_nonnative) %>%
   mutate(ymax = mean_detections + 0.5 * SE_nonnative) %>%
-  mutate(xmin = mean_all_sp - 0.5 * SE_all_sp) %>%
-  mutate(xmax = mean_all_sp + 0.5 * SE_all_sp)
+  mutate(xmin = mean_native - 0.5 * SE_native) %>%
+  mutate(xmax = mean_native + 0.5 * SE_native)
 
 # plots with error bars SE vs SD 
-ggplot(error_bar_plt, aes(x=mean_all_sp, y=mean_detections, color=site)) +
-  labs(title = "Richness by Site",
-       x = "Native Richness", y = "Non-Native Richness") +
-  geom_point() +
-  scale_color_brewer(palette="Spectral") +
-  theme_classic() +
-  geom_errorbar(aes(ymin=ymin,ymax=ymax)) +
-  geom_errorbarh(aes(xmin=xmin,xmax=xmax)) +
-  scale_y_continuous(breaks=0:7)
-ggsave(filename="../figures/draft/SE_richness.png")
+# ggplot(error_bar_plt, aes(x=mean_all_sp, y=mean_detections, color=site)) +
+#   labs(title = "Richness by Site",
+#        x = "Native Richness", y = "Non-Native Richness") +
+#   geom_point() +
+#   scale_color_brewer(palette="Spectral") +
+#   theme_classic() +
+#   geom_errorbar(aes(ymin=ymin,ymax=ymax)) +
+#   geom_errorbarh(aes(xmin=xmin,xmax=xmax)) +
+#   scale_y_continuous(breaks=0:7)
+# ggsave(filename="../figures/draft/SE_richness.png")
 
 # use this font size for all figures
-ggplot(SD_bar_plt, aes(x=mean_all_sp, y=mean_detections, color=site)) +
-  labs(x = "Native Species Richness", y = "Introduced Species Richness") +
+ggplot(SD_bar_plt, aes(x=mean_native, y=mean_detections, color=site)) +
+  labs(x = "Native Species Richness", y = "Non-native Species Richness") +
   geom_point() +
   scale_color_brewer(palette="Spectral", name="Site") +
   theme_classic() +
-  geom_errorbar(aes(ymin=ymin,ymax=ymax)) +
-  geom_errorbarh(aes(xmin=xmin,xmax=xmax)) +
+  geom_errorbar(aes(ymin=ymin,ymax=ymax), size=1.5) +
+  geom_errorbarh(aes(xmin=xmin,xmax=xmax), size=1.5) +
   scale_y_continuous(breaks=0:7) +
   theme(text = element_text(size = 17)) 
 ggsave(filename="../figures/draft/SD_richness.png")
@@ -286,7 +292,7 @@ ggsave(filename="../figures/draft/probable_nonnative_richness.png")
 
 # proportion boxplot
 ggplot(nonnative_vs_all_species, aes(x=site, y=prop_nn)) + 
-  labs(x = "Site", y = "Invasion Rate") +
+  labs(x = "Site", y = "Relative Non-native Richness") +
   geom_boxplot() +
   theme_classic() +
   theme(text = element_text(size = 17)) 
@@ -325,7 +331,7 @@ ggsave(filename="../figures/draft/nn_prop_salinity.png")
 
 # DRAFT SCATTERPLOT
 ggplot(enviro_plot_df, aes(x = Temperature, y = prop_nn, color = site)) +
-  labs(x = "Temperature (C)", y = "Invasion Rate", color = "Site") +
+  labs(x = "Temperature (C)", y = "Relative Non-native Richness", color = "Site") +
   geom_point() +
   scale_color_manual(values=pal_jco("default")(8)) +
   theme_classic() +
@@ -390,36 +396,6 @@ site_native_barchart_df <- unique_nat_species_by_site %>%
   mutate(n_native_species = n()) %>%
   distinct(site, n_native_species)
 
-# combine the unique non-native species from each region with the 
-# unique native species into a single table, this could be modified
-# to be by site as well - which might be more relevant to the research question
-chi_sq_df_region <- data.frame(region = region_barchart_df$region,    ### SITE/REGION
-                            nonative = region_barchart_df$n_nonn_species,
-                            native = region_native_barchart_df$n_native_species)
-
-chi_sq_df_site <- data.frame(site = site_barchart_df$site,
-                             nonative = site_barchart_df$n_nonn_species,
-                             native = site_native_barchart_df$n_native_species)
-
-
-# format the 2xX table into right format for chi-squared test
-row.names(chi_sq_df_region) <- chi_sq_df_region$region ### SITE/REGION
-chi_sq_df_region <- chi_sq_df_region %>%
-  select(-region)
-
-pdf("../figures/draft/region_table.pdf")
-grid.table(chi_sq_df_region)
-dev.off()
-
-row.names(chi_sq_df_site) <- chi_sq_df_site$site
-chi_sq_df_site <- chi_sq_df_site %>%
-  select(-site)
-
-pdf("../figures/draft/site_table.pdf")
-grid.table(chi_sq_df_site)
-dev.off()
-
-
 # INVASION RATE ACROSS SPACE AND TIME (sites and months)
 # ====================================================  
 nonnative_vs_all_species_heat <- nonnative_vs_all_species %>%
@@ -446,8 +422,7 @@ ggplot(nonnative_vs_all_species_heat, aes(month, site, fill = mean_prop_nn)) +
   theme_classic() +
   scale_fill_distiller(palette = "RdYlBu") +
   geom_text(aes(label=mean_nnn)) +
-  labs(title="Mean Invasion Rate (color) and Introduced Species Richness (numeral)",
-       x ="Month", y = "Site", fill = "Invasion Rate") +
+  labs(x ="Month", y = "Site", fill = "Relative \nNon-native \nRichness") +
   theme(axis.line=element_blank(),
         axis.ticks=element_blank()) +
   theme(text = element_text(size = 13)) 
@@ -456,29 +431,33 @@ ggsave(filename="../figures/draft/invasion_heatmap.png")
 # stacked bar madness (sites and months)
 # ====================================================  
 stacked_bar_df <- left_join(unique_species_by_site, species_annotated) 
+# save stacked_bar_df in order to make manual corrections to algal phyla/classes
+write_csv(stacked_bar_df, "../data/stacked_bar_df.csv")
+alga_stack <- read_csv("../data/stacked_bar_df_algal_corrections.csv")
 
 #TODO make the propagule bar chart - i do think this would be informative
 #propagule_stack <- left_join(unique_species_by_site, nonnative_status)
 
-stacked_bar_df$site <- factor(stacked_bar_df$site, 
+alga_stack$site <- factor(alga_stack$site, 
                              levels = c("TW", "PO", "LL", "TR", "SA", "FH", "CP", "LK"))
 
-stacked_bar_df <- stacked_bar_df %>%
+alga_stack <- alga_stack %>%
   mutate(nonnative = as.integer(nonnative))
 
-#TODO these colors should be changed for visual clarity 
-phyla_colors <- c("Mollusca" = "#5e3c99", "Florideophyceae" = "#ca0020", 
+phyla_colors <- c("Mollusca" = "#5e3c99", "Rhodophyta" = "#ca0020", 
                   "Cnidaria" = "#66c2a4", "Chordata" = "#92c5de",
                   "Arthropoda" = "#fc8d59", "Annelida" = "#023858", 
-                  "Bangiophyceae" = "#662506", "Dictyochophyceae" = "#fed976")
+                  "Ochrophyta" = "#edbc3d")
 
-print(unique(stacked_bar_df$phylum))
+print(unique(alga_stack$phylum))
+
+
 
 # stacked bar plot code 
-ggplot(stacked_bar_df, aes(x = site, y = nonnative, fill = phylum)) + 
+ggplot(alga_stack, aes(x = site, y = nonnative, fill = phylum)) + 
   geom_bar(position = "stack", stat = "identity", color = "black") +
   scale_fill_manual(values = phyla_colors) +
-  labs(x ="Site", y = "Unique Introduced Species Detections", fill = "Phyla") +
+  labs(x ="Site", y = "Unique Non-native Species Detections", fill = "Phyla") +
   theme_classic() +
   theme(text = element_text(size = 17)) +
   scale_y_continuous(breaks=0:16, limits = c(0,17), expand = c(0,0)) +

@@ -9,7 +9,7 @@ library(viridis)
 #   mutate(native_richness = all_sp_richness - nn_sp_richness) %>% 
 #   drop_na()
 
-# updated counts as of 05/05/2022
+# updated counts, 10/27/2022
 a <- read.csv("../data/species_counts_inv_rate.csv", row.names = 1) %>% 
   mutate(native_richness = all_sp_richness - nn_sp_richness) %>% 
   drop_na()
@@ -150,8 +150,12 @@ a %>%
   geom_smooth(aes(x = Temperature, y = poisMod4_75), col = "grey50", se = F, method = "glm", method.args = list(family = "poisson"))
 
 #split out into high/med/low native diversity environments, just to see what that looks like:
+#TODO readjust bins for visualization with new values
+print(max(a$native_richness))
+print(min(a$native_richness))
+
 p <- a %>% 
-  mutate(native_bin = cut(native_richness, c(24,52,107), labels = FALSE)) %>% 
+  mutate(native_bin = cut(native_richness, c(18,40,85), labels = FALSE)) %>% 
   mutate(native_bin = case_when(native_bin == 1 ~ "Lower Native Richness",
                                 native_bin == 2 ~ "Higher Native Richness")) %>%
   ggplot(aes(x = Temperature, y = nn_sp_richness)) +
@@ -171,21 +175,27 @@ ggsave(p, file = "../figures/draft/two_Facets_modelFit.png")
 
 print(table(p[["data"]]$native_bin))
 
-# plot high and low lines on the same graph
+# plot high andlow lines on the same graph
+# TODO fix color and legend label
 q <- a %>% 
-  mutate(native_bin = cut(native_richness, c(24,52,107), labels = FALSE)) %>% 
-  mutate(native_bin = case_when(native_bin == 1 ~ "Lower Native Richness",
-                                native_bin == 2 ~ "Higher Native Richness")) %>%
-  ggplot(aes(x = Temperature, y = nn_sp_richness)) +
-  geom_point(col = "grey20") +
-  geom_point(aes(x = Temperature, y = poisMod4_pred), col = "#fc4e2a") + #plot model prediction
-  geom_smooth(aes(x = Temperature, y = poisMod4_pred), col = "#fc4e2a", se = F, method = "glm", method.args = list(family = "poisson")) +
-  geom_smooth(aes(x = Temperature, y = poisMod4_25), col = "grey50", se = F, method = "glm", method.args = list(family = "poisson")) +
-  geom_smooth(aes(x = Temperature, y = poisMod4_75), col = "grey50", se = F, method = "glm", method.args = list(family = "poisson")) +
-  facet_grid(~native_bin) +
-  ylab("Non-Native Diversity") 
+  mutate(native_bin = cut(native_richness, c(18,40,85), labels = FALSE)) %>% 
+  mutate(native_bin = case_when(native_bin == 1 ~ "Lower Native Richness \nSamples",
+                                native_bin == 2 ~ "Higher Native Richness \nSamples")) %>%
+  ggplot(aes(x = Temperature, y = nn_sp_richness, color=native_bin)) +
+  geom_point(alpha=0.5) +
+  #geom_point(aes(x = Temperature, y = poisMod4_pred, color=native_bin)) + #plot model prediction
+  geom_smooth(aes(x = Temperature, y = poisMod4_pred, color=native_bin), se = F, method = "glm", method.args = list(family = "poisson")) +
+  #geom_smooth(aes(x = Temperature, y = poisMod4_25, color=native_bin), se = F, method = "glm", method.args = list(family = "poisson"), linetype="dotted") +
+  stat_smooth(aes(x = Temperature, y = poisMod4_25, color=native_bin), geom="line", size=1, se = F, method = "glm", method.args = list(family = "poisson"), linetype="dotted", alpha=0.5) +
+  #geom_smooth(aes(x = Temperature, y = poisMod4_75, color=native_bin), se = F, method = "glm", method.args = list(family = "poisson"), linetype="dotted") +
+  stat_smooth(aes(x = Temperature, y = poisMod4_75, color=native_bin), geom="line", size=1, se = F, method = "glm", method.args = list(family = "poisson"), linetype="dotted", alpha=0.5) +
+  #facet_grid(~native_bin) +
+  ylab("Non-Native Species Richness") +
+  theme_minimal() +
+  scale_color_manual(values=c("#253494", "#e31a1c"), name="") +
+  theme(panel.border = element_rect(color = "black", fill = NA, size = 1)) 
 q
-ggsave(p, file = "threeFacets_modelFit.pdf")
+ggsave(p, file = "overlapping_pois.pdf")
 
 # ==============================================================
 # two dimensional plot of native richness and temperature
