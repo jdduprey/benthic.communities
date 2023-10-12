@@ -1,4 +1,5 @@
 # Patterns of invasive in an inland sea 
+[![DOI](https://zenodo.org/badge/358407651.svg)](https://zenodo.org/badge/latestdoi/358407651)
 
 * This repo contains code for cleaning, analysis, and visualization of eDNA data to better understand patterns of biological invasion in the Salish Sea.
 * [eDNA data](https://github.com/jdduprey/benthic.communities/tree/main/data), [raw sequence data](https://github.com/ramongallego/eDNA.and.Ocean.Acidification.Gallego.et.al.2020)
