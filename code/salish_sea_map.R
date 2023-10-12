@@ -24,7 +24,7 @@ p <- ggplot() +
   geom_sf(data=NW_coast, col = 1, fill = "ivory") +
   coord_sf(xlim = -c(125, 122), ylim = c(47,49)) +
   geom_point(data = site_meta, 
-             aes(x = long, y = lat, color = hab_type), size = 4, alpha = 0.8) +
+             aes(x = long, y = lat, color = hab_type, shape = hab_type), size = 5, alpha = 0.8) +
   scale_color_manual(values = site_colors) +
   xlab(NULL) + ylab(NULL) +
   ggrepel::geom_text_repel(data = site_meta, 

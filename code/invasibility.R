@@ -246,13 +246,14 @@ SD_bar_plt <- SD_bar_plot_df %>%
 ggplot(SD_bar_plt, aes(x=mean_native, y=mean_detections, color=site)) +
   labs(x = "Native Species Richness", y = "Non-native Species Richness") +
   geom_point() +
-  scale_color_brewer(palette="Spectral", name="Site") +
+  #scale_color_brewer(palette="Spectral", name="Site") +
+  scale_color_manual(values = pal_jco("default")(8)) +
   theme_classic() +
   geom_errorbar(aes(ymin=ymin,ymax=ymax), size=1.5) +
   geom_errorbarh(aes(xmin=xmin,xmax=xmax), size=1.5) +
   scale_y_continuous(breaks=0:7) +
   theme(text = element_text(size = 17)) 
-ggsave(filename="../figures/draft/SD_richness.png")
+ggsave(filename="../figures/draft/SD_richness.png", width=9, height=6)
 
 ggplot(nonnative_vs_all_species, aes(x=all_sp_detections, y=n_detections, color=region)) +
   labs(title = "Richness Ratio by Region",
@@ -329,14 +330,15 @@ ggplot(enviro_plot_df, aes(x = Salinity, y = prop_nn, color = site)) +
   theme_classic()
 ggsave(filename="../figures/draft/nn_prop_salinity.png")
 
+
 # DRAFT SCATTERPLOT
 ggplot(enviro_plot_df, aes(x = Temperature, y = prop_nn, color = site)) +
   labs(x = "Temperature (C)", y = "Relative Non-native Richness", color = "Site") +
-  geom_point() +
-  scale_color_manual(values=pal_jco("default")(8)) +
+  geom_point(size = 4) +  # Set the size of the points to 4
+  scale_color_manual(values = pal_jco("default")(8)) +
   theme_classic() +
-  theme(text = element_text(size = 17)) 
-ggsave(filename="../figures/draft/nn_prop_temp.png")
+  theme(text = element_text(size = 17))
+ggsave(filename="../figures/draft/resub_scatter.png", width=8, height=5)
 
 
 ggplot(use_plot_df, aes(x = visitors, y = prop_nn, color = site)) +
